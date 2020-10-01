@@ -4,7 +4,7 @@
                <ul class="social-media-list">
                     <li v-for="link in links" :key='link.link'>
                          <a :href="link.link" target="_blank"  icon>
-                              <v-icon class="social-buttons">{{link.icon}}</v-icon>
+                              <v-icon size="20" class="social-buttons">{{link.icon}}</v-icon>
                          </a>
                     </li>
                </ul>
@@ -30,6 +30,8 @@ export default {
 }
 </script>
 <style lang="scss">
+@import './../../assets/main.scss';
+
 .social-network {
      .social-meida-orientation {
           display: flex;
@@ -49,22 +51,31 @@ export default {
                margin: 0;
                padding: 0;
                list-style: none;
+               
                li {
                     padding: 10px;
-                    color: red;
                     transition: 0.3s;
+                    opacity: 0.7;
+                    .social-buttons{
+                         color: $white;
+                    }
                     &:hover {
-                         transform: translate(0px, -5px);
+                         transform: translate(0px, -4px);
+                         opacity: 1;
+                         .social-buttons{
+                              color: $hover-link !important;
+                         }
                     }
                }
                &::after{
+                    opacity: 0.7;
                     content: "";
                     display: block;
                     width: 1px;
                     height: 90px;
                     margin: 0px auto;
                     margin-top: 20px;
-                    background-color: white;
+                    background-color: $white;
                }
           }
      }
@@ -75,6 +86,7 @@ export default {
           .email-media-link{
                position: relative;
                a {
+                    opacity: 0.7;
                     margin: 20px auto;
                     padding: 10px;
                     font-size: 13px;
@@ -90,17 +102,27 @@ export default {
                     transition: 0.3s;
                     &:hover {
                          transform: translate(0px, -5px);
+                         color: $hover-link !important;
+                         opacity: 1;
                     }
                }
                &::after {
+                    opacity: 0.7;
                     content: "";
                     display: block;
                     width: 1px;
                     height: 90px;
                     margin: 0px auto;
-                    background-color: white;
+                    background-color: $white;
                }
           }
      }
 }
+
+@media only screen and (max-width: 768px){
+     .social-network {
+          display: none;
+     }
+}
+
 </style>
