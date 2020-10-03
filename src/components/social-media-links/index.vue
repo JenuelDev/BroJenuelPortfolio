@@ -1,36 +1,46 @@
 <template>
      <div class="social-network">
-          <div class="social-media social-meida-orientation social-media-placement">
-               <ul class="social-media-list">
-                    <li v-for="link in links" :key='link.link'>
-                         <a :href="link.link" target="_blank"  icon>
-                              <v-icon size="20" class="social-buttons">{{link.icon}}</v-icon>
-                         </a>
-                    </li>
-               </ul>
-          </div>
-          <div class="email-media social-meida-orientation social-media-placement">
-               <div class="email-media-link">
-                    <a :href="email">{{email}}</a>
+          <slide-y-down-transition  :delay="1300">
+               <div v-show="show" class="social-media social-meida-orientation social-media-placement">
+                    <ul class="social-media-list">
+                         <li v-for="link in links" :key='link.link'>
+                              <a :href="link.link" target="_blank"  icon>
+                                   <v-icon size="20" class="social-buttons">{{link.icon}}</v-icon>
+                              </a>
+                         </li>
+                    </ul>
                </div>
-          </div>
+          </slide-y-down-transition>
+          <slide-y-down-transition :delay="1600">
+               <div v-show="show" class="email-media social-meida-orientation social-media-placement">
+                    <div class="email-media-link">
+                         <a :href="email">{{email}}</a>
+                    </div>
+               </div>
+          </slide-y-down-transition>
      </div>
 </template>
 <script>
 import { email, socialMediaLinks } from './../../data/social-network'
-
+import { SlideYDownTransition } from 'vue2-transitions'
 export default {
      name: "SocialMediaLinks",
+     components: {
+          SlideYDownTransition
+     },
      data: () => {
           return {
                links: socialMediaLinks,
-               email: email
+               email: email,
+               show: false
           }
+     },
+     mounted() {
+          this.show = true
      }
 }
 </script>
 <style lang="scss">
-@import './../../assets/main.scss';
 
 .social-network {
      .social-meida-orientation {
@@ -57,13 +67,13 @@ export default {
                     transition: 0.3s;
                     opacity: 0.7;
                     .social-buttons{
-                         color: $white;
+                         color: var(--white);
                     }
                     &:hover {
                          transform: translate(0px, -4px);
                          opacity: 1;
                          .social-buttons{
-                              color: $hover-link !important;
+                              color: var(--green) !important;
                          }
                     }
                }
@@ -75,7 +85,7 @@ export default {
                     height: 90px;
                     margin: 0px auto;
                     margin-top: 20px;
-                    background-color: $white;
+                    background-color: var(--white);
                }
           }
      }
@@ -99,10 +109,10 @@ export default {
                     text-decoration-skip-ink: auto;
                     color: inherit;
                     position: relative;
-                    transition: 0.3s;
+                    transition: 0.2s !important;
                     &:hover {
                          transform: translate(0px, -5px);
-                         color: $hover-link !important;
+                         color: var(--green) !important;
                          opacity: 1;
                     }
                }
@@ -113,9 +123,17 @@ export default {
                     width: 1px;
                     height: 90px;
                     margin: 0px auto;
-                    background-color: $white;
+                    background-color: var(--white);
                }
           }
+     }
+}
+@media only screen and (max-width: 1078px) {
+     .social-media {
+          left: 20px !important;
+     }
+     .email-media{
+          right: 20px !important;
      }
 }
 

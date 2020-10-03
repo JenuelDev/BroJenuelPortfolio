@@ -1,5 +1,5 @@
 <template>
      <div>
-          Contact Me
+          Footer here
      </div>
 </template>

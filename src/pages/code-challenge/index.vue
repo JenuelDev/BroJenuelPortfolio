@@ -1,3 +1,180 @@
 <template>
-     Code Challenge
+     <section class="code-challenge">
+          <SlideXRightTransition :delay="200">
+               <h2 class="numbered-header" v-show="show" style="margin: 10px 0px -10px;"> <v-icon class="front-icon">{{headIcon}}</v-icon> Code Chellenge</h2>
+          </SlideXRightTransition>
+          <SlideXLeftTransition :delay="300">
+               <p v-show="show">This projects under this page, are simple projects that I created to challenge my self to experience and learn things.</p>
+          </SlideXLeftTransition>
+          <div class="code-grid">
+               <template v-for="(code, index) in codes" >
+               <SlideYUpTransition :key="code.title" :delay="index*250">
+                    <div v-show="show"  class="code-item">
+                         <div  class="code-item-inner">
+                              <header>
+                                   <div class="item-top">
+                                        <div class="item-folder">
+                                             <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40"><path d="M.5 12.5v-10a1 1 0 011-1h4l2 2h6a1 1 0 011 1v8a1 1 0 01-1 1h-12a1 1 0 01-1-1z" stroke="currentColor"></path></svg>
+                                        </div>
+                                        <div class="item-links">
+                                             <a v-for="link in code.links" :key="link.link" :href="link.link" target="_blank">
+                                                  <v-btn class="icon" icon>
+                                                       <v-icon>{{link.icon}}</v-icon>
+                                                  </v-btn>
+                                             </a>
+                                        </div>
+                                   </div>
+                                   <h3 class="item-title">{{code.title}}</h3>
+                                   <div class="item-des" v-html="code.des">
+                                   </div>
+                              </header>
+                              <footer>
+                                   <ul>
+                                        <li v-for="tech in code.techs" :key="tech.name">
+                                             <v-icon class="icon" small >{{tech.icon}}</v-icon> {{tech.name}}
+                                        </li>
+                                   </ul>
+                              </footer>
+                         </div>
+                    </div>
+               </SlideYUpTransition>
+               </template>
+          </div>
+     </section>
 </template>
+<script>
+import { mdiBrain, mdiFolderOpenOutline } from '@mdi/js'
+import codeChallenge from './../../data/code-challenge'
+import { SlideYUpTransition, SlideXLeftTransition, SlideXRightTransition   } from 'vue2-transitions'
+export default {
+     components: {
+          SlideYUpTransition, SlideXLeftTransition, SlideXRightTransition
+     },
+     data: () => {
+          return {
+               headIcon: mdiBrain,
+               codes: codeChallenge,
+               folderIcon: mdiFolderOpenOutline,
+               show: false
+          }
+     },
+     mounted() {
+          this.show = true;
+     },
+}
+</script>
+<style lang="scss">
+     .code-challenge {
+          margin-top: 70px;
+          max-width: 1000px;
+          p {
+               color: var(--slate);
+          }
+
+          .code-grid {
+               display: grid;
+               grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+               gap: 15px;
+               position: relative;
+               margin-top: 50px;
+
+               .code-item {
+                    transition-delay: 0ms;
+                    visibility: visible;
+                    opacity: 1;
+                    transition: 0.2s;
+
+                    .code-item-inner {
+                         box-shadow: 0 10px 30px -15px var(--navy-shadow);
+                         display: flex;
+                         -webkit-box-pack: justify;
+                         justify-content: space-between;
+                         -webkit-box-align: center;
+                         flex-direction: column;
+                         align-items: flex-start;
+                         position: relative;
+                         height: 100%;
+                         padding: 2rem 1.75rem;
+                         border-radius: var(--border-radius);
+                         background-color: var(--light-navy);
+                         transition: var(--transition);
+
+                         header {
+                              .item-top {
+                                   display: flex;
+                                   -webkit-box-pack: justify;
+                                   justify-content: space-between;
+                                   -webkit-box-align: center;
+                                   align-items: center;
+                                   margin-bottom: 30px;
+
+                                   .item-folder {
+                                        color: var(--green) !important;
+                                        .icon {
+                                             color: var(--green) !important;
+                                        }
+                                   }
+                                   .item-links {
+                                        margin-right: -15px;
+                                        color: var(--light-slate) !important;
+                                        a {
+                                             padding: 0px 5px;
+                                             .icon {
+                                                  color: var(--light-slate) !important;
+                                             }
+
+                                             &:hover {
+                                                  .icon {
+                                                       color: var(--green) !important;
+                                                  }
+                                             }
+                                        }
+                                   }
+                              }
+
+                              h3 {
+                                   margin: 0px 0px 0px;
+                                   color: var(--lightest-slate);
+                                   font-size: var(--fz-xxl);
+                                   line-height: 1.1;
+                              }
+
+                              .item-des {
+                                   color: var(--light-slate);
+                                   font-size: 17px;
+                              }
+                         }
+
+                         footer {
+                              ul {
+                                   display: flex;
+                                   align-items: flex-end;
+                                   -webkit-box-flex: 1;
+                                   flex-grow: 1;
+                                   flex-wrap: wrap;
+                                   padding: 0px;
+                                   margin: 0px 10px 0px 10px;
+                                   gap: 10px;
+                                   list-style: none;
+
+                                   li {
+                                        font-family: var(--font-mono);
+                                        font-size: var(--fz-xxs);
+                                        line-height: 1.75;
+                                        color: var(--light-slate);
+                                        
+                                        .icon {
+                                             color: var(--light-slate);
+                                        }
+                                   }
+                              }
+                         }
+                    }
+
+                    &:hover {
+                         transform: translate(0px, -5px);
+                    }
+               }
+          }
+     }
+</style>

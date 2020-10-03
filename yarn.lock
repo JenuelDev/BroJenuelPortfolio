@@ -8618,6 +8618,11 @@ vue-loader@^15.9.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-page-transition@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/vue-page-transition/-/vue-page-transition-0.2.2.tgz#a7c607ccc8dc67e7c05e66a5a9d54bd27d252d56"
+  integrity sha512-qOx+llJ28XX0VwJNJ4GVaeNBPRmPMZac2QQgrIHVUhpXyJx2CQ2XvoQOpGD1ge7QMY3PjZ6fwTbdBwZkA3I9qA==
+
 vue-router@^3.2.0:
   version "3.4.5"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.4.5.tgz#d396ec037b35931bdd1e9b7edd86f9788dc15175"
@@ -8643,6 +8648,11 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==
+
+vue2-transitions@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/vue2-transitions/-/vue2-transitions-0.3.0.tgz#765fc0d743103fcfe2d10f431697d8873a075c17"
+  integrity sha512-m1ad8K8kufqiEhj5gXHkkqOioI5sW0FaMbRiO0Tv2WFfGbO2eIKrfkFiO3HPQtMJboimaLCN4p/zL81clLbG4w==
 
 vue@^2.6.11:
   version "2.6.12"
