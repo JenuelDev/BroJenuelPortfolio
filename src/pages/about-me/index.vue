@@ -56,7 +56,7 @@ export default {
           z-index: 5;
           -webkit-box-pack: center;
           -webkit-box-align: center;
-          min-height: 90vh;
+          min-height: 100vh;
           max-width: 1000px;
           visibility: visible;
           opacity: 1;

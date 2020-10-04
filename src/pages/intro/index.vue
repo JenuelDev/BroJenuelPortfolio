@@ -53,7 +53,7 @@ export default {
           -webkit-box-align: center;
           flex-direction: column;
           align-items: flex-start;
-          min-height: 90vh;
+          min-height: 100vh;
           max-width: 1000px;
 
           h1 {

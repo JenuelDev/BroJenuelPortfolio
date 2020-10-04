@@ -3,20 +3,24 @@
         <NavigationBar />
         <main>
             <router-view/>
+            
         </main>
         <SocialNetworkSite />
+        <Footer />
     </v-app>
 </template>
 
 <script>
 import SocialNetworkSite from '@/components/social-media-links'
 import NavigationBar from './components/navigation-bar'
+import Footer from './components/footer'
 
 export default {
     name: 'App',
     components: {
         SocialNetworkSite,
-        NavigationBar
+        NavigationBar,
+        Footer
     },
     data: () => ({
       
@@ -30,7 +34,6 @@ export default {
         margin: 0px auto;
         width: 100%;
         max-width: 1600px;
-        min-height: 100vh;
         counter-reset: section 0;
     }
     @media only screen and (max-width: 1078px) {

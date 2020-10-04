@@ -92,7 +92,7 @@ export default {
           justify-content: center;
           -webkit-box-align: center;
           flex-direction: column;
-          min-height: 90vh;
+          min-height: 100vh;
           max-width: 1000px;
           margin: 0px auto;
 

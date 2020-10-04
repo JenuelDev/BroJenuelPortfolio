@@ -1,5 +1,6 @@
-// @import './styles/fonts.scss';
 
+// if you want to change theme here
+// you need to change also theme colors in plugins folder
 :root {
      --navy-color: #0a192f;
      --navy-shadow: rgba(2,12,27,0.7);
@@ -23,7 +24,7 @@
 
 *, ::before, ::after {
      font-family: Calibri, 'Trebuchet MS', sans-serif !important;
-     // box-sizing: inherit;
+     box-sizing: inherit;
 }
 
 img {
