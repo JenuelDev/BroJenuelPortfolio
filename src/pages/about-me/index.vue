@@ -9,7 +9,7 @@
                          <div class="about-me-text-info" v-html="info"></div>
                          <ul class="skill-list">
                               <li v-for="skill in skills" :key="skill.text">
-                                   <v-icon small class="skill-icon">{{skill.icon}}</v-icon> {{skill.text}}
+                                   <v-icon color="primary" small class="skill-icon">{{skill.icon}}</v-icon> {{skill.text}}
                               </li>
                          </ul>
                     </div>
@@ -79,7 +79,7 @@ export default {
                
                
                p {
-                    color: var(--slate) !important;
+                    color: var(--v-slate-base) !important;
                }
           }
 
@@ -93,11 +93,10 @@ export default {
                li {
                     font-family: var(--font-mono) !important;
                     font-size: 13px;
-                    color: var(--slate) !important;
+                    color: var(--v-slate-base) !important;
                }
 
                .skill-icon {
-                    color: var(--green);
                     margin: 0px 5px;
                }
           }
@@ -111,7 +110,7 @@ export default {
                     position: relative;
                     width: 100%;
                     border-radius: 10px;
-                    background-color: var(--green);
+                    background-color: var(--v-primary-base);
                     transition: var(--transition);
 
                     &::before, &::after {
@@ -127,7 +126,6 @@ export default {
                     &::before {
                          top: 0;
                          left: 0;
-                         background-color: var(--navy-color);
                          mix-blend-mode: screen;
                     }
                     .photo {
@@ -138,7 +136,7 @@ export default {
                          transition: 0.3s !important;
                     }
                     &::after {
-                         border: 2px solid var(--green);
+                         border: 2px solid var(--v-primary-base);
                          top: 20px;
                          left: 20px;
                          z-index: -1;

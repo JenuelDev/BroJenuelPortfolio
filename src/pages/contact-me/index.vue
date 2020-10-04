@@ -8,9 +8,21 @@
                <SlideYUpTransition :delay="400">
                <div v-show="show" class="form" style="max-width: 800px;">
                     <p>
-                         Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you! You can fill up the form bellow.
+                         Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you! You can check my social profile bellow.
                     </p>
-                    <v-text-field
+                    <div class="social-icons">
+                         <ul>
+                              <li v-for="social in socials" :key="social.name">
+                                   <a :href="social.link" target="_blank">
+                                        <v-icon class="icons">{{social.icon}}</v-icon>
+                                   </a>
+                              </li>
+                         </ul>
+                    </div>
+                    <v-btn x-large color="primary" outlined>
+                         Send Message ☺
+                    </v-btn>
+                    <!-- <v-text-field
                          label="Your Name"
                          outlined
                          dense
@@ -33,7 +45,7 @@
                     ></v-textarea>
                     <v-btn color="primary" large outlined>
                          Send Message
-                    </v-btn>
+                    </v-btn> -->
                </div>
                </SlideYUpTransition>
           </div>
@@ -42,6 +54,7 @@
 <script>
 import { mdiEmailEditOutline } from '@mdi/js'
 import { SlideYUpTransition  } from 'vue2-transitions';
+import {socialMediaLinks} from './../../data/social-network'
 export default {
      components: {
           SlideYUpTransition
@@ -49,7 +62,8 @@ export default {
      data: () => {
           return {
                show: false,
-               contactIcon: mdiEmailEditOutline
+               contactIcon: mdiEmailEditOutline,
+               socials: socialMediaLinks
           }
      },
      mounted() {
@@ -69,6 +83,27 @@ export default {
           max-width: 1000px;
           .form {
                margin-top: 30px;
+          }
+
+          .social-icons {
+               margin-bottom: 20px;
+               ul {
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    li {
+                         margin: 10px;
+                         .icons {
+                              color: var(--v-slate-base)
+                         }
+
+                         &:hover {
+                              .icons {
+                              color: var(--v-primary-base)
+                         }
+                         }
+                    }
+               }
           }
      }
 </style>

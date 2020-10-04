@@ -58,7 +58,7 @@ export default {
 
           h1 {
                margin: 0px 0px 0px 4px;
-               color: var(--green);
+               color: var(--v-primary-base);
                font-family: var(--font-mono) !important;
                font-size: 17px !important;
                font-weight: lighter;
@@ -67,24 +67,24 @@ export default {
           h2 {
                margin: 0px 0px -20px 0px !important;
                font-size: clamp(40px, 8vw, 80px);
-               color: var(--white);
+               color: var(--v-white-base);
           }
           h3 {
                margin-top: 10px;
-               color: var(--slate);
+               color: var(--v-slate-base);
                line-height: 0.9;
                font-size: clamp(40px, 8vw, 80px);
           }
           p {
                margin: 20px 0px 0px;
                max-width: 500px;
-               color: var(--slate);
+               color: var(--v-slate-base);
           }
           .get-in-touch {
-               border: 1px solid var(--green);
+               border: 1px solid var(--v-primary-base);
                border-radius: 4px;
                font-size: 14px;
-               color: var(--green);
+               color: var(--v-primary-base);
                margin-top: 30px;
           }
      }

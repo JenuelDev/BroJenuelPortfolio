@@ -112,7 +112,7 @@ export default {
                               content: "▹";
                               position: absolute;
                               left: 20px;
-                              color: var(--green);
+                              color: var(--v-primary-base);
                          }
                     }
                }
@@ -121,7 +121,7 @@ export default {
                     opacity: 0.8;
                }
                .highlight {
-                    color: var(--green)
+                    color: var(--v-primary-base)
                }
                .list{
                     opacity: 0.8;

@@ -13,7 +13,7 @@
                </v-tab>
           </v-tabs>
           <div class="responsive-nav-tab">
-               <v-btn large icon elevation="0" rounded @click="dialog = !dialog">
+               <v-btn color="primary" large icon elevation="0" rounded @click="dialog = !dialog">
                     <v-icon large>{{menuIcon}}</v-icon>
                </v-btn>
                <v-dialog
@@ -94,18 +94,6 @@ export default {
           top: 10px;
           right: 20px;
           z-index: 100 !important;
-
-
-          button {
-               background-color: var(--navy-color) !important;
-               color: var(--green) !important;
-          }
-          
-          .show-navigation-tab{
-               background-color: var(--navy-color);
-          }
-
-          
      }
      .navigation-tab-top {
           box-shadow: 0 0px 0px 0px rgb(2, 12, 27, 0.7) !important;

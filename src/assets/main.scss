@@ -1,20 +1,5 @@
-
-// if you want to change theme here
-// you need to change also theme colors in plugins folder
 :root {
-     --navy-color: #0a192f;
-     --navy-shadow: rgba(2,12,27,0.7);
-     --background-color: #0a192f;
-     --green-color: #64ffda;
-     --dark: rgb(2, 12, 27);
-     --light-navy: #172a45;
-     --lightest-navy: #303C55;
-     --slate: #8892b0;
-     --light-slate: #a8b2d1;
-     --lightest-slate: #ccd6f6;
-     --white: #e6f1ff;
-     --green: rgba(100, 255, 218, 1);
-     --orange: #ffe064;
+     --black-shadow: 0 10px 30px -15px black;
      --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
      --transition: all 0.25 cubic-bezier(0.645, 0.045, 0.355, 1);
      --border-radius: 4px;
@@ -34,10 +19,10 @@ img {
  }
 
 .v-application {
-     background-color: var(--background-color) !important;
+     background-color: var(--v-background-base) !important;
 }
 .v-dialog {
-     background-color: var(--navy-color);
+     background-color: var(--v-background-base);
 }
 
 @import './styles/themes.scss';

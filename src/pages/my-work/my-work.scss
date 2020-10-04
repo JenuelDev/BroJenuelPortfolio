@@ -44,7 +44,7 @@
 
                .info-overline {
                     margin: 10px 0px;
-                    color: var(--green);
+                    color: var(--v-primary-base);
                     font-family: var(--font-mono) !important;
                     font-size: 13px;
                     font-weight: 400;
@@ -53,18 +53,18 @@
                .info-title {
                     margin: 0px 0px 20px;
                     font-size: clamp(24px, 5vw, 28px);
-                    color: var(--lightest-slate) !important;
+                    color: var(--v-lightestSlate-base) !important;
                }
 
                .info-des-container {
-                    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+                    box-shadow: var(--black-shadow);
                     transition: var(--transition);
                     position: relative;
                     z-index: 2;
                     padding: 25px;
                     border-radius: var(--border-radius);
-                    background-color: var(--light-navy);
-                    color: var(--light-slate);
+                    background-color: var(--v-liteprimary-base);
+                    color: var(--v-lightSlate-base);
                     font-size: 18px;
                }
 
@@ -79,7 +79,7 @@
                     padding: 0px;
                     list-style: none;
                     li {
-                         color: var(--light-slate);
+                         color: var(--v-lightSlate-base);
                          font-family: var(--font-mono) !important;
                          font-size: var(--fz-xs);
                          white-space: nowrap;
@@ -98,12 +98,12 @@
                     position: relative;
                     margin-top: 10px;
                     margin-left: -10px;
-                    color: var(--lightest-slate);
+                    color: var(--v-lightestSlate-base);
                     a {
                          padding: 10px;
                          &:hover {
                               .highlight-hover {
-                                   color: var(--green) !important;
+                                   color: var(--v-primary-base) !important;
                               }
                          }
                     }
@@ -122,7 +122,7 @@
                transition: var(--transition);
                a {
                     width: 100%;
-                    background-color: var(--green);
+                    background-color: var(--v-primary-base);
                     border-radius: var(--border-radius);
                     vertical-align: middle;
                     transition: 0.25s !important;

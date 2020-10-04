@@ -28,7 +28,6 @@ export default {
 };
 </script>
 <style lang="scss">
-    @import './assets/main.scss';
     main {
         padding: 0px 150px;
         margin: 0px auto;

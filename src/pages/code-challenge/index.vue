@@ -68,7 +68,7 @@ export default {
           margin-top: 70px;
           max-width: 1000px;
           p {
-               color: var(--slate);
+               color: var(--v-slate-base);
           }
 
           .code-grid {
@@ -83,9 +83,9 @@ export default {
                     visibility: visible;
                     opacity: 1;
                     transition: 0.2s;
+                    box-shadow: 0 0px 0px 0px black;
 
                     .code-item-inner {
-                         box-shadow: 0 10px 30px -15px var(--navy-shadow);
                          display: flex;
                          -webkit-box-pack: justify;
                          justify-content: space-between;
@@ -96,7 +96,7 @@ export default {
                          height: 100%;
                          padding: 2rem 1.75rem;
                          border-radius: var(--border-radius);
-                         background-color: var(--light-navy);
+                         background-color: var(--v-liteprimary-base);
                          transition: var(--transition);
 
                          header {
@@ -109,23 +109,23 @@ export default {
                                    margin-bottom: 30px;
 
                                    .item-folder {
-                                        color: var(--green) !important;
+                                        color: var(--v-primary-base) !important;
                                         .icon {
-                                             color: var(--green) !important;
+                                             color: var(--v-primary-base) !important;
                                         }
                                    }
                                    .item-links {
                                         margin-right: -15px;
-                                        color: var(--light-slate) !important;
+                                        color: var(--v-lightSlate-base) !important;
                                         a {
                                              padding: 0px 5px;
                                              .icon {
-                                                  color: var(--light-slate) !important;
+                                                  color: var(--v-lightSlate-base) !important;
                                              }
 
                                              &:hover {
                                                   .icon {
-                                                       color: var(--green) !important;
+                                                       color: var(--v-primary-base) !important;
                                                   }
                                              }
                                         }
@@ -134,13 +134,13 @@ export default {
 
                               h3 {
                                    margin: 0px 0px 0px;
-                                   color: var(--lightest-slate);
+                                   color: var(--v-lightestSlate-base);
                                    font-size: var(--fz-xxl);
                                    line-height: 1.1;
                               }
 
                               .item-des {
-                                   color: var(--light-slate);
+                                   color: var(--v-lightSlate-base);
                                    font-size: 17px;
                               }
                          }
@@ -161,10 +161,10 @@ export default {
                                         font-family: var(--font-mono);
                                         font-size: var(--fz-xxs);
                                         line-height: 1.75;
-                                        color: var(--light-slate);
+                                        color: var(--v-lightSlate-base);
                                         
                                         .icon {
-                                             color: var(--light-slate);
+                                             color: var(--v-lightSlate-base);
                                         }
                                    }
                               }
@@ -173,6 +173,7 @@ export default {
 
                     &:hover {
                          transform: translate(0px, -5px);
+                         box-shadow: var(--black-shadow);
                     }
                }
           }

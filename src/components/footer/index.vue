@@ -14,8 +14,11 @@
           </div>
           <div class="footer-text">
                <a href="#">
-                    <div>Built by Jenuel Ganawed based on Brittany's Design</div>
-                    <div>using <v-icon small color="green">{{vueIcon}}</v-icon> Vue.js</div>
+                    <div>
+                         <span>Built by Jenuel Ganawed based on Brittany's Design
+                         <br>
+                         using <v-icon small color="green">{{vueIcon}}</v-icon> Vue.js</span>
+                    </div>
                </a>
           </div>
      </footer>
@@ -34,11 +37,12 @@ export default {
 </script>
 <style lang="scss">
      .footer {
+          margin-top: 20px;
           padding: 50px;
           text-align: center;
 
           .social-links {
-               display: flex;
+               display: none;
                flex-direction: column;
                align-items: center;
                text-align: center;
@@ -46,14 +50,15 @@ export default {
                     display: flex;
                     flex-direction: row;
                     list-style: none;
+                    margin-bottom: 10px;
                     li {
                          margin: 0px 10px;
                          .icon {
-                              color: var(--slate);
+                              color: var(--v-slate-base);
                          }
                          &:hover {
                               .icon {
-                                   color: var(--green) !important;
+                                   color: var(--v-primary-base) !important;
                               }
                          }
                     }
@@ -63,25 +68,35 @@ export default {
                     font-family: var(--font-mono) !important;
                     font-size: 13px;
                     padding: 10px 0px 0px 0px;
-                    color: var(--slate);
+                    color: var(--v-slate-base);
 
                     &:hover {
-                         color: var(--green);
+                         color: var(--v-primary-base);
                     }
                }
           }
 
           .footer-text {
                div {
-                    font-family: var(--font-mono) !important;
-                    font-size: 13px;
-                    color: var(--slate);
-               }
+                    margin-top: 10px;
+                    span {
+                         font-family: var(--font-mono) !important;
+                         font-size: 13px;
+                         color: var(--v-slate-base);
+                         margin: 10px;
 
-               &:hover {
-                    div {
-                         color: var(--green);
+                         &:hover {
+                              color: var(--v-primary-base);
+                         }
                     }
+               }
+          }
+     }
+
+     @media only screen and (max-width: 768px) {
+          .footer {
+               .social-links {
+                    display: flex;
                }
           }
      }

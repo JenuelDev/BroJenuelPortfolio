@@ -67,13 +67,13 @@ export default {
                     transition: 0.3s;
                     opacity: 0.7;
                     .social-buttons{
-                         color: var(--white);
+                         color: var(--v-white-base);
                     }
                     &:hover {
                          transform: translate(0px, -4px);
                          opacity: 1;
                          .social-buttons{
-                              color: var(--green) !important;
+                              color: var(--v-primary-base) !important;
                          }
                     }
                }
@@ -85,7 +85,7 @@ export default {
                     height: 90px;
                     margin: 0px auto;
                     margin-top: 20px;
-                    background-color: var(--white);
+                    background-color: var(--v-white-base);
                }
           }
      }
@@ -112,7 +112,7 @@ export default {
                     transition: 0.2s !important;
                     &:hover {
                          transform: translate(0px, -5px);
-                         color: var(--green) !important;
+                         color: var(--v-primary-base) !important;
                          opacity: 1;
                     }
                }
@@ -123,7 +123,7 @@ export default {
                     width: 1px;
                     height: 90px;
                     margin: 0px auto;
-                    background-color: var(--white);
+                    background-color: var(--v-white-base);
                }
           }
      }

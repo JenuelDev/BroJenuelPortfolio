@@ -13,11 +13,11 @@ p {
      margin-block-end: 1em;
      margin-inline-start: 0px;
      margin-inline-end: 0px;
-     color: var(--lightest-slate);
+     color: var(--v-lightestSlate-base);
 }
 
 h3, ul {
-     color: var(--lightest-slate);
+     color: var(--v-lightestSlate-base);
 }
 
 
@@ -49,7 +49,6 @@ p {
           position: relative;
           transition: var(--transition) !important;
           cursor: pointer;
-          color: var(--green) !important;
 
           &::after {
                content: "";
@@ -58,7 +57,7 @@ p {
                height: 2px;
                position: relative;
                bottom: 0.37em;
-               background-color: var(--green);
+               background-color: var(--v-primary-base);
                transition: var(--transition) !important;
                opacity: 0.5;
           }
@@ -71,35 +70,24 @@ p {
      }
 }
 
-.v-tab {
-     background-color: var(--navy-color) !important;
-}
 .v-tabs{
-     background-color: var(--navy-color) !important;
-     color: var(--green) !important;
+     background-color: var(--v-background-base) !important;
 }
 .v-window {
-     background-color: var(--navy-color) !important;
+     background-color: var(--v-background-base) !important;
 }
 .v-tabs > .v-tabs-bar .v-tabs-bar__content {
-     background-color: var(--navy-color) !important;
-     color: var(--green);
+     background-color: var(--v-background-base) !important;
  }
 .v-tabs--vertical > .v-tabs-bar .v-tabs-bar__content {
-     background-color: var(--navy-color) !important;
-     color: var(--green);
+     background-color: var(--v-background-base) !important;
  }
 .tab-items {
-     background-color: var(--navy-color) !important;
+     background-color: var(--v-background-base) !important;
 }
 .v-card {
-     background-color: var(--navy-color) !important;
+     background-color: var(--v-background-base) !important;
 }
-
-.v-application .primary--text {
-     color: var(--green) !important;
-}
-
 
 .numbered-header{
      display: flex;
@@ -110,10 +98,10 @@ p {
      width: 100%;
      font-size: clamp(26px), 5vw, 32px;
      white-space: nowrap;
-     color: var(--lightest-slate);
+     color: var(--v-lightestSlate-base);
 
      .front-icon {
-          color: var(--green) !important;
+          color: var(--v-primary-base) !important;
           margin-right: 10px;
      }
 
@@ -124,6 +112,6 @@ p {
           width: 300px;
           height: 1px;
           margin-left: 20px;
-          background-color: var(--lightest-navy);
+          background-color: var(--v-lightestPrimary-base);
      }
 }
