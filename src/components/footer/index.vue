@@ -13,7 +13,7 @@
                </a>
           </div>
           <div class="footer-text">
-               <a href="#">
+               <a href="https://github.com/MisterJ936/jenuel-portfolio-v2" target="_blank">
                     <div>
                          <span>Built by Jenuel Ganawed based on Brittany's Design
                          <br>

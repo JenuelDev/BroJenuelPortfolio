@@ -19,33 +19,38 @@
                               </li>
                          </ul>
                     </div>
-                    <v-btn x-large color="primary" outlined>
-                         Send Message ☺
-                    </v-btn>
-                    <!-- <v-text-field
-                         label="Your Name"
-                         outlined
-                         dense
-                         required
-                         style="width: 100%;"
-                    ></v-text-field>
-                    <v-text-field
-                         label="Your Email"
-                         outlined
-                         dense
-                         required
-                         style="width: 100%;"
-                    ></v-text-field>
-                    <v-textarea
-                         outlined
-                         name="input-7-4"
-                         label="Write your Message Here."
-                         required
-                         value=""
-                    ></v-textarea>
-                    <v-btn color="primary" large outlined>
-                         Send Message
-                    </v-btn> -->
+                    <a v-if="true" href="mailto:jenuelganawed936@gmail.com" style="text-decoration: none;">
+                         <v-btn x-large color="primary" outlined>
+                              Send Message
+                         </v-btn>
+                    </a>
+                    <div v-else>
+                         <v-text-field
+                              label="Your Name"
+                              outlined
+                              dense
+                              required
+                              style="width: 100%;"
+                         ></v-text-field>
+                         <v-text-field
+                              label="Your Email"
+                              outlined
+                              dense
+                              required
+                              style="width: 100%;"
+                         ></v-text-field>
+                         <v-textarea
+                              outlined
+                              name="input-7-4"
+                              label="Write your Message Here."
+                              required
+                              value=""
+                         ></v-textarea>
+                         <v-btn color="primary" large outlined>
+                              Send Message
+                         </v-btn>
+                    </div>
+                    
                </div>
                </SlideYUpTransition>
           </div>
