@@ -18,11 +18,11 @@
                                              <li v-for="tech in work.techs" :key="tech">{{tech}}</li>
                                         </ul>
                                         <div class="work-links" :class="i%2==0 ? '' : 'work-links-right'">
-                                             <a v-for="link in work.links" :key="link.name" :href="link.link" aria-label="GitHUB Link"><v-icon class="highlight-hover">{{link.icon}}</v-icon></a>
+                                             <a v-for="link in work.links" :key="link.name" :href="link.link" target="_blank" aria-label="GitHUB Link"><v-icon class="highlight-hover">{{link.icon}}</v-icon></a>
                                         </div>
                                    </div>
                                    <div class="work-info-image " :class="i%2 == 0 ? 'right-image' : 'left-image' ">
-                                        <a :href="work.imageLink">
+                                        <a :href="work.imageLink" target="_blank">
                                              <div class="image-wrapping">
                                                   <div class="front-filter"></div>
                                                   <img :src="work.img" alt="">
