@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "dist": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./dist.ps1",
-    "pub": "publish.bat"
+    "pub": "publish.bat",
+    "allin" : "yarn build & yarn dist & yarn pub"
   },
   "dependencies": {
     "@mdi/font": "^5.6.55",
