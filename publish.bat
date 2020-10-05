@@ -8,4 +8,3 @@ git commit -m "Update Portfolio"
 git push origin master
 cd ..
 cd jenuel-portfolio-v2
-pause

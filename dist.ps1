@@ -7,6 +7,3 @@ if (Test-Path .\..\MisterJ936) {
 } else {
      Write-Warning "Directory MisterJ936 Doesnt Exist"
 }
-
-
-Read-Host -Prompt "Press Enter to exit"
