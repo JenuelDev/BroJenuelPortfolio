@@ -24,8 +24,7 @@ export default new Vuetify({
                     info: '#2196F3',
                     success: '#4CAF50',
                     warning: '#FFC107',
-                    shadow: '#020c1bb3',
-
+                    shadow: '#000000',
                }
           },
           dark: true
