@@ -14,7 +14,7 @@
           <slide-y-down-transition :delay="1600">
                <div v-show="show" class="email-media social-meida-orientation social-media-placement">
                     <div class="email-media-link">
-                         <a :href="email">{{email}}</a>
+                         <a :href="'mailto:'+email">{{email}}</a>
                     </div>
                </div>
           </slide-y-down-transition>
