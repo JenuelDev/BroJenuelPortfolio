@@ -14,7 +14,7 @@ export const socialMediaLinks = [
      },
      {
           icon: mdiGithub,
-          link: 'https://github.com/MisterJ936'
+          link: 'https://github.com/BroJenuel'
      },
      {
           icon: mdiTwitter,

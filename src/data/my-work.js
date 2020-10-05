@@ -12,7 +12,7 @@ export default [
           ],
           links: [
                {
-                    link: "https://github.com/MisterJ936/jenuel-portfolio-v2",
+                    link: "https://github.com/BroJenuel/jenuel-portfolio-v2",
                     icon: mdiGithub
                },
                {

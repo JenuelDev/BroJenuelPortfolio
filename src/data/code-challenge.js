@@ -6,7 +6,7 @@ export default [
           des: "<p>World Time is a simple App that I made using React Native. I was able to fetch data from World Time API and Used it in this app. I was able to build the app as an apk and you can check it by clicking the download button bellow.</p>",
           links: [
                {
-                    link: "https://github.com/MisterJ936/MyPortFolio/tree/master/appDev/world_time",
+                    link: "https://github.com/BroJenuel/MyPortFolio/tree/master/appDev/world_time",
                     icon: mdiGithub
                },
                {
@@ -30,7 +30,7 @@ export default [
           des: "<p>Calculator is one fascinating computer that is created during the early days. People Have been using it for computing a lot of stuff. Its been a useful tool for eveyone specially students and workers. So I created a simple calculator using Vue sincce I have been learning how to create and build using vuejs.</p>",
           links: [
                {
-                    link: "https://github.com/MisterJ936/MyPortFolio/tree/master/calculator-vue",
+                    link: "https://github.com/BroJenuel/MyPortFolio/tree/master/calculator-vue",
                     icon: mdiGithub
                },
                {
@@ -50,7 +50,7 @@ export default [
           des: "<p>This is a simple speech to text using HTML, CSS, and JS. I was fascinated with what javascrip can do so I made a simple, project to try and convert speech to text. And JavaScript has a library called Speech Recognition.</p>",
           links: [
                {
-                    link: "https://github.com/MisterJ936/MyPortFolio/tree/master/speach-to-text",
+                    link: "https://github.com/BroJenuel/MyPortFolio/tree/master/speach-to-text",
                     icon: mdiGithub
                },
                {
@@ -78,7 +78,7 @@ export default [
           des: "<p>This is a simple Text to Speech using HTML, CSS, and JS. I was fascinated with what javascrip can do so I made a simple, project to try and convert speech to text. And JavaScript has a library called Speech Recognition.</p>",
           links: [
                {
-                    link: "https://github.com/MisterJ936/MyPortFolio/tree/master/text-to-speach",
+                    link: "https://github.com/BroJenuel/MyPortFolio/tree/master/text-to-speach",
                     icon: mdiGithub
                },
                {
