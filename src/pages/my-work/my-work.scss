@@ -2,6 +2,7 @@
      margin: 0px auto;
      padding: 100px 0px;
      max-width: 1000px;
+     min-height: 90vh;
 
      .work-info {
           visibility: visible;
@@ -101,6 +102,9 @@
                     color: var(--v-lightestSlate-base);
                     a {
                          padding: 10px;
+                         .highlight-hover {
+                              color: var(--v-slate-base) !important;
+                         }
                          &:hover {
                               .highlight-hover {
                                    color: var(--v-primary-base) !important;
