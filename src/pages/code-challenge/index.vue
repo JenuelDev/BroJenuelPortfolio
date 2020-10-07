@@ -18,7 +18,7 @@
                                         </div>
                                         <div class="item-links">
                                              <a v-for="link in code.links" :key="link.link" :href="link.link" target="_blank">
-                                                  <v-btn class="icon" icon>
+                                                  <v-btn class="icon" icon aria-label="Link Icons">
                                                        <v-icon>{{link.icon}}</v-icon>
                                                   </v-btn>
                                              </a>

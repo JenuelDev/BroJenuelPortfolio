@@ -13,7 +13,7 @@
                <p v-show="show">{{des}}</p>
           </slide-y-up-transition>
           <slide-y-up-transition :delay="700">
-               <v-btn v-show="show" outlined x-large class="get-in-touch" :href="'mailto:'+email">
+               <v-btn v-show="show" outlined x-large class="get-in-touch" :href="'mailto:'+email" aria-label="Send Message">
                     Get In Touch
                </v-btn>
           </slide-y-up-transition>

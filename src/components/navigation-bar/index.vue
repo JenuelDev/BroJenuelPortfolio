@@ -13,7 +13,7 @@
                </v-tab>
           </v-tabs>
           <div class="responsive-nav-tab">
-               <v-btn color="primary" large icon elevation="0" rounded @click="dialog = !dialog">
+               <v-btn color="primary" large icon elevation="0" rounded @click="dialog = !dialog" aria-label="Open Drawer">
                     <v-icon large>{{menuIcon}}</v-icon>
                </v-btn>
                <v-dialog
@@ -23,7 +23,7 @@
                     transition="slide-x-transition"
                     class="nav-dialog"
                >
-                    <v-btn x-large icon style="position: absolute; z-index: 20; right: 10px; top: 10px;" @click="dialog = !dialog">
+                    <v-btn x-large icon style="position: absolute; z-index: 20; right: 10px; top: 10px;" @click="dialog = !dialog" aria-label="Close Drawer">
                          <v-icon x-large>{{closeIcon}}</v-icon>
                     </v-btn>
                     <v-tabs class="show-navigation-tab" vertical>

@@ -20,7 +20,7 @@
                          </ul>
                     </div>
                     <a v-if="true" href="mailto:jenuelganawed936@gmail.com" style="text-decoration: none;">
-                         <v-btn x-large color="primary" outlined>
+                         <v-btn x-large color="primary" outlined aria-label="Send Message">
                               Send Message
                          </v-btn>
                     </a>
@@ -46,7 +46,7 @@
                               required
                               value=""
                          ></v-textarea>
-                         <v-btn color="primary" large outlined>
+                         <v-btn color="primary" large outlined aria-label="Send Message">
                               Send Message
                          </v-btn>
                     </div>
