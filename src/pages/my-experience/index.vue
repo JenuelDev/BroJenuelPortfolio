@@ -65,7 +65,13 @@ export default {
      },
      mounted() {
           this.show = true;
+          this.setTabs();
           window.onresize = () => {
+               this.setTabs();
+          }
+     },
+     methods: {
+          setTabs() {
                if (window.innerWidth < 375) {
                     this.showTab = false;
                } else if (window.innerWidth < 502) {
