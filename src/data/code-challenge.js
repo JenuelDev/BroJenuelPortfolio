@@ -3,7 +3,7 @@ import { mdiCircle, mdiDownload, mdiGithub, mdiLanguageCss3, mdiLanguageHtml5, m
 export default [
      {
           title: "World Time Using React Native",
-          des: "<p>World Time is a simple App that I made using React Native. I was able to fetch data from World Time API and Used it in this app. I was able to build the app as an apk and you can check it by clicking the download button bellow.</p>",
+          des: "<p>World Time is a simple App that I made using React Native. I was able to fetch data from World Time API and Used it in this app. I was able to build the app as an apk and you can check it by clicking the download button.</p>",
           links: [
                {
                     link: "https://github.com/BroJenuel/MyPortFolio/tree/master/appDev/world_time",
@@ -27,7 +27,7 @@ export default [
      },
      {
           title: "Web Calculator",
-          des: "<p>Calculator is one fascinating computer that is created during the early days. People Have been using it for computing a lot of stuff. Its been a useful tool for eveyone specially students and workers. So I created a simple calculator using Vue sincce I have been learning how to create and build using vuejs.</p>",
+          des: "<p>Calculator is one fascinating computer that is created during the early days. People Have been using it for computing a lot of stuff. Its been a useful tool for eveyone specially students and workers. So I created my simple calculator using Vue.</p>",
           links: [
                {
                     link: "https://github.com/BroJenuel/MyPortFolio/tree/master/calculator-vue",
