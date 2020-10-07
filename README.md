@@ -1,5 +1,5 @@
 ## Hi! ✋ I'm Jenuel Oras Ganawed
-`PortFolio Version 2`  `Misterj936`
+`PortFolio Version 2`  `BroJenuel`
   
 Hi! I have created a new Portfolio. I haven been looking for designs for my portfolio,  
 and then this design by [Britanny Chiang](http://mr-branding.blogspot.com/2019/09/website-inspiration-brittany-chiang.html) got my attention. And so I created and rebuilt  
@@ -15,4 +15,6 @@ forget to Credit the designer as well.
 You can change data under this project by chaning the  
 values of javascript files inside `src/data/*`. You can change data for each pages.  
 
+### Preview
+<img src="./public/meta-image.png"/>
 
