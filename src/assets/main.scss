@@ -17,6 +17,9 @@ img {
      max-width: 100%;
      vertical-align: middle;
  }
+ .highlight:hover {
+      color: var(--v-primary-base);
+ }
 
 .v-application {
      background-color: var(--v-background-base) !important;

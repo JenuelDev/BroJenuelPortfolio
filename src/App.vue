@@ -1,9 +1,9 @@
 <template>
     <v-app>
         <NavigationBar />
+        <ThemeChanger />
         <main>
             <router-view/>
-            
         </main>
         <SocialNetworkSite />
         <Footer />
@@ -14,13 +14,15 @@
 import SocialNetworkSite from '@/components/social-media-links'
 import NavigationBar from './components/navigation-bar'
 import Footer from './components/footer'
+import ThemeChanger from './components/themeChanger'
 
 export default {
     name: 'App',
     components: {
         SocialNetworkSite,
         NavigationBar,
-        Footer
+        Footer,
+        ThemeChanger
     },
     data: () => ({
       

@@ -96,7 +96,7 @@ export default {
                          height: 100%;
                          padding: 2rem 1.75rem;
                          border-radius: var(--border-radius);
-                         background-color: var(--v-liteprimary-base);
+                         background-color: var(--v-lightBackground-base);
                          transition: var(--transition);
 
                          header {
