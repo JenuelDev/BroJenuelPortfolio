@@ -38,32 +38,47 @@
 import { mdiFormatPaint } from '@mdi/js'
 import { themes } from './../../data/theme'
 export default {
-     data: () => ({
-          fav: true,
-          menu: false,
-          message: false,
-          hints: true,
-          colorIcon: mdiFormatPaint,
-          themes: themes
-     }),
-     methods: {
-          changeTheme(theme) {
-               // const name = theme.name;
-               const dark = theme.dark;
+    data: () => ({
+        fav: true,
+        menu: false,
+        message: false,
+        hints: true,
+        colorIcon: mdiFormatPaint,
+        themes: themes
+    }),
+    methods: {
+        changeTheme(theme) {
+            const name = theme.name;
+            const dark = theme.dark;
 
-               Object.keys(dark).forEach(i => {
-                    this.$vuetify.theme.themes.dark[i] = dark[i];
-               });
+            // set Themne
+            Object.keys(dark).forEach(i => {
+                this.$vuetify.theme.themes.dark[i] = dark[i];
+            });
 
-               this.menu = false;
-          }
-     },
+            // save local theme
+            localStorage.setItem('theme-selected', name)
+
+            this.menu = false;
+        }
+    },
+    mounted() {
+        const themeName = localStorage.getItem('theme-selected')
+        if (themeName) {
+            this.themes.forEach(theme => {
+                if (theme.name == themeName) {
+                    this.changeTheme(theme)
+                    return true
+                }
+            })
+        }
+    }
 }
 </script>
 <style lang="scss">
      .change-theme-btn {
           position: fixed;
-          top: 50px;
+          top: 60px;
           left: 40px;
           z-index: 15;
 
@@ -79,11 +94,11 @@ export default {
           
      }
      .theme-chooser {
-          width: 80px;
+          width: 40px;
           padding: 10px;
           cursor: pointer;
-          border-radius: 5px;
           transition: all .25s ease;
+          opacity: 0.5;
 
           .colors-flex {
                display: flex;
@@ -98,8 +113,26 @@ export default {
 
           &:hover {
                background-color: var(--v-background-base) !important;
+               opacity: 1;
+               border-radius: 10px;
           }
      }
-     
-     
+     @media only screen and (max-width: 1078px) {
+         .change-theme-btn {
+            // top: 20px;
+            left: 20px;
+         }
+     }
+     @media only screen and (max-width: 800px) {
+          .change-theme-btn {
+              
+            top: 15px;
+            left: 20px;
+            background-color: var(--v-background-base);
+            box-shadow: var(--black-shadow) !important;
+            .icon {
+                color: var(--v-primary-base) !important;
+            }
+          }
+     }
 </style>
