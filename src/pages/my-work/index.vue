@@ -1,13 +1,16 @@
 <template>
      <section class="my-work">
-          <slide-y-up-transition :delay="100">
-               <h2 v-show="show" class="numbered-header"> <v-icon class="front-icon">{{headIcon}}</v-icon> Some of my Work</h2>
-          </slide-y-up-transition>
+          <SlideXRightTransition :delay="200">
+               <h2 class="numbered-header" v-show="$store.state.workShow" style="margin: 10px 0px -10px;"> <v-icon class="front-icon">{{headIcon}}</v-icon> My Work</h2>
+          </SlideXRightTransition>
+          <SlideXLeftTransition :delay="300">
+               <p v-show="$store.state.workShow">This are projects that I made, and deployed it live for everyone to use.</p>
+          </SlideXLeftTransition>
           <slide-y-down-transition :delay="400">
-               <div v-show="show">
+               <div v-show="$store.state.workShow" style="margin-top: 20px;">
                     <template v-for="(work, i) in myWorks">
                          <slide-y-down-transition :delay="i*900" :key="work.title">
-                              <div v-show="show" class="work-info">
+                              <div v-show="$store.state.workShow" class="work-info">
                                    <div class="work-info-details" :class="i%2 == 0 ? 'left-content' : 'right-content' ">
                                         <p class="info-overline">{{work.overline}}</p>
                                         <h3 class="info-title">{{work.title}}</h3>
@@ -38,24 +41,24 @@
 </template>
 <script>
 import { mdiFileDocumentMultipleOutline, mdiGithub, mdiOpenInNew } from '@mdi/js'
-import { SlideYDownTransition, SlideYUpTransition   } from 'vue2-transitions'
+import { SlideYDownTransition, SlideXLeftTransition, SlideXRightTransition   } from 'vue2-transitions'
 import myWorks from './../../data/my-work'
 export default {
      components: {
           SlideYDownTransition,
-          SlideYUpTransition 
+          SlideXLeftTransition,
+          SlideXRightTransition
      },
      data: () => {
           return {
                headIcon: mdiFileDocumentMultipleOutline,
                githubIcon: mdiGithub,
                externalIcon: mdiOpenInNew,
-               show: false,
                myWorks: myWorks
           }
      },
      mounted() {
-          this.show = true;
+         this.$store.state.workShow = true
      }
 }
 </script>

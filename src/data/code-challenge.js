@@ -3,7 +3,7 @@ import { mdiCircle, mdiDownload, mdiGithub, mdiLanguageCss3, mdiLanguageHtml5, m
 export default [
      {
           title: "World Time Using React Native",
-          des: "<p>World Time is a simple App that I made using React Native. I was able to fetch data from World Time API and Used it in this app. I was able to build the app as an apk and you can check it by clicking the download button.</p>",
+          des: "<p>These projects under this page are simple projects that I created to challenge myself and to experience and learn new things.</p>",
           links: [
                {
                     link: "https://github.com/BroJenuel/MyPortFolio/tree/master/appDev/world_time",
@@ -27,7 +27,7 @@ export default [
      },
      {
           title: "Web Calculator",
-          des: "<p>Calculator is one fascinating computer that is created during the early days. People Have been using it for computing a lot of stuff. Its been a useful tool for eveyone specially students and workers. So I created my simple calculator using Vue.</p>",
+          des: "<p>Calculator is a fascinating computer. People Have been using it for computing a lot of stuff. It's been a useful tool for everyone. So I created my simple calculator using Vue.</p>",
           links: [
                {
                     link: "https://github.com/BroJenuel/MyPortFolio/tree/master/calculator-vue",
@@ -47,7 +47,7 @@ export default [
      },
      {
           title: "Speech To Text",
-          des: "<p>This is a simple speech to text using HTML, CSS, and JS. I was fascinated with what javascrip can do so I made a simple, project to try and convert speech to text. And JavaScript has a library called Speech Recognition.</p>",
+          des: "<p>This is a simple speech to text website using HTML, CSS, and JS. JavaScript is fascinating in what it can do. So, I built a simple project to try to convert speech to text.</p>",
           links: [
                {
                     link: "https://github.com/BroJenuel/MyPortFolio/tree/master/speach-to-text",
@@ -75,7 +75,7 @@ export default [
      },
      {
           title: "Text To Speech",
-          des: "<p>This is a simple Text to Speech using HTML, CSS, and JS. I was fascinated with what javascrip can do so I made a simple, project to try and convert speech to text. And JavaScript has a library called Speech Recognition.</p>",
+          des: "<p>This is a simple Text to Speech using HTML, CSS, and JS. JavaScript is fascinating with what it can do. So I made a simple, project to try and convert speech to text. I used a library called Speech Recognition.</p>",
           links: [
                {
                     link: "https://github.com/BroJenuel/MyPortFolio/tree/master/text-to-speach",

@@ -3,8 +3,8 @@ import MyPortFolio from './../assets/image/MyWork/MyPortFolio.png'
 export default [
      {
           overline: 'Featured Project',
-          title: 'My Portfolio v1',
-          des: "I nicer look new look of my portfolio based in Brittany's Portfolio design. I created Ground Up using The Technology Called Vue to Create This Portfolio.",
+          title: 'My Portfolio v2',
+          des: "It's is a new cool look for my portfolio based on Brittany's design. I created Ground Up using the Technology Called Vue to Create This Portfolio.",
           techs: [
                "vue-cli",
                "vuetify",

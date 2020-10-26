@@ -2,10 +2,10 @@
      <section class="my-work">
           <div>
                <slide-y-up-transition :delay="100">
-                    <h2 v-show="show" class="numbered-header"> <v-icon class="front-icon">{{workIcon}}</v-icon> Where I've Worked</h2>
+                    <h2 v-show="$store.state.experienceShow" class="numbered-header"> <v-icon class="front-icon">{{workIcon}}</v-icon> Where I've Worked</h2>
                </slide-y-up-transition>
                <slide-x-left-transition :delay="300">
-                    <div v-show="show">
+                    <div v-show="$store.state.experienceShow">
                          <v-tabs v-if="showTab" :vertical="vertical">
                               <template v-for="work in works">
                                    <v-tab :key="work.company">
@@ -59,12 +59,11 @@ export default {
                workIcon: mdiHeadHeartOutline,
                works: works,
                vertical: true,
-               showTab: true,
-               show: false
+               showTab: true
           }
      },
      mounted() {
-          this.show = true;
+         this.$store.state.experienceShow = true
           this.setTabs();
           window.onresize = () => {
                this.setTabs();
@@ -95,7 +94,7 @@ export default {
           transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
           display: flex;
           -webkit-box-pack: center;
-          justify-content: center;
+        //   justify-content: center;
           -webkit-box-align: center;
           flex-direction: column;
           min-height: 100vh;

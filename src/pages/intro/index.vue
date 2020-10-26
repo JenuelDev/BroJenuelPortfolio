@@ -1,19 +1,19 @@
 <template>
      <section class="intro">
           <slide-y-up-transition :delay="200">
-               <h1 v-show="show">Hi! <v-icon>{{handIcon}}</v-icon> my name is</h1>
+               <h1 v-show="$store.state.introShow">Hi! <v-icon>{{handIcon}}</v-icon> my name is</h1>
           </slide-y-up-transition>
           <slide-y-up-transition :delay="300">
-               <h2 v-show="show">{{name}}</h2>
+               <h2 v-show="$store.state.introShow">{{name}}</h2>
           </slide-y-up-transition>
           <slide-y-up-transition :delay="400">
-               <h3 v-show="show">{{ido}}</h3>
+               <h3 v-show="$store.state.introShow">{{ido}}</h3>
           </slide-y-up-transition>
           <slide-y-up-transition :delay="600">
-               <p v-show="show">{{des}}</p>
+               <p v-show="$store.state.introShow">{{des}}</p>
           </slide-y-up-transition>
           <slide-y-up-transition :delay="700">
-               <v-btn v-show="show" outlined x-large class="get-in-touch" :href="'mailto:'+email" aria-label="Send Message">
+               <v-btn v-show="$store.state.introShow" outlined x-large class="get-in-touch" :href="'mailto:'+email" aria-label="Send Message">
                     Get In Touch
                </v-btn>
           </slide-y-up-transition>
@@ -31,7 +31,7 @@ export default {
            SlideYUpTransition
      },
      mounted() {
-          this.show = true;
+          this.$store.state.introShow = true;
      },
      data: () => {
           return {
@@ -39,7 +39,6 @@ export default {
                ido: IDo,
                des: simpleDescription,
                email: email,
-               show: false,
                handIcon: mdiHand
           }
      }
@@ -49,7 +48,7 @@ export default {
      .intro {
           display: flex;
           -webkit-box-pack: center;
-          justify-content: center;
+          margin-top: 50px;
           -webkit-box-align: center;
           flex-direction: column;
           align-items: flex-start;

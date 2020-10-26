@@ -1,15 +1,15 @@
 <template>
      <section class="code-challenge">
           <SlideXRightTransition :delay="200">
-               <h2 class="numbered-header" v-show="show" style="margin: 10px 0px -10px;"> <v-icon class="front-icon">{{headIcon}}</v-icon> Code Chellenge</h2>
+               <h2 class="numbered-header" v-show="$store.state.codeChallengeShow" style="margin: 10px 0px -10px;"> <v-icon class="front-icon">{{headIcon}}</v-icon> Code Chellenge</h2>
           </SlideXRightTransition>
           <SlideXLeftTransition :delay="300">
-               <p v-show="show">This projects under this page, are simple projects that I created to challenge my self to experience and learn things.</p>
+               <p v-show="$store.state.codeChallengeShow">This projects under this page, are simple projects that I created to challenge my self to experience and learn things.</p>
           </SlideXLeftTransition>
           <div class="code-grid">
                <template v-for="(code, index) in codes" >
-               <SlideYUpTransition :key="code.title" :delay="index*250">
-                    <div v-show="show"  class="code-item">
+               <SlideYUpTransition :key="code.title" :delay="index*150">
+                    <div v-show="$store.state.codeChallengeShow"  class="code-item">
                          <div  class="code-item-inner">
                               <header>
                                    <div class="item-top">
@@ -54,18 +54,16 @@ export default {
           return {
                headIcon: mdiBrain,
                codes: codeChallenge,
-               folderIcon: mdiFolderOpenOutline,
-               show: false
+               folderIcon: mdiFolderOpenOutline
           }
      },
      mounted() {
-          this.show = true;
+          this.$store.state.codeChallengeShow = true
      },
 }
 </script>
 <style lang="scss">
      .code-challenge {
-          margin-top: 70px;
           max-width: 1000px;
           p {
                color: var(--v-slate-base);

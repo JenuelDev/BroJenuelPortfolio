@@ -36,18 +36,17 @@ export default {
         width: 100%;
         max-width: 1600px;
         counter-reset: section 0;
+        margin-top: 100px;
     }
     @media only screen and (max-width: 1078px) {
         main {
             padding: 0px 90px;
-            padding-top: 70px;
         }
     }
 
     @media only screen and (max-width: 768px) {
         main {
             padding: 0px 20px;
-            padding-top: 70px;
         }
     }
 </style>

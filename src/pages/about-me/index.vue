@@ -1,11 +1,11 @@
 <template>
      <section class="about-me">
           <slide-y-up-transition :delay="100">
-               <h2 v-show="show" class="numbered-header"> <v-icon class="front-icon">{{aboutIcon}}</v-icon> About Me</h2>
+               <h2 v-show="$store.state.aboutMeShow" class="numbered-header"> <v-icon class="front-icon">{{aboutIcon}}</v-icon> About Me</h2>
           </slide-y-up-transition>
           <div class="about-me-inner">
                <slide-x-left-transition :delay="230">
-                    <div v-show="show" class="about-me-text">
+                    <div v-show="$store.state.aboutMeShow" class="about-me-text">
                          <div class="about-me-text-info" v-html="info"></div>
                          <ul class="skill-list">
                               <li v-for="skill in skills" :key="skill.text">
@@ -15,7 +15,7 @@
                     </div>
                </slide-x-left-transition>
                <slide-x-right-transition :delay="430">
-                    <div v-show="show" class="about-me-photo">
+                    <div v-show="$store.state.aboutMeShow" class="about-me-photo">
                          <div class="wrapper">
                               <div class="photo" style="position: relative; overflow: hidden;">
                                    <div class="photo-front"></div>
@@ -41,12 +41,11 @@ export default {
           return {
                aboutIcon: mdiFaceOutline,
                info: info,
-               skills: skillList,
-               show: false
+               skills: skillList
           }
      },
      mounted() {
-          this.show = true;
+          this.$store.state.aboutMeShow = true
      }
 }
 </script>
@@ -64,7 +63,6 @@ export default {
           transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
           display: flex;
           flex-direction: column;
-          justify-content: center;
           align-items: center;
           align-content: center;
           
