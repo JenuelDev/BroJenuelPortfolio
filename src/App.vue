@@ -3,7 +3,7 @@
         <NavigationBar />
         <ThemeChanger />
         <main>
-            <router-view/>
+            <router-view />
         </main>
         <SocialNetworkSite />
         <Footer />
@@ -22,31 +22,30 @@ export default {
         SocialNetworkSite,
         NavigationBar,
         Footer,
-        ThemeChanger
+        ThemeChanger,
     },
-    data: () => ({
-      
-    }),
-};
+    data: () => ({}),
+}
 </script>
 <style lang="scss">
+main {
+    padding: 0px 150px;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1600px;
+    counter-reset: section 0;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+@media only screen and (max-width: 1078px) {
     main {
-        padding: 0px 150px;
-        margin: 0px auto;
-        width: 100%;
-        max-width: 1600px;
-        counter-reset: section 0;
-        margin-top: 100px;
+        padding: 0px 90px;
     }
-    @media only screen and (max-width: 1078px) {
-        main {
-            padding: 0px 90px;
-        }
-    }
+}
 
-    @media only screen and (max-width: 768px) {
-        main {
-            padding: 0px 20px;
-        }
+@media only screen and (max-width: 768px) {
+    main {
+        padding: 0px 20px;
     }
+}
 </style>

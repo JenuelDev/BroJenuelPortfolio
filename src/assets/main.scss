@@ -1,31 +1,33 @@
 :root {
-     --black-shadow: 0 10px 30px -15px black;
-     --font-mono: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-     --transition: all 0.25 cubic-bezier(0.645, 0.045, 0.355, 1);
-     --border-radius: 4px;
-     --fz-xs: 13px;
-     --fz-xxl: 22px;
+    --black-shadow: 0 10px 30px -15px black;
+    --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    --transition: all 0.25 cubic-bezier(0.645, 0.045, 0.355, 1);
+    --border-radius: 4px;
+    --fz-xs: 13px;
+    --fz-xxl: 22px;
 }
 
-*, ::before, ::after {
-     font-family: Calibri, 'Trebuchet MS', sans-serif !important;
-     box-sizing: inherit;
+*,
+::before,
+::after {
+    font-family: Calibri, 'Trebuchet MS', sans-serif !important;
+    box-sizing: inherit;
 }
 
 img {
-     width: 100%;
-     max-width: 100%;
-     vertical-align: middle;
- }
- .highlight:hover {
-      color: var(--v-primary-base);
- }
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.highlight:hover {
+    color: var(--v-primary-base);
+}
 
 .v-application {
-     background-color: var(--v-background-base) !important;
+    background-color: var(--v-background-base) !important;
 }
 .v-dialog {
-     background-color: var(--v-background-base);
+    background-color: var(--v-background-base);
 }
 
 @import './styles/themes.scss';

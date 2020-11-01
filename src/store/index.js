@@ -4,18 +4,18 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
-      introShow: false,
-      aboutMeShow: false,
-      experienceShow: false,
-      workShow: false,
-      codeChallengeShow: false,
-      contactMeShow: false
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+    state: {
+        introShow: false,
+        aboutMeShow: false,
+        experienceShow: false,
+        workShow: false,
+        codeChallengeShow: false,
+        contactMeShow: false
+    },
+    mutations: {
+    },
+    actions: {
+    },
+    modules: {
+    }
 })
