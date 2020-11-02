@@ -16,5 +16,5 @@ You can change data under this project by chaning the
 values of javascript files inside `src/data/*`. You can change data for each pages.  
 
 ### Preview
-<img src="./public/meta-image.png"/>
+<img src="https://github.com/BroJenuel/jenuel-portfolio-v2/blob/master/meta-image.png?raw=true"/>
 
