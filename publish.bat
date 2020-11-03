@@ -1,6 +1,6 @@
 git add .
 git commit -m "Update Jenuel-portfolio-v2"
-git push origin master
+git push origin main
 cd ..
 cd misterj936
 git add .
