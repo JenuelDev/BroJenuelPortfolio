@@ -1,4 +1,4 @@
-import { mdiFacebook, mdiGithub, mdiInstagram, mdiLinkedin, mdiTwitter } from '@mdi/js'
+import { mdiFacebook, mdiGithub, mdiInstagram, mdiLinkedin, mdiTwitter, mdiYoutube } from '@mdi/js'
 export const socialMediaLinks = [
     {
         icon: mdiInstagram,
@@ -6,7 +6,11 @@ export const socialMediaLinks = [
     },
     {
         icon: mdiFacebook,
-        link: 'https://www.facebook.com/ganawed/',
+        link: 'https://www.facebook.com/broJenuel/',
+    },
+    {
+        icon: mdiYoutube,
+        link: 'https://www.youtube.com/channel/UCNANDtTF63UTRcYioVsSCdA'
     },
     {
         icon: mdiLinkedin,

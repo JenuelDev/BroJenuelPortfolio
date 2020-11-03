@@ -1,9 +1,9 @@
-import { mdiCircle, mdiDownload, mdiGithub, mdiLanguageCss3, mdiLanguageHtml5, mdiLanguageJavascript, mdiOpenInNew, mdiVuejs } from '@mdi/js'
+import { mdiDownload, mdiGithub, mdiLanguageCss3, mdiLanguageHtml5, mdiLanguageJavascript, mdiOpenInNew, mdiReact, mdiVuejs } from '@mdi/js'
 
 export default [
     {
         title: "World Time Using React Native",
-        des: "<p>These projects under this page are simple projects that I created to challenge myself and to experience and learn new things.</p>",
+        des: "<p>World time is an app I created, wherein you can check the time around the world and also check if its night time or day time.</p>",
         links: [
             {
                 link: "https://github.com/BroJenuel/MyPortFolio/tree/master/appDev/world_time",
@@ -16,7 +16,7 @@ export default [
         ],
         techs: [
             {
-                icon: mdiCircle,
+                icon: mdiReact,
                 name: "react-native"
             },
             {
