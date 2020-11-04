@@ -2,7 +2,7 @@
 `PortFolio Version 2`  `BroJenuel`
   
 Hi! I have created a new Portfolio. I haven been looking for designs for my portfolio,  
-and then this design by [Britanny Chiang](http://mr-branding.blogspot.com/2019/09/website-inspiration-brittany-chiang.html) got my attention. And so I created and rebuilt  
+and then this design by [Britanny Chiang](https://onepagelove.com/brittany-chiang) got my attention. And so I created and rebuilt  
 her design from scratch but I tweeked it a little bit.  
   
 I used Vue.JS and used its cli ecosystem to build this project.  
