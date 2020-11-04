@@ -12,7 +12,7 @@ If You want to use this project, Please Credit Me, and dont
 forget to Credit the designer as well.
 
 ### How to change data ?
-You can change data under this project by chaning the  
+You can change data under this project by changing the  
 values of javascript files inside `src/data/*`. You can change data for each pages.  
 
 ### Preview
