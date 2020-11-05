@@ -1,0 +1,26 @@
+// for chromes scrollbar
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+*::-webkit-scrollbar {
+    width: 5px;
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--v-primary-base);
+}
+::-webkit-scrollbar-corner {
+    background: var(--v-primary-base);
+  }
+// for firefox scroll bar
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--v-primary-base) #cccccc ;
+}
+
+.s-loading {
+    margin-bottom: 10px;
+}
