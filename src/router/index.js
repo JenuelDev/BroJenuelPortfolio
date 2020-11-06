@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Intro from '@/pages/intro'
 import PageNotFound from '@/pages/page-not-found'
 
 Vue.use(VueRouter)
@@ -13,7 +12,7 @@ const routes = [
     {
         path: '/intro',
         name: 'Intro',
-        component: Intro
+        component: () => import(/* webpackChunkName: "about" */ '@/pages/intro')
     },
     {
         path: '/about',

@@ -6,13 +6,13 @@
             </h1>
         </slide-y-up-transition>
         <slide-y-up-transition :delay="300">
-            <h2 v-show="$store.state.introShow">{{ name }}</h2>
+            <h2 v-show="$store.state.introShow">{{ INTRO.name }}</h2>
         </slide-y-up-transition>
         <slide-y-up-transition :delay="400">
-            <h3 v-show="$store.state.introShow">{{ ido }}</h3>
+            <h3 v-show="$store.state.introShow">{{ INTRO.IDo }}</h3>
         </slide-y-up-transition>
         <slide-y-up-transition :delay="600">
-            <p v-show="$store.state.introShow">{{ des }}</p>
+            <p v-show="$store.state.introShow">{{ INTRO.des }}</p>
         </slide-y-up-transition>
         <slide-y-up-transition :delay="700">
             <v-btn
@@ -20,7 +20,7 @@
                 outlined
                 x-large
                 class="get-in-touch"
-                :href="'mailto:' + email"
+                :href="'mailto:' + INTRO.email"
                 aria-label="Send Message"
             >
                 Get In Touch
@@ -30,7 +30,6 @@
 </template>
 
 <script>
-import { email, IDo, name, simpleDescription } from './../../data/intro'
 import { SlideYUpTransition } from 'vue2-transitions'
 import { mdiHand } from '@mdi/js'
 
@@ -44,13 +43,14 @@ export default {
     },
     data: () => {
         return {
-            name: name,
-            ido: IDo,
-            des: simpleDescription,
-            email: email,
             handIcon: mdiHand,
         }
     },
+    computed: {
+        INTRO() {
+            return this.$store.state.introPage
+        }
+    }
 }
 </script>
 <style lang="scss" scope>

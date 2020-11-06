@@ -5,19 +5,20 @@
                 <h2
                     v-show="$store.state.experienceShow"
                     class="numbered-header"
+                    style="margin: 10px 0px -10px"
                 >
                     <v-icon class="front-icon">{{ workIcon }}</v-icon> Where
                     I've Worked
                 </h2>
             </slide-y-up-transition>
+            <slide-y-up-transition :delay="100">
+                <p v-show="$store.state.experienceShow">{{$store.state.experiencePage.des}}</p>
+            </slide-y-up-transition>
             <slide-x-left-transition :delay="300">
                 <div v-show="$store.state.experienceShow">
                     <v-tabs v-if="showTab" :vertical="vertical">
-                        <template v-for="work in works">
+                        <template v-for="work in $store.state.experiencePage.experiences">
                             <v-tab :key="work.company">
-                                <!-- <v-icon left>
-                                             {{ work.icon }}
-                                        </v-icon> -->
                                 {{ work.tab }}
                             </v-tab>
                             <v-tab-item class="tab-items" :key="work.company">
@@ -86,7 +87,6 @@
 </template>
 <script>
 import { mdiHeadHeartOutline } from '@mdi/js'
-import works from './../../data/experience'
 import { SlideYUpTransition, SlideXLeftTransition } from 'vue2-transitions'
 export default {
     components: {
@@ -96,7 +96,6 @@ export default {
     data: () => {
         return {
             workIcon: mdiHeadHeartOutline,
-            works: works,
             vertical: true,
             showTab: true,
         }
@@ -120,7 +119,7 @@ export default {
                 this.showTab = true
             }
         },
-    },
+    }
 }
 </script>
 <style lang="scss">

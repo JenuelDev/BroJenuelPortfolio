@@ -12,12 +12,11 @@
         </SlideXRightTransition>
         <SlideXLeftTransition :delay="300">
             <p v-show="$store.state.codeChallengeShow">
-                This projects under this page, are simple projects that I
-                created to challenge my self to experience and learn things.
+                {{CODE_CHALLENGE.des}}
             </p>
         </SlideXLeftTransition>
         <div class="code-grid">
-            <template v-for="(code, index) in codes">
+            <template v-for="(code, index) in CODE_CHALLENGE.challenges">
                 <SlideYUpTransition :key="code.title" :delay="index * 150">
                     <div
                         v-show="$store.state.codeChallengeShow"
@@ -82,7 +81,6 @@
 </template>
 <script>
 import { mdiBrain, mdiFolderOpenOutline } from '@mdi/js'
-import codeChallenge from './../../data/code-challenge'
 import {
     SlideYUpTransition,
     SlideXLeftTransition,
@@ -97,127 +95,17 @@ export default {
     data: () => {
         return {
             headIcon: mdiBrain,
-            codes: codeChallenge,
             folderIcon: mdiFolderOpenOutline,
         }
     },
     mounted() {
         this.$store.state.codeChallengeShow = true
     },
-}
-</script>
-<style lang="scss">
-.code-challenge {
-    max-width: 1000px;
-    p {
-        color: var(--v-slate-base);
-    }
-
-    .code-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 15px;
-        position: relative;
-        margin-top: 50px;
-
-        .code-item {
-            transition-delay: 0ms;
-            visibility: visible;
-            opacity: 1;
-            transition: 0.2s;
-            box-shadow: 0 0px 0px 0px black;
-
-            .code-item-inner {
-                display: flex;
-                -webkit-box-pack: justify;
-                justify-content: space-between;
-                -webkit-box-align: center;
-                flex-direction: column;
-                align-items: flex-start;
-                position: relative;
-                height: 100%;
-                padding: 2rem 1.75rem;
-                border-radius: var(--border-radius);
-                background-color: var(--v-lightBackground-base);
-                transition: var(--transition);
-
-                header {
-                    .item-top {
-                        display: flex;
-                        -webkit-box-pack: justify;
-                        justify-content: space-between;
-                        -webkit-box-align: center;
-                        align-items: center;
-                        margin-bottom: 30px;
-
-                        .item-folder {
-                            color: var(--v-primary-base) !important;
-                            .icon {
-                                color: var(--v-primary-base) !important;
-                            }
-                        }
-                        .item-links {
-                            margin-right: -15px;
-                            color: var(--v-lightSlate-base) !important;
-                            a {
-                                padding: 0px 5px;
-                                .icon {
-                                    color: var(--v-lightSlate-base) !important;
-                                }
-
-                                &:hover {
-                                    .icon {
-                                        color: var(--v-primary-base) !important;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    h3 {
-                        margin: 0px 0px 0px;
-                        color: var(--v-lightestSlate-base);
-                        font-size: var(--fz-xxl);
-                        line-height: 1.1;
-                    }
-
-                    .item-des {
-                        color: var(--v-lightSlate-base);
-                        font-size: 17px;
-                    }
-                }
-
-                footer {
-                    ul {
-                        display: flex;
-                        align-items: flex-end;
-                        -webkit-box-flex: 1;
-                        flex-grow: 1;
-                        flex-wrap: wrap;
-                        padding: 0px;
-                        margin: 0px 10px 0px 10px;
-                        gap: 10px;
-                        list-style: none;
-
-                        li {
-                            font-family: var(--font-mono);
-                            font-size: var(--fz-xxs);
-                            line-height: 1.75;
-                            color: var(--v-lightSlate-base);
-
-                            .icon {
-                                color: var(--v-lightSlate-base);
-                            }
-                        }
-                    }
-                }
-            }
-
-            &:hover {
-                transform: translate(0px, -5px);
-                box-shadow: var(--black-shadow);
-            }
+    computed: {
+        CODE_CHALLENGE() {
+            return this.$store.state.codeChallengePage
         }
     }
 }
-</style>
+</script>
+<style lang="scss" src="./style.scss"></style>

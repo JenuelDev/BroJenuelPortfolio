@@ -6,14 +6,11 @@
                 v-show="$store.state.workShow"
                 style="margin: 10px 0px -10px"
             >
-                <v-icon class="front-icon">{{ headIcon }}</v-icon> My Work
+                <v-icon class="front-icon">{{ headIcon }}</v-icon> {{$store.state.workPage.title}}
             </h2>
         </SlideXRightTransition>
         <SlideXLeftTransition :delay="300">
-            <p v-show="$store.state.workShow">
-                This are projects that I made, and deployed it live for everyone
-                to use.
-            </p>
+            <p v-show="$store.state.workShow">{{$store.state.workPage.des}}</p>
         </SlideXLeftTransition>
         <slide-y-down-transition :delay="400">
             <div v-show="$store.state.workShow" style="margin-top: 20px">
@@ -92,7 +89,6 @@ import {
     SlideXLeftTransition,
     SlideXRightTransition,
 } from 'vue2-transitions'
-import myWorks from './../../data/my-work'
 export default {
     components: {
         SlideYDownTransition,
@@ -103,13 +99,17 @@ export default {
         return {
             headIcon: mdiFileDocumentMultipleOutline,
             githubIcon: mdiGithub,
-            externalIcon: mdiOpenInNew,
-            myWorks: myWorks,
+            externalIcon: mdiOpenInNew
         }
     },
     mounted() {
         this.$store.state.workShow = true
     },
+    computed: {
+        myWorks() {
+            return this.$store.state.workPage.works
+        }
+    }
 }
 </script>
 <style lang="scss" src="./my-work.scss"></style>

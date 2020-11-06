@@ -1,6 +1,6 @@
 import { mdiAngularjs, mdiFire, mdiLanguageHtml5, mdiLanguageJavascript, mdiLanguageRubyOnRails, mdiLaravel, mdiVuejs } from '@mdi/js'
 
-export const info =
+const info =
     "<p>Hi! I'm Jenuel, and I am a Web Developer.</p>" +
 
     "<p>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to Join or Work in any opportunity that will help me grow in this Industry. I welcome challenging projects and enjoy working with all sorts of personalities..</p>" +
@@ -9,7 +9,7 @@ export const info =
 
     "<p>Here are a few technologies I've been working with recently:</p>";
 
-export const skillList = [
+const skillList = [
     {
         icon: mdiLanguageJavascript,
         text: 'JavaScript (ES6+)'
@@ -39,3 +39,10 @@ export const skillList = [
         text: 'CodeIgniter'
     }
 ];
+
+export default {
+    aboutMe: {
+        info: info,
+        skills: skillList
+    }
+}

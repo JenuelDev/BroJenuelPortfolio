@@ -8,9 +8,9 @@
         <div class="about-me-inner">
             <slide-x-left-transition :delay="230">
                 <div v-show="$store.state.aboutMeShow" class="about-me-text">
-                    <div class="about-me-text-info" v-html="info"></div>
+                    <div class="about-me-text-info" v-html="$store.state.aboutMe.info"></div>
                     <ul class="skill-list">
-                        <li v-for="skill in skills" :key="skill.text">
+                        <li v-for="skill in $store.state.aboutMe.skills" :key="skill.text">
                             <v-icon color="primary" small class="skill-icon">{{
                                 skill.icon
                             }}</v-icon>
@@ -40,7 +40,6 @@
 </template>
 <script>
 import { mdiFaceOutline } from '@mdi/js'
-import { info, skillList } from './../../data/aboutme'
 import {
     SlideYUpTransition,
     SlideXLeftTransition,
@@ -54,14 +53,12 @@ export default {
     },
     data: () => {
         return {
-            aboutIcon: mdiFaceOutline,
-            info: info,
-            skills: skillList,
+            aboutIcon: mdiFaceOutline
         }
     },
     mounted() {
         this.$store.state.aboutMeShow = true
-    },
+    }
 }
 </script>
 
