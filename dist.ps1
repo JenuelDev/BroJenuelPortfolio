@@ -1,10 +1,10 @@
-if (Test-Path .\..\MisterJ936) {
-     if (Test-Path .\..\MisterJ936\dist) {
-          Write-Host "Deleting Dist in MisterJ936..."
-          Remove-Item ".\..\MisterJ936\dist" -Recurse -Force
+if (Test-Path .\..\BroJenuel) {
+     if (Test-Path .\..\BroJenuel\dist) {
+          Write-Host "Deleting Dist in BroJenuel..."
+          Remove-Item ".\..\BroJenuel\dist" -Recurse -Force
      }
-     Write-Host "Copyint Dist to MisterJ936...."
-     Copy-Item -Path ".\dist" -Destination ".\..\MisterJ936" -Recurse -Force
+     Write-Host "Copyint Dist to BroJenuel...."
+     Copy-Item -Path ".\dist" -Destination ".\..\BroJenuel" -Recurse -Force
 } else {
-     Write-Warning "Directory MisterJ936 Doesnt Exist"
+     Write-Warning "Directory BroJenuel Doesnt Exist"
 }
