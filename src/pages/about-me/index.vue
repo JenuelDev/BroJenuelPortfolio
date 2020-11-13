@@ -28,6 +28,7 @@
                         >
                             <div class="photo-front"></div>
                             <img
+                                loading='lazy'
                                 src="./../../assets/image/profile.jpeg"
                                 alt=""
                             />

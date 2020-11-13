@@ -67,7 +67,7 @@
                                 <a :href="work.imageLink" target="_blank">
                                     <div class="image-wrapping">
                                         <div class="front-filter"></div>
-                                        <img :src="work.img" alt="" />
+                                        <img loading='lazy' :src="work.img" alt="" />
                                     </div>
                                 </a>
                             </div>
