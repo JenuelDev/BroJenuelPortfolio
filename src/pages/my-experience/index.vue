@@ -16,7 +16,7 @@
             </slide-y-up-transition>
             <slide-x-left-transition :delay="300">
                 <div v-show="$store.state.experienceShow">
-                    <v-tabs v-if="showTab" :vertical="vertical">
+                    <v-tabs v-if="showTab" height="120px" :vertical="vertical">
                         <template v-for="work in $store.state.experiencePage.experiences">
                             <v-tab :key="work.company">
                                 {{ work.tab }}

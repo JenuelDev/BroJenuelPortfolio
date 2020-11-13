@@ -2,6 +2,7 @@
     <v-app>
         <NavigationBar />
         <ThemeChanger />
+        <ResumeDownloader />
         <main>
             <router-view />
         </main>
@@ -15,6 +16,7 @@ import SocialNetworkSite from '@/components/social-media-links'
 import NavigationBar from './components/navigation-bar'
 import Footer from './components/footer'
 import ThemeChanger from './components/themeChanger'
+import ResumeDownloader from './components/resume-download'
 
 export default {
     name: 'App',
@@ -23,6 +25,7 @@ export default {
         NavigationBar,
         Footer,
         ThemeChanger,
+        ResumeDownloader
     },
     data: () => ({}),
 }
