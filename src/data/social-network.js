@@ -1,10 +1,5 @@
-import { mdiFacebook, mdiGithub, mdiInstagram, mdiLinkedin, mdiTwitter, mdiYoutube } from '@mdi/js'
-export const socialMediaLinks = [
-    {
-        icon: mdiInstagram,
-        link: 'https://www.instagram.com/brojenuel/',
-    },
-    {
+import { mdiFacebook, mdiGithub, mdiLinkedin, mdiTwitter, mdiYoutube } from '@mdi/js'
+export const socialMediaLinks = [{
         icon: mdiFacebook,
         link: 'https://www.facebook.com/broJenuel/',
     },
