@@ -68,7 +68,6 @@ export default {
     z-index: 5;
     -webkit-box-pack: center;
     -webkit-box-align: center;
-    //   min-height: 100vh;
     max-width: 1000px;
     visibility: visible;
     opacity: 1;
@@ -84,6 +83,7 @@ export default {
         display: flex;
         flex-direction: row;
         gap: 50px;
+
     }
 
     .about-me-text {

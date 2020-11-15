@@ -11,73 +11,44 @@
         </SlideYUpTransition>
 
         <div>
-            <SlideYUpTransition :delay="400">
+            
                 <div
-                    v-show="$store.state.contactMeShow"
                     class="form"
                     style="max-width: 800px"
                 >
-                    <p>
-                        Although I'm not currently looking for any new opportunities, my inbox is always open. Whether you have a question or want to say hi, I'll try my best to get back to you! You can check my social profile below.
-                    </p>
-                    <div class="social-icons">
-                        <ul>
-                            <li v-for="social in socials" :key="social.name">
-                                <a :href="social.link" target="_blank">
-                                    <v-icon class="icons">{{
-                                        social.icon
-                                    }}</v-icon>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a
-                        v-if="true"
-                        href="mailto:jenuelganawed936@gmail.com"
-                        style="text-decoration: none"
-                    >
-                        <v-btn
-                            x-large
-                            color="primary"
-                            outlined
+                    <SlideYUpTransition :delay="400">
+                        <p v-show="$store.state.contactMeShow">
+                            Although I'm not currently looking for any new
+                            opportunities, my inbox is always open. Whether you have
+                            a question or want to say hi, I'll try my best to get
+                            back to you! You can check my social profile below.
+                        </p>
+                    </SlideYUpTransition>
+                    <SlideYUpTransition :delay="500">
+                        <div v-show="$store.state.contactMeShow" class="social-icons">
+                            <ul>
+                                <li v-for="social in socials" :key="social.name">
+                                    <a :href="social.link" target="_blank">
+                                        <v-icon x-large class="icons">{{
+                                            social.icon
+                                        }}</v-icon>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </SlideYUpTransition>
+                    <SlideYUpTransition :delay="600">
+                        <Button
+                            v-show="$store.state.contactMeShow"
+                            :site="'mailto:' + INTRO.email"
                             aria-label="Send Message"
+                            style="margin-top: 30px"
                         >
-                            Send Message
-                        </v-btn>
-                    </a>
-                    <div v-else>
-                        <v-text-field
-                            label="Your Name"
-                            outlined
-                            dense
-                            required
-                            style="width: 100%"
-                        ></v-text-field>
-                        <v-text-field
-                            label="Your Email"
-                            outlined
-                            dense
-                            required
-                            style="width: 100%"
-                        ></v-text-field>
-                        <v-textarea
-                            outlined
-                            name="input-7-4"
-                            label="Write your Message Here."
-                            required
-                            value=""
-                        ></v-textarea>
-                        <v-btn
-                            color="primary"
-                            large
-                            outlined
-                            aria-label="Send Message"
-                        >
-                            Send Message
-                        </v-btn>
-                    </div>
+                            Send Me Message
+                        </Button>
+                    </SlideYUpTransition>
                 </div>
-            </SlideYUpTransition>
+            
         </div>
     </section>
 </template>
@@ -85,9 +56,11 @@
 import { mdiEmailEditOutline } from '@mdi/js'
 import { SlideYUpTransition } from 'vue2-transitions'
 import { socialMediaLinks } from './../../data/social-network'
+import Button from '@/components/button'
 export default {
     components: {
         SlideYUpTransition,
+        Button,
     },
     data: () => {
         return {
@@ -98,6 +71,11 @@ export default {
     mounted() {
         this.$store.state.contactMeShow = true
     },
+    computed: {
+        INTRO() {
+            return this.$store.state.introPage
+        }
+    }
 }
 </script>
 <style lang="scss">
@@ -118,6 +96,7 @@ export default {
             list-style: none;
             display: flex;
             flex-direction: row;
+            padding-left: 0;
             li {
                 margin: 10px;
                 .icons {

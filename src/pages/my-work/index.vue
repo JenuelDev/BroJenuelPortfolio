@@ -12,10 +12,10 @@
         <SlideXLeftTransition :delay="300">
             <p v-show="$store.state.workShow">{{$store.state.workPage.des}}</p>
         </SlideXLeftTransition>
-        <slide-y-down-transition :delay="400">
+        <SlideYDownTransition :delay="400">
             <div v-show="$store.state.workShow" style="margin-top: 20px">
                 <template v-for="(work, i) in myWorks">
-                    <slide-y-down-transition :delay="i * 900" :key="work.title">
+                    <SlideYDownTransition :delay="i * 500" :key="work.title">
                         <div v-show="$store.state.workShow" class="work-info">
                             <div
                                 class="work-info-details"
@@ -72,10 +72,10 @@
                                 </a>
                             </div>
                         </div>
-                    </slide-y-down-transition>
+                    </SlideYDownTransition>
                 </template>
             </div>
-        </slide-y-down-transition>
+        </SlideYDownTransition>
     </section>
 </template>
 <script>

@@ -11,7 +11,7 @@ export default {
                 title: 'My Portfolio v2',
                 des: "It's is a new cool look for my portfolio based on Brittany's design. I created Ground Up using the Technology Called Vue to Create This Portfolio.",
                 techs: [
-                    "vue-cli",
+                    "vue",
                     "vuetify",
                     "vue2-transition",
                 ],
@@ -27,7 +27,28 @@ export default {
                 ],
                 imageLink: "https://jenuelganawed.ml",
                 img: MyPortFolio
-            }
+            },
+            {
+                overline: 'Featured Project',
+                title: `Get GIF's`,
+                des: "With this website, you can search the wide internet to get GIFs that you can download for your content.",
+                techs: [
+                    "vue",
+                    "API"
+                ],
+                links: [
+                    {
+                        link: "https://github.com/BroJenuel-Youtube/get-gifs",
+                        icon: mdiGithub
+                    },
+                    {
+                        link: 'https://jenuelganawed.ml',
+                        icon: mdiOpenInNew
+                    }
+                ],
+                imageLink: "https://www.getgifs.ml/",
+                img: 'https://i.ibb.co/rMqXVJP/getgifs.png'
+            },
         ]
     }
 }

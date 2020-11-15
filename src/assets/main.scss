@@ -1,10 +1,15 @@
 :root {
     --black-shadow: 0 10px 30px -15px black;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
-    --transition: all 0.25 cubic-bezier(0.645, 0.045, 0.355, 1);
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     --border-radius: 4px;
     --fz-xs: 13px;
     --fz-xxl: 22px;
+}
+
+@font-face {
+    font-family: Tungsten;
+    src: url('./font/Tungsten-Bold.ttf');
 }
 
 *,
@@ -29,6 +34,8 @@ img {
 .v-dialog {
     background-color: var(--v-background-base);
 }
+
+
 
 @import './styles/themes.scss';
 @import './styles/scrollbar.scss';

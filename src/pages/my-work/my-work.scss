@@ -9,7 +9,7 @@
         transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
         transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s,
             transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-        margin-bottom: 100px;
+        margin: 50px 0px;
         display: grid;
         gap: 10px;
         grid-template-columns: repeat(12, 1fr);

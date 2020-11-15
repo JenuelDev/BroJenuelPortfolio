@@ -1,0 +1,148 @@
+$base: var(--v-background-base);
+$white: #e6f1ff;
+$pink: var(--v-primary-base);
+$height: 70px;
+$transition: 0.3s ease-out all;
+
+div.jbutton {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    & a {
+        min-width: 240px;
+        max-width: 280px;
+        height: $height;
+        padding: 10px;
+        font-size: 0.8rem;
+        font-weight: 900;
+        color: $pink;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        box-shadow: 0 0 0 1px inset rgba($white, 0.5);
+        position: relative;
+        margin: 10px 0;
+        
+        &.white:hover>p {
+            color: $white;
+        }
+        &.white>p {
+            background: $white;
+            color: $base;
+            & span.base {
+                border: 1px solid transparent;
+            }
+        }
+        &.green:hover>p {
+            color: $white;
+        }
+        &.green>p {
+            background: $white;
+            color: $base;
+            & span.base {
+                border: 1px solid transparent;
+            }
+        }
+        &.transparent:hover>p {
+            color: $white;
+            & span.text {
+                box-shadow: 0 0 0 1px $white;
+            }
+        }
+        &.transparent>p {
+            background: $base;
+            color: $white;
+            & span.base {
+                border: 1px solid $white;
+            }
+        }
+        &:after,
+        &:before {
+            content: "";
+            width: 1px;
+            position: absolute;
+            height: 8px;
+            background: $base;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &:before {
+            right: 0;
+            left: initial;
+        }
+        & p {
+            margin: 0;
+            height: 50px;
+            line-height: 50px;
+            box-sizing: border-box;
+            z-index: 1;
+            left: 0;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            color: var(--v-primary-base);
+
+            & span.base {
+                box-sizing: border-box;
+                position: absolute;
+                z-index: 2;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                border: 1px solid $pink;
+                &:before {
+                    content: "";
+                    width: 2px;
+                    height: 2px;
+                    left: -1px;
+                    top: -1px;
+                    background: $base;
+                    position: absolute;
+                    transition: $transition;
+                }
+            }
+            & span.bg {
+                left: -5%;
+                position: absolute;
+                background: $pink;
+                width: 0;
+                height: 100%;
+                z-index: 3;
+                transition: $transition;
+                transform: skewX(-10deg);
+            }
+            & span.text {
+                z-index: 4;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                &:after {
+                    content: "";
+                    width: 4px;
+                    height: 4px;
+                    right: 0;
+                    bottom: 0;
+                    background: $base;
+                    position: absolute;
+                    transition: $transition;
+                    z-index: 5;
+                }
+            }
+        }
+        &:hover {
+            color: $base !important;
+            p span.text {
+                color: $base !important;
+            }
+            & span.bg {
+                width: 110%;
+            }
+            & span.text:after {
+                background: $white;
+            }
+        }
+    }
+}
