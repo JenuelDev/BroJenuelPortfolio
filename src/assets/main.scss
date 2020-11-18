@@ -1,3 +1,10 @@
+@font-face {
+    font-family: Tungsten;
+    src: url('./font/Tungsten-Bold.ttf');
+    font-display: swap;
+}
+
+
 :root {
     --black-shadow: 0 10px 30px -15px black;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
@@ -7,10 +14,7 @@
     --fz-xxl: 22px;
 }
 
-@font-face {
-    font-family: Tungsten;
-    src: url('./font/Tungsten-Bold.ttf');
-}
+
 
 *,
 ::before,
