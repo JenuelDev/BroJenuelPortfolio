@@ -1,6 +1,6 @@
 <template>
     <div class="jbutton">
-        <a :href="site">
+        <a :href="site" rel="external">
             <p>
                 <span class="bg"></span>
                 <span class="base"></span>

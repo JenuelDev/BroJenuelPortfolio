@@ -52,6 +52,7 @@
                                         :href="link.link"
                                         target="_blank"
                                         aria-label="GitHUB Link"
+                                        rel="external"
                                         ><v-icon class="highlight-hover">{{
                                             link.icon
                                         }}</v-icon></a
@@ -64,7 +65,7 @@
                                     i % 2 == 0 ? 'right-image' : 'left-image'
                                 "
                             >
-                                <a :href="work.imageLink" target="_blank">
+                                <a :href="work.imageLink" target="_blank" rel="external">
                                     <div class="image-wrapping">
                                         <div class="front-filter"></div>
                                         <img loading='lazy' :src="work.img" alt="" />

@@ -28,7 +28,7 @@
                         <div v-show="$store.state.contactMeShow" class="social-icons">
                             <ul>
                                 <li v-for="social in socials" :key="social.name">
-                                    <a :href="social.link" target="_blank">
+                                    <a :href="social.link" target="_blank" rel="external">
                                         <v-icon x-large class="icons">{{
                                             social.icon
                                         }}</v-icon>

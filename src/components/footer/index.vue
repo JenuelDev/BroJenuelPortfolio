@@ -4,12 +4,12 @@
             <div class="social-links">
                 <ul>
                     <li v-for="social in socials" :key="social.name">
-                        <a :href="social.link" target="_blank">
+                        <a :href="social.link" target="_blank" rel="author">
                             <v-icon class="icon">{{ social.icon }}</v-icon>
                         </a>
                     </li>
                 </ul>
-                <a href="mailto:jenuelganawed936@gmail">
+                <a href="mailto:jenuelganawed936@gmail" rel="author">
                     jenuelganawed936@gmail.com
                 </a>
             </div>
@@ -17,6 +17,7 @@
                 <a
                     href="https://github.com/MisterJ936/jenuel-portfolio-v2"
                     target="_blank"
+                    rel="author"
                 >
                     <div>
                         <span
