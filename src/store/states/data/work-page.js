@@ -1,5 +1,4 @@
 import { mdiGithub, mdiOpenInNew } from "@mdi/js";
-import MyPortFolio from '@/assets/image/MyWork/MyPortFolio.png'
 
 export default {
     workPage: {
@@ -26,7 +25,7 @@ export default {
                     }
                 ],
                 imageLink: "https://jenuelganawed.ml",
-                img: MyPortFolio
+                img: 'https://i.ibb.co/yWW9Zy3/My-Port-Folio.png'
             },
             {
                 overline: 'Featured Project',

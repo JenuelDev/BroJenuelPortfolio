@@ -15,16 +15,6 @@
             <p v-show="$store.state.introShow">{{ INTRO.des }}</p>
         </slide-y-up-transition>
         <slide-y-up-transition :delay="700">
-            <!-- <v-btn
-                v-show="$store.state.introShow"
-                outlined
-                x-large
-                class="get-in-touch"
-                :href="'mailto:' + INTRO.email"
-                aria-label="Send Message"
-            >
-                Get In Touch
-            </v-btn> -->
             <Button :site="'mailto:' + INTRO.email"
                 aria-label="Send Message" v-show="$store.state.introShow" style="margin-top: 30px;" >
                 Check me Out

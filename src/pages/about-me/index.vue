@@ -29,7 +29,7 @@
                             <div class="photo-front"></div>
                             <img
                                 loading='lazy'
-                                src="./../../assets/image/profile.jpeg"
+                                src="https://i.ibb.co/7kmD65f/profile.jpg"
                                 alt=""
                             />
                         </div>
