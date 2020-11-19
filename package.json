@@ -13,7 +13,6 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
-    "vue-page-transition": "^0.2.2",
     "vue-router": "^3.2.0",
     "vue2-transitions": "^0.3.0",
     "vuetify": "^2.2.11",
