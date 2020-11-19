@@ -29,6 +29,28 @@ export default {
             },
             {
                 overline: 'Featured Project',
+                title: 'Portfolio Z',
+                des: "It's is a portfolio made with vue mixed with a plugin called vuetify. It is a free open source project that you can use for your portfolio project as well.",
+                techs: [
+                    "vue",
+                    "vuetify",
+                    "vue-page-transition",
+                ],
+                links: [
+                    {
+                        link: "https://github.com/BroJenuel/jenuel-portfolio-v1",
+                        icon: mdiGithub
+                    },
+                    {
+                        link: 'https://jenuelganawed-v1.netlify.app/',
+                        icon: mdiOpenInNew
+                    }
+                ],
+                imageLink: "https://jenuelganawed-v1.netlify.app/",
+                img: 'https://i.ibb.co/wr4b0BD/portfoliov1-min.png'
+            },
+            {
+                overline: 'Featured Project',
                 title: `Get GIF's`,
                 des: "With this website, you can search the wide internet to get GIFs that you can download for your content.",
                 techs: [
