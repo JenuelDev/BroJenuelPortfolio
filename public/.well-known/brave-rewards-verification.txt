@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: jenuelganawed.ml
-Token: e345f6fa6dd41b950f63fddd1aaabc772142173381b8ed0346bbba776d981b43
