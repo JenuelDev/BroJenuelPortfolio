@@ -69,18 +69,15 @@ export default {
         }
         h2 {
             margin: 0px 0px -20px 0px !important;
-            font-family: Tungsten, arial, georgia, sans-serif !important;
-            letter-spacing: 2px;
-            font-size: clamp(50px, 8vw, 90px);
+            font-family: sans-serif;
+            font-size: clamp(50px, 8vw, 80px);
             color: var(--v-white-base);
         }
         h3 {
             margin-top: 10px;
-            font-family: Tungsten, arial, georgia, sans-serif !important;
             color: var(--v-slate-base);
-            letter-spacing: 2px;
             line-height: 0.9;
-            font-size: clamp(50px, 8vw, 90px);
+            font-size: clamp(50px, 8vw, 80px);
         }
         p {
             margin: 20px 0px 0px;
