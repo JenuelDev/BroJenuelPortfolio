@@ -72,9 +72,10 @@ export default {
             font-family: sans-serif;
             font-size: clamp(50px, 8vw, 80px);
             color: var(--v-white-base);
+            line-height: 0.9;
         }
         h3 {
-            margin-top: 10px;
+            margin-top: 20px;
             color: var(--v-slate-base);
             line-height: 0.9;
             font-size: clamp(50px, 8vw, 80px);
