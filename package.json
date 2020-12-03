@@ -6,9 +6,11 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "allin": "yarn build & yarn dist & yarn pub",
+    "allin": "yarn build & yarn purgecss & yarn cc & yarn dist & yarn pub",
     "dist": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./dist.ps1",
-    "pub": "publish.bat"
+    "pub": "publish.bat",
+    "purgecss": "purgecss.bat",
+    "cc": "copypurge.bat"
   },
   "dependencies": {
     "core-js": "^3.6.5",
