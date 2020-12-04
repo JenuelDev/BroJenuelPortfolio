@@ -24,7 +24,7 @@
                             >Built by Jenuel Ganawed based on Brittany's Design
                             <br />
                             using
-                            <v-icon small color="green">{{ vueIcon }}</v-icon>
+                            <v-icon small color="primary">{{ vueIcon }}</v-icon>
                             Vue.js</span
                         >
                     </div>

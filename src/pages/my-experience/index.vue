@@ -133,10 +133,8 @@ export default {
         transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
     display: flex;
     -webkit-box-pack: center;
-    //   justify-content: center;
     -webkit-box-align: center;
     flex-direction: column;
-    //   min-height: 100vh;
     max-width: 1000px;
     margin: 0px auto;
 
