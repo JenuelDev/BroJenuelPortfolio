@@ -25,7 +25,7 @@
                                 <div style="min-height: 200px">
                                     <h3>
                                         {{ work.position }}
-                                        <span class="highlight"
+                                        <span class="highlight cursor-pointer" @click="openNewTab(work.url)"
                                             >@ {{ work.company }}</span
                                         >
                                     </h3>
@@ -119,6 +119,9 @@ export default {
                 this.showTab = true
             }
         },
+        openNewTab(url) {
+            window.open(url,'_blank')
+        }
     }
 }
 </script>
@@ -164,6 +167,7 @@ export default {
             opacity: 0.8;
         }
         .highlight {
+            font-weight: 800;
             color: var(--v-primary-base);
         }
         .list {

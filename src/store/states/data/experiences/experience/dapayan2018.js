@@ -9,5 +9,6 @@ export default {
     des: [
         "Participated as an author and a project developer of their own private Ordering Management System",
         "Technologies used are MySQL, CodeIgniter"
-    ]
+    ],
+    url: "https://www.facebook.com/DapayanCafeExtention"
 }

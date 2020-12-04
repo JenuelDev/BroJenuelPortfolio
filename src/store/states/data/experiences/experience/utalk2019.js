@@ -11,5 +11,6 @@ export default {
         "Full-time software developer",
         "Worked with a variety of tech's. such as Vue, Angular, CodeIgniter, Lumen, Ruby on Rails, MySQL, MongoDB",
         "Maintaining the system of the company"
-    ]
+    ],
+    url: "https://www.facebook.com/utalkphilippines"
 }

@@ -9,5 +9,6 @@ export default {
     des: [
         "Created web designs for wonderful clients",
         "Maintaining their system as well as their website"
-    ]
+    ],
+    url: "http://www.ilearnsda.com"
 }

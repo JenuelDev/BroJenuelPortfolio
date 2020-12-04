@@ -33,6 +33,9 @@ img {
     background-color: var(--v-background-base);
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
 
 
 @import './styles/themes.scss';
