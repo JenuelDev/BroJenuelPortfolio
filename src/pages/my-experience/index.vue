@@ -53,7 +53,7 @@
                     </v-tabs>
                     <div v-else>
                         <div
-                            v-for="work in works"
+                            v-for="work in $store.state.experiencePage.experiences"
                             :key="work.company"
                             class="small-size"
                         >
