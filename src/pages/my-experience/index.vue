@@ -16,7 +16,7 @@
             </slide-y-up-transition>
             <slide-x-left-transition :delay="300">
                 <div v-show="$store.state.experienceShow">
-                    <v-tabs v-if="showTab" height="120px" :vertical="vertical">
+                    <v-tabs v-if="showTab" :class="vertical ? 'verticaltabs' : 'horizontaltabs'" :height="vertical ? '120px' : ''" :vertical="vertical">
                         <template v-for="work in $store.state.experiencePage.experiences">
                             <v-tab :key="work.company">
                                 {{ work.tab }}
@@ -151,9 +151,11 @@ export default {
             font-size: 22px;
         }
         ul {
-            font-size: 18px;
+            font-size: var(--fz-lg);
             list-style: none;
+            font-weight: 200;
             li {
+                
                 &::before {
                     content: '▹';
                     position: absolute;
@@ -171,8 +173,35 @@ export default {
             color: var(--v-primary-base);
         }
         .list {
-            opacity: 0.8;
+            font-family: var(--font-sans) !important;
+            opacity: 0.7;
         }
     }
+    .v-tab{
+        text-transform: none !important;
+        font-family: var(--font-mono) !important;
+        font-weight: 200 !important;
+        letter-spacing: 0em;
+        color: var(--v-lightSlate-base);
+    }
+    .v-tab--active {
+        color: var(--v-primary-base);
+    }
+    .v-tabs--vertical {
+        .v-tab{
+            border-left: 2px solid var(--v-lightBackground-base) !important;
+            justify-content: left !important;
+        }
+    }
+    .horizontaltabs {
+        .v-tab{
+            border-bottom: 2px solid var(--v-lightBackground-base) !important;
+        }
+        .v-tabs-bar {
+            margin-bottom: 30px !important;
+        }
+    }
+    
+    
 }
 </style>
