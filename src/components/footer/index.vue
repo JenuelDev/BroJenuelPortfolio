@@ -21,9 +21,8 @@
                 >
                     <div>
                         <span
-                            >Built by Jenuel Ganawed based on Brittany's Design
+                            >Built by Jenuel Ganawed
                             <br />
-                            using
                             <v-icon small color="primary">{{ vueIcon }}</v-icon>
                             Vue.js</span
                         >
