@@ -50,7 +50,15 @@ main {
 
 @media only screen and (max-width: 768px) {
     main {
+        margin-top: 50px;
         padding: 0px 20px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    main {
+        margin-top: 60px;
+        padding: 10px 10px 30px 10px;
     }
 }
 </style>

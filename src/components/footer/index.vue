@@ -21,8 +21,7 @@
                 >
                     <div>
                         <span
-                            >Built by Jenuel Ganawed
-                            <br />
+                            >Built by Jenuel Ganawed using
                             <v-icon small color="primary">{{ vueIcon }}</v-icon>
                             Vue.js</span
                         >
@@ -96,6 +95,7 @@ export default {
     }
 
     .footer-text {
+        padding: 0 30px;
         div {
             margin-top: 10px;
             span {

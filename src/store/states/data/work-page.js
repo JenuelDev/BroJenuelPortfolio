@@ -27,7 +27,7 @@ export default {
                 img: 'https://i.ibb.co/NWMHjGx/laravelmongodb.png'
             },
             {
-                overline: 'Featured Project',
+                overline: 'Portfolio Project',
                 title: 'Portfolio',
                 des: "It's is a new cool look for my portfolio based on Brittany's design. I created Ground Up using the Technology Called Vue to Create This Portfolio.",
                 techs: [
@@ -49,7 +49,7 @@ export default {
                 img: 'https://i.ibb.co/yWW9Zy3/My-Port-Folio.png'
             },
             {
-                overline: 'Featured Project',
+                overline: 'Search Engine Project',
                 title: `Get GIF's`,
                 des: "With this website, you can search the wide internet to get GIFs that you can download for your content.",
                 techs: [
