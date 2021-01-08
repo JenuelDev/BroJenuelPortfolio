@@ -4,7 +4,9 @@
         <ThemeChanger />
         <ResumeDownloader />
         <main>
-            <router-view />
+            <vue-page-transition name="fade-in-up">
+                <router-view />
+            </vue-page-transition>
         </main>
         <SocialNetworkSite />
         <Footer />
