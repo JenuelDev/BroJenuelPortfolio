@@ -62,7 +62,7 @@ export default {
                         icon: mdiGithub
                     },
                     {
-                        link: 'https://jenuelganawed.ml',
+                        link: 'https://www.getgifs.ml/',
                         icon: mdiOpenInNew
                     }
                 ],
