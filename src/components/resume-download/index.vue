@@ -29,7 +29,7 @@ export default {
     }),
     methods: {
         Download() {
-            window.open("https://github.com/BroJenuel/BroJenuel/raw/master/resume/JenuelGanawed_CV_2020.pdf");
+            window.open("https://github.com/BroJenuel/BroJenuel/raw/master/resume/JenuelGanawed-2021.pdf");
         }
     }
 }
