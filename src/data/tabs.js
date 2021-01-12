@@ -1,11 +1,6 @@
-import { mdiBrain, mdiEmailEditOutline, mdiFaceOutline, mdiFileDocumentMultipleOutline, mdiHand, mdiHeadHeartOutline } from '@mdi/js'
+import { mdiBrain, mdiEmailEditOutline, mdiFaceOutline, mdiFileDocumentMultipleOutline, mdiHeadHeartOutline } from '@mdi/js'
 
 export default [
-    {
-        icon: mdiHand,
-        name: 'Intro',
-        to: '/intro'
-    },
     {
         icon: mdiFaceOutline,
         name: 'About Me',

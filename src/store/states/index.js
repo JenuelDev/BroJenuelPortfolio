@@ -5,12 +5,17 @@ import AboutMePage from './data/about-me-page'
 import experiencePage from './data/experience-page'
 import codeChallengesPage from './data/code-challenges-page'
 
+let modalShow = {
+    modalShow: true
+};
+
 let states = Object.assign(
     AnimationShow,
     IntroPage,
     AboutMePage,
     experiencePage,
     WorkPage,
-    codeChallengesPage
+    codeChallengesPage,
+    modalShow
 )
 export default states

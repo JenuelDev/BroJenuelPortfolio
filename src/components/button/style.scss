@@ -8,7 +8,8 @@ div.jbutton {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    & a {
+    & div {
+        cursor: pointer;
         min-width: 240px;
         max-width: 280px;
         height: $height;

@@ -7,13 +7,13 @@ Vue.use(VueRouter)
 const routes = [
     {
         path: '',
-        redirect: '/intro'
+        redirect: '/about'
     },
-    {
-        path: '/intro',
-        name: 'Intro',
-        component: () => import(/* webpackChunkName: "intro" */ '@/pages/intro')
-    },
+    // {
+    //     path: '/intro',
+    //     name: 'Intro',
+    //     component: () => import(/* webpackChunkName: "intro" */ '@/pages/intro')
+    // },
     {
         path: '/about',
         name: "About",
@@ -47,7 +47,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
-    mode: "history",
+    // mode: "history",
     routes
 })
 

@@ -1,5 +1,6 @@
 <template>
     <v-app>
+        <Intro />
         <NavigationBar />
         <ThemeChanger />
         <ResumeDownloader />
@@ -19,6 +20,7 @@ import NavigationBar from './components/navigation-bar'
 import Footer from './components/footer'
 import ThemeChanger from './components/themeChanger'
 import ResumeDownloader from './components/resume-download'
+import Intro from './pages/intro'
 
 export default {
     name: 'App',
@@ -27,7 +29,8 @@ export default {
         NavigationBar,
         Footer,
         ThemeChanger,
-        ResumeDownloader
+        ResumeDownloader,
+        Intro
     },
     data: () => ({}),
 }

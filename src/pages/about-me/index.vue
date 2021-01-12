@@ -1,13 +1,13 @@
 <template>
     <section class="about-me">
         <slide-y-up-transition :delay="100">
-            <h2 v-show="$store.state.aboutMeShow" class="numbered-header">
+            <h2 v-show="$store.state.aboutMeShow && !$store.state.modalShow" class="numbered-header">
                 <v-icon class="front-icon">{{ aboutIcon }}</v-icon> About Me
             </h2>
         </slide-y-up-transition>
         <div class="about-me-inner">
             <slide-x-left-transition :delay="230">
-                <div v-show="$store.state.aboutMeShow" class="about-me-text">
+                <div v-show="$store.state.aboutMeShow && !$store.state.modalShow" class="about-me-text">
                     <div class="about-me-text-info" v-html="$store.state.aboutMe.info"></div>
                     <ul class="skill-list">
                         <li v-for="skill in $store.state.aboutMe.skills" :key="skill.text">
@@ -20,7 +20,7 @@
                 </div>
             </slide-x-left-transition>
             <slide-x-right-transition :delay="430">
-                <div v-show="$store.state.aboutMeShow" class="about-me-photo">
+                <div v-show="$store.state.aboutMeShow && !$store.state.modalShow" class="about-me-photo">
                     <div class="wrapper">
                         <div
                             class="photo"

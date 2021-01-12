@@ -3,7 +3,7 @@
         <SlideXRightTransition :delay="200">
             <h2
                 class="numbered-header"
-                v-show="$store.state.codeChallengeShow"
+                v-show="$store.state.codeChallengeShow && !$store.state.modalShow"
                 style="margin: 10px 0px -10px"
             >
                 <v-icon class="front-icon">{{ headIcon }}</v-icon> Code
@@ -11,7 +11,7 @@
             </h2>
         </SlideXRightTransition>
         <SlideXLeftTransition :delay="300">
-            <p v-show="$store.state.codeChallengeShow">
+            <p v-show="$store.state.codeChallengeShow && !$store.state.modalShow">
                 {{CODE_CHALLENGE.des}}
             </p>
         </SlideXLeftTransition>
@@ -19,7 +19,7 @@
             <template v-for="(code, index) in CODE_CHALLENGE.challenges">
                 <SlideYUpTransition :key="code.title" :delay="index * 150">
                     <div
-                        v-show="$store.state.codeChallengeShow"
+                        v-show="$store.state.codeChallengeShow && !$store.state.modalShow"
                         class="code-item"
                     >
                         <div class="code-item-inner">

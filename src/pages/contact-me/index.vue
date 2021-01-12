@@ -3,7 +3,7 @@
         <SlideYUpTransition :delay="200">
             <h2
                 class="numbered-header"
-                v-show="$store.state.contactMeShow"
+                v-show="$store.state.contactMeShow && !$store.state.modalShow"
                 style="margin: 10px 0px -10px"
             >
                 <v-icon class="front-icon">{{ contactIcon }}</v-icon> Contact Me
@@ -17,30 +17,17 @@
                     style="max-width: 800px"
                 >
                     <SlideYUpTransition :delay="400">
-                        <p v-show="$store.state.contactMeShow">
+                        <p v-show="$store.state.contactMeShow && !$store.state.modalShow">
                             Although I'm not currently looking for any new
                             opportunities, my inbox is always open. Whether you have
                             a question or want to say hi, I'll try my best to get
                             back to you! You can check my social profile below.
                         </p>
                     </SlideYUpTransition>
-                    <SlideYUpTransition :delay="500">
-                        <div v-show="$store.state.contactMeShow" class="social-icons">
-                            <ul>
-                                <li v-for="social in socials" :key="social.name">
-                                    <a :href="social.link" target="_blank" rel="external">
-                                        <v-icon x-large class="icons">{{
-                                            social.icon
-                                        }}</v-icon>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </SlideYUpTransition>
                     <SlideYUpTransition :delay="600">
                         <Button
-                            v-show="$store.state.contactMeShow"
-                            :site="'mailto:' + INTRO.email"
+                            v-show="$store.state.contactMeShow && !$store.state.modalShow"
+                            @click.native="sendMeMessage()"
                             aria-label="Send Message"
                             style="margin-top: 30px"
                         >
@@ -75,6 +62,11 @@ export default {
         INTRO() {
             return this.$store.state.introPage
         }
+    },
+    methods: {
+        sendMeMessage() {
+            window.location.href = 'mailto:' + this.INTRO.email;
+        },
     }
 }
 </script>

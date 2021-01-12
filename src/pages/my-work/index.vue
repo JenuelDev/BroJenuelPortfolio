@@ -3,20 +3,20 @@
         <SlideXRightTransition :delay="200">
             <h2
                 class="numbered-header"
-                v-show="$store.state.workShow"
+                v-show="$store.state.workShow && !$store.state.modalShow"
                 style="margin: 10px 0px -10px"
             >
                 <v-icon class="front-icon">{{ headIcon }}</v-icon> {{$store.state.workPage.title}}
             </h2>
         </SlideXRightTransition>
         <SlideXLeftTransition :delay="300">
-            <p v-show="$store.state.workShow">{{$store.state.workPage.des}}</p>
+            <p v-show="$store.state.workShow && !$store.state.modalShow">{{$store.state.workPage.des}}</p>
         </SlideXLeftTransition>
         <SlideYDownTransition :delay="400">
-            <div v-show="$store.state.workShow" style="margin-top: 20px">
+            <div v-show="$store.state.workShow && !$store.state.modalShow" style="margin-top: 20px">
                 <template v-for="(work, i) in myWorks">
                     <SlideYDownTransition :delay="i * 500" :key="work.title">
-                        <div v-show="$store.state.workShow" class="work-info">
+                        <div v-show="$store.state.workShow && !$store.state.modalShow" class="work-info">
                             <div
                                 class="work-info-details"
                                 :class="

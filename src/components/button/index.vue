@@ -1,6 +1,6 @@
 <template>
     <div class="jbutton">
-        <a :href="site" rel="external">
+        <div :href="site" rel="external">
             <p>
                 <span class="bg"></span>
                 <span class="base"></span>
@@ -8,7 +8,7 @@
                     <slot></slot>
                 </span>
             </p>
-        </a>
+        </div>
     </div>
 </template>
 <script>

@@ -3,7 +3,7 @@
         <div>
             <slide-y-up-transition :delay="100">
                 <h2
-                    v-show="$store.state.experienceShow"
+                    v-show="$store.state.experienceShow && !$store.state.modalShow"
                     class="numbered-header"
                     style="margin: 10px 0px -10px"
                 >
@@ -12,10 +12,10 @@
                 </h2>
             </slide-y-up-transition>
             <slide-y-up-transition :delay="100">
-                <p v-show="$store.state.experienceShow">{{$store.state.experiencePage.des}}</p>
+                <p v-show="$store.state.experienceShow && !$store.state.modalShow">{{$store.state.experiencePage.des}}</p>
             </slide-y-up-transition>
             <slide-x-left-transition :delay="300">
-                <div v-show="$store.state.experienceShow">
+                <div v-show="$store.state.experienceShow && !$store.state.modalShow">
                     <v-tabs v-if="showTab" :class="vertical ? 'verticaltabs' : 'horizontaltabs'" :height="vertical ? '120px' : ''" :vertical="vertical">
                         <template v-for="work in $store.state.experiencePage.experiences">
                             <v-tab :key="work.company">
