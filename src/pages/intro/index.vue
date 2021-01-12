@@ -26,7 +26,7 @@
                             v-show="$store.state.introShow"
                             style="margin-top: 30px"
                         >
-                            Check me Out
+                            Let's Go
                         </Button>
                     </slide-y-up-transition>
                 </section>
@@ -61,7 +61,10 @@ export default {
     },
     methods: {
         closeModal() {
-            this.$router.replace({name: 'About'})
+            if (this.$route.name != 'About') {
+                this.$router.replace({name: 'About'})
+            }
+            
             this.$store.state.modalShow = !this.$store.state.modalShow
         }
     }
@@ -74,7 +77,8 @@ export default {
     margin-top: 50px;
     -webkit-box-align: center;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     max-width: 1000px;
 
     h1 {

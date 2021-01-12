@@ -1,6 +1,6 @@
 <template>
     <slide-y-up-transition :delay="900">
-        <div v-show="show">
+        <div v-show="show && !$store.state.modalShow">
             <v-tabs
                 :style="tabShow ? 'top: 0px;' : 'top: -50px'"
                 class="navigation-tab"

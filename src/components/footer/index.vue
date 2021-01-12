@@ -1,6 +1,6 @@
 <template>
     <SlideYUpTransition :delay="1700">
-        <footer v-show="show" class="footer">
+        <footer v-show="show && !$store.state.modalShow" class="footer">
             <div class="social-links">
                 <ul>
                     <li v-for="social in socials" :key="social.name">

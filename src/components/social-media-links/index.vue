@@ -2,7 +2,7 @@
     <div class="social-network">
         <slide-y-down-transition :delay="1300">
             <div
-                v-show="show"
+                v-show="show && !$store.state.modalShow"
                 class="social-media social-meida-orientation social-media-placement"
             >
                 <ul class="social-media-list">
@@ -18,7 +18,7 @@
         </slide-y-down-transition>
         <slide-y-down-transition :delay="1600">
             <div
-                v-show="show"
+                v-show="show && !$store.state.modalShow"
                 class="email-media social-meida-orientation social-media-placement"
             >
                 <div class="email-media-link">
