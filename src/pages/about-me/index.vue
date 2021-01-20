@@ -1,5 +1,16 @@
 <template>
     <section class="about-me">
+        <v-dialog
+            v-model="dialog"
+            max-width="300"
+        >
+            <v-card>
+                <v-card-title class="headline" style="display: block">
+                    <v-icon color="primary" style="margin-right: 10px;">{{dialogConent.icon}}</v-icon> <span style="color: var(--v-primary-base);">{{dialogConent.title}}</span>
+                </v-card-title>
+                <v-card-text>{{dialogConent.des}}</v-card-text>
+            </v-card>
+        </v-dialog>
         <slide-y-up-transition :delay="100">
             <h2 v-show="$store.state.aboutMeShow && !$store.state.modalShow" class="numbered-header">
                 <v-icon class="front-icon">{{ aboutIcon }}</v-icon> About Me
@@ -10,7 +21,7 @@
                 <div v-show="$store.state.aboutMeShow && !$store.state.modalShow" class="about-me-text">
                     <div class="about-me-text-info" v-html="$store.state.aboutMe.info"></div>
                     <ul class="skill-list">
-                        <li v-for="skill in $store.state.aboutMe.skills" :key="skill.text">
+                        <li v-for="skill in $store.state.aboutMe.skills" :key="skill.text" @click="openDialog(skill)">
                             <v-icon color="primary" small class="skill-icon">{{
                                 skill.icon
                             }}</v-icon>
@@ -39,148 +50,5 @@
         </div>
     </section>
 </template>
-<script>
-import { mdiFaceOutline } from '@mdi/js'
-import {
-    SlideYUpTransition,
-    SlideXLeftTransition,
-    SlideXRightTransition,
-} from 'vue2-transitions'
-export default {
-    components: {
-        SlideYUpTransition,
-        SlideXLeftTransition,
-        SlideXRightTransition,
-    },
-    data: () => {
-        return {
-            aboutIcon: mdiFaceOutline
-        }
-    },
-    mounted() {
-        this.$store.state.aboutMeShow = true
-    }
-}
-</script>
-
-<style lang="scss">
-.about-me {
-    z-index: 5;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    max-width: 1000px;
-    visibility: visible;
-    opacity: 1;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s,
-        transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-
-    .about-me-inner {
-        display: flex;
-        flex-direction: row;
-        gap: 50px;
-
-    }
-
-    .about-me-text {
-        p {
-            color: var(--v-slate-base) !important;
-        }
-    }
-
-    .skill-list {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(140px, 200px));
-        padding: 0px;
-        margin: 20px 0px 0px;
-        overflow: hidden;
-        list-style: none;
-        li {
-            font-family: var(--font-mono) !important;
-            font-size: 13px;
-            color: var(--v-slate-base) !important;
-        }
-
-        .skill-icon {
-            margin: 0px 5px;
-        }
-    }
-
-    .about-me-photo {
-        position: relative;
-        max-width: 300px;
-
-        .wrapper {
-            display: block;
-            position: relative;
-            width: 100%;
-            border-radius: 10px;
-            background-color: var(--v-primary-base);
-            transition: var(--transition);
-
-            &::before,
-            &::after {
-                content: '';
-                display: block;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-                transition: 0.3s;
-            }
-
-            &::before {
-                top: 0;
-                left: 0;
-                mix-blend-mode: screen;
-            }
-            .photo {
-                border-radius: 10px;
-                height: 300px;
-                mix-blend-mode: multiply;
-                filter: grayscale(100%) contrast(1);
-                transition: 0.3s !important;
-            }
-            &::after {
-                border: 2px solid var(--v-primary-base);
-                top: 20px;
-                left: 20px;
-                z-index: -1;
-            }
-
-            &:hover {
-                .photo {
-                    mix-blend-mode: normal;
-                    filter: grayscale(50%);
-                }
-                &::after {
-                    top: 10px;
-                    left: 10px;
-                }
-            }
-        }
-    }
-}
-@media only screen and (max-width: 856px) {
-    .about-me {
-        .about-me-inner {
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-
-            .about-me-photo {
-                order: 1;
-                align-self: center;
-            }
-            .about-me-text {
-                order: 2;
-                align-self: center;
-            }
-        }
-    }
-}
-</style>
+<script src="./script.js"></script>
+<style lang="scss" src="./style.scss"></style>
