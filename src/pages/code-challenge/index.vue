@@ -34,7 +34,7 @@
                                             :key="link.link"
                                             :href="link.link"
                                             target="_blank"
-                                            rel="external"
+                                            rel="noreferrer"
                                         >
                                             <v-btn
                                                 class="icon"

@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint",
     "allnopurge": "yarn build & yarn dist & yarn pub",
     "allwithpurge": "yarn build & yarn purgecss & yarn cc & yarn dist & yarn pub",
+    "bp": "yarn build & yarn purgecss & yarn cc",
     "cc": "copypurge.bat",
     "dist": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./dist.ps1",
     "pub": "publish.bat",

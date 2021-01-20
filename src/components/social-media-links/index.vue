@@ -7,7 +7,7 @@
             >
                 <ul class="social-media-list">
                     <li v-for="link in links" :key="link.link">
-                        <a :href="link.link" target="_blank" rel="author" icon>
+                        <a :href="link.link" target="_blank" rel="noreferrer" icon>
                             <v-icon size="20" class="social-buttons">{{
                                 link.icon
                             }}</v-icon>

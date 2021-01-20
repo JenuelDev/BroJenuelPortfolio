@@ -4,7 +4,7 @@
             <div class="social-links">
                 <ul>
                     <li v-for="social in socials" :key="social.name">
-                        <a :href="social.link" target="_blank" rel="author">
+                        <a :href="social.link" target="_blank" rel="noreferrer">
                             <v-icon class="icon">{{ social.icon }}</v-icon>
                         </a>
                     </li>
@@ -17,7 +17,7 @@
                 <a
                     href="https://github.com/MisterJ936/jenuel-portfolio-v2"
                     target="_blank"
-                    rel="author"
+                    rel="noreferrer"
                 >
                     <div>
                         <span

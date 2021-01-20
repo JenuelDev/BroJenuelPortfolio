@@ -52,7 +52,7 @@
                                         :href="link.link"
                                         target="_blank"
                                         aria-label="GitHUB Link"
-                                        rel="external"
+                                        rel="noreferrer"
                                         ><v-icon class="highlight-hover">{{
                                             link.icon
                                         }}</v-icon></a

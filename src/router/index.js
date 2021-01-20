@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import PageNotFound from '@/pages/page-not-found'
 
 Vue.use(VueRouter)
 
@@ -9,11 +8,6 @@ const routes = [
         path: '',
         redirect: '/about'
     },
-    // {
-    //     path: '/intro',
-    //     name: 'Intro',
-    //     component: () => import(/* webpackChunkName: "intro" */ '@/pages/intro')
-    // },
     {
         path: '/about',
         name: "About",
@@ -42,12 +36,11 @@ const routes = [
     {
         path: '/*',
         name: 'PageNotFound',
-        component: PageNotFound
+        component: () => import(/* webpackChunkName: "notfound" */  '@/pages/page-not-found')
     }
 ]
 
 const router = new VueRouter({
-    // mode: "history",
     routes
 })
 
