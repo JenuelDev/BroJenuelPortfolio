@@ -17,9 +17,6 @@
                         <h3 v-show="$store.state.introShow">{{ INTRO.IDo }}</h3>
                     </slide-y-up-transition>
                     <slide-y-up-transition :delay="600">
-                        <p v-show="$store.state.introShow">{{ INTRO.des }}</p>
-                    </slide-y-up-transition>
-                    <slide-y-up-transition :delay="700">
                         <Button
                             @click.native="closeModal()"
                             aria-label="Send Message"
@@ -78,21 +75,21 @@ export default {
     -webkit-box-align: center;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     max-width: 1000px;
+    text-align: center;
 
     h1 {
         margin: 0px 0px 0px 4px;
         color: var(--v-primary-base);
         font-family: var(--font-mono) !important;
-        font-size: 17px !important;
+        font-size: 18px !important;
         font-weight: lighter;
         line-height: 1.1;
     }
     h2 {
         margin: 0px 0px -20px 0px !important;
         font-family: sans-serif;
-        font-size: clamp(50px, 8vw, 80px);
+        font-size: clamp(50px, 8vw, 70px);
         color: var(--v-white-base);
         line-height: 0.9;
     }
@@ -100,7 +97,7 @@ export default {
         margin-top: 20px;
         color: var(--v-slate-base);
         line-height: 0.9;
-        font-size: clamp(50px, 8vw, 80px);
+        font-size: clamp(40px, 8vw, 50px);
     }
     p {
         margin: 20px 0px 0px;
