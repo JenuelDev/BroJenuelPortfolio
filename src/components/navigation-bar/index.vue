@@ -2,11 +2,11 @@
     <slide-y-up-transition :delay="900">
         <div v-show="show && !$store.state.modalShow">
             <v-tabs
-                :style="tabShow ? 'top: 0px;' : 'top: -50px'"
+                :style="tabShow ? 'top: 0px;' : 'top: -60px'"
                 class="navigation-tab"
                 :class="tabTop ? 'navigation-tab-top' : ''"
                 centered
-                :height="tabTop ? '60px' : '40px'"
+                :height="tabTop ? '70px' : '50px'"
             >
                 <v-tab v-for="tab in tabs" :key="tab.name" :to="tab.to">
                     <v-icon small style="margin-right: 5px">{{
