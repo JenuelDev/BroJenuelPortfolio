@@ -39,6 +39,7 @@
                         >
                             <div class="photo-front"></div>
                             <img
+                                loading='lazy'
                                 src="https://i.ibb.co/7kmD65f/profile.jpg"
                                 alt=""
                                 width="300px"
