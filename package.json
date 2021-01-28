@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-purge": "yarn build & yarn purgecss",
     "lint": "vue-cli-service lint",
     "allnopurge": "yarn build & yarn dist & yarn pub",
     "allwithpurge": "yarn build & yarn purgecss & yarn cc & yarn dist & yarn pub",
@@ -12,7 +13,8 @@
     "cc": "copypurge.bat",
     "dist": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./dist.ps1",
     "pub": "publish.bat",
-    "purgecss": "purgecss.bat"
+    "purgedist": "purgecss.bat",
+    "purgecss": "yarn purgedist & yarn cc "
   },
   "dependencies": {
     "core-js": "^3.6.5",

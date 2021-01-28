@@ -10,7 +10,7 @@
             </h2>
         </SlideXRightTransition>
         <SlideXLeftTransition :delay="300">
-            <p v-show="$store.state.workShow && !$store.state.modalShow">{{$store.state.workPage.des}}</p>
+            <p class="header-des" v-show="$store.state.workShow && !$store.state.modalShow">{{$store.state.workPage.des}}</p>
         </SlideXLeftTransition>
         <SlideYDownTransition :delay="400">
             <div v-show="$store.state.workShow && !$store.state.modalShow" style="margin-top: 20px">

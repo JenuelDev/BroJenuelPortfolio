@@ -17,7 +17,7 @@
                     style="max-width: 800px"
                 >
                     <SlideYUpTransition :delay="400">
-                        <p v-show="$store.state.contactMeShow && !$store.state.modalShow">
+                        <p class="header-des" v-show="$store.state.contactMeShow && !$store.state.modalShow">
                             Although I'm not currently looking for any new
                             opportunities, my inbox is always open. Whether you have
                             a question or want to say hi, I'll try my best to get

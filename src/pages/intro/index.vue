@@ -1,6 +1,5 @@
 <template>
-    <v-dialog v-model="$store.state.modalShow" persistent max-width="700">
-        <v-card>
+        <v-overlay :value="$store.state.modalShow" opacity="0">
             <v-card-text>
                 <section class="intro">
                     <slide-y-up-transition :delay="200">
@@ -16,6 +15,9 @@
                     <slide-y-up-transition :delay="400">
                         <h3 v-show="$store.state.introShow">{{ INTRO.IDo }}</h3>
                     </slide-y-up-transition>
+                    <slide-y-up-transition :delay="400">
+                        <p v-show="$store.state.introShow">{{ INTRO.des }}</p>
+                    </slide-y-up-transition>
                     <slide-y-up-transition :delay="600">
                         <Button
                             @click.native="closeModal()"
@@ -28,8 +30,7 @@
                     </slide-y-up-transition>
                 </section>
             </v-card-text>
-        </v-card>
-    </v-dialog>
+        </v-overlay>
 </template>
 
 <script>
@@ -74,12 +75,10 @@ export default {
     margin-top: 50px;
     -webkit-box-align: center;
     flex-direction: column;
-    align-items: center;
     max-width: 1000px;
-    text-align: center;
 
     h1 {
-        margin: 0px 0px 0px 4px;
+        margin: 0px 0px 15px 4px;
         color: var(--v-primary-base);
         font-family: var(--font-mono) !important;
         font-size: 18px !important;
@@ -87,9 +86,8 @@ export default {
         line-height: 1.1;
     }
     h2 {
-        margin: 0px 0px -20px 0px !important;
         font-family: sans-serif;
-        font-size: clamp(50px, 8vw, 70px);
+        font-size: clamp(50px, 8vw, 80px);
         color: var(--v-white-base);
         line-height: 0.9;
     }
@@ -97,12 +95,13 @@ export default {
         margin-top: 20px;
         color: var(--v-slate-base);
         line-height: 0.9;
-        font-size: clamp(40px, 8vw, 50px);
+        font-size: clamp(40px, 8vw, 70px);
     }
     p {
         margin: 20px 0px 0px;
         max-width: 500px;
         color: var(--v-slate-base);
+        font-size: 20px;
     }
     .get-in-touch {
         border: 1px solid var(--v-primary-base);

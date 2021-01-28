@@ -3,7 +3,7 @@ export const themes = [
         name: 'Main Theme',
         dark: {
             background: '#0a192f',
-            lightBackground: '#172a45',
+            lightBackground: '#112240', //#112240 '#172a45'
             primary: '#64ffda',
             liteprimary: '#172a45',
             lightestPrimary: '#303C55',
@@ -17,8 +17,8 @@ export const themes = [
         name: 'Arthur Theme',
         dark: {
             background: '#1C1C1C',
-            lightBackground: '#3D352A',
-            primary: '#CD5C5C',
+            lightBackground: '#363535',
+            primary: '#82E0AA',
             liteprimary: '#E8AE5B',
             lightestPrimary: '#BBAA99',
             slate: '#8892b0',
@@ -45,7 +45,7 @@ export const themes = [
         name: 'Banana Blue Berry Theme',
         dark: {
             background: '#191323',
-            lightBackground: '#495162',
+            lightBackground: '#2E263C',
             primary: '#FF6B7F',
             liteprimary: '#DC396A',
             lightestPrimary: '#F1F1F1',

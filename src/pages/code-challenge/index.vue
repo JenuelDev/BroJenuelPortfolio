@@ -11,7 +11,7 @@
             </h2>
         </SlideXRightTransition>
         <SlideXLeftTransition :delay="300">
-            <p v-show="$store.state.codeChallengeShow && !$store.state.modalShow">
+            <p class="header-des" v-show="$store.state.codeChallengeShow && !$store.state.modalShow">
                 {{CODE_CHALLENGE.des}}
             </p>
         </SlideXLeftTransition>

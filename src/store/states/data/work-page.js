@@ -3,7 +3,7 @@ import { mdiGithub, mdiOpenInNew } from "@mdi/js";
 export default {
     workPage: {
         title: "My Work",
-        des: "Showcasing complete functional demonstrates what I can bring to your project. I built these projects from the ground up to show my skills in front-end, back-end, and database development. Most of these projects are full-stack web projects, and you can demo them easily.",
+        des: "Showcasing complete functional full-stack web projects. Built from the ground up to show my skills in front-end, back-end, and database development.",
         works: [
             {
                 overline: 'Documentation Project',

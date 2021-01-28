@@ -57,12 +57,10 @@
 
     .about-me-photo {
         position: relative;
-        max-width: 300px;
 
         .wrapper {
             display: block;
             position: relative;
-            width: 100%;
             border-radius: 10px;
             background-color: var(--v-primary-base);
             transition: var(--transition);
@@ -83,19 +81,23 @@
                 left: 0;
                 mix-blend-mode: screen;
             }
-            .photo {
-                border-radius: 10px;
-                height: 300px;
-                mix-blend-mode: multiply;
-                filter: grayscale(100%) contrast(1);
-                transition: 0.3s !important;
-            }
+
             &::after {
                 border: 2px solid var(--v-primary-base);
                 top: 20px;
                 left: 20px;
                 z-index: -1;
             }
+
+            .photo {
+                border-radius: 10px;
+                height: 300px !important;
+                width: 300px !important;
+                mix-blend-mode: multiply;
+                filter: grayscale(100%) contrast(1);
+                transition: 0.3s !important;
+            }
+            
 
             &:hover {
                 .photo {
