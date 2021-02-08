@@ -1,5 +1,11 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Intro from './../views/AboutMe/AboutMe.vue'
+import MyExperience from './../views/MyExperience'
+import MyWork from './../views/MyWork'
+import CodeChallenge from './../views/CodeChallenge'
+import ContactMe from './../views/ContactMe'
+import PageNotFound from './../views/PageNotFound'
+
 const routes = [
     {
         path: '/',
@@ -13,27 +19,27 @@ const routes = [
     {
         path: '/experience',
         name: "Experience",
-        component: () => import(/* webpackChunkName: "experience" */ './../views/MyExperience')
+        component: MyExperience
     },
     {
         path: '/work',
         name: "Work",
-        component: () => import(/* webpackChunkName: "work" */ './../views/MyWork')
+        component: MyWork
     },
     {
         path: '/codechallenge',
         name: "CodeChallenge",
-        component: () => import(/* webpackChunkName: "codechallenge" */ './../views/CodeChallenge')
+        component: CodeChallenge
     },
     {
         path: '/contact',
         name: "Contact",
-        component: () => import(/* webpackChunkName: "contact" */ './../views/ContactMe')
+        component: ContactMe
     },
     {
         path: '/:pathMatch(.*)*',
         name: 'PageNotFound',
-        component: () => import(/* webpackChunkName: "notfound" */  './../views/PageNotFound')
+        component: PageNotFound
     }
 ]
 

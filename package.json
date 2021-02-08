@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deps": "yarn build & git add . & git commit -m 'deployes' & git push origin main"
+    "dist": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./dist.ps1"
   },
   "dependencies": {
     "core-js": "^3.6.5",
