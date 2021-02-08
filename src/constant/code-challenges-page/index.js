@@ -1,6 +1,6 @@
 import challenges from "./challenges";
 
 export default {
-    des: "This projects under this page, are simple projects that I created to challenge my self to experience and learn things.",
+    des: "This are simple projects I made for learning purposes only. You can check and see how I made them, you might learn from it too.",
     challenges: challenges
 }

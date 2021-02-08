@@ -1,0 +1,34 @@
+.my-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: var(--lightSlate);
+        &:hover {
+            color: var(--primary);
+        }
+    }
+
+    .icon-highlight {
+        color: var(--primary);
+    }
+
+    &.a-before-enter {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: 0.3s;
+    }
+    
+    &.a-enter {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

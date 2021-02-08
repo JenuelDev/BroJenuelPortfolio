@@ -120,6 +120,7 @@
             }
 
             &:hover {
+                transition-delay: 0ms !important;
                 transform: translate(0px, -5px);
                 box-shadow: var(--black-shadow);
             }

@@ -8,9 +8,11 @@
     <main v-show="$store.state.show">
         <router-view />
     </main>
+    <Footer v-show="$store.state.show" />
 </template>
 
 <script>
+import Footer from './components/Footer'
 import SocialMediaLinks from "./components/social-media-links";
 import Header from "./components/Header";
 import Overlay from "./components/overlay";
@@ -18,7 +20,7 @@ import Intro from "./views/Intro";
 import MobileNav from "./components/Header/MobileNav";
 
 export default {
-    components: { SocialMediaLinks, Header, Overlay, Intro, MobileNav },
+    components: { SocialMediaLinks, Header, Overlay, Intro, MobileNav, Footer},
     created() {
         if (localStorage.getItem("showedIntro") == "done") {
             let ext = localStorage.getItem("expy") ? localStorage.getItem("expy"):'';
