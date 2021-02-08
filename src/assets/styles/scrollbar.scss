@@ -6,19 +6,19 @@
 }
 *::-webkit-scrollbar {
     width: 5px;
+    height: 2px;
     background-color: #fff;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: var(--v-primary-base);
+    background-color: var(--lightestPrimary);
 }
 ::-webkit-scrollbar-corner {
-    background: var(--v-primary-base);
+    background: var(--lightestPrimary);
   }
-// for firefox scroll bar
 * {
     scrollbar-width: thin;
-    scrollbar-color: var(--v-primary-base) #cccccc ;
+    scrollbar-color: var(--lightestPrimary) #cccccc ;
 }
 
 .s-loading {

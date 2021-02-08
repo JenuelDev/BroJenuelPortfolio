@@ -1,54 +1,45 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-
-Vue.use(VueRouter)
-
+import { createRouter, createWebHashHistory } from 'vue-router'
+import Intro from './../views/AboutMe/AboutMe.vue'
 const routes = [
     {
-        path: '',
-        redirect: '/about'
+        path: '/',
+        redirect: "/aboutme"
     },
     {
-        path: '/about',
-        name: "About",
-        component: () => import(/* webpackChunkName: "about" */ './../pages/about-me')
+        path: '/aboutme',
+        name: "AboutMe",
+        component: Intro
     },
     {
         path: '/experience',
         name: "Experience",
-        component: () => import(/* webpackChunkName: "experience" */ './../pages/my-experience')
+        component: () => import(/* webpackChunkName: "experience" */ './../views/MyExperience')
     },
     {
         path: '/work',
         name: "Work",
-        component: () => import(/* webpackChunkName: "work" */ './../pages/my-work')
+        component: () => import(/* webpackChunkName: "work" */ './../views/MyWork')
     },
     {
         path: '/codechallenge',
         name: "CodeChallenge",
-        component: () => import(/* webpackChunkName: "codechallenge" */ './../pages/code-challenge')
+        component: () => import(/* webpackChunkName: "codechallenge" */ './../views/CodeChallenge')
     },
     {
         path: '/contact',
         name: "Contact",
-        component: () => import(/* webpackChunkName: "contact" */ './../pages/contact-me')
+        component: () => import(/* webpackChunkName: "contact" */ './../views/ContactMe')
     },
     {
-        path: '/*',
+        path: '/:pathMatch(.*)*',
         name: 'PageNotFound',
-        component: () => import(/* webpackChunkName: "notfound" */  '@/pages/page-not-found')
+        component: () => import(/* webpackChunkName: "notfound" */  './../views/PageNotFound')
     }
 ]
 
-const router = new VueRouter({
+const router = createRouter({
+    history: createWebHashHistory(),
     routes,
-    scrollBehavior (to, from, savedPosition) {
-        if (savedPosition) {
-          return savedPosition
-        } else {
-          return { x: 0, y: 0 }
-        }
-    }
 })
 
-export default router
+export default router;

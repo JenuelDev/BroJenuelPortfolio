@@ -1,18 +1,13 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
-import vuetify from './plugins/vuetify'
 import './assets/main.scss'
-import VuePageTransition from 'vue-page-transition'
 import './registerServiceWorker'
+import ScrollAnimation from './directives/scrollAnimation'
+import { store } from './store/store'
 
-Vue.use(VuePageTransition)
-Vue.config.productionTip = false
-
-new Vue({
-    router,
-    store,
-    vuetify,
-    render: h => h(App)
-}).$mount('#app')
+createApp(App)
+.directive('scrollanimation', ScrollAnimation)
+.use(store)
+.use(router)
+.mount('#app')

@@ -1,0 +1,193 @@
+
+.my-work {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    &.a-before-enter {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: 0.3s ease-in;
+    }
+
+    &.a-enter {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .inner {
+        margin-top: 30px;
+        display: flex;
+        gap: 10px;
+
+        .tab-list {
+            position: relative;
+            z-index: 3;
+            width: max-content;
+            padding: 0px;
+            margin: 20px 0 0 0;
+            list-style: none;
+
+            li{
+                height: var(--tab-height);
+
+                div {
+                    text-decoration: none;
+                    text-decoration-skip-ink: auto;
+                    position: relative;
+                    transition: var(--transition);
+                    cursor: pointer;
+                    display: flex;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    height: var(--tab-height);
+                    padding: 0px 20px 2px;
+                    border-left: 2px solid var(--lightest-navy);
+                    background-color: transparent;
+                    color: var(--slate);
+                    font-family: var(--font-mono);
+                    text-align: left;
+                    white-space: nowrap;
+                    font-size: 0.8rem;
+                    
+                }
+
+                &.active {
+                    background-color: var(--light-navy);
+                    div {
+                        color: var(--primary);
+                    }
+                    
+                }
+
+                &:hover {
+                    background-color: var(--light-navy);
+                }
+            }
+
+            .slider {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                z-index: 10;
+                width: 2px;
+                height: var(--tab-height);
+                border-radius: var(--border-radius);
+                background: var(--primary);
+                transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+            }
+        }
+
+
+        .company-details {
+            width: 100%;
+            height: auto;
+            padding-left: 30px;
+            padding-top: 10px;
+
+            h3 {
+                margin-bottom: 5px;
+                font-size: 1.5rem;
+                font-weight: 500;
+                margin: 0px;
+                a {
+                    font-family: var(--font-sans);
+                }
+                span {
+                    font-family: var(--font-sans);  
+                }
+
+                .company {
+                    color: var(--primary);
+                }
+            }
+
+            p.range {
+                margin-bottom: 30px;
+                margin-top: 0;
+                color: var(--light-slate);
+                font-size: var(--fz-xs);
+            }
+            ul {
+                padding: 0px;
+                margin: 0px;
+                list-style: none;
+                font-size: var(--fz-lg);
+
+                li {
+                    position: relative;
+                    padding-left: 30px;
+                    margin-bottom: 10px;
+                    font-size: 0.9rem;
+
+                    &::before {
+                        content: "▹";
+                        position: absolute;
+                        left: 0px;
+                        color: var(--primary);
+                    }
+                }
+            }
+
+            &.a-before-enter {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: 0.5s;
+            }
+
+            &.a-enter {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+    .my-work {
+        .inner {
+            display: block;
+            .tab-list {
+                display: flex;
+                overflow-x: auto;
+                overflow-y: hidden;
+                width: calc(100% + 50px);
+                margin-left: -50px;
+                margin-bottom: 30px;
+                li:first-of-type {
+                    margin-left: 50px;
+                }
+                li {
+                    div {
+                        display: flex;
+                        -webkit-box-pack: center;
+                        justify-content: center;
+                        -webkit-box-align: center;
+                        align-items: center;
+                        min-width: 90px;
+                        padding: 0px 15px;
+                        border-left: 0px;
+                        border-bottom: 2px solid var(--lightest-navy);
+                        text-align: center;
+                    }
+                }
+
+                .slider {
+                    top: auto;
+                    bottom: 0px;
+                    width: 100%;
+                    max-width: var(--tab-width);
+                    height: 2px;
+                    margin-left: 50px;
+                }
+            }
+
+            
+
+            .company-details {
+                padding-left: 0;
+            }
+        }
+    }
+}

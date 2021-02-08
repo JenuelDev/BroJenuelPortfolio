@@ -1,0 +1,192 @@
+.about-me {
+    z-index: 5;
+    max-width: 1000px;
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    &.a-before-enter {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: 0.3s ease-in;
+    }
+
+    &.a-enter {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .about-me-inner {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+        margin: 20px 0px 0px;
+        gap: 10px;
+        list-style: none;
+
+        li {
+            font-family: var(--font-mono) !important;
+            font-size: 13px;
+            transition: 0.1s ease-in-out;
+            border: 1px solid var(--slate);
+            padding: 9px;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+
+            &:hover {
+                color: var(--primary) !important;
+                border: 1px solid var(--primary);
+            }
+        }
+
+        .a-before-enter {
+            opacity: 0;
+            transform: translateY(20px);
+            transition-property: opacity, transform;
+        }
+        .a-enter {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+    .about-me-photo {
+        position: relative;
+
+        .wrapper {
+            display: block;
+            position: relative;
+            border-radius: 10px;
+            background-color: var(--primary);
+            transition: var(--transition);
+
+            &::before,
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                transition: 0.3s;
+            }
+
+            &::before {
+                top: 0;
+                left: 0;
+                mix-blend-mode: screen;
+            }
+
+            &::after {
+                border: 2px solid var(--primary);
+                top: 20px;
+                left: 20px;
+                z-index: -1;
+            }
+
+            .photo {
+                border-radius: 10px;
+                height: 300px !important;
+                width: 300px !important;
+                mix-blend-mode: multiply;
+                filter: grayscale(100%) contrast(1);
+                transition: 0.3s !important;
+            }
+
+            &:hover {
+                .photo {
+                    mix-blend-mode: normal;
+                    filter: grayscale(50%);
+                }
+                &::after {
+                    top: 10px;
+                    left: 10px;
+                }
+            }
+        }
+    }
+
+    
+}
+
+// modal
+.modal-window {
+    .modal-window-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 0%;
+        width: 0%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 80;
+
+        &.show {
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .modal-window-content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 90;
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        .box {
+            max-width: 300px;
+            background-color: var(--background);
+            padding: 20px;
+            border-radius: 10px;
+
+            h1 {
+                margin: 10px 0;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: var(--primary);
+                font-size: 1.3rem;
+            }
+        }
+
+        &.show {
+            visibility: visible;
+        }
+    }
+}
+
+@media only screen and (max-width: 856px) {
+    .about-me {
+        .about-me-inner {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+
+            .about-me-photo {
+                order: 1;
+                align-self: center;
+            }
+            .about-me-text {
+                order: 2;
+                align-self: center;
+            }
+        }
+    }
+}

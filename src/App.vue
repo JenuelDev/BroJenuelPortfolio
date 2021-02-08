@@ -1,67 +1,76 @@
 <template>
-    <v-app>
+    <Overlay v-show="!$store.state.show">
         <Intro />
-        <NavigationBar />
-        <ThemeChanger />
-        <ResumeDownloader />
-        <main>
-            <vue-page-transition name="fade-in-up">
-                <router-view />
-            </vue-page-transition>
-        </main>
-        <SocialNetworkSite />
-        <Footer />
-    </v-app>
+    </Overlay>
+    <MobileNav />
+    <Header v-show="$store.state.show" />
+    <SocialMediaLinks v-show="$store.state.show" />
+    <main v-show="$store.state.show">
+        <router-view />
+    </main>
 </template>
 
 <script>
-import SocialNetworkSite from '@/components/social-media-links'
-import NavigationBar from './components/navigation-bar'
-import Footer from './components/footer'
-import ThemeChanger from './components/themeChanger'
-import ResumeDownloader from './components/resume-download'
-import Intro from './pages/intro'
+import SocialMediaLinks from "./components/social-media-links";
+import Header from "./components/Header";
+import Overlay from "./components/overlay";
+import Intro from "./views/Intro";
+import MobileNav from "./components/Header/MobileNav";
 
 export default {
-    name: 'App',
-    components: {
-        SocialNetworkSite,
-        NavigationBar,
-        Footer,
-        ThemeChanger,
-        ResumeDownloader,
-        Intro
+    components: { SocialMediaLinks, Header, Overlay, Intro, MobileNav },
+    created() {
+        if (localStorage.getItem("showedIntro") == "done") {
+            let ext = localStorage.getItem("expy") ? localStorage.getItem("expy"):'';
+
+            if (ext != "") {
+                let isExpire = parseInt(ext);
+                let dateNow = Date.now();
+                
+                if (isExpire > dateNow) {
+                    this.$store.state.show = true;
+                } else {
+                    this.$store.state.show = false;
+                }
+            }
+        }
     },
-    data: () => ({}),
-}
+};
 </script>
+
 <style lang="scss">
-main {
-    padding: 0px 150px;
-    margin: 0px auto;
-    width: 100%;
-    max-width: 1600px;
-    counter-reset: section 0;
-    margin-top: 100px;
-    margin-bottom: 200px;
-}
-@media only screen and (max-width: 1078px) {
-    main {
-        padding: 0px 90px;
-    }
-}
+  main {
+      margin: 0px auto;
+      max-width: 1600px;
+      counter-reset: section 0;
+      margin-top: 130px;
+      margin-bottom: 200px;
+  }
 
-@media only screen and (max-width: 768px) {
-    main {
-        margin-top: 50px;
-        padding: 0px 20px;
-    }
-}
+  @media only screen and (max-width: 1186px) {
+      main {
+          margin-top: 100px;
+          padding: 0px 110px;
+      }
+  }
 
-@media only screen and (max-width: 425px) {
-    main {
-        margin-top: 60px;
-        padding: 10px 10px 30px 10px;
-    }
-}
+  @media only screen and (max-width: 1050px) {
+      main {
+          margin-top: 80px;
+          padding: 0px 110px;
+      }
+  }
+
+  @media only screen and (max-width: 768px) {
+      main {
+          margin-top: 70px;
+          padding: 2px 20px;
+      }
+  }
+
+  @media only screen and (max-width: 425px) {
+      main {
+          padding: 10px 10px 30px 10px;
+      }
+  }
 </style>

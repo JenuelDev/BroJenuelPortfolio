@@ -1,6 +1,6 @@
 
 :root {
-    --black-shadow: 0 10px 30px -15px black;
+    
     --font-sans: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -8,6 +8,34 @@
     --fz-xs: 13px;
     --fz-xxl: 22px;
     --fz-lg: 18px;
+
+    // theme
+    --background: #0a192f;
+    --lightBackground: #112240;
+    --primary: #64ffda;
+    --liteprimary: #172a45;
+    --lightestPrimary: #303C55;
+    --slate: #8892b0;
+    --lightSlate: #a8b2d1;
+    --lightestSlate: #ccd6f6;
+    --white: #e6f1ff;
+    --secondary: #424242;
+    --accent: #82B1FF;
+    --error: #FF5252;
+    --info: #2196F3;
+    --success: #4CAF50;
+    --warning: #FFC107;
+    --black-shadow: 0 10px 30px -15px black;
+    --navy-shadow: rgba(2,12,27,1);
+
+    --nav-height: 100px;
+    --nav-scroll-height: 70px;
+    --border-radius: 4px;
+    --tab-height: 50px;
+    --tab-width: 120px;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --fz-xxl: 22px;
 }
 
 
@@ -15,7 +43,7 @@
 *,
 ::before,
 ::after {
-    font-family: Calibri, 'Trebuchet MS', sans-serif !important;
+    font-family: var(--font-mono);
     box-sizing: inherit;
 }
 
@@ -24,22 +52,25 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
-.highlight:hover {
-    color: var(--v-primary-base);
-}
 
-.v-application {
-    background-color: var(--v-background-base) !important;
-}
-.v-dialog {
-    background-color: var(--v-background-base);
+.highlight:hover {
+    color: var(--primary);
 }
 
 .cursor-pointer {
     cursor: pointer;
 }
-
-
-@import './styles/themes.scss';
+// components
 @import './styles/scrollbar.scss';
 @import './styles/body.scss';
+@import './styles/header.scss';
+@import './../components/GradientBorder/style.scss';
+@import './../components/social-media-links/style.scss';
+
+//css pages
+@import './../views/AboutMe/style.scss';
+@import './../views/CodeChallenge/style.scss';
+@import './../views/ContactMe/style.scss';
+@import './../views/MyExperience/style.scss';
+@import './../views/MyWork/my-work.scss';
+
