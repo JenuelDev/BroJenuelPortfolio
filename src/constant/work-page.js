@@ -1,7 +1,7 @@
 export default {
     title: "My Work",
     des:
-        "Showcasing web projects I made, some projects are made for a client. Built from the ground up to show my skills in front-end, back-end, and database development.",
+        "Showcasing web projects I made, some projects are made for a client. Built from the ground up to show my works in front-end and backend.",
     works: [
         {
             overline: "Documentation Project",
