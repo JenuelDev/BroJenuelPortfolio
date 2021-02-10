@@ -4,6 +4,25 @@ export default {
         "Showcasing web projects I made, some projects are made for a client. Built from the ground up to show my works in front-end and backend.",
     works: [
         {
+            overline: "Porfolio Project",
+            title: "Kate Awisan's Portfolio",
+            des: "A very simple responsive portfolio made for my client. Its a static site with a simple design, with image optimization to load large sized images, and responsive so that layout will look good on desktop and mobile.",
+            techs: ["vue-transition", "vue", "PWA"],
+            links: [
+                {
+                    link:
+                        "https://github.com/BroJenuel-Projects/kate-awisan",
+                    icon: "github"
+                },
+                {
+                    link: "https://kateawisan.ml/",
+                    icon: "link"
+                }
+            ],
+            imageLink: "https://kateawisan.ml/",
+            img: "https://i.ibb.co/94M74js/kateawisanprofile.png"
+        },
+        {
             overline: "Documentation Project",
             title: "Laravel MongoDB Documentation",
             des:
@@ -28,7 +47,7 @@ export default {
             title: "Portfolio",
             des:
                 "It's is a new cool look for my portfolio based on Brittany's design. I created Ground Up using the Technology Called Vue to Create This Portfolio.",
-            techs: ["vue", "vuetify", "vue2-transition"],
+            techs: ["vue","PWA"],
             links: [
                 {
                     link: "https://github.com/BroJenuel/jenuel-portfolio-v2",
