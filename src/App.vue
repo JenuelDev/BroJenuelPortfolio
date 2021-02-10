@@ -36,6 +36,22 @@ export default {
                 }
             }
         }
+        console.log("%cHey! Whats Up! \n%cLike to dig into the meaty bits of the website?\nThanks for looking! Hit me up on Twitter @BroJenuel!", "padding:10px;"+
+        "border-radius: 10px;"+
+        "color:#64ffda;"+
+        "font-family:'Ubuntu';"+
+        "display: block;"+
+        "font-weight:bold;"+
+        "font-size:48px;"+
+        "background:#0a192f;",
+        
+        "padding: 10px; "+
+        "border-radius:10px; "+
+        "color:#ccd6f6; "+
+        "font-family:'Ubuntu'; "+
+        "font-weight:100; "+
+        "font-size:24px; "+
+        "background:#0a192f;");
     },
 };
 </script>
