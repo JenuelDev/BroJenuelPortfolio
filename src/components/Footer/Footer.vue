@@ -1,6 +1,6 @@
 <template>
     <div v-scrollanimation class="my-footer">
-        <router-link to="/">{{new Date().getFullYear()}} <Icon class="icon-highlight" name="vue" :size="20"/> Jenuel Ganawed</router-link>
+        <a href="https://github.com/BroJenuel/jenuel-portfolio-v2" target="_blank" rel="noreferrer">{{new Date().getFullYear()}} <Icon class="icon-highlight" name="vue" :size="20"/> Jenuel Ganawed</a>
     </div>
 </template>
 <script>
