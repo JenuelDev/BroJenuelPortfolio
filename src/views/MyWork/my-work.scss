@@ -191,6 +191,9 @@
 
                 &:hover {
                     background-color: rgba(0, 0, 0, 0);
+                    .image-wrapping {
+                        filter: grayscale(0%) contrast(1) brightness(90%);
+                    }
                 }
             }
         }

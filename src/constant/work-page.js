@@ -20,7 +20,7 @@ export default {
                 }
             ],
             imageLink: "https://kateawisan.ml/",
-            img: "https://i.ibb.co/94M74js/kateawisanprofile.png"
+            img: "https://i.ibb.co/X5dHcWS/kates-port-folio.png"
         },
         {
             overline: "Documentation Project",
@@ -40,7 +40,7 @@ export default {
                 }
             ],
             imageLink: "https://laravel-mongodb.netlify.app/",
-            img: "https://i.ibb.co/NWMHjGx/laravelmongodb.png"
+            img: "https://i.ibb.co/L8qNGch/laravel-mongodb-documentation.png"
         },
         {
             overline: "Portfolio Project",
@@ -59,7 +59,7 @@ export default {
                 }
             ],
             imageLink: "https://jenuelganawed.ml",
-            img: "https://i.ibb.co/yWW9Zy3/My-Port-Folio.png"
+            img: "https://i.ibb.co/7pNpm2z/my-portfolio.png"
         },
         {
             overline: "Search Engine Project",
@@ -78,7 +78,7 @@ export default {
                 }
             ],
             imageLink: "https://www.getgifs.ml/",
-            img: "https://i.ibb.co/rMqXVJP/getgifs.png"
+            img: "https://i.ibb.co/940jKmq/getgif.png"
         }
     ]
 };
