@@ -12,32 +12,22 @@
                     question or want to say hi, I'll try my best to get back to
                     you! You can check my social profile below.
                 </p>
-                <GradientBorder
-                    @click="sendMeMessage()"
-                    aria-label="Send Message"
-                    style="margin-top: 30px; width: 300px; font-size: 1.5rem !important; font-weight: 900;"
-                >
-                    <p class="padding: 20px;">Send me Message!</p>
-                </GradientBorder>
             </div>
+            <Form />
         </div>
     </section>
 </template>
 <script>
 import { socialMediaLinks } from "./../../constant/social-network";
 import Icon from "./../../components/Icons";
-import GradientBorder from './../../components/GradientBorder'
+import Form from "./../../components/Form"
+
 export default {
-    components: { Icon, GradientBorder},
+    components: { Icon, Form},
     data: () => {
         return {
             socials: socialMediaLinks,
         };
-    },
-    methods: {
-        sendMeMessage() {
-            window.location.href = "mailto:jenuelganawed936@gmail.com";
-        },
     },
 };
 </script>

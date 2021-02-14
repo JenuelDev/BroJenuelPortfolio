@@ -3,7 +3,6 @@ import Intro from './../views/AboutMe/AboutMe.vue'
 import MyExperience from './../views/MyExperience'
 import MyWork from './../views/MyWork'
 import CodeChallenge from './../views/CodeChallenge'
-import ContactMe from './../views/ContactMe'
 import PageNotFound from './../views/PageNotFound'
 
 const routes = [
@@ -34,7 +33,7 @@ const routes = [
     {
         path: '/contact',
         name: "Contact",
-        component: ContactMe
+        component: () => import('./../views/ContactMe')
     },
     {
         path: '/:pathMatch(.*)*',

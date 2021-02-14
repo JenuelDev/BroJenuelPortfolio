@@ -1,0 +1,55 @@
+.contact-form {
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .alert {
+            padding: 10px;
+            opacity: 0.8;
+            border-radius: 5px;
+            h1, p {
+                margin: 5px;
+                color: var(--background);
+            }
+        }
+
+        .show-error {
+            background-color: var(--error);
+        }
+        
+        .show-success {
+            background-color: var(--primary);
+        }
+
+        .flex {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            gap: 15px;
+            input {
+                width: 100%;
+            }
+        }
+        input, textarea {
+            border-radius: 3px;
+            border: 1px solid var(--lightBackground);
+            padding: 15px 30px;
+            background-color: var(--lightBackground);
+            color: var(--slate);
+            &::placeholder {
+                color: var(--slate);
+            }
+
+            &:focus {
+                border-bottom: 1px solid var(   --primary-darker);
+            }
+
+            
+        }
+        textarea {
+            resize: vertical;
+        }
+    }
+    
+}
