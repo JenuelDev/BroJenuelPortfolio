@@ -7,9 +7,9 @@
         <div>
             <div class="form" style="max-width: 800px">
                 <p class="header-des">
-                    Hi! I am an open book, and is looking for opportunities. Whether you have a
-                    question or want to say hi, I'll try my best to get back to
-                    you! by sending me message through this form bellow.
+                    I am interested in freelance opportunities, it can be very simple or
+                    large projects. However, if you have other request or questions, don't hesitate
+                    to contact me using the form bellow.
                 </p>
             </div>
             <Form />

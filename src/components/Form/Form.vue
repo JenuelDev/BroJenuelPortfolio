@@ -14,7 +14,7 @@
                 <input v-model="form.email" type="email" placeholder="Email">
             </div>
             <input v-model="form.subject" type="text" placeholder="Subject">
-            <textarea v-model="form.message" name="msg" placeholder="Message"></textarea>
+            <textarea v-model="form.message" name="msg" placeholder="Message" rows="8"></textarea>
             <GradientBorder
                 @click="sendEmail()"
                 aria-label="Send Message"
