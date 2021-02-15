@@ -7,10 +7,9 @@
         <div>
             <div class="form" style="max-width: 800px">
                 <p class="header-des">
-                    Although I'm not currently looking for any new
-                    opportunities, my inbox is always open. Whether you have a
+                    Hi! I am an open book, and is looking for opportunities. Whether you have a
                     question or want to say hi, I'll try my best to get back to
-                    you! You can check my social profile below.
+                    you! by sending me message through this form bellow.
                 </p>
             </div>
             <Form />
