@@ -55,6 +55,26 @@
                         Contact Me
                     </div>
                 </li>
+                <li
+                    v-scrollanimation
+                    style="transition-delay: 700ms"
+                >
+                    <GradientBorder
+                        v-scrollanimation
+                        style="width: 150px;"
+                        :withBg="false"
+                    >
+                        <a
+                            href="https://github.com/BroJenuel/BroJenuel/raw/master/resume/JenuelGanawed-2021.pdf"
+                            target="_blank"
+                            class="resume-button"
+                            rel="noopener"
+                        >
+                            <Icon name="file" :size="15" />
+                            Resume
+                        </a>
+                    </GradientBorder>
+                </li>
             </ul>
         </div>
         <div class="nav-back" :class="{'show-nav': $store.state.navShow}" @click="$store.state.navShow = false"></div>
@@ -62,8 +82,9 @@
 </template>
 <script>
 import Icon from './../Icons'
+import GradientBorder from "./../GradientBorder";
 export default {
-    components: {Icon}
+    components: {Icon,GradientBorder}
 }
 </script>
 <style lang="scss">
