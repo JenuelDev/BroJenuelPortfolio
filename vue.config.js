@@ -4,7 +4,8 @@ module.exports = {
         themeColor: "#64ffda",
         msTileColor: "#0a192f",
         workboxOptions: {
-            skipWaiting: true
+            skipWaiting: true,
+            exclude: [/_redirects/]
         }
     }
 };

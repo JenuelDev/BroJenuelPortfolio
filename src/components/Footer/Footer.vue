@@ -1,12 +1,33 @@
 <template>
     <div v-scrollanimation class="my-footer">
-        <a href="https://github.com/BroJenuel/jenuel-portfolio-v2" target="_blank" rel="noreferrer">{{new Date().getFullYear()}} <Icon class="icon-highlight" name="vue" :size="20"/> Jenuel Ganawed</a>
+        <a
+            href="https://github.com/BroJenuel/jenuel-portfolio-v2"
+            target="_blank"
+            rel="noreferrer"
+            >{{ new Date().getFullYear() }}
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-copyright"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="color: var(--primary)"
+            >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M14.5 9a3.5 4 0 1 0 0 6"></path>
+            </svg>
+            Jenuel Ganawed</a
+        >
     </div>
 </template>
 <script>
-import Icon from './../Icons'
 export default {
-    name: "Footer",
-    components: {Icon}
-}
+    name: "Footer"
+};
 </script>
