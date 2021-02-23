@@ -18,6 +18,7 @@
             <GradientBorder
                 @click="sendEmail()"
                 aria-label="Send Message"
+                :withBg="false"
                 style="margin-top: 5px; width: 150px; font-size: 1.1rem !important; font-weight: 900;"
             >
                 <p style="margin: 0;">{{sending ? "Sending..." : "Send"}}</p>

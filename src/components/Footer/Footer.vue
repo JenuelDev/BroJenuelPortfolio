@@ -16,7 +16,6 @@
                 fill="none"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                style="color: var(--primary)"
             >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <circle cx="12" cy="12" r="9"></circle>
