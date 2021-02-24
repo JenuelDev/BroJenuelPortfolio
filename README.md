@@ -1,24 +1,5 @@
-# jenuelganawed
+# HI! 🖐 My Name is ***Jenuel Ganawed***
+I'm glad that you visited my repo, this project is actually a design that made by [Brittany Chiang's](https://onepagelove.com/brittany-chiang) design, you should check her out. Since I am into VueJs I created ground up based on her design using VueJs 3.
 
-## Project setup
-```
-yarn install
-```
+Site Link: https://www.jenuelganawed.ml
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
