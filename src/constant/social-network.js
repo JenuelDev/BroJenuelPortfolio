@@ -1,7 +1,7 @@
 
 export const socialMediaLinks = [{
         icon: 'facebook',
-        link: 'https://www.facebook.com/broJenuel/',
+        link: 'https://www.facebook.com/ganawed/',
     },
     {
         icon: 'youtube',
