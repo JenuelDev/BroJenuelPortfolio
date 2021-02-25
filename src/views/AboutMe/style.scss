@@ -107,9 +107,10 @@
             }
 
             &:hover {
+                background-color: rgba(0, 0, 0, 0);
                 .photo {
                     mix-blend-mode: normal;
-                    filter: grayscale(50%);
+                    filter: grayscale(0%) contrast(1) brightness(90%);
                 }
                 &::after {
                     top: 10px;

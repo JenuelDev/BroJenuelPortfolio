@@ -52,9 +52,8 @@
                     >
                         <div class="photo-front"></div>
                         <img
-                            loading="lazy"
-                            src="https://i.ibb.co/7kmD65f/profile.jpg"
-                            alt=""
+                            src="https://i.ibb.co/kmCTWf7/profile.jpg"
+                            alt="Jenuel Ganawed - Profile Picture"
                             width="300px"
                             height="300px"
                         />
