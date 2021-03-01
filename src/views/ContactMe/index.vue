@@ -6,8 +6,7 @@
         <div>
             <div class="form" style="max-width: 800px">
                 <p class="header-des">
-                    I am interested in freelance opportunities, it can be very simple to medium projects but not very large project.
-                    However, if you have other request or questions, don't hesitate
+                    I am currently looking for Job. However, if you have other request or questions, don't hesitate
                     to contact me using the form bellow.
                 </p>
             </div>
