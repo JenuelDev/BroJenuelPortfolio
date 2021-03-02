@@ -75,6 +75,13 @@
                         </a>
                     </GradientBorder>
                 </li>
+                <li>
+                    <ul class="social-medias-in-nav">
+                        <li v-for="social in SocialNetwork" :key="social.link">
+                            <Icon :name="social.icon" :size="30" />
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <div class="nav-back" :class="{'show-nav': $store.state.navShow}" @click="$store.state.navShow = false"></div>
@@ -83,8 +90,12 @@
 <script>
 import Icon from './../Icons'
 import GradientBorder from "./../GradientBorder";
+import { socialMediaLinks } from "./../../constant/social-network"
 export default {
-    components: {Icon,GradientBorder}
+    components: {Icon,GradientBorder},
+    computed: {
+        SocialNetwork: () => socialMediaLinks
+    }
 }
 </script>
 <style lang="scss">
@@ -142,6 +153,15 @@ export default {
                 }
             }
         }
+
+        ul.social-medias-in-nav {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            visibility: hidden;
+        }
     }
     .nav-back {
         background-color: rgba(0, 0, 0, 0.4);
@@ -158,12 +178,26 @@ export default {
         }
 
     }
+    
 }
+
+
 @media only screen and (max-width: 1050px) {
     .nav-mobile {
         display: block;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .nav-mobile {
+        .nav-front {
+            ul.social-medias-in-nav {
+                visibility: visible;
+            }
+        }
+    }
+}
+
 
 @media only screen and (max-width: 375px) {
     .nav-mobile {

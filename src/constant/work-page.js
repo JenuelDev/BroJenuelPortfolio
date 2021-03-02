@@ -1,27 +1,8 @@
 export default {
     title: "My Work",
     des:
-        "Showcasing web projects I made, some projects are made for a client. Built from the ground up to show my works in front-end and backend.",
+        "Showcasing projects I made, some projects are made for public use and some are made for a client.",
     works: [
-        // {
-        //     overline: "Porfolio Project",
-        //     title: "Kate Awisan's Portfolio",
-        //     des: "A very simple responsive portfolio made for my client. Its a static site with a simple design, with image optimization to load large sized images, and responsive so that layout will look good on desktop and mobile.",
-        //     techs: ["vue-transition", "vue", "PWA"],
-        //     links: [
-        //         {
-        //             link:
-        //                 "https://github.com/BroJenuel-Projects/kate-awisan",
-        //             icon: "github"
-        //         },
-        //         {
-        //             link: "https://kateawisan.ml/",
-        //             icon: "link"
-        //         }
-        //     ],
-        //     imageLink: "https://kateawisan.ml/",
-        //     img: "https://i.ibb.co/X5dHcWS/kates-port-folio.png"
-        // },
         {
             overline: "Documentation Project",
             title: "Laravel MongoDB Documentation",

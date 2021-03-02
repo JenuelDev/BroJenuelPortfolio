@@ -1,15 +1,13 @@
 export default {
     icon: '',
     present: true,
-    position: 'Software/Web Dev.',
+    position: 'Software/Web Developer',
     tab: 'Utalk Phil.',
     company: 'Utalk Philippines',
     workStart: 'Sept. 2019',
     workUntil: 'Present',
     des: [
-        "Full-time software developer",
-        "Worked with a variety of tech's. such as Vue, Angular, CodeIgniter, Lumen, Ruby on Rails, MySQL, MongoDB",
-        "Maintaining the system of the company"
+        "Maintaining Systems and services to lower the rate of system errors or bugs. To manage and create front-end and back-end codes/programs, we are also engaged in different kinds of frameworks and tools like VueJs, AngularJs, Codeigniter, Lumen/Laravel, and Ruby on Rails. For the Database, we manage MySQL and Mongo Database."
     ],
     url: "https://www.facebook.com/utalkphilippines"
 }
