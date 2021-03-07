@@ -38,16 +38,6 @@
                 <li
                     v-scrollanimation
                     style="transition-delay: 550ms"
-                    @click="$router.push({ name: 'CodeChallenge' }); $store.state.navShow = false"
-                >
-                    <div :class="{ active: $route.name == 'CodeChallenge' }">
-                        <Icon name="folders" :size="15" />
-                        Code Challenge
-                    </div>
-                </li>
-                <li
-                    v-scrollanimation
-                    style="transition-delay: 700ms"
                     @click="$router.push({ name: 'Contact' }); $store.state.navShow = false"
                 >
                     <div :class="{ active: $route.name == 'Contact' }">

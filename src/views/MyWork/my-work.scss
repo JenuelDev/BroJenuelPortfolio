@@ -36,23 +36,23 @@
 
         .left-content {
             position: relative;
-            grid-area: 1 / 1 / 1 / 7;
+            grid-area: 2 / 2 / 1 / 7;
         }
 
         .right-image {
             position: relative;
-            grid-area: 1/6/-1/-1;
+            grid-area: 1/6/-1/-2;
         }
 
         .right-content {
             position: relative;
-            grid-area: 1/7/-1/-1;
+            grid-area: 1/7/-1/-2;
             text-align: right;
         }
 
         .left-image {
             position: relative;
-            grid-area: 2 / 1 / 1 / 8;
+            grid-area: 2 / 2 / 1 / 8;
         }
 
         .work-info-details {
@@ -70,7 +70,7 @@
 
             .info-title {
                 margin: 0px 0px 20px;
-                font-size: clamp(24px, 5vw, 28px);
+                font-size: clamp(18px, 5vw, 23px);
                 color: var(--lightestSlate) !important;
             }
 

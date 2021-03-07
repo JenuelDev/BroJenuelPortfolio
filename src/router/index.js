@@ -2,7 +2,6 @@ import { createRouter, createWebHashHistory } from "vue-router";
 import Intro from "./../views/AboutMe/AboutMe.vue";
 import MyExperience from "./../views/MyExperience";
 import MyWork from "./../views/MyWork";
-import CodeChallenge from "./../views/CodeChallenge";
 import PageNotFound from "./../views/PageNotFound";
 
 const routes = [
@@ -24,11 +23,6 @@ const routes = [
         path: "/work",
         name: "Work",
         component: MyWork
-    },
-    {
-        path: "/codechallenge",
-        name: "CodeChallenge",
-        component: CodeChallenge
     },
     {
         path: "/contact",

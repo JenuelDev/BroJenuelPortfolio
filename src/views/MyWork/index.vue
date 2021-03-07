@@ -1,5 +1,5 @@
 <template>
-    <section v-scrollanimation class="my-work">
+    <section v-scrollanimation class="my-work" style="margin-bottom: 80px;">
             <h2
                 class="numbered-header"
                 style="margin: 10px 0px -10px"
@@ -67,13 +67,15 @@
                 </template>
             </div>
     </section>
+    <CodeChallenge />
 </template>
 <script>
+import CodeChallenge from './../CodeChallenge/index.vue'
 import Icon from './../../components/Icons'
 import Work from './../../constant/work-page'
 export default {
     name: "Work",
-    components: {Icon},
+    components: {Icon, CodeChallenge},
     data: () => {
         return {
             works: Work

@@ -33,24 +33,12 @@
                     >
                         <div :class="{ active: $route.name == 'Work' }">
                             <Icon name="code" :size="15" />
-                            Work
+                            Works
                         </div>
                     </li>
                     <li
                         v-scrollanimation
                         style="transition-delay: 550ms"
-                        @click="$router.push({ name: 'CodeChallenge' })"
-                    >
-                        <div
-                            :class="{ active: $route.name == 'CodeChallenge' }"
-                        >
-                            <Icon name="folders" :size="15" />
-                            Code Challenge
-                        </div>
-                    </li>
-                    <li
-                        v-scrollanimation
-                        style="transition-delay: 700ms"
                         @click="$router.push({ name: 'Contact' })"
                     >
                         <div :class="{ active: $route.name == 'Contact' }">
