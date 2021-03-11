@@ -27,5 +27,6 @@ export default {
     react: '<path d="M14.5 7.584c0 1.657-3.134 3-7 3s-7-1.343-7-3 3.134-3 7-3 7 1.343 7 3z" stroke="currentColor"></path><path d="M4.166 13.739c1.457.79 4.13-1.327 5.972-4.726 1.841-3.4 2.153-6.795.696-7.584-1.457-.79-4.13 1.327-5.972 4.726-1.841 3.4-2.153 6.795-.696 7.584z" stroke="currentColor"></path><path d="M10.834 13.739c-1.457.79-4.13-1.327-5.972-4.726-1.841-3.4-2.153-6.795-.696-7.584 1.457-.79 4.13 1.327 5.972 4.726 1.841 3.4 2.153 6.795.696 7.584z" stroke="currentColor"></path><path d="M6.5 7.584a1 1 0 102 0 1 1 0 00-2 0z" stroke="currentColor"></path>',
     file: '<path d="M5 7.5l2 2 3.5-4m0-5h-8a1 1 0 00-1 1v12a1 1 0 001 1h10a1 1 0 001-1v-10l-3-3z" stroke="currentColor"></path>',
     menu: '<path d="M0 5.5h15m-15-4h15m-15 8h15m-15 4h15" stroke="currentColor"></path>',
-    x: '<path d="M4.5 4.5l6 6m-6 0l6-6m-3 10a7 7 0 110-14 7 7 0 010 14z" stroke="currentColor"></path>'
+    x: '<path d="M4.5 4.5l6 6m-6 0l6-6m-3 10a7 7 0 110-14 7 7 0 010 14z" stroke="currentColor"></path>',
+    arrowRight: `<path d="M13.5 7.5l-4-4m4 4l-4 4m4-4H1" stroke="currentColor"></path>`
 }

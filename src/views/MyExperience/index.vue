@@ -37,10 +37,10 @@
                                 <a :href="exp.url" target="_blank" rel="noopener">{{exp.company}}</a>
                             </span>
                         </h3>
-                        <p class="range">{{exp.workStart}} - {{exp.workUntil}}</p>
+                        <p class="range" v-html="exp.workStart+' - '+ exp.workUntil"></p>
                         <div>
                             <ul>
-                                <li v-for="d in exp.des" :key="d">{{d}}</li>
+                                <li v-for="d in exp.des" :key="d"><p v-html="d"></p></li>
                             </ul>
                         </div>
                     </div>

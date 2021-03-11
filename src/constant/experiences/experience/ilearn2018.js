@@ -2,7 +2,7 @@ export default {
     icon: '',
     position: 'Designer and Web Programmer',
     tab: 'iLearn',
-    company: 'iLearn Skills Development Academy',
+    company: 'iLearn',
     workStart: 'Aug. 2018',
     workUntil: 'Dec. 2018',
     des: [

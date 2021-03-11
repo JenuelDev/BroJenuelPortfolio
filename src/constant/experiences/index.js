@@ -7,10 +7,11 @@ const webinarinc = {
     position: 'Web Developer',
     tab: 'Webinarinc',
     company: 'Webinarinc',
-    workStart: 'March. 2021',
-    workUntil: 'Present',
+    workStart: 'Mar. 2021',
+    workUntil: '<span class="present-work">Present</span>',
     des: [
-        "Full Time Web Developer at webinarinc. I believe it is the best place to work with."
+        "Full Time <b>Web Developer</b> at webinarinc.",
+        "<b>About <a href='https://webinarinc.com/about-us/'>Webinarinc</a>:</b> With a passion for providing industry-leading automotive sales training and innovative tools – Webinarinc was born! Founded in 2015, Webinarinc takes decades of experience in the automotive industry and translates it into training and tools that provide the insights, tips and techniques that allow dealerships across the United States to stand at the forefront of their marketplace."
     ],
     url: "https://webinarinc.com/"
 }

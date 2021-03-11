@@ -1,7 +1,7 @@
 <template>
     <div>
         <section class="intro">
-            <h1 v-scrollanimation style="transition-delay: 100ms"><span>👋</span>Howdy! my name is</h1>
+            <h1 v-scrollanimation style="transition-delay: 100ms"><span>👋</span>Hi! my name is</h1>
             <h2 v-scrollanimation style="transition-delay: 250ms">
                 {{ name }}
             </h2>
@@ -14,7 +14,14 @@
                     style="margin-top: 30px; width: 300px; font-size: 1.5rem !important; font-weight: 900;"
                     class="go-button"
                 >
-                    <p class="padding: 20px;">Lets Go!</p>
+                    <p class="padding: 20px;" style="
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                    ">
+                        <span>CONTINUE</span>
+                        <Icon class="arrow-icon" name="arrowRight" :size="24"/>
+                    </p>
                 </GradientBorder>
             </div>
         </section>
@@ -23,11 +30,11 @@
 
 <script>
 import GradientBorder from "./../../components/GradientBorder";
-
+import Icon from './../../components/Icons'
 export default {
     name: "Intro",
     components: {
-        GradientBorder,
+        GradientBorder, Icon
     },
     data: () => {
         return {
@@ -104,11 +111,29 @@ export default {
     }
 
     .go-button {
+        
         &:hover {
             p {
                 color: var(--primary);
             }
+
+            .arrow-icon {
+                transition: 0.2s;
+                animation: sigways 1s infinite;
+            }
         }
     }
+}
+
+@keyframes sigways {
+  0% {
+    transform:translateX(0px);
+  }
+  50% {
+      transform:translateX(20px);
+  }
+  100% {
+    transform:translateX(0px);
+  }
 }
 </style>

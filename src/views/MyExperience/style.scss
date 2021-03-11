@@ -108,6 +108,10 @@
                 margin-top: 0;
                 color: var(--light-slate);
                 font-size: var(--fz-xs);
+                .present-work {
+                    color: var(--primary);
+                    font-weight: 800;
+                }
             }
             ul {
                 padding: 0px;
@@ -120,6 +124,13 @@
                     padding-left: 30px;
                     margin-bottom: 10px;
                     font-size: 0.9rem;
+
+                    p {
+                        margin: 0;
+                        b {
+                            font-style: italic;
+                        }
+                    }
 
                     &::before {
                         content: "▹";

@@ -13,7 +13,7 @@ export default {
     },
     props: {
         name: {type: String},
-        size: {type: Number}
+        size: {type: Number, default: 24}
     },
     methods: {
         getIcon(name) {

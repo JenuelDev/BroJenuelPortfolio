@@ -2,7 +2,7 @@ export default {
     icon: '',
     position: 'Web Developer',
     tab: 'Dap-ayan',
-    company: 'Dapayan Eatery La Trinidad',
+    company: 'Dap-ayan',
     workStart: 'Aug. 2018',
     workUntil: 'May 2019',
     des: [
