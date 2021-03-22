@@ -62,6 +62,9 @@
                         Resume
                     </a>
                 </GradientBorder>
+                <div>
+                    <ThemeChanger />
+                </div>
             </div>
             <div class="show-mobile-nav-but">
                 <Icon name="menu" :size="30" @click="$store.state.navShow = true" style="margin-right: 20px;"/>
@@ -71,11 +74,12 @@
 </template>
 
 <script>
+import ThemeChanger from './../themeChanger/themeChanger'
 import Icon from "./../../components/Icons";
 import GradientBorder from "./../GradientBorder";
 export default {
     name: "Header",
-    components: { Icon, GradientBorder },
+    components: { Icon, GradientBorder, ThemeChanger },
     data() {
         return {
             scroll: 0,

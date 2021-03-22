@@ -29,12 +29,12 @@
         width: calc(100% + var(--borderWidth) * 2);
         background: linear-gradient(
             60deg,
-            #ef4e7b,
-            #a166ab,
-            #5073b8,
-            #1098ad,
-            #07b39b,
-            #6fba82
+            var(--linear-1),
+            var(--linear-2),
+            var(--linear-3),
+            var(--linear-4),
+            var(--linear-5),
+            var(--linear-6),
         );
         border-radius: calc(2 * var(--borderWidth));
         z-index: -1;

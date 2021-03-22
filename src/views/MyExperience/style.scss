@@ -43,7 +43,7 @@
                     align-items: center;
                     height: var(--tab-height);
                     padding: 0px 20px 2px;
-                    border-left: 2px solid var(--lightest-navy);
+                    border-left: 2px solid var(--lightBackground);
                     background-color: transparent;
                     color: var(--slate);
                     font-family: var(--font-mono);
@@ -54,7 +54,7 @@
                 }
 
                 &.active {
-                    background-color: var(--light-navy);
+                    background-color: var(--lightBackground);
                     div {
                         color: var(--primary);
                     }
@@ -62,7 +62,7 @@
                 }
 
                 &:hover {
-                    background-color: var(--light-navy);
+                    background-color: var(--lightBackground);
                 }
             }
 

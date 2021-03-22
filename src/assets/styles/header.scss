@@ -8,7 +8,7 @@
     backdrop-filter: blur(10px);
     transition: var(--transition);
     transform: translateY(0px);
-    background-color: rgba(10, 25, 47, 0.85);
+    background-color: var(--nav-bg);
     height: var(--nav-height);
     filter: none !important;
     pointer-events: auto !important;
