@@ -1,9 +1,8 @@
 <template>
     <div v-scrollanimation class="my-footer">
-        <a
-            href="https://github.com/BroJenuel/jenuel-portfolio-v2"
-            target="_blank"
-            rel="noreferrer"
+        <div
+            class="footer-toggle-link"
+            @click="openSite('https://github.com/BroJenuel/jenuel-portfolio-v2')"
             >{{ new Date().getFullYear() }}
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -22,11 +21,16 @@
                 <path d="M14.5 9a3.5 4 0 1 0 0 6"></path>
             </svg>
             Jenuel Ganawed
-        </a>
+        </div>
     </div>
 </template>
 <script>
 export default {
-    name: "Footer"
+    name: "Footer",
+    methods: {
+        openSite(site) {
+            window.open(site,'_blank')
+        }
+    }
 };
 </script>

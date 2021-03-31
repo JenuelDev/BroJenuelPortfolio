@@ -6,7 +6,8 @@
     height: 100px;
     align-items: center;
 
-    a {
+    .footer-toggle-link {
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
