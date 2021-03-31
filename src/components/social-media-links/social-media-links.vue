@@ -1,21 +1,22 @@
 <template>
   <div class="social-network">
-    <div class="social-media social-meida-orientation social-media-placement">
+    <div class="social-media social-media-orientation social-media-placement">
       <ul v-scrollanimation class="social-media-list">
         <li v-for="link in links" :key="link.link">
-          <a
-            :href="link.link"
+          <div
+            @click="openSite(link.link)"
+            class="a-link"
             target="_blank"
             rel="noreferrer"
           >
             <Icon :name="link.icon" :size="25"/>
-          </a>
+          </div>
         </li>
       </ul>
     </div>
-    <div v-scrollanimation class="email-media social-meida-orientation social-media-placement">
+    <div v-scrollanimation class="email-media social-media-orientation social-media-placement">
       <div  class="email-media-link">
-        <a :href="'mailto:' + email">{{ email }}</a>
+        <div class="mail-link" @click="$router.push('/contact')">{{ email }}</div>
       </div>
     </div>
   </div>
@@ -32,6 +33,11 @@ export default {
       email: email,
       show: true,
     };
+  },
+  methods: {
+    openSite(site) {
+      window.open(site,'_blank')
+    }
   }
 };
 </script>

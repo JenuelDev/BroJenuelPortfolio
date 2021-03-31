@@ -1,5 +1,5 @@
 .social-network {
-    .social-meida-orientation {
+    .social-media-orientation {
         display: flex;
         flex-direction: column;
         -webkit-box-align: center;
@@ -36,7 +36,8 @@
 
                 &:hover {
                     transform: translate(0px, -4px);
-                    a {
+                    .a-link {
+                        cursor: pointer;
                         color: var(--primary) !important;
                     }
                 }
@@ -76,7 +77,7 @@
             
 
 
-            a {
+            .mail-link {
                 opacity: 0.7;
                 margin: 20px auto;
                 padding: 10px;
@@ -90,6 +91,7 @@
                 color: inherit;
                 position: relative;
                 transition: 0.2s ease-in-out !important;
+                cursor: pointer;
                 color: var(--lightSlate);
 
                 &:hover {
