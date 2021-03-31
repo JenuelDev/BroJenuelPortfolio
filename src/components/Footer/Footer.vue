@@ -21,8 +21,8 @@
                 <circle cx="12" cy="12" r="9"></circle>
                 <path d="M14.5 9a3.5 4 0 1 0 0 6"></path>
             </svg>
-            Jenuel Ganawed</a
-        >
+            Jenuel Ganawed
+        </a>
     </div>
 </template>
 <script>

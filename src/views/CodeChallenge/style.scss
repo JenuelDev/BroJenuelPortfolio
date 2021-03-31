@@ -64,10 +64,13 @@
                             }
                         }
                         .item-links {
+                            display: flex;
                             margin-right: -15px;
                             color: var(--lightSlate) !important;
-                            a {
+
+                            .item-links-toggle {
                                 padding: 0px 5px;
+                                cursor: pointer;
                                 .icon {
                                     color: var(--lightSlate) !important;
                                 }

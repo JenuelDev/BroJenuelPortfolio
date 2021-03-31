@@ -31,19 +31,18 @@
                                         </svg>
                                     </div>
                                     <div class="item-links">
-                                        <a
+                                        <div
+                                            class="item-links-toggle"
                                             v-for="link in code.links"
                                             :key="link.link"
-                                            :href="link.link"
-                                            target="_blank"
-                                            rel="noreferrer"
+                                            @click="openSite(link.link)"
                                         >
                                             <Icon
                                                 class="icon"
                                                 :name="link.icon"
                                                 :size="25"
                                             />
-                                        </a>
+                                        </div>
                                     </div>
                                 </div>
                                 <h3 class="item-title">{{ code.title }}</h3>
@@ -74,5 +73,10 @@ export default {
             CodeChallenge: CodeChallenge,
         };
     },
+    methods: {
+        openSite(site) {
+            window.open(site, '_blank')
+        }
+    }
 };
 </script>

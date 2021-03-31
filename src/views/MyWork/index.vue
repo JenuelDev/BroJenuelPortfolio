@@ -39,15 +39,15 @@
                                         i % 2 == 0 ? '' : 'work-links-right'
                                     "
                                 >
-                                    <a
+                                    <div
                                         v-for="link in work.links"
+                                        class="work-links-toggle"
                                         :key="link.name"
-                                        :href="link.link"
-                                        target="_blank"
                                         aria-label="GitHUB Link"
-                                        rel="noreferrer"
-                                        ><Icon :name="link.icon" :size="25"/></a
+                                        @click="openSite(link.link)"
                                     >
+                                        <Icon class="highlight-hover" :name="link.icon" :size="25"/>
+                                    </div>
                                 </div>
                             </div>
                             <div
@@ -56,12 +56,12 @@
                                     i % 2 == 0 ? 'right-image' : 'left-image'
                                 "
                             >
-                                <a :href="work.imageLink" target="_blank" rel="noopener">
+                                <div class="work-info-image-link" @click="openSite(work.imageLink)">
                                     <div class="image-wrapping">
                                         <div class="front-filter"></div>
                                         <img loading='lazy' :src="work.img" alt="" />
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                 </template>
@@ -87,6 +87,11 @@ export default {
     computed: {
         myWorks() {
             return this.$store.state.workPage.works
+        }
+    },
+    methods: {
+        openSite(site) {
+            window.open(site,'_blank')
         }
     }
 }

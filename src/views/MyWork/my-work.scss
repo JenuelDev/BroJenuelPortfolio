@@ -12,7 +12,7 @@
         opacity: 1;
         transform: translateY(0);
     }
-    
+
     .work-info {
         visibility: visible;
         opacity: 1;
@@ -28,7 +28,7 @@
             transform: translateY(20px);
             transition: 0.2s ease-in-out 400ms;
         }
-    
+
         &.a-enter {
             opacity: 1;
             transform: translateY(0);
@@ -121,8 +121,10 @@
                 margin-top: 10px;
                 margin-left: -10px;
                 color: var(--lightestSlate);
-                a {
+                .work-links-toggle {
                     padding: 10px;
+                    cursor: pointer;
+
                     .highlight-hover {
                         color: var(--slate) !important;
                     }
@@ -144,15 +146,16 @@
 
         .work-info-image {
             transition: var(--transition);
-            a {
+            .work-info-image-link {
                 width: 100%;
                 background-color: var(--primary);
                 border-radius: var(--border-radius);
                 vertical-align: middle;
+                cursor: pointer;
                 transition: 0.25s !important;
 
                 &::before {
-                    content: '';
+                    content: "";
                     position: absolute;
                     width: 100%;
                     height: 100%;

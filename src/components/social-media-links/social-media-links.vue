@@ -6,8 +6,6 @@
           <div
             @click="openSite(link.link)"
             class="a-link"
-            target="_blank"
-            rel="noreferrer"
           >
             <Icon :name="link.icon" :size="25"/>
           </div>
