@@ -3,7 +3,7 @@ export default {
     present: true,
     position: 'Software/Web Developer',
     tab: 'Utalk',
-    company: 'Utalk',
+    company: 'Beijing Bangnishuo Internet Education Technology LTD-Philippines (Utalk)',
     workStart: 'Sept. 2019',
     workUntil: 'April 2021',
     des: [
