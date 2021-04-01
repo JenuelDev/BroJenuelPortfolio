@@ -4,7 +4,7 @@
             <div class="close-button">
                 <Icon name="x" :size="30" @click="$store.state.navShow = false"/>
             </div>
-            <ul style="margin-top: -50px;">
+            <ul>
                 <li>
                     <div>
                         <ThemeChanger />
@@ -125,6 +125,9 @@ export default {
         .close-button {
             text-align: right;
             margin: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
 
         ul {
