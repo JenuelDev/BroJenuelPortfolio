@@ -62,7 +62,7 @@
                         Resume
                     </a>
                 </GradientBorder>
-                <div>
+                <div v-scrollanimation style="transition-delay: 1000ms;">
                     <ThemeChanger />
                 </div>
             </div>

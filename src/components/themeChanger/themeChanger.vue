@@ -1,56 +1,89 @@
 <template>
-    <div class="theme-dropdown">
-        <div class="color-selector"></div>
+    <div class="theme-dropdown" :class="{'open-dropdown':open}" v-click-outside="clickOutSide()">
+        <div class="color-selector" @click="open = !open"></div>
         <div class="theme-dropdown-content">
-            <div v-for="theme in themes" class="color-theme-choices" :key="theme.name" @click="changeTheme(theme)">
-                <div class="color-selections" :style="`padding: 10px; background-color: ${theme.color};`"></div>
-                <span>{{theme.name}}</span>
+            <div class="theme-dropdown-content-wrapper">
+                <div v-for="theme in themes" class="color-theme-choices" :class="{'active' : selectedTheme == theme.name}" :key="theme.name" @click="changeTheme(theme);">
+                    <div class="color-selector-pallette">
+                        <div class="color-selections" :style="`padding: 10px; background-color: ${theme.color1};`"></div>
+                        <div class="color-selections" :style="`padding: 10px; background-color: ${theme.color2};`"></div>
+                        <div class="color-selections" :style="`padding: 10px; background-color: ${theme.color3};`"></div>
+                    </div>
+                    <span>{{theme.name}}</span>
+                </div>
             </div>
         </div>
     </div>
 </template>
 <script>
+import { ref } from "vue";
 export default {
-    data: () => {
-        return {
-            themes: [
+    setup() {
+        let theme = localStorage.getItem("theme") ? localStorage.getItem("theme") : 'underTheSea';
+        document.documentElement.setAttribute('theme',theme)
+
+        const open = ref(false);
+        const selectedTheme = ref(theme);
+
+        const clickOutSide = () => (el) => {
+            if (el) {
+                open.value = false
+            } else {
+                open.value = true
+            }
+        }
+
+        const close = () => {
+            console.log('close')
+            open.value = false
+        }
+        const themes = [
                 {
                     name: 'greenLight',
-                    color: '#64ffda'
+                    color1: '#64ffda',
+                    color2: "#349780",
+                    color3: "#0a192f"
                 },
                 {
                     name: 'yellowOrange',
-                    color: '#f0a500'
+                    color1: '#f0a500',
+                    color2: "#e45826",
+                    color3: "#222222"
+                },
+                {
+                    name: "underTheSea",
+                    color1: '#2aea5e',
+                    color2: "#00a941",
+                    color3: "#011116"
+                },
+                {
+                    name: "NightBurns",
+                    color1: '#fc595f',
+                    color2: "#d2494e",
+                    color3: "#151515"
                 }
-            ]
-        }
-    },
-    methods: {
-        changeTheme(theme) {
+            ];
+
+        const changeTheme = (theme) => {
             localStorage.setItem('theme',theme.name)
+            selectedTheme.value = theme.name
+            console.log(selectedTheme.value)
             document.documentElement.setAttribute('theme',theme.name)
         }
-    },
-    mounted() {
-        // check for active theme
-        let htmlElement = document.documentElement;
-        let theme = localStorage.getItem("theme");
 
-        if (theme === 'yellowOrange') {
-            htmlElement.setAttribute('theme', 'yellowOrange')
-        } else {
-            htmlElement.setAttribute('theme', 'greenLight');
+        return {
+            clickOutSide, open, themes, close, changeTheme, selectedTheme
         }
-    }
+    },
 }
 </script>
 <style lang="scss">
     .theme-dropdown {
-        display: inline-block;
         cursor: pointer;
 
         .color-selector {
-            padding: 17px;
+            height: 2rem;
+            width: 2rem;
             background-color: var(--primary);
             margin: 3px 20px 0px 20px;
             border-radius: 100%;
@@ -59,34 +92,44 @@ export default {
         }
 
         .theme-dropdown-content {
-            visibility: hidden;
             position: absolute;
-            background-color: var(--lightBackground);
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            min-width: 180px;
             transform: translateY(30px);
             right: 20px;
-            padding: 12px 16px;
+            padding: 15px 0 0 0;
             opacity: 0;
             z-index: 1;
             transition: 0.3s;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            border-radius: 8px;
+            visibility: hidden;
+
+            .theme-dropdown-content-wrapper {
+                padding: 5px 5px;
+                display: flex;
+                flex-direction: column;
+                background-color: var(--lightBackground);
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                border-radius: 8px;
+            }
         }
 
         .color-theme-choices {
             display: flex;
-            gap: 10px;
+            padding: 10px;
+            border-radius: 8px;
+
+            .color-selector-pallette {
+                display: flex;
+                margin: 0 10px 0 0;
+            }
 
             .color-selections {
                 border-radius: 100%;
                 transition: 0.2s;
             }
 
-            &:hover {
+            &:hover, &.active {
                 color: var(--primary);
+                background-color: rgba(0,0,0,0.3);
 
                 .color-selections {
                     border-radius: 0%;
@@ -94,7 +137,7 @@ export default {
             }
         }
 
-        &:hover, &:focus {
+        &.open-dropdown, &:focus {
             .color-selector {
                 border: 3px solid #FFF;
             }
@@ -104,5 +147,7 @@ export default {
                 visibility: visible;
             }
         }
+
+        
     }
 </style>

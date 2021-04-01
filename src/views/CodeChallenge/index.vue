@@ -1,7 +1,7 @@
 <template>
     <section v-scrollanimation class="code-challenge">
         <h2 class="numbered-header" style="margin: 10px 0px -10px">
-            <Icon class="front-icon" name="folders" :size="30" /> Work Challenges
+            <Icon class="front-icon" name="folders" :size="30" /> Others
         </h2>
         <p class="header-des">
             {{ CodeChallenge.des }}

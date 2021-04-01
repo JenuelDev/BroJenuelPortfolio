@@ -9,7 +9,7 @@
     --fz-xxl: 22px;
     --fz-lg: 18px;
 
-    // theme
+    // default theme
     --background: #0a192f;
     --lightBackground: #112240;
     --nav-bg: rgba(10, 25, 47, 0.85);
@@ -40,47 +40,7 @@
     --fz-xxl: 22px;
 }
 
-[theme="greenLight"] {
-    --primary: #64ffda;
-    --primary-darker: #349780;
-    --background: #0a192f;
-    --lightBackground: #112240;
-    --nav-bg: rgba(10, 25, 47, 0.85);
-    --slate: #8892b0;
-    --lightSlate: #a8b2d1;
-    --lightestSlate: #ccd6f6;
-    --white: #e6f1ff;
-    --navy-shadow: rgba(2,12,27,1);
-
-    // for linear gradient
-    --linear-1: #ef4e7b;
-    --linear-2: #a166ab;
-    --linear-3: #5073b8;
-    --linear-4: #1098ad;
-    --linear-5: #07b39b;
-    --linear-6: #6fba82;
-}
-
-[theme="yellowOrange"] {
-    --primary: #f0a500;
-    --primary-darker: #e45826;
-    --background: #222222;
-    --lightBackground: #303030;
-    --nav-bg: rgba(34, 34, 34, 0.85);
-    --slate: #d3d6df;
-    --lightSlate: #c1c5d1;
-    --lightestSlate: #dfe2eb;
-    --white: #e6f1ff;
-    --navy-shadow: rgba(23, 23, 23,1);
-
-    // for linear gradient
-    --linear-1: #53354a;
-    --linear-2: #903749;
-    --linear-3: #e84545;
-    --linear-4: #e45826;
-    --linear-5: #f0a500;
-    --linear-6: #e6d5b8;
-}
+@import './styles/themes.scss';
 
 
 *,

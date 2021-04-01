@@ -1,8 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Intro from "./../views/AboutMe/AboutMe.vue";
-import MyExperience from "./../views/MyExperience";
-import MyWork from "./../views/MyWork";
-import PageNotFound from "./../views/PageNotFound";
 
 const routes = [
     {
@@ -17,12 +14,12 @@ const routes = [
     {
         path: "/experience",
         name: "Experience",
-        component: MyExperience
+        component: () => import("./../views/MyExperience")
     },
     {
         path: "/work",
         name: "Work",
-        component: MyWork
+        component: () => import("./../views/MyWork")
     },
     {
         path: "/contact",
@@ -32,7 +29,7 @@ const routes = [
     {
         path: "/:pathMatch(.*)*",
         name: "PageNotFound",
-        component: PageNotFound
+        component: () => import("./../views/PageNotFound")
     }
 ];
 

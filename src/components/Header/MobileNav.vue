@@ -4,7 +4,12 @@
             <div class="close-button">
                 <Icon name="x" :size="30" @click="$store.state.navShow = false"/>
             </div>
-            <ul>
+            <ul style="margin-top: -50px;">
+                <li>
+                    <div>
+                        <ThemeChanger />
+                    </div>
+                </li>
                 <li
                     v-scrollanimation
                     style="transition-delay: 100ms"
@@ -47,7 +52,8 @@
                 </li>
                 <li
                     v-scrollanimation
-                    style="transition-delay: 700ms"
+                    style="transition-delay: 700ms;"
+                    
                 >
                     <GradientBorder
                         v-scrollanimation
@@ -78,11 +84,12 @@
     </div>
 </template>
 <script>
+import ThemeChanger from './../themeChanger/themeChanger'
 import Icon from './../Icons'
 import GradientBorder from "./../GradientBorder";
 import { socialMediaLinks } from "./../../constant/social-network"
 export default {
-    components: {Icon,GradientBorder},
+    components: {Icon,GradientBorder,ThemeChanger},
     computed: {
         SocialNetwork: () => socialMediaLinks
     }
@@ -102,6 +109,7 @@ export default {
     .nav-front {
         position: fixed;
         height: 100%;
+        overflow: auto;
         background-color: var(--background);
         z-index: 40;
         top: 0;
