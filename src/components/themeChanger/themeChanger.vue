@@ -19,7 +19,7 @@
 import { ref } from "vue";
 export default {
     setup() {
-        let theme = localStorage.getItem("theme") ? localStorage.getItem("theme") : 'underTheSea';
+        let theme = localStorage.getItem("theme") ? localStorage.getItem("theme") : 'greenLight';
         document.documentElement.setAttribute('theme',theme)
 
         const open = ref(false);
