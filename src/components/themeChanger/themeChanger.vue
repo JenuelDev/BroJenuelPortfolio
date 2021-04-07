@@ -34,7 +34,6 @@ export default {
         }
 
         const close = () => {
-            console.log('close')
             open.value = false
         }
         const themes = [
@@ -67,7 +66,6 @@ export default {
         const changeTheme = (theme) => {
             localStorage.setItem('theme',theme.name)
             selectedTheme.value = theme.name
-            console.log(selectedTheme.value)
             document.documentElement.setAttribute('theme',theme.name)
         }
 

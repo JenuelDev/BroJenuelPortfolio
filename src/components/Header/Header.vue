@@ -4,6 +4,9 @@
         :class="{ 'navbar--hidden': !showNavbar && scroll > 100, 'nav-min': scroll > 50 }"
     >
         <nav>
+            <div class="logo-image">
+                <img :src="require('./../../assets/images/brojenuellogo.svg')" @click="$router.push('/')"/>
+            </div>
             <div class="navs">
                 <ol>
                     <li

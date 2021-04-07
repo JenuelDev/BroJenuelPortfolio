@@ -28,7 +28,7 @@
     nav {
         display: flex;
         -webkit-box-pack: justify;
-        justify-content: flex-end;
+        justify-content: space-between;
         -webkit-box-align: center;
         align-items: center;
         position: relative;
@@ -38,11 +38,19 @@
         counter-reset: item 0;
         z-index: 12;
 
+        .logo-image {
+            img {
+                width: 40px;
+                margin-left: 50px;
+                margin-top: -5px;
+                cursor: pointer;
+            }
+        }
+
 
         .navs {
             display: flex;
             align-items: center;
-            padding-right: 50px;
 
             .resume-button {
                 display: flex;
@@ -113,6 +121,14 @@
             box-shadow: 0 10px 20px -10px var(--navy-shadow);
         }
         nav {
+            .logo-image {
+                img {
+                    width: 35px;
+                    margin-left: 20px;
+                    margin-top: 0px;
+                }
+            }
+
             .navs {
                 display: none;
             }
