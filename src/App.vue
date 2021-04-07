@@ -10,7 +10,6 @@
     </main>
     <Footer v-show="$store.state.show" />
 </template>
-
 <script>
 import Footer from './components/Footer'
 import SocialMediaLinks from "./components/social-media-links";
@@ -18,7 +17,6 @@ import Header from "./components/Header";
 import Overlay from "./components/overlay";
 import Intro from "./views/Intro";
 import MobileNav from "./components/Header/MobileNav";
-
 export default {
     components: { SocialMediaLinks, Header, Overlay, Intro, MobileNav, Footer},
     created() {
