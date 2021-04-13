@@ -52,6 +52,16 @@
                 </li>
                 <li
                     v-scrollanimation
+                    style="transition-delay: 650ms"
+                    @click="goToLink('https://bro-jenuel-blog.netlify.app/'); $store.state.navShow = false"
+                >
+                    <div :class="{ active: $route.name == 'Contact' }">
+                        <Icon name="documents" :size="15" />
+                        Blog
+                    </div>
+                </li>
+                <li
+                    v-scrollanimation
                     style="transition-delay: 700ms;"
                     
                 >
@@ -92,6 +102,9 @@ export default {
     components: {Icon,GradientBorder,ThemeChanger},
     computed: {
         SocialNetwork: () => socialMediaLinks
+    },
+    methods: {
+        goToLink(link) { window.open(link, '_blank') }
     }
 }
 </script>

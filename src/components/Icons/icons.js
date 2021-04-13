@@ -28,5 +28,6 @@ export default {
     file: '<path d="M5 7.5l2 2 3.5-4m0-5h-8a1 1 0 00-1 1v12a1 1 0 001 1h10a1 1 0 001-1v-10l-3-3z" stroke="currentColor"></path>',
     menu: '<path d="M0 5.5h15m-15-4h15m-15 8h15m-15 4h15" stroke="currentColor"></path>',
     x: '<path d="M4.5 4.5l6 6m-6 0l6-6m-3 10a7 7 0 110-14 7 7 0 010 14z" stroke="currentColor"></path>',
-    arrowRight: `<path d="M13.5 7.5l-4-4m4 4l-4 4m4-4H1" stroke="currentColor"></path>`
+    arrowRight: `<path d="M13.5 7.5l-4-4m4 4l-4 4m4-4H1" stroke="currentColor"></path>`,
+    documents: '<path d="M10.5.5l.277-.416L10.651 0H10.5v.5zm3 2h.5v-.268l-.223-.148-.277.416zm-1 9.5h-8v1h8v-1zM4 11.5v-10H3v10h1zM4.5 1h6V0h-6v1zM13 2.5v9h1v-9h-1zM10.223.916l3 2 .554-.832-3-2-.554.832zM4.5 12a.5.5 0 01-.5-.5H3A1.5 1.5 0 004.5 13v-1zm8 1a1.5 1.5 0 001.5-1.5h-1a.5.5 0 01-.5.5v1zM4 1.5a.5.5 0 01.5-.5V0A1.5 1.5 0 003 1.5h1zm-3 2v10h1v-10H1zM2.5 15h8v-1h-8v1zm0-12h1V2h-1v1zM12 13.5v-1h-1v1h1zM10.5 15a1.5 1.5 0 001.5-1.5h-1a.5.5 0 01-.5.5v1zM1 13.5A1.5 1.5 0 002.5 15v-1a.5.5 0 01-.5-.5H1zm1-10a.5.5 0 01.5-.5V2A1.5 1.5 0 001 3.5h1z" fill="currentColor"></path>'
 }

@@ -49,6 +49,16 @@
                             Contact Me
                         </div>
                     </li>
+                    <li
+                        v-scrollanimation
+                        style="transition-delay: 650ms"
+                        @click="goToLink('https://bro-jenuel-blog.netlify.app/')"
+                    >
+                        <div :class="{ active: $route.name == 'Contact' }">
+                            <Icon name="documents" :size="15" />
+                            Blog
+                        </div>
+                    </li>
                 </ol>
                 <GradientBorder
                     v-scrollanimation
@@ -96,6 +106,7 @@ export default {
         window.addEventListener('resize', this.handleWidth);
     },
     methods: {
+        goToLink(link) { window.open(link, '_blank') },
         handleScroll() {
             this.scroll = window.scrollY;
         },
