@@ -54,7 +54,7 @@
                         style="transition-delay: 650ms"
                         @click="goToLink('https://bro-jenuel-blog.netlify.app/')"
                     >
-                        <div :class="{ active: $route.name == 'Contact' }">
+                        <div>
                             <Icon name="documents" :size="15" />
                             Blog
                         </div>
