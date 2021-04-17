@@ -59,7 +59,7 @@
                                 <div class="work-info-image-link" @click="openSite(work.imageLink)">
                                     <div class="image-wrapping">
                                         <div class="front-filter"></div>
-                                        <img loading='lazy' :src="work.img" alt="" />
+                                        <img loading='lazy' :src="work.img" alt="work image preview" />
                                     </div>
                                 </div>
                             </div>
