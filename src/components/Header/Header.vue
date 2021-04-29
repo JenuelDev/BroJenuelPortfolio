@@ -52,7 +52,7 @@
                     <li
                         v-scrollanimation
                         style="transition-delay: 650ms"
-                        @click="goToLink('https://bro-jenuel-blog.netlify.app/')"
+                        @click="goToLink('https://brojenuel-blog.ml')"
                     >
                         <div>
                             <Icon name="documents" :size="15" />
