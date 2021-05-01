@@ -24,6 +24,11 @@ const skillList = [
         des: "Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You, and is maintained by him and the rest of the active core team members."
     },
     {
+        icon: 'nuxt',
+        text: 'Nuxt JS',
+        des: "Build your next Vue.js application with confidence using NuxtJS. An open source framework making web development simple and powerful."
+    },
+    {
         icon: 'laravel',
         text: 'laravel/Lumen',
         des: "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller architectural pattern and based on Symfony. Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax."
@@ -47,6 +52,11 @@ const skillList = [
         icon: 'tablet',
         text: 'Progressive Web Apps (PWA)',
         des: "A progressive web application is a type of application software delivered through the web, built using common web technologies including HTML, CSS and JavaScript. It is intended to work on any platform that uses a standards-compliant browser, including both desktop and mobile devices."
+    },
+    {
+        icon: 'react',
+        text: 'React JS',
+        des: 'React is an open-source, front end, JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications.'
     }
 ];
 

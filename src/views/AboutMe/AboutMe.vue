@@ -2,10 +2,9 @@
     <div class="modal-window">
         <div
             class="modal-window-content"
-            :class="{ show: dialog }"
-            @click="dialog = !dialog"
         >
-            <div class="box">
+            <transition name="modal">
+            <div class="box" v-show="dialog">
                 <h1>
                     <Icon
                         class="skill-icon"
@@ -17,8 +16,11 @@
                     {{ dialogConent.des }}
                 </div>
             </div>
+            </transition>
         </div>
-        <div class="modal-window-bg" :class="{ show: dialog }"></div>
+        <transition name="modalBg">
+            <div v-show="dialog" class="modal-window-bg" @click="dialog = !dialog"></div>
+        </transition>
     </div>
     <section v-scrollanimation class="about-me">
         <h2 class="numbered-header">

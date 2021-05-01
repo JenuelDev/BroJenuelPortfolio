@@ -16,4 +16,19 @@ const webinarinc = {
     ],
     url: "https://webinarinc.com/"
 }
-export default [webinarinc, utalk2019,dapayan2018, ilearn2018]
+
+const kcp = {
+    icon: '',
+    position: 'Web Developer Student',
+    tab: 'KCP',
+    company: 'Kings College of the Philippines',
+    workStart: 'Aug. 2016',
+    workUntil: 'April 2019',
+    des: [
+        "Full time student at <a href='https://kcp.edu.ph' target='_blank'>Kings College of the Philippines</a>",
+        "This is the school I started learning, and experienced about programming in Web Development.",
+        "<b>About:</b> King’s College of the Philippines is a mission school under the auspices of the Northern Luzon Presbyterian Church. Its beginnings can be traced from the arrival of a Korean Missionary, Rev. Kwon Young Soo in the Philippines in 1991.<br><br>For more than a decade, Missionary Kwon laboriously ministered to a great number of people in the various Cordillera provinces namely: Mt. Province, Kalinga, Apayao, Ifugao, Benguet, Isabela, Cagayan, and also Baguio City. Noting the lack of trained clergy, Rev. Kwon established a Bible School named Zoe Logos Temple Ministry in Sabangan, Mt. Province. Eventually, to addressthe concern of growing number of unschooled youth in the Cordilleras, and with assistance from church and individual sponsors – local and overseas, he established Eastern Luzon Colleges in Bambang, Nueva Vizcaya in 2003 and Eastern Luzon Colleges in 2004 in La Trinidad, Benguet."
+    ],
+    url: "https://webinarinc.com/"
+}
+export default [webinarinc, utalk2019,dapayan2018, ilearn2018, kcp]

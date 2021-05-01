@@ -119,8 +119,6 @@
             }
         }
     }
-
-    
 }
 
 // modal
@@ -129,33 +127,26 @@
         position: fixed;
         top: 0;
         left: 0;
-        height: 0%;
-        width: 0%;
+        height: 100%;
+        width: 100%;
         background-color: rgba(0, 0, 0, 0.4);
         z-index: 80;
-
-        &.show {
-            height: 100%;
-            width: 100%;
-        }
     }
     .modal-window-content {
         position: fixed;
+        z-index: 90;
         top: 0;
         left: 0;
-        z-index: 90;
-        visibility: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
 
         .box {
-            max-width: 300px;
+            position: fixed;
+            max-width: 250px;
             background-color: var(--background);
             padding: 20px;
             border-radius: 10px;
+            left: 50%;
+            margin-left: -125px;
+            margin-top: 20vh;
 
             h1 {
                 margin: 10px 0;
@@ -165,10 +156,6 @@
                 color: var(--primary);
                 font-size: 1.3rem;
             }
-        }
-
-        &.show {
-            visibility: visible;
         }
     }
 }

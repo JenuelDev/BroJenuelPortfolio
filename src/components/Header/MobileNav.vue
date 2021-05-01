@@ -53,9 +53,9 @@
                 <li
                     v-scrollanimation
                     style="transition-delay: 650ms"
-                    @click="goToLink('https://bro-jenuel-blog.netlify.app/'); $store.state.navShow = false"
+                    @click="goToLink('https://brojenuelblog.ml'); $store.state.navShow = false"
                 >
-                    <div :class="{ active: $route.name == 'Contact' }">
+                    <div>
                         <Icon name="documents" :size="15" />
                         Blog
                     </div>
