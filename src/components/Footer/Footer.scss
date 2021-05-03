@@ -3,16 +3,22 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100px;
-    align-items: center;
+    padding: 50px 0;
+    flex-direction: column;
 
     .footer-toggle-link {
         cursor: pointer;
         display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 10px;
         color: var(--lightSlate);
+        flex-direction: column;
+
+        .copy-right {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
         &:hover {
             color: var(--primary);
         }

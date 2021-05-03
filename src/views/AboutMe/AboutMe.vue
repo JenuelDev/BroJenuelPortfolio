@@ -63,5 +63,21 @@
             </div>
         </div>
     </section>
+    <div v-scrollview class="what-i-offer-content">
+            <div v-scrollview class="services-title">
+                <h2><Icon class="service-title-icon" name="qrCode" /> What I can Offer/Service</h2>
+                <p>Your complete website solution</p>
+            </div>
+            <div class="services-wrapper" >
+                <div class="services-item" v-scrollview  v-for="(service,i) in services" :key="service.title" :style="`transition-delay: ${i*200}ms;`">
+                    <Card
+                        :index="1"
+                        :icon="service.icon"
+                        :title="service.title"
+                        :description="service.description"
+                    />
+                </div>
+            </div>
+    </div>
 </template>
 <script src="./script.js"></script>
