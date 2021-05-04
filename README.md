@@ -5,7 +5,7 @@
 <img src="https://github.com/aleen42/badges/raw/master/src/visual_studio_code_dfc.svg"/>
 
 
-I'm glad that you visited my repo, this project is actually a design that made by [Brittany Chiang's](https://onepagelove.com/brittany-chiang) design.  
+I'm glad that you visited my repo. I made this website from scratch while basing the design of  [Brittany Chiang's](https://onepagelove.com/brittany-chiang) design.  
 I recreated it ground up myself using Vue 3.
 
 Site Link: https://www.jenuelganawed.ml
