@@ -145,7 +145,8 @@
         h2 {
             display: flex;
             align-items:center;
-            margin:0;
+            font-size: clamp(17px, 5vw, 32px);
+            margin:0 0 10px 0;
 
             .service-title-icon {
                 margin-right: 10px;
