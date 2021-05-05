@@ -63,7 +63,7 @@
             </div>
         </div>
     </section>
-    <div v-scrollview class="what-i-offer-content">
+    <div class="what-i-offer-content">
             <div v-scrollview class="services-title">
                 <h2><Icon class="service-title-icon" name="qrCode" /> What I can Offer/Service</h2>
                 <p>Your complete website solution</p>
