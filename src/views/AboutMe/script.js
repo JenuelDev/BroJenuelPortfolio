@@ -9,7 +9,7 @@ export default {
         return {
             AboutMe: AboutMe,
             dialog: false,
-            dialogConent: {
+            dialogContent: {
                 title: "",
                 des: "",
             },
@@ -34,7 +34,7 @@ export default {
     },
     methods: {
         openDialog(skill) {
-            this.dialogConent = {
+            this.dialogContent = {
                 title: skill.text,
                 des: skill.des,
                 icon: skill.icon

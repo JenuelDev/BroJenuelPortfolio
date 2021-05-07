@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import Intro from "./../views/AboutMe/AboutMe.vue";
 
 const routes = [
@@ -30,11 +30,17 @@ const routes = [
         path: "/:pathMatch(.*)*",
         name: "PageNotFound",
         component: () => import("./../views/PageNotFound")
+    },
+    {
+        path: '/index.html',
+        beforeEnter: (to, from, next) => {
+            next("/");
+        }
     }
 ];
 
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     routes,
     scrollBehavior(to, from, savedPosition) {
         if (!savedPosition) {

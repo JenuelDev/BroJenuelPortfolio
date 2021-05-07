@@ -8,12 +8,12 @@
                 <h1>
                     <Icon
                         class="skill-icon"
-                        :name="dialogConent.icon"
+                        :name="dialogContent.icon"
                         :size="20"
-                    />{{ dialogConent.title }}
+                    />{{ dialogContent.title }}
                 </h1>
                 <div>
-                    {{ dialogConent.des }}
+                    <p v-html="dialogContent.des"></p>
                 </div>
             </div>
             </transition>
@@ -35,7 +35,7 @@
                         v-scrollanimation
                         :key="skill.text"
                         @click="openDialog(skill)"
-                        :style="'transition-delay: ' + i * 100 + 'ms'"
+                        :style="'transition-delay: ' + i * 50 + 'ms'"
                     >
                         <Icon
                             class="skill-icon"

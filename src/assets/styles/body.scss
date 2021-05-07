@@ -41,19 +41,18 @@ p {
         color: var(--primary);
 
         &::after {
-            content: '';
+            content: "";
             display: block;
             width: 0%;
             height: 1px;
             position: relative;
-            bottom: 0.10em;
+            bottom: 0.1em;
             background-color: var(--primary);
             transition: var(--transition) !important;
             opacity: 0.5;
         }
 
         &:hover {
-            
             &::after {
                 width: 100%;
             }
@@ -79,7 +78,7 @@ p {
     }
 
     &::after {
-        content: '';
+        content: "";
         display: block;
         position: relative;
         max-width: 300px;
@@ -90,7 +89,6 @@ p {
     }
 }
 
-
 .header-des {
     max-width: 500px;
     margin: 20px 0;
@@ -98,25 +96,25 @@ p {
 
 .route-enter-from,
 .route-leave-to {
-  opacity: 0;
-  transform: translateY(-30px);
+    opacity: 0;
+    transform: translateY(-30px);
 }
 
 .route-enter-active,
 .route-leave-active {
-  transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .route-enter-to,
 .route-leave-from {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media only screen and (max-width: 425px) {
     main {
-      p {
-          font-size: 0.8rem !important;
-      }
+        p {
+            font-size: 0.8rem !important;
+        }
     }
-  }
+}

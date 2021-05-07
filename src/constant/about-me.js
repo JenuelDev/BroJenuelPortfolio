@@ -21,17 +21,17 @@ const skillList = [
     {
         icon: 'vue',
         text: "Vue",
-        des: "Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You, and is maintained by him and the rest of the active core team members."
+        des: `Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications. It was created by Evan You, and is maintained by him and the rest of the active core team members. <a href="https://vuejs.org/" target="_blank" alt="Go To VueJS">Go To VueJS</a>`
     },
     {
         icon: 'nuxt',
         text: 'Nuxt JS',
-        des: "Build your next Vue.js application with confidence using NuxtJS. An open source framework making web development simple and powerful."
+        des: `Build your next Vue.js application with confidence using NuxtJS. An open source framework making web development simple and powerful. <a href="https://nuxtjs.org/" target="_blank" alt="go to Nuxtjs">Go To NuxtJS</a>`
     },
     {
         icon: 'laravel',
         text: 'laravel/Lumen',
-        des: "Laravel is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller architectural pattern and based on Symfony. Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax."
+        des: "<a href='https://laravel.com/' target='_blank' alt='Go to Laravel'>Laravel</a> is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller architectural pattern and based on Symfony. Laravel <a href='https://lumen.laravel.com/' target='_blank' alt='Go to lumen'>Lumen</a> is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax."
     },
     {
         icon: 'angular',
@@ -52,6 +52,11 @@ const skillList = [
         icon: 'tablet',
         text: 'Progressive Web Apps (PWA)',
         des: "A progressive web application is a type of application software delivered through the web, built using common web technologies including HTML, CSS and JavaScript. It is intended to work on any platform that uses a standards-compliant browser, including both desktop and mobile devices."
+    },
+    {
+        icon: 'tailwind',
+        text: 'Tailwind CSS',
+        des: 'Tailwind utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup. <a href="https://tailwindcss.com/" target="_blank" alt="go to tailwind website">Check It Here</a>'
     },
     {
         icon: 'react',
