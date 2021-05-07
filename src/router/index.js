@@ -31,12 +31,6 @@ const routes = [
         name: "PageNotFound",
         component: () => import("./../views/PageNotFound")
     },
-    {
-        path: '/index.html',
-        beforeEnter: (to, from, next) => {
-            next("/");
-        }
-    }
 ];
 
 const router = createRouter({
