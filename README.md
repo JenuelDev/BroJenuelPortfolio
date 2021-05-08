@@ -8,6 +8,14 @@
 I'm glad that you visited my repo. I made this website from scratch while basing the design of  [Brittany Chiang's](https://onepagelove.com/brittany-chiang) design.  
 I recreated it ground up myself using Vue 3.
 
+#### ***Mobile Performance Test `Lighthouse`***  
+[![Mobile Test](https://i.imgur.com/SFErR8H.png)](https://i.imgur.com/SFErR8H.png)
+#### ***Desktop Performance Test `Lighthouse`***  
+[![Desktop Test](https://i.imgur.com/vmjJNRM.png)](https://i.imgur.com/vmjJNRM.png)
+#### ***Audit Test Performance Test `https://web.dev`***  
+[![Audit Test](https://i.imgur.com/ksV0Hrp.png)](https://i.imgur.com/ksV0Hrp.png)
+
+
 Site Link: https://www.jenuelganawed.ml
 <img src="https://i.ibb.co/jvCW0KT/image.png" width="100%" alt="image" border="0">
 <img src="https://i.ibb.co/FqYCKNV/image.png" width="100%" alt="image" border="0">
