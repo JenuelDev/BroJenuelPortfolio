@@ -15,11 +15,11 @@ export default {
                     icon: "github"
                 },
                 {
-                    link: "https://bro-jenuel-blog.netlify.app/",
+                    link: "https://brojenuelblog.ml",
                     icon: "link"
                 }
             ],
-            imageLink: "https://bro-jenuel-blog.netlify.app/",
+            imageLink: "https://brojenuelblog.ml",
             img: "https://i.ibb.co/2ZgY08J/Jenuel-Blog.png"
         },
         {
