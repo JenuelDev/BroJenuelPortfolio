@@ -60,6 +60,12 @@ export default {
                     color1: '#fc595f',
                     color2: "#d2494e",
                     color3: "#151515"
+                },
+                {
+                    name: "lightBurn",
+                    color1: '#b8005c',
+                    color2: "#dcdcdc",
+                    color3: "#2b2b2b"
                 }
             ];
 
