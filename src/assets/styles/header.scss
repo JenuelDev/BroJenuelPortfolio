@@ -40,6 +40,7 @@
 
         .logo-image {
             img {
+                aspect-ratio: attr(width) / attr(height);
                 width: 40px;
                 margin-left: 50px;
                 margin-top: -5px;
@@ -123,6 +124,7 @@
         nav {
             .logo-image {
                 img {
+                    aspect-ratio: attr(width) / attr(height);
                     width: 35px;
                     margin-left: 20px;
                     margin-top: 0px;

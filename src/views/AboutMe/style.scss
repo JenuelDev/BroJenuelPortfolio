@@ -104,6 +104,10 @@
                 mix-blend-mode: multiply;
                 filter: grayscale(100%) contrast(1);
                 transition: 0.3s !important;
+
+                img {
+                    aspect-ratio: attr(width) / attr(height);
+                }
             }
 
             &:hover {

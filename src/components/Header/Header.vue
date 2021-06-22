@@ -5,7 +5,7 @@
     >
         <nav>
             <div class="logo-image">
-                <img :src="require('./../../assets/images/brojenuellogo.svg')" @click="$router.push('/')" alt="Logo Image" />
+                <img width="50" height="50" :src="require('./../../assets/images/brojenuellogo.svg')" @click="$router.push('/')" alt="Jenuel Ganawed Logo Image" />
             </div>
             <div class="navs">
                 <ol>
