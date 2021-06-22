@@ -4,25 +4,6 @@ export default {
         "Showcasing projects I made, some projects are made for public use and some are made for a client.",
     works: [
         {
-            overline: "Personal Blog",
-            title: "Bro Jenuel Blog",
-            des: "I built a blog for my self, where I can post what I learned and upload my journey as a developer. I post 1 to 2 times a week.",
-            techs: ["vue", "nuxtjs","javaScript","typeScript"],
-            links: [
-                {
-                    link:
-                        "https://github.com/BroJenuel/BroJenuelBlog",
-                    icon: "github"
-                },
-                {
-                    link: "https://brojenuelblog.ml",
-                    icon: "link"
-                }
-            ],
-            imageLink: "https://brojenuelblog.ml",
-            img: "https://i.ibb.co/2ZgY08J/Jenuel-Blog.png"
-        },
-        {
             overline: "Documentation Project",
             title: "Laravel MongoDB Documentation",
             des:
@@ -45,7 +26,8 @@ export default {
         {
             overline: "Portfolio Website",
             title: "Portfolio Website",
-            des: "A very simple website that I made for a friend. This is a non profit organization or a company, its a personal website by a client.",
+            des:
+                "A very simple website that I made for a friend. This is a non profit organization or a company, its a personal website by a client.",
             techs: ["vue", "javascript"],
             links: [
                 {
@@ -58,27 +40,8 @@ export default {
                     icon: "link"
                 }
             ],
-            imageLink: 'https://kateawisan.ml',
+            imageLink: "https://kateawisan.ml",
             img: "https://i.ibb.co/CtF2CMc/Kate-Website.png"
-        },
-        {
-            overline: "Personal Website",
-            title: "Portfolio",
-            des:
-                "It's is a new cool look for my portfolio based on Brittany's design. I created Ground Up using the Technology Called Vue to Create This Portfolio.",
-            techs: ["vue","PWA","javascript"],
-            links: [
-                {
-                    link: "https://github.com/BroJenuel/jenuel-portfolio-v2",
-                    icon: "github"
-                },
-                {
-                    link: "https://jenuelganawed.ml",
-                    icon: "link"
-                }
-            ],
-            imageLink: "https://jenuelganawed.ml",
-            img: "https://i.ibb.co/h8m7MT9/my-portfolio.png"
         },
         {
             overline: "Search Engine Project",
@@ -98,6 +61,44 @@ export default {
             ],
             imageLink: "https://www.getgifs.ml/",
             img: "https://i.ibb.co/5xy83X1/getgif.png"
+        },
+        {
+            overline: "Personal Website",
+            title: "Portfolio",
+            des:
+                "It's is a new cool look for my portfolio based on Brittany's design. I created Ground Up using the Technology Called Vue to Create This Portfolio.",
+            techs: ["vue", "PWA", "javascript"],
+            links: [
+                {
+                    link: "https://github.com/BroJenuel/jenuel-portfolio-v2",
+                    icon: "github"
+                },
+                {
+                    link: "https://jenuelganawed.ml",
+                    icon: "link"
+                }
+            ],
+            imageLink: "https://jenuelganawed.ml",
+            img: "https://i.ibb.co/h8m7MT9/my-portfolio.png"
+        },
+        {
+            overline: "Personal Blog",
+            title: "Bro Jenuel Blog",
+            des:
+                "I built a blog for my self, where I can post what I learned and upload my journey as a developer. I post 1 to 2 times a week.",
+            techs: ["vue", "nuxtjs", "javaScript", "typeScript"],
+            links: [
+                {
+                    link: "https://github.com/BroJenuel/BroJenuelBlog",
+                    icon: "github"
+                },
+                {
+                    link: "https://brojenuelblog.ml",
+                    icon: "link"
+                }
+            ],
+            imageLink: "https://brojenuelblog.ml",
+            img: "https://i.ibb.co/2ZgY08J/Jenuel-Blog.png"
         }
     ]
 };
