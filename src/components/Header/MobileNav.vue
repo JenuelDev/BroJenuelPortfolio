@@ -53,12 +53,11 @@
                 <li
                     v-scrollanimation
                     style="transition-delay: 650ms"
-                    @click="goToLink('https://brojenuelblog.ml'); $store.state.navShow = false"
                 >
-                    <div>
+                    <a rel="external" href="https://brojenuelblog.ml" hreflang="es-es">
                         <Icon name="documents" :size="15" />
                         Blog
-                    </div>
+                    </a>
                 </li>
                 <li
                     v-scrollanimation
@@ -104,7 +103,7 @@ export default {
         SocialNetwork: () => socialMediaLinks
     },
     methods: {
-        goToLink(link) { window.open(link, '_blank') }
+        goToLink(link) { window.open(link) }
     }
 }
 </script>

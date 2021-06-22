@@ -52,12 +52,11 @@
                     <li
                         v-scrollanimation
                         style="transition-delay: 650ms"
-                        @click="goToLink('https://brojenuelblog.ml')"
                     >
-                        <div>
+                        <a rel="external" href="https://brojenuelblog.ml" hreflang="es-es">
                             <Icon name="documents" :size="15" />
                             Blog
-                        </div>
+                        </a>
                     </li>
                 </ol>
                 <GradientBorder
@@ -106,7 +105,7 @@ export default {
         window.addEventListener('resize', this.handleWidth);
     },
     methods: {
-        goToLink(link) { window.open(link, '_blank') },
+        goToLink(link) { window.open(link) },
         handleScroll() {
             this.scroll = window.scrollY;
         },
