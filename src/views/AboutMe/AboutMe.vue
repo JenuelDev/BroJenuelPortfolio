@@ -55,7 +55,7 @@
                         <div class="photo-front"></div>
                         <img
                             loading='lazy'
-                            src="https://i.ibb.co/6FNxFDB/Untitled-1.png"
+                            src="https://i.imgur.com/la9CFWFm.png"
                             alt="Jenuel Ganawed - Profile Picture"
                             width="300"
                             height="300"
