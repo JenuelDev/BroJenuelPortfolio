@@ -13,11 +13,13 @@ export default {
                 {
                     link:
                         "https://github.com/BroJenuel-Youtube/laravel-mongodb",
-                    icon: "github"
+                    icon: "github",
+                    tooltip: "Open in Github"
                 },
                 {
                     link: "https://laravel-mongodb.netlify.app/",
-                    icon: "link"
+                    icon: "link",
+                    tooltip: "Open Link"
                 }
             ],
             imageLink: "https://laravel-mongodb.netlify.app/",
@@ -33,11 +35,13 @@ export default {
                 {
                     link:
                         "https://github.com/BroJenuel-Projects/kate-awisan-v2",
-                    icon: "github"
+                    icon: "github",
+                    tooltip: "Open in Github"
                 },
                 {
                     link: "https://kateawisan.ml",
-                    icon: "link"
+                    icon: "link",
+                    tooltip: "Open Link"
                 }
             ],
             imageLink: "https://kateawisan.ml",
@@ -52,11 +56,13 @@ export default {
             links: [
                 {
                     link: "https://github.com/BroJenuel-Youtube/get-gifs",
-                    icon: "github"
+                    icon: "github",
+                    tooltip: "Open in Github"
                 },
                 {
                     link: "https://www.getgifs.ml/",
-                    icon: "link"
+                    icon: "link",
+                    tooltip: "Open Link"
                 }
             ],
             imageLink: "https://www.getgifs.ml/",
@@ -71,11 +77,13 @@ export default {
             links: [
                 {
                     link: "https://github.com/BroJenuel/jenuel-portfolio-v2",
-                    icon: "github"
+                    icon: "github",
+                    tooltip: "Open In Github"
                 },
                 {
                     link: "https://jenuelganawed.ml",
-                    icon: "link"
+                    icon: "link",
+                    tooltip: "Open Link"
                 }
             ],
             imageLink: "https://jenuelganawed.ml",
@@ -90,11 +98,13 @@ export default {
             links: [
                 {
                     link: "https://github.com/BroJenuel/BroJenuelBlog",
-                    icon: "github"
+                    icon: "github",
+                    tooltip: "Open in Github"
                 },
                 {
                     link: "https://brojenuelblog.ml",
-                    icon: "link"
+                    icon: "link",
+                    tooltip: "Open Link"
                 }
             ],
             imageLink: "https://brojenuelblog.ml",

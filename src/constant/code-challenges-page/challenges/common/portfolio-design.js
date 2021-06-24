@@ -6,11 +6,13 @@ export default {
     links: [
         {
             link: "https://i.ibb.co/wr4b0BD/portfoliov1-min.png",
-            icon: 'github'
+            icon: 'github',
+            tooltip: 'Open in Github'
         },
         {
             link: "https://jenuelganawed-v1.netlify.app",
-            icon: 'link'
+            icon: 'link',
+            tooltip: 'Open Link'
         }
     ],
     techs: [

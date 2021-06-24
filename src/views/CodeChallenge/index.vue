@@ -32,7 +32,7 @@
                                     </div>
                                     <div class="item-links">
                                         <div
-                                            class="item-links-toggle"
+                                            class="item-links-toggle tooltip"
                                             v-for="link in code.links"
                                             :key="link.link"
                                             @click="openSite(link.link)"
@@ -41,7 +41,9 @@
                                                 class="icon"
                                                 :name="link.icon"
                                                 :size="25"
+                                                style="margin-bottom: 10px;"
                                             />
+                                            <span class="tool-tip-text">{{link.tooltip}}</span>
                                         </div>
                                     </div>
                                 </div>

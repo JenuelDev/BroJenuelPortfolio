@@ -41,12 +41,13 @@
                                 >
                                     <div
                                         v-for="link in work.links"
-                                        class="work-links-toggle"
+                                        class="work-links-toggle tooltip"
                                         :key="link.name"
                                         aria-label="GitHUB Link"
                                         @click="openSite(link.link)"
                                     >
                                         <Icon class="highlight-hover" :name="link.icon" :size="25"/>
+                                        <span class="tool-tip-text">{{link.tooltip}}</span>
                                     </div>
                                 </div>
                             </div>

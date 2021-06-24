@@ -5,11 +5,13 @@ export default {
     links: [
         {
             link: "https://github.com/BroJenuel-Youtube/lets-chat",
-            icon: 'github'
+            icon: 'github',
+            tooltip: 'Open In Github'
         },
         {
             link: "https://lets-chat-app-by-jenuel.herokuapp.com/",
-            icon: 'link'
+            icon: 'link',
+            tooltip: 'Open Link'
         }
     ],
     techs: [

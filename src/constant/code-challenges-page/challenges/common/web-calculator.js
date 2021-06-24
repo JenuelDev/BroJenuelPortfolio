@@ -5,11 +5,13 @@ export default {
     links: [
         {
             link: "https://github.com/BroJenuel/MyPortFolio/tree/master/calculator-vue",
-            icon: 'github'
+            icon: 'github',
+            tooltip: 'Open In Github'
         },
         {
             link: "https://jenuelganawed-calculator-vue.netlify.app/",
-            icon: 'link'
+            icon: 'link',
+            tooltip: 'Open Link'
         }
     ],
     techs: [

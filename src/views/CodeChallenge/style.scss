@@ -32,7 +32,7 @@
 
         .code-item {
             visibility: visible;
-            background-color: var(--lightBackground);
+            background-color: rgba(255, 255, 255, 0);
             box-shadow: 0 10px 30px -15px var(--navy-shadow);
             border-radius: var(--border-radius);
             transition: 0.2s;
@@ -128,6 +128,7 @@
                 transition-delay: 0ms !important;
                 transform: translate(0px, -5px);
                 box-shadow: var(--black-shadow);
+                background-color: var(--lightBackground);
             }
         }
     }

@@ -5,11 +5,13 @@ export default {
     links: [
         {
             link: "https://github.com/BroJenuel/MyPortFolio/tree/master/appDev/world_time",
-            icon: 'github'
+            icon: 'github',
+            tooltip: 'Open in Github'
         },
         {
             link: "https://drive.google.com/file/d/1kc7EE7naz9Rpvq8kyJhJ4F_eB96tnEi5/view",
-            icon: 'download'
+            icon: 'download',
+            tooltip: 'Download The APP'
         }
     ],
     techs: [

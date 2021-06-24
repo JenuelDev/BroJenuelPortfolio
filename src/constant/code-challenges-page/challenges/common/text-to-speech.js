@@ -5,11 +5,13 @@ export default {
     links: [
         {
             link: "https://github.com/BroJenuel/MyPortFolio/tree/master/text-to-speach",
-            icon: 'github'
+            icon: 'github',
+            tooltip: 'Open in Github'
         },
         {
             link: "https://jenuelganawed-texttospeach.netlify.app/",
-            icon: 'link'
+            icon: 'link',
+            tooltip: 'Open Link'
         }
     ],
     techs: [
