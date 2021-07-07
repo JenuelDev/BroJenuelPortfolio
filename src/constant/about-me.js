@@ -1,7 +1,7 @@
 const info =
     "<p>Hi! I'm Jenuel Ganawed, and I am a Web Developer.</p>" +
 
-    "<p>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to Join or Work in any opportunity that will help me grow and enhance my skills and knowledge. I welcome challenging projects and enjoy working with all sorts of personalities.</p>" +
+    "<p>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.<br><br>I'd Love to <u><i><b>Join/Work</b></i></u> in a company/projects and <u><i><b>Help solve their problems or create ideas</b></i></u>, that will also help me grow in knowledge and enhance my skills. I welcome challenging projects and enjoy working with all sorts of personalities.</p>" +
 
     "<p>Here are a few technologies I've been working with recently:</p>";
 
@@ -31,11 +31,11 @@ const skillList = [
         text: 'laravel/Lumen',
         des: "<a href='https://laravel.com/' target='_blank' alt='Go to Laravel'>Laravel</a> is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller architectural pattern and based on Symfony. Laravel <a href='https://lumen.laravel.com/' target='_blank' alt='Go to lumen'>Lumen</a> is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax."
     },
-    {
-        icon: 'angular',
-        text: 'AngularS',
-        des: "AngularJS is a JavaScript-based open-source front-end web framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications."
-    },
+    // {
+    //     icon: 'angular',
+    //     text: 'AngularS',
+    //     des: "AngularJS is a JavaScript-based open-source front-end web framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications."
+    // },
     {
         icon: 'ruby',
         text: 'Ruby on Rails',

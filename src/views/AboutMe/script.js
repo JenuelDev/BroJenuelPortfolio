@@ -27,7 +27,7 @@ export default {
                 {
                     icon: 'toggle',
                     title: 'Website Management',
-                    description: 'Managing all of the activities included in the process of posting and maintaining a website on the World Wide Web. This includes WWebsite optimization and SEO friendly.'
+                    description: 'Managing all of the activities included in the process of posting and maintaining a website on the World Wide Web. This includes Website optimization and SEO friendly.'
                 }
             ]
         }
