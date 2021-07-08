@@ -11,36 +11,64 @@
             </p>
             <div class="inner">
                 <ul class="tab-list">
-                    <li v-for="(exp, index) in experiences" :key="exp.company" @click="tab = index" :class="tab == index ? 'active' : ''">
+                    <li
+                        v-for="(exp, index) in experiences"
+                        :key="exp.company"
+                        @click="tab = index"
+                        :class="tab == index ? 'active' : ''"
+                    >
                         <div>
-                            <span>{{exp.tab}}</span>
+                            <span>{{ exp.tab }}</span>
                         </div>
                     </li>
                     <div
                         class="slider"
-                        :style="width >= 600 ?
-                            'transform: translateY(calc(' +
-                            tab +
-                            ' * var(--tab-height)));' :
-                            'transform: translateX(calc(' +
-                            tab +
-                            ' * var(--tab-width)));'
+                        :style="
+                            width >= 600
+                                ? 'transform: translateY(calc(' +
+                                  tab +
+                                  ' * var(--tab-height)));'
+                                : 'transform: translateX(calc(' +
+                                  tab +
+                                  ' * var(--tab-width)));'
                         "
                     ></div>
                 </ul>
-                <template v-for="(exp, index) in experiences" :key="exp.company+index">
-                    <div v-scrollanimation class="company-details"  v-if="tab == index">
+                <template
+                    v-for="(exp, index) in experiences"
+                    :key="exp.company + index"
+                >
+                    <div
+                        v-scrollanimation
+                        class="company-details"
+                        v-if="tab == index"
+                    >
                         <h3>
-                            <span>{{exp.position}}</span>
+                            <span>{{ exp.position }}</span>
                             <span class="company">
                                 @
-                                <a :href="exp.url" target="_blank" rel="noopener">{{exp.company}}</a>
+                                <a
+                                    :href="exp.url"
+                                    target="_blank"
+                                    rel="noopener"
+                                >
+                                    {{ exp.company }}
+                                </a>
                             </span>
                         </h3>
-                        <p class="range" v-html="exp.workStart+' - '+ exp.workUntil"></p>
+                        <a class="link-button" v-if="exp.certificate" rel="external" target="_blank" :href="exp.certificate.link" hreflang="es-es">
+                            <Icon name="certificate" :size="15" />
+                            {{exp.certificate.label}}
+                        </a>
+                        <p
+                            class="range"
+                            v-html="exp.workStart + ' - ' + exp.workUntil"
+                        ></p>
                         <div>
                             <ul>
-                                <li v-for="d in exp.des" :key="d"><p v-html="d"></p></li>
+                                <li v-for="d in exp.des" :key="d">
+                                    <p v-html="d"></p>
+                                </li>
                             </ul>
                         </div>
                     </div>

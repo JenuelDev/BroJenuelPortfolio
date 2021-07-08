@@ -111,6 +111,19 @@ p {
     transform: translateY(0);
 }
 
+.link-button {
+    border: 1px solid var(--slate);
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+    transition: 0.3s !important;
+
+    &:hover {
+        border: 1px solid var(--primary);
+        color: var(--primary);
+    }
+}
+
 @media only screen and (max-width: 425px) {
     main {
         p {
