@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "dist": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./dist.ps1"
+    "dist": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./dist.ps1",
+    "deploy": "yarn build && yarn dist"
   },
   "dependencies": {
     "core-js": "^3.6.5",

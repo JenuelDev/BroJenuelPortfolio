@@ -5,7 +5,7 @@ export default {
     tab: "Utalk",
     company:
         "Beijing Bangnishuo Internet Education Technology LTD-Philippines (Utalk)",
-    workStart: "Sept. 2019",
+    workStart: "August 2019",
     workUntil: "April 2021",
     des: [
         "Maintaining Systems and services to lower the rate of system errors or bugs.",
