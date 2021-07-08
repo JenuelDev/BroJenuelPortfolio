@@ -73,13 +73,13 @@
 <script>
 import CodeChallenge from './../CodeChallenge/index.vue'
 import Icon from './../../components/Icons'
-import Work from './../../constant/work-page'
+import Project from './../../constant/work-page'
 export default {
-    name: "Work",
+    name: "Project",
     components: {Icon, CodeChallenge},
     data: () => {
         return {
-            works: Work
+            works: Project
         }
     },
     mounted() {

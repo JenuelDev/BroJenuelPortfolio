@@ -32,11 +32,11 @@
                     <li
                         v-scrollanimation
                         style="transition-delay: 400ms"
-                        @click="$router.push({ name: 'Work' })"
+                        @click="$router.push({ name: 'Project' })"
                     >
-                        <div :class="{ active: $route.name == 'Work' }">
+                        <div :class="{ active: $route.name == 'Project' }">
                             <Icon name="code" :size="15" />
-                            Works
+                            Projects
                         </div>
                     </li>
                     <li

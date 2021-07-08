@@ -17,8 +17,8 @@ const routes = [
         component: () => import("./../views/MyExperience")
     },
     {
-        path: "/work",
-        name: "Work",
+        path: "/Project",
+        name: "Project",
         component: () => import("./../views/MyWork")
     },
     {

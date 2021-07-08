@@ -1,5 +1,5 @@
 export default {
-    title: "My Work",
+    title: "My Projects",
     des:
         "Showcasing projects I made, some projects are made for public use and some are made for a client.",
     works: [
