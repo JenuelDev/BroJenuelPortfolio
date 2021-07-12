@@ -4,10 +4,10 @@ import Intro from "./../views/AboutMe/AboutMe.vue";
 const routes = [
     {
         path: "/",
-        redirect: "/aboutme"
+        redirect: "/home"
     },
     {
-        path: "/aboutme",
+        path: "/home",
         name: "AboutMe",
         component: Intro
     },

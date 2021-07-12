@@ -16,8 +16,8 @@
                     @click="$router.push({ name: 'AboutMe' }); $store.state.navShow = false"
                 >
                     <div :class="{ active: $route.name == 'AboutMe' }">
-                        <Icon name="user" :size="15" />
-                        About Me
+                        <Icon name="home" :size="15" />
+                        Home
                     </div>
                 </li>
                 <li
