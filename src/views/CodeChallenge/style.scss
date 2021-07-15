@@ -14,17 +14,17 @@
 
     .code-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         position: relative;
         margin-top: 50px;
+        gap: 20px;
 
         .a-before-enter {
             opacity: 0;
             transform: translateY(20px);
             transition: 0.2s ease-in-out;
         }
-    
+
         .a-enter {
             opacity: 1;
             transform: translateY(0);
@@ -32,21 +32,17 @@
 
         .code-item {
             visibility: visible;
-            background-color: rgba(255, 255, 255, 0);
             box-shadow: 0 10px 30px -15px var(--navy-shadow);
             border-radius: var(--border-radius);
             transition: 0.2s;
             height: 100%;
-            
-            
+            z-index: 1;
+            background-color: var(--lightBackground);
 
             .code-item-inner {
                 display: flex;
-                -webkit-box-pack: justify;
                 justify-content: space-between;
-                -webkit-box-align: center;
                 flex-direction: column;
-                gap: 20px;
                 padding: 2rem 1.75rem;
                 height: 88%;
 
@@ -125,7 +121,6 @@
             }
 
             &:hover {
-                transition-delay: 0ms !important;
                 transform: translate(0px, -5px);
                 box-shadow: var(--black-shadow);
                 background-color: var(--lightBackground);

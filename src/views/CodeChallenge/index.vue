@@ -11,8 +11,11 @@
                 v-for="(code, index) in CodeChallenge.challenges"
                 :key="index"
             >
-                <div v-scrollanimation :style="'transition-delay:'+(index*100)+'ms'">
-                    <div  class="code-item" >
+                <div
+                    v-scrollanimation
+                    :style="'transition-delay:' + index * 100 + 'ms'"
+                >
+                    <div class="code-item">
                         <div class="code-item-inner">
                             <header>
                                 <div class="item-top">
@@ -32,7 +35,11 @@
                                     </div>
                                     <div class="item-links">
                                         <div
-                                            class="item-links-toggle tooltip"
+                                            class="
+                                                item-links-toggle
+                                                customTooltip
+                                            "
+                                            :gloss="link.tooltip"
                                             v-for="link in code.links"
                                             :key="link.link"
                                             @click="openSite(link.link)"
@@ -41,9 +48,8 @@
                                                 class="icon"
                                                 :name="link.icon"
                                                 :size="25"
-                                                style="margin-bottom: 10px;"
+                                                style="margin-bottom: 10px"
                                             />
-                                            <span class="tool-tip-text">{{link.tooltip}}</span>
                                         </div>
                                     </div>
                                 </div>
@@ -52,7 +58,10 @@
                             </header>
                             <footer>
                                 <ul>
-                                    <li v-for="tech in code.techs" :key="tech.name">
+                                    <li
+                                        v-for="tech in code.techs"
+                                        :key="tech.name"
+                                    >
                                         <Icon :name="tech.icon" :size="15" />
                                         {{ tech.name }}
                                     </li>
@@ -77,8 +86,8 @@ export default {
     },
     methods: {
         openSite(site) {
-            window.open(site, '_blank')
-        }
-    }
+            window.open(site, "_blank");
+        },
+    },
 };
 </script>
