@@ -33,19 +33,13 @@ export default {
             techs: ["vue", "javascript"],
             links: [
                 {
-                    link:
-                        "https://github.com/BroJenuel-Projects/kate-awisan-v2",
-                    icon: "github",
-                    tooltip: "Open in Github"
-                },
-                {
                     link: "https://kateawisan.ml",
                     icon: "link",
                     tooltip: "Open Link"
                 }
             ],
             imageLink: "https://kateawisan.ml",
-            img: "https://i.imgur.com/ErFsPiGl.png"
+            img: "https://i.imgur.com/v4uiq8Al.png"
         },
         {
             overline: "Search Engine Project",
