@@ -2,7 +2,7 @@
     <div v-scrollanimation class="my-footer">
         <div
             class="footer-toggle-link"
-            @click="openSite('https://github.com/BroJenuel/jenuel-portfolio-v2')"
+            @click="openSite('https://github.com/BroJenuel/BroJenuelPortfolio')"
             >
             <div class="copy-right">
                 {{ new Date().getFullYear() }}
