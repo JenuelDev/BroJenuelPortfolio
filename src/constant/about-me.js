@@ -7,8 +7,13 @@ const info =
 
 const skillList = [
     {
+        icon: 'code',
+        text: 'PHP',
+        des: "<a href='https://www.php.net/' target='_blank' alt='Go to PHP Website'>PHP:Hypertext Processor</a> is a popular general-purpose scripting language that is especially suited to web development. Fast, flexible and pragmatic, PHP powers everything from your blog to the most popular websites in the world."
+    },
+    {
         icon: 'javascript',
-        text: 'JavaScript (ES6+)',
+        text: 'JavaScript',
         des: "JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web. JavaScript is easy to learn. This tutorial will teach you JavaScript from basic to advanced."
     },
     {

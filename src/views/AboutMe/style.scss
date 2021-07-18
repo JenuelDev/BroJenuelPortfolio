@@ -197,7 +197,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.8);
         z-index: 80;
     }
     .modal-window-content {
@@ -215,6 +215,16 @@
             left: 50%;
             margin-left: -125px;
             margin-top: 20vh;
+
+            .x-close-button {
+                float: right;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
 
             h1 {
                 margin: 10px 0;
@@ -242,6 +252,23 @@
             .about-me-text {
                 order: 2;
                 align-self: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 553px) {
+    .modal-window {
+        .modal-window-content {
+            .box {
+                position: fixed;
+                max-width: 250px;
+                background-color: var(--background);
+                padding: 20px;
+                left: 45%;
+                border-radius: 10px;
+                margin-left: -125px;
+                margin-top: 20vh;
             }
         }
     }
