@@ -45,7 +45,7 @@
                         <Icon
                             class="skill-icon"
                             :name="skill.icon"
-                            :size="20"
+                            :size="30"
                         />
                         {{ skill.text }}
                     </li>

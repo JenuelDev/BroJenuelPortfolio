@@ -34,6 +34,7 @@
         margin: 20px 0px 0px;
         gap: 10px;
         list-style: none;
+        
 
         li {
             font-family: var(--font-mono) !important;
@@ -47,6 +48,7 @@
             align-items: center;
             gap: 10px;
             cursor: pointer;
+            font-size: 20px;
 
             &:hover {
                 color: var(--primary) !important;
@@ -240,6 +242,15 @@
 
 @media only screen and (max-width: 856px) {
     .about-me {
+
+        .skill-list {
+            justify-content: center;
+        }
+
+        .about-me-text-info {
+            text-align: center;
+        }
+
         .about-me-inner {
             display: flex;
             flex-direction: column;
