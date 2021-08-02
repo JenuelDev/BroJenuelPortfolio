@@ -1,5 +1,5 @@
 const info =
-    "<p>Hi! I'm Jenuel Ganawed, and I am a Web Developer.</p>" +
+    "<p>Hi! I'm Jenuel Ganawed, and I am a <b>Software Developer</b>.</p>" +
 
     "<p>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between.<br><br>I'd Love to <u><i><b>Join/Work</b></i></u> in a company/projects and <u><i><b>Help solve their problems or create ideas</b></i></u>, that will also help me grow in knowledge and enhance my skills. I welcome challenging projects and enjoy working with all sorts of personalities.</p>" +
 
