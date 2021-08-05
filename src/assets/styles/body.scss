@@ -74,7 +74,7 @@ p {
     .front-icon {
         color: var(--primary) !important;
         margin-right: 10px;
-        width: 50px;
+        min-width: 30px;
     }
 
     &::after {

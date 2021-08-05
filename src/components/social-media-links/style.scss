@@ -30,15 +30,32 @@
             }
 
             li {
-                padding: 10px;
+                padding: 7px;
                 transition: 0.2s ease-in-out;
                 color: var(--lightSlate);
+                margin-top: 8px;
+                border-radius: 100%;
+
+                .a-link {
+                    span {
+                        position: absolute;
+                        transform: translate(15px, 5px);
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: 0.3s;
+                    }
+                }
 
                 &:hover {
                     transform: translate(0px, -4px);
+                    background-color: var(--lightBackground);
                     .a-link {
                         cursor: pointer;
                         color: var(--primary) !important;
+                        span {
+                            visibility: visible;
+                            opacity: 1;
+                        }
                     }
                 }
             }

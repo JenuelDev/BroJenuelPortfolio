@@ -3,11 +3,11 @@
     z-index: 99;
     right: 0;
 
-    &:hover:after {
-        background: #eee;
+    &:after {
+        background: var(--background);
         border-radius: 5px;
         bottom: -33px;
-        color: black;
+        // color: var(--primary);
         content: attr(gloss);
         right: 0%;
         padding: 5px 15px;
@@ -16,16 +16,32 @@
         width: auto;
         white-space: nowrap;
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
     }
 
-    &:hover:before {
+    &:hover:after {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    &:before {
         border: solid;
-        border-color: #ddd transparent;
+        border-color: var(--background) transparent;
         border-width: 0 6px 6px 6px;
         bottom: -4px;
         content: "";
         left: 40%;
         position: absolute;
         z-index: 99;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    &:hover:before {
+        visibility: visible;
+        opacity: 1;
     }
 }

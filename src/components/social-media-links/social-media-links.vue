@@ -8,6 +8,7 @@
             class="a-link"
           >
             <Icon :name="link.icon" :size="25"/>
+            <span>{{link.title}}</span>
           </div>
         </li>
       </ul>

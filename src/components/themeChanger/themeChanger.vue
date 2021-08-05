@@ -1,7 +1,7 @@
 <template>
     <div class="theme-dropdown" :class="{'open-dropdown':open}" v-click-outside="clickOutSide()">
-        <div class="color-selector" @click="open = !open"></div>
-        <div class="theme-dropdown-content">
+        <div class="color-selector" @mouseover="open = true"></div>
+        <div class="theme-dropdown-content" @mouseover="open = true" @mouseout="open = false">
             <div class="theme-dropdown-content-wrapper">
                 <div v-for="theme in themes" class="color-theme-choices" :class="{'active' : selectedTheme == theme.name}" :key="theme.name" @click="changeTheme(theme);">
                     <div class="color-selector-pallette">
@@ -92,7 +92,7 @@ export default {
             margin: 3px 20px 0px 20px;
             border-radius: 100%;
             border: 3px solid var(--primary);
-            transition: 0.3s;
+            transition: 0.1s;
         }
 
         .theme-dropdown-content {
@@ -103,7 +103,7 @@ export default {
             padding: 15px 0 0 0;
             opacity: 0;
             z-index: 1;
-            transition: 0.3s;
+            transition: 0.1s;
             visibility: hidden;
 
             .theme-dropdown-content-wrapper {

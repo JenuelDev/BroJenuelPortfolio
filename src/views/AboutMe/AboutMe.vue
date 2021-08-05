@@ -4,13 +4,16 @@
             <transition name="modal">
                 <div class="box" v-show="dialog">
                     <div>
-                        <Icon @click="closeDialog()" class="x-close-button" name="x" />
+                        <Icon
+                            @click="closeDialog()"
+                            class="x-close-button"
+                            name="x"
+                        />
                         <h1>
-                            <Icon
-                                class="skill-icon"
-                                :name="dialogContent.icon"
-                                :size="20"
-                            />{{ dialogContent.title }}
+                            <div class="skill-icon">
+                                <Icon :name="dialogContent.icon" :size="30" />
+                            </div>
+                            {{ dialogContent.title }}
                         </h1>
                         <div>
                             <p v-html="dialogContent.des"></p>
@@ -42,12 +45,14 @@
                         @click="openDialog(skill)"
                         :style="'transition-delay: ' + i * 50 + 'ms'"
                     >
-                        <Icon
-                            class="skill-icon"
-                            :name="skill.icon"
-                            :size="30"
-                        />
-                        {{ skill.text }}
+                        <div>
+                            <Icon
+                                class="skill-icon"
+                                :name="skill.icon"
+                                :size="20"
+                            />
+                            {{ skill.text }}
+                        </div>
                     </li>
                 </ul>
             </div>
