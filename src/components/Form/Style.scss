@@ -3,24 +3,7 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
-
-        .alert {
-            padding: 10px;
-            opacity: 0.8;
-            border-radius: 5px;
-            h1, p {
-                margin: 5px;
-                color: var(--background);
-            }
-        }
-
-        .show-error {
-            background-color: var(--error);
-        }
-        
-        .show-success {
-            background-color: var(--primary);
-        }
+        max-width: 500px;
 
         .flex {
             display: flex;

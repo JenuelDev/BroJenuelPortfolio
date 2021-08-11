@@ -21,10 +21,10 @@ import Form from "./../../components/Form"
 
 export default {
     components: { Icon, Form},
-    data: () => {
+    setup () {
         return {
             socials: socialMediaLinks,
-        };
-    },
+        }
+    }
 };
 </script>

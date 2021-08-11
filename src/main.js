@@ -5,6 +5,7 @@ import './assets/main.scss'
 import './registerServiceWorker'
 import ScrollAnimation, { animationViewFull } from './directives/scrollAnimation'
 import { store } from './store/store'
+import VueSession from './helper/VueSession'
 
 createApp(App)
 .directive('scrollanimation', ScrollAnimation)
@@ -24,4 +25,5 @@ createApp(App)
     })
 .use(store)
 .use(router)
+.use(VueSession)
 .mount('#app')

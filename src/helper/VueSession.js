@@ -7,13 +7,13 @@ var VueSession = {
     }
 }
 
-VueSession.install = function(Vue, options) {
+VueSession.install = (app, options) => {
     if(options && 'persist' in options && options.persist) STORAGE = window.localStorage;
     else STORAGE = window.sessionStorage;
-    Vue.config.globalProperties.$session = {
+    app.config.globalProperties.$session = {
         flash: {
             parent: function(){
-                return Vue.config.globalProperties.$session;
+                return app.config.globalProperties.$session;
             },
             get: function(key){
                 var all = this.parent().getAll();
@@ -102,6 +102,7 @@ VueSession.install = function(Vue, options) {
             return this.get('session-id');
         }
     }
+    
 };
 
-module.exports = VueSession;
+export default VueSession;
