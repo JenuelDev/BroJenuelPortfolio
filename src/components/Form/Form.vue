@@ -19,6 +19,8 @@ import GradientBorder from './../GradientBorder';
 import Alert from './../alert/Alert.vue';
 import { reactive, ref } from '@vue/reactivity';
 import axios from 'axios';
+import emailjs, { init } from 'emailjs-com';
+init('user_zdO7SqNAzUeW1bl8KtMhn');
 
 export default {
     name: 'Form',
@@ -47,39 +49,70 @@ export default {
             return form.subject != '' && form.name != '' && form.email != '' && form.message != '' ? true : false;
         };
 
-        const validateForm = async (sentSuccess = false) => {
-            if (sentSuccess === true) {
-                alertTitle.value = `Your Message Send! I'll Check them later. 😁👍`;
-                alertDescription.value = `It seams that your message was send successfuly. I'm not online always but I will definitely check your message when I go online.`;
-                alertType.value = 'success';
-                alertShow.value = true;
-                return false;
-            }
-
-            if (checkProperties() === false) {
-                console.log('hey');
-                alertTitle.value = 'Some Fields Are Empty 😢😭📧';
-                alertDescription.value = 'Sorry about that, it seems that there are empty fields. Please fill them all out.';
-                alertType.value = 'error';
-                alertShow.value = true;
-                return false;
-            }
-            if (validateEmail(form.email) === false) {
-                alertTitle.value = 'Oops! Invalid Email 😢😭📧';
-                alertDescription.value = 'Sorry about that, it seems that you have entered a wrong email format.';
-                alertType.value = 'error';
-                alertShow.value = true;
-                return false;
-            }
-
-            return true;
-        };
-
-        const alertSet = ({title, description, type, show}) => {
+        const alertSet = ({ title, description, type, show }) => {
             alertTitle.value = title;
             alertDescription.value = description;
             alertType.value = type;
             alertShow.value = show;
+        };
+
+        const verifyEmail = async () => {
+            let r;
+            await axios
+                .post(`http://localhost:8000/email/verify?email=${form.email}`)
+                .then((res) => {
+                    r = res.data;
+                })
+                .catch((e) => {
+                    console.log(e.response.data);
+                    r = e.response.data;
+                });
+            return r;
+        };
+
+        const validateForm = async (sentSuccess = false) => {
+            if (sentSuccess === true) {
+                alertSet({
+                    title: `Successfully Sent! I'll Check them later. 😁👍`,
+                    description: `It seams that your message was send successfuly. I'm not online always but I will definitely check your message when I go online.`,
+                    type: 'success',
+                    show: true,
+                });
+                return;
+            }
+
+            if (checkProperties() === false) {
+                alertSet({
+                    title: 'Some Fields Are Empty 😢😭📧',
+                    description: 'Sorry about that, it seems that there are empty fields. Please fill them all out.',
+                    type: 'error',
+                    show: true,
+                });
+
+                return false;
+            }
+            if (validateEmail(form.email) === false) {
+                alertSet({
+                    title: 'Oops! Invalid Email 😢😭📧',
+                    description: 'Sorry about that, it seems that you have entered a wrong email format.',
+                    type: 'error',
+                    show: true,
+                });
+                return false;
+            }
+
+            let verified = await verifyEmail();
+            if (verified.deliverable === false) {
+                alertSet({
+                    title: 'Oops! Email Does not Exist! 😢😭📧',
+                    description: 'Sorry about that, it seems that you have entered a wrong email, I cant find it anywhere.',
+                    type: 'error',
+                    show: true,
+                });
+                return false;
+            }
+
+            return true;
         };
 
         return {
@@ -92,19 +125,17 @@ export default {
             alertDescription,
             alertType,
             validateEmail,
-
             async sendEmail() {
                 alertShow.value = false;
                 sending.value = true;
                 if (await validateForm()) {
-                    axios
-                        .post(`${process.env.VUE_APP_BACKEND_URL}/email/send`, form)
-                        .then((res) => {
-                            console.log(res);
+                    emailjs
+                        .send('service_88wvqn9', 'template_nulphu2', this.form)
+                        .then(() => {
                             sent.value = true;
                             showError.value = false;
                             sending.value = false;
-                            form.value = {
+                            this.form = {
                                 subject: '',
                                 name: '',
                                 email: '',
@@ -112,19 +143,16 @@ export default {
                             };
                             validateForm(true);
                         })
-                        .catch((e) => {
-                            if (e.response.data.deliverable === false) {
-                                alertSet({
-                                    title: "Ops! Email Doesn't Exist 😥",
-                                    description: "It seems that you have entered the email incorrectly that I can't find it. " 
-                                    + (e.response.data.did_you_mean != '' ? `Did you mean <b>${e.response.data.did_you_mean}</b>.`: ''),
-                                    type: "error",
-                                    show: true
-                                })
-                            }
+                        .catch(() => {
                             sent.value = false;
                             showError.value = false;
                             sending.value = false;
+                            alertSet({
+                                title: 'Oops! Email Does not Exist! 😢😭📧',
+                                description: 'Sorry about that, it seems that you have entered a wrong email, I cant find it anywhere.',
+                                type: 'error',
+                                show: true,
+                            });
                         });
                 } else {
                     sending.value = false;
