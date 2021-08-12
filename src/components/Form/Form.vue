@@ -59,7 +59,7 @@ export default {
         const verifyEmail = async () => {
             let r;
             await axios
-                .post(`http://localhost:8000/email/verify?email=${form.email}`)
+                .post(`${process.env.VUE_APP_BACKEND_URL}/email/verify?email=${form.email}`)
                 .then((res) => {
                     r = res.data;
                 })
