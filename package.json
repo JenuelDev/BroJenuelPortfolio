@@ -3,8 +3,8 @@
   "version": "4.0.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "cross-env VUE_APP_BACKEND_URL=http://localhost:8000 vue-cli-service serve",
+    "build": "cross-env VUE_APP_BACKEND_URL=https://brojenuelbackend.herokuapp.com vue-cli-service build",
     "lint": "vue-cli-service lint",
     "dist": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./dist.ps1",
     "deploy": "yarn build && yarn dist"
@@ -25,6 +25,7 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
+    "cross-env": "^7.0.3",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-0",
     "node-sass": "^5.0.0",
