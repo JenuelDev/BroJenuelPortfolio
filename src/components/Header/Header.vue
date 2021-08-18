@@ -65,7 +65,7 @@
                     :withBg="false"
                 >
                     <a
-                        href="https://github.com/BroJenuel/BroJenuel/raw/master/resume/JenuelGanawed-2021.pdf"
+                        href="https://drive.google.com/file/d/1glSw79r4360gq0kmpODBCibRQEg1l6tM/view?usp=sharing"
                         target="_blank"
                         class="resume-button"
                         rel="noopener"
@@ -129,7 +129,7 @@ export default {
     mounted() {
         window.addEventListener("scroll", this.onScroll);
     },
-    beforeUnmount() {
+    beforeUmount() {
         window.removeEventListener("scroll", this.onScroll);
     },
 };
