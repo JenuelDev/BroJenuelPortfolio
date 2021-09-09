@@ -66,7 +66,13 @@ export default {
                     color1: '#b8005c',
                     color2: "#dcdcdc",
                     color3: "#2b2b2b"
-                }
+                },
+                {
+                    name: "brightMind",
+                    color1: '#4b5ebe',
+                    color2: "#dcdcdc",
+                    color3: "#2b2b2b"
+                },
             ];
 
         const changeTheme = (theme) => {

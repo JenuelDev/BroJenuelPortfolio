@@ -107,3 +107,31 @@
     --linear-5: #b8005c;
     --linear-6: #b8005c;
 }
+
+[theme="brightMind"] {
+    --primary: #4b5ebe;
+    --image-cover: #dddddd;
+    --primary-darker: #ff5a6a;
+    --background: #ffffff;
+    --lightBackground: #e9e9e9;
+    --nav-bg: rgba(255, 255, 255, 0.563);
+    --slate: #2b2b2b;
+    --lightSlate: #3f3f3f;
+    --lightestSlate: #444444;
+    --white: #1b1b1c;
+    --navy-shadow: rgba(0, 0, 0, 0.8);
+
+    // for linear gradient
+    --linear-1: #b8005c;
+    --linear-2: #b8005c;
+    --linear-3: #b8005c;
+    --linear-4: #b8005c;
+    --linear-5: #b8005c;
+    --linear-6: #b8005c;
+
+    --font-size-lr: 30px;
+    --font-size-md: 24px;
+    --font-size-sm: 14px;
+
+    --social-icon-light-color: #8895bf;
+}

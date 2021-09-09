@@ -59,12 +59,8 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="postcss">
 main {
-    margin: 0px auto;
-    max-width: 1600px;
-    counter-reset: section 0;
-    margin-top: 130px;
     min-height: 70vh;
 }
 

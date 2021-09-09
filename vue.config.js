@@ -8,5 +8,5 @@ module.exports = {
             skipWaiting: true,
             exclude: [/_redirects/]
         },
-    }
+    },
 };

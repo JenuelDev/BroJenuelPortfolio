@@ -1,8 +1,6 @@
 
 :root {
-    
-    --font-sans: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-    --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    --font-mono: "Inter var", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     --border-radius: 4px;
     --fz-xs: 13px;
@@ -54,9 +52,12 @@
 *,
 ::before,
 ::after {
-    font-family: var(--font-mono);
     box-sizing: inherit;
     outline: none;
+}
+
+body {
+    font-family: var(--font-mono);
 }
 
 img {

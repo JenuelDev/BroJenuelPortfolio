@@ -1,97 +1,50 @@
 <template>
-    <div
-        class="header"
-        :class="{ 'navbar--hidden': !showNavbar && scroll > 100, 'nav-min': scroll > 50 }"
-    >
+    <div class="header" :class="{ 'navbar--hidden': !showNavbar && scroll > 100, 'nav-min': scroll > 50 }">
         <nav>
-            <div class="logo-image">
-                <img width="50" height="50" :src="require('./../../assets/images/brojenuellogo.svg')" @click="$router.push('/')" alt="Jenuel Ganawed Logo Image" />
-            </div>
+            <div class="logo-image"></div>
             <div class="navs">
                 <ol>
-                    <li
-                        v-scrollanimation
-                        style="transition-delay: 100ms"
-                        @click="$router.push({ name: 'AboutMe' })"
-                    >
-                        <div :class="{ active: $route.name == 'AboutMe' }">
-                            <Icon name="home" :size="15" />
-                            Home
+                    <li v-scrollanimation style="transition-delay: 100ms" @click="$router.push({ name: 'AboutMe' })">
+                        <div class="flex items-center" :class="{ active: $route.name == 'AboutMe' }">
+                            <span class="text-size-14px font-500"> Home </span>
                         </div>
                     </li>
-                    <li
-                        v-scrollanimation
-                        style="transition-delay: 250ms"
-                        @click="$router.push({ name: 'Experience' })"
-                    >
-                        <div :class="{ active: $route.name == 'Experience' }">
-                            <Icon name="case" :size="15" />
-                            Experience
+                    <li v-scrollanimation style="transition-delay: 250ms" @click="$router.push({ name: 'Experience' })">
+                        <div class="flex items-center" :class="{ active: $route.name == 'Experience' }">
+                            <span class="text-size-14px font-500"> Experience </span>
                         </div>
                     </li>
-                    <li
-                        v-scrollanimation
-                        style="transition-delay: 400ms"
-                        @click="$router.push({ name: 'Project' })"
-                    >
+                    <li v-scrollanimation style="transition-delay: 400ms" @click="$router.push({ name: 'Project' })">
                         <div :class="{ active: $route.name == 'Project' }">
-                            <Icon name="code" :size="15" />
-                            Projects
+                            <span class="text-size-14px font-500"> Projects </span>
                         </div>
                     </li>
-                    <li
-                        v-scrollanimation
-                        style="transition-delay: 550ms"
-                        @click="$router.push({ name: 'Contact' })"
-                    >
+                    <li v-scrollanimation style="transition-delay: 550ms" @click="$router.push({ name: 'Contact' })">
                         <div :class="{ active: $route.name == 'Contact' }">
-                            <Icon name="envelope" :size="15" />
-                            Contact Me
+                            <span class="text-size-14px font-500"> Contact Me </span>
                         </div>
                     </li>
-                    <li
-                        v-scrollanimation
-                        style="transition-delay: 650ms"
-                    >
-                        <a rel="external" href="https://brojenuelblog.ml" hreflang="es-es">
-                            <Icon name="documents" :size="15" />
-                            Blog
-                        </a>
+                    <li v-scrollanimation style="transition-delay: 650ms">
+                        <a class="text-size-14px font-500" rel="external" href="https://brojenuelblog.ml" hreflang="es-es"> Blog </a>
                     </li>
                 </ol>
-                <GradientBorder
-                    v-scrollanimation
-                    style="transition-delay: 850ms; margin-left: 20px; font-weight: 900"
-                    :withBg="false"
-                >
-                    <a
-                        href="https://drive.google.com/file/d/1glSw79r4360gq0kmpODBCibRQEg1l6tM/view?usp=sharing"
-                        target="_blank"
-                        class="resume-button"
-                        rel="noopener"
-                    >
-                        <Icon name="file" :size="15" />
-                        Resume
-                    </a>
-                </GradientBorder>
-                <div v-scrollanimation style="transition-delay: 1000ms;">
+                <div v-scrollanimation style="transition-delay: 700ms">
                     <ThemeChanger />
                 </div>
             </div>
             <div class="show-mobile-nav-but">
-                <Icon name="menu" :size="30" @click="$store.state.navShow = true" style="margin-right: 20px;"/>
+                <Icon name="menu" :size="30" @click="$store.state.navShow = true" style="margin-right: 20px" />
             </div>
         </nav>
     </div>
 </template>
 
 <script>
-import ThemeChanger from './../themeChanger/themeChanger'
-import Icon from "./../../components/Icons";
-import GradientBorder from "./../GradientBorder";
+import ThemeChanger from './../themeChanger/themeChanger';
+import Icon from './../../components/Icons';
 export default {
-    name: "Header",
-    components: { Icon, GradientBorder, ThemeChanger },
+    name: 'Header',
+    components: { Icon, ThemeChanger },
     data() {
         return {
             scroll: 0,
@@ -101,11 +54,13 @@ export default {
         };
     },
     created() {
-        window.addEventListener("scroll", this.handleScroll);
+        window.addEventListener('scroll', this.handleScroll);
         window.addEventListener('resize', this.handleWidth);
     },
     methods: {
-        goToLink(link) { window.open(link) },
+        goToLink(link) {
+            window.open(link);
+        },
         handleScroll() {
             this.scroll = window.scrollY;
         },
@@ -114,8 +69,7 @@ export default {
         },
         onScroll() {
             // Get the current scroll position
-            const currentScrollPosition =
-                window.pageYOffset || document.documentElement.scrollTop;
+            const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
             // Because of momentum scrolling on mobiles, we shouldn't continue if it is less than zero
             if (currentScrollPosition < 0) {
                 return;
@@ -127,10 +81,10 @@ export default {
         },
     },
     mounted() {
-        window.addEventListener("scroll", this.onScroll);
+        window.addEventListener('scroll', this.onScroll);
     },
     beforeUmount() {
-        window.removeEventListener("scroll", this.onScroll);
+        window.removeEventListener('scroll', this.onScroll);
     },
 };
 </script>

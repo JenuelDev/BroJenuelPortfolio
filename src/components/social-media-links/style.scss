@@ -37,12 +37,15 @@
                 border-radius: 100%;
 
                 .a-link {
+                    position: relative;
+                    color: var(--social-icon-light-color);
                     span {
                         position: absolute;
-                        transform: translate(15px, 5px);
                         visibility: hidden;
                         opacity: 0;
                         transition: 0.3s;
+                        top: 0;
+                        left: 40px;
                     }
                 }
 
@@ -64,9 +67,9 @@
                 content: "";
                 display: block;
                 width: 1px;
-                height: 90px;
+                height: 50px;
                 margin: 0px auto;
-                margin-top: 20px;
+                margin-top: 10px;
                 background-color: var(--lightSlate);
             }
         }
@@ -91,15 +94,11 @@
         .email-media-link {
             position: relative;
 
-            
-
-
             .mail-link {
                 opacity: 0.7;
                 margin: 20px auto;
                 padding: 10px;
                 font-size: 1.2rem;
-                font-family: "Courier New", Courier, monospace !important;
                 letter-spacing: 0.1em;
                 writing-mode: vertical-lr;
                 display: inline-block;
@@ -122,8 +121,9 @@
                 content: "";
                 display: block;
                 width: 1px;
-                height: 90px;
+                height: 50px;
                 margin: 0px auto;
+                margin-top: 10px;
                 background-color: var(--lightSlate);
             }
         }

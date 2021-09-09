@@ -6,11 +6,12 @@
     "serve": "cross-env VUE_APP_BACKEND_URL=http://localhost:8000 vue-cli-service serve",
     "build": "cross-env VUE_APP_BACKEND_URL=https://brojenuelbackend.herokuapp.com vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "dist": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./dist.ps1",
-    "deploy": "yarn build && yarn dist"
+    "deploy": "yarn build && yarn dist",
+    "dist": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./dist.ps1"
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "boxicons": "^2.0.9",
     "core-js": "^3.6.5",
     "emailjs-com": "^3.2.0",
     "register-service-worker": "^1.7.1",
@@ -29,7 +30,8 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-0",
     "node-sass": "^5.0.0",
-    "sass-loader": "^10.1.1"
+    "sass-loader": "^10.1.1",
+    "vue-cli-plugin-windicss": "~1.0.4"
   },
   "eslintConfig": {
     "root": true,
