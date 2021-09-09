@@ -123,11 +123,3 @@ p {
         color: var(--primary);
     }
 }
-
-@media only screen and (max-width: 425px) {
-    main {
-        p {
-            font-size: 0.8rem !important;
-        }
-    }
-}

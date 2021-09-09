@@ -1,82 +1,17 @@
 <template>
-    
     <AboutMeSection />
     <TechnicalSkills />
-    <div class="what-i-offer-content">
-        <div v-scrollview class="services-title">
-            <h2><Icon class="service-title-icon" name="qrCode" /> What I can Offer/Service</h2>
-            <p>Your complete website solution</p>
-        </div>
-        <div class="services-wrapper">
-            <div class="services-item" v-scrollview v-for="(service, i) in services" :key="service.title" :style="`transition-delay: ${i * 200}ms;`">
-                <Card :index="1" :icon="service.icon" :title="service.title" :description="service.description" />
-            </div>
-        </div>
-    </div>
+    <WhatIconOffer />
 </template>
 <script>
-import Icon from './../../components/Icons';
-import AboutMe from './../../constant/about-me';
-import Card from './../../components/Card/Card.vue';
 import AboutMeSection from './../../components/AboutMe/ABoutMeSection.vue';
 import TechnicalSkills from './../../components/AboutMe/TechnicalSkills.vue';
+import WhatIconOffer from './../../components/AboutMe/WhatIOffer.vue';
 export default {
     components: {
-        Icon,
-        Card,
         AboutMeSection,
-        TechnicalSkills
-    },
-    setup() {
-        const services = [
-            {
-                icon: 'gridLayout',
-                title: 'Front-End Development',
-                description: 'Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.',
-            },
-            {
-                icon: 'database',
-                title: 'Back-End Development',
-                description:
-                    'Developing the server side responsible for storing and organizing data of an application and everything that communicates between the database and the browser.',
-            },
-            {
-                icon: 'toggle',
-                title: 'Website Management',
-                description:
-                    'Managing all of the activities included in the process of posting and maintaining a website on the World Wide Web. This includes Website optimization and SEO friendly.',
-            },
-        ];
-
-        return {
-            services,
-        };
-    },
-    data: () => {
-        return {
-            AboutMe: AboutMe,
-            dialog: false,
-            dialogContent: {
-                title: '',
-                des: '',
-            },
-        };
-    },
-    methods: {
-        openDialog(skill) {
-            this.dialogContent = {
-                title: skill.text,
-                des: skill.des,
-                icon: skill.icon,
-            };
-
-            document.getElementById('main-screen-window').style.overflowY = 'hidden';
-            this.dialog = !this.dialog;
-        },
-        closeDialog() {
-            document.getElementById('main-screen-window').style.overflowY = 'overlay';
-            this.dialog = !this.dialog;
-        },
+        TechnicalSkills,
+        WhatIconOffer
     },
 };
 </script>

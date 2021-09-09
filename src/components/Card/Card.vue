@@ -7,17 +7,17 @@
                         <Icon :size="50" :name="icon" />
                     </div>
                 </div>
-                <h3 class="item-title">{{ title }}</h3>
-                <div class="item-des" v-html="description"></div>
+                <h3 class="item-title text-size-24px">{{ title }}</h3>
+                <div class="item-des text-size-20px " v-html="description"></div>
             </header>
         </div>
     </div>
 </template>
 <script>
-import Icon from './../Icons'
+import Icon from './../Icons';
 export default {
-    components: {Icon},
-    props: ["index","icon", "links", "title", "description", "techs"],
+    components: { Icon },
+    props: ['index', 'icon', 'links', 'title', 'description', 'techs'],
 };
 </script>
 <style lang="scss">
@@ -59,14 +59,12 @@ export default {
             h3 {
                 margin: 0px 0px 0px;
                 color: var(--lightestSlate);
-                font-size: 1.2rem;
                 line-height: 1.1;
             }
 
             .item-des {
                 margin-top: 10px;
                 color: var(--lightSlate);
-                font-size: 0.9rem;
                 line-height: 1.2;
             }
         }
