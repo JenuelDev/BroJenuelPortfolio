@@ -28,7 +28,7 @@
             <SvgDecoration classNames="absolute md:visible invisible left-[-50px] bottom-[-20px] transform rotate-[-180deg] fill-[var(--primary)] opacity-50" :type="1" />
             <SvgDecoration classNames="absolute md:right-[-56px] md:visible invisible z-20 fill-[var(--primary)] opacity-50" :type="2" />
         </div>
-        <div class="text-size-24px md:px-10px w-[100%] max-w-[770px] pt-100px leading-relaxed">
+        <div class="text-size-24px md:px-10px w-[100%] max-w-[770px] pt-100px leading-relaxed select-none">
             <div class="mb-30px">
                 My name is Jenuel Ganawed. I’m a developer with a full-stack background and a keen eye for good design. I love to make complex things simple and joy to
                 use. Currently, I focus on building single-page applications with VueJs.
