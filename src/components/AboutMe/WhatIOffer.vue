@@ -1,8 +1,8 @@
 <template>
-    <section class="flex flex-col w-[100%] max-w-[1200px] visible opacity-100 z-10 px-10px mt-100px select-none">
+    <section class="flex flex-col w-[100%] max-w-[1200px] visible opacity-100 z-10 px-10px mt-100px select-none mx-auto">
         <div class="text-center mb-40px">
-            <h1 class="text-size-52px font-600 text-[var(--primary)] tracking-tight mt-10px mb-15px">What I can Offer</h1>
-            <p class="text-size-24px md:px-10px w-[100%] max-w-[770px] leading-relaxed mx-auto">
+            <h1 class="lg:text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--primary)] tracking-tight mt-10px mb-15px">What I can offer</h1>
+            <p class="md:text-size-24px text-size-20px md:px-10px w-[100%] max-w-[770px] md:leading-relaxed leading-normal mx-auto">
                 I’m constantly learning and keep up to date with the latest technologies, so I can pick the best tech for the job.
             </p>
         </div>

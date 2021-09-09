@@ -49,33 +49,10 @@
 @import './styles/themes.scss';
 
 
-*,
-::before,
-::after {
-    box-sizing: inherit;
-    outline: none;
-}
 
-body {
-    font-family: var(--font-mono);
-}
-
-img {
-    width: 100%;
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-.highlight:hover {
-    color: var(--primary);
-}
-
-.cursor-pointer {
-    cursor: pointer;
-}
 // components
-@import './styles/scrollbar.scss';
 @import './styles/body.scss';
+@import './styles/scrollbar.scss';
 @import './styles/header.scss';
 @import './../components/GradientBorder/style.scss';
 @import './../components/social-media-links/style.scss';
@@ -87,5 +64,4 @@ img {
 @import './../views/MyExperience/style.scss';
 @import './../views/MyWork/my-work.scss';
 @import './../components/Footer/Footer.scss';
-@import './styles/transition.scss';
 @import './styles/tool-tip.scss';

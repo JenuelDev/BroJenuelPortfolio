@@ -1,31 +1,24 @@
 <template>
-    <Overlay v-show="!$store.state.show">
-        <Intro />
-    </Overlay>
     <MobileNav />
-    <Header v-show="$store.state.show" />
-    <SocialMediaLinks v-show="$store.state.show" />
-    <main v-show="$store.state.show">
+    <Header />
+    <SocialMediaLinks />
+    <main>
         <router-view />
     </main>
-    <Footer v-show="$store.state.show" />
+    <Footer />
 </template>
 <script>
-import Footer from "./components/Footer";
-import SocialMediaLinks from "./components/social-media-links";
-import Header from "./components/Header";
-import Overlay from "./components/overlay";
-import Intro from "./views/Intro";
-import MobileNav from "./components/Header/MobileNav";
+import Footer from './components/Footer';
+import SocialMediaLinks from './components/social-media-links';
+import Header from './components/Header';
+import MobileNav from './components/Header/MobileNav';
 export default {
-    components: { SocialMediaLinks, Header, Overlay, Intro, MobileNav, Footer },
+    components: { SocialMediaLinks, Header, MobileNav, Footer },
     created() {
-        if (localStorage.getItem("showedIntro") == "done") {
-            let ext = localStorage.getItem("expy")
-                ? localStorage.getItem("expy")
-                : "";
+        if (localStorage.getItem('showedIntro') == 'done') {
+            let ext = localStorage.getItem('expy') ? localStorage.getItem('expy') : '';
 
-            if (ext != "") {
+            if (ext != '') {
                 let isExpire = parseInt(ext);
                 let dateNow = Date.now();
 
@@ -37,23 +30,17 @@ export default {
             }
         }
         console.log(
-            "%cHey! Whats Up! \n%cLike to dig into the meaty bits of the website?\nThanks for looking! Hit me up on Twitter @BroJenuel!",
-            "padding:10px;" +
-                "border-radius: 10px;" +
-                "color:#64ffda;" +
+            '%cHey! Whats Up! \n%cLike to dig into the meaty bits of the website?\nThanks for looking! Hit me up on Twitter @BroJenuel!',
+            'padding:10px;' +
+                'border-radius: 10px;' +
+                'color:#64ffda;' +
                 "font-family:'Ubuntu';" +
-                "display: block;" +
-                "font-weight:bold;" +
-                "font-size:48px;" +
-                "background:#0a192f;",
+                'display: block;' +
+                'font-weight:bold;' +
+                'font-size:48px;' +
+                'background:#0a192f;',
 
-            "padding: 10px; " +
-                "border-radius:10px; " +
-                "color:#ccd6f6; " +
-                "font-family:'Ubuntu'; " +
-                "font-weight:100; " +
-                "font-size:24px; " +
-                "background:#0a192f;"
+            'padding: 10px; ' + 'border-radius:10px; ' + 'color:#ccd6f6; ' + "font-family:'Ubuntu'; " + 'font-weight:100; ' + 'font-size:24px; ' + 'background:#0a192f;'
         );
     },
 };

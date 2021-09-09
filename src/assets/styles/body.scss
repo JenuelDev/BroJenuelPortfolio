@@ -1,30 +1,30 @@
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    outline: none !important;
+}
+
 body {
+    font-family: var(--font-mono);
     margin: 0px;
+    padding: 0;
     background-color: var(--background);
     color: var(--lightSlate);
+    overflow: hidden;
 }
 
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
 }
 
-section {
-    margin: 0px auto;
-    padding: 0px 0px;
-    display: block;
+.highlight:hover {
+    color: var(--primary);
 }
 
-a {
-    display: inline-block;
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
-    color: inherit;
-    position: relative;
-    transition: var(--transition) !important;
+.cursor-pointer {
     cursor: pointer;
 }
 
@@ -55,69 +55,5 @@ p {
                 width: 100%;
             }
         }
-    }
-}
-
-.numbered-header {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    margin: 10px 0px 40px;
-    width: 100%;
-    font-size: clamp(17px, 5vw, 32px);
-    white-space: nowrap;
-    color: var(--lightestSlate);
-
-    .front-icon {
-        color: var(--primary) !important;
-        margin-right: 10px;
-        min-width: 30px;
-    }
-
-    &::after {
-        content: "";
-        display: block;
-        position: relative;
-        max-width: 300px;
-        width: 100%;
-        height: 1px;
-        margin-left: 20px;
-        background-color: var(--slate);
-    }
-}
-
-.header-des {
-    max-width: 500px;
-    margin: 20px 0;
-}
-
-.route-enter-from,
-.route-leave-to {
-    opacity: 0;
-    transform: translateY(-30px);
-}
-
-.route-enter-active,
-.route-leave-active {
-    transition: all 0.3s ease;
-}
-
-.route-enter-to,
-.route-leave-from {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.link-button {
-    border: 1px solid var(--slate);
-    padding: 5px 10px;
-    border-radius: 8px;
-    margin: 5px 0;
-    transition: 0.3s !important;
-
-    &:hover {
-        border: 1px solid var(--primary);
-        color: var(--primary);
     }
 }

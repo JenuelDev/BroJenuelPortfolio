@@ -1,8 +1,8 @@
 <template>
     <div class="nav-mobile">
-        <div class="nav-front" :class="{'show-nav': $store.state.navShow}">
+        <div class="nav-front" :class="{ 'show-nav': $store.state.navShow }">
             <div class="close-button">
-                <Icon name="x" :size="30" @click="$store.state.navShow = false"/>
+                <Icon name="x" :size="30" @click="$store.state.navShow = false" />
             </div>
             <ul>
                 <li>
@@ -13,7 +13,10 @@
                 <li
                     v-scrollanimation
                     style="transition-delay: 100ms"
-                    @click="$router.push({ name: 'AboutMe' }); $store.state.navShow = false"
+                    @click="
+                        $router.push({ name: 'AboutMe' });
+                        $store.state.navShow = false;
+                    "
                 >
                     <div :class="{ active: $route.name == 'AboutMe' }">
                         <Icon name="home" :size="15" />
@@ -23,7 +26,10 @@
                 <li
                     v-scrollanimation
                     style="transition-delay: 250ms"
-                    @click="$router.push({ name: 'Experience' }); $store.state.navShow = false"
+                    @click="
+                        $router.push({ name: 'Experience' });
+                        $store.state.navShow = false;
+                    "
                 >
                     <div :class="{ active: $route.name == 'Experience' }">
                         <Icon name="case" :size="15" />
@@ -33,7 +39,10 @@
                 <li
                     v-scrollanimation
                     style="transition-delay: 400ms"
-                    @click="$router.push({ name: 'Project' }); $store.state.navShow = false"
+                    @click="
+                        $router.push({ name: 'Project' });
+                        $store.state.navShow = false;
+                    "
                 >
                     <div :class="{ active: $route.name == 'Project' }">
                         <Icon name="code" :size="15" />
@@ -43,42 +52,21 @@
                 <li
                     v-scrollanimation
                     style="transition-delay: 550ms"
-                    @click="$router.push({ name: 'Contact' }); $store.state.navShow = false"
+                    @click="
+                        $router.push({ name: 'Contact' });
+                        $store.state.navShow = false;
+                    "
                 >
                     <div :class="{ active: $route.name == 'Contact' }">
                         <Icon name="envelope" :size="15" />
                         Contact Me
                     </div>
                 </li>
-                <li
-                    v-scrollanimation
-                    style="transition-delay: 650ms"
-                >
+                <li v-scrollanimation style="transition-delay: 650ms">
                     <a rel="external" href="https://brojenuelblog.ml" hreflang="es-es">
                         <Icon name="documents" :size="15" />
                         Blog
                     </a>
-                </li>
-                <li
-                    v-scrollanimation
-                    style="transition-delay: 700ms;"
-                    
-                >
-                    <GradientBorder
-                        v-scrollanimation
-                        style="width: 150px;"
-                        :withBg="false"
-                    >
-                        <a
-                            href="https://github.com/BroJenuel/BroJenuel/raw/master/resume/JenuelGanawed-2021.pdf"
-                            target="_blank"
-                            class="resume-button"
-                            rel="noopener"
-                        >
-                            <Icon name="file" :size="15" />
-                            Resume
-                        </a>
-                    </GradientBorder>
                 </li>
                 <li>
                     <ul class="social-medias-in-nav">
@@ -89,23 +77,24 @@
                 </li>
             </ul>
         </div>
-        <div class="nav-back" :class="{'show-nav': $store.state.navShow}" @click="$store.state.navShow = false"></div>
+        <div class="nav-back" :class="{ 'show-nav': $store.state.navShow }" @click="$store.state.navShow = false"></div>
     </div>
 </template>
 <script>
-import ThemeChanger from './../themeChanger/themeChanger'
-import Icon from './../Icons'
-import GradientBorder from "./../GradientBorder";
-import { socialMediaLinks } from "./../../constant/social-network"
+import ThemeChanger from './../themeChanger/themeChanger';
+import Icon from './../Icons';
+import { socialMediaLinks } from './../../constant/social-network';
 export default {
-    components: {Icon,GradientBorder,ThemeChanger},
+    components: { Icon, ThemeChanger },
     computed: {
-        SocialNetwork: () => socialMediaLinks
+        SocialNetwork: () => socialMediaLinks,
     },
     methods: {
-        goToLink(link) { window.open(link) }
-    }
-}
+        goToLink(link) {
+            window.open(link);
+        },
+    },
+};
 </script>
 <style lang="scss">
 .nav-mobile {
@@ -117,7 +106,7 @@ export default {
         top: 0;
         margin: 20px;
     }
-    
+
     .nav-front {
         position: fixed;
         height: 100%;
@@ -151,8 +140,12 @@ export default {
 
             li {
                 cursor: pointer;
+                
 
-                div {
+                div, a {
+                    display: flex;
+                    align-items: center;
+                    gap: 7px;
                     padding: 10px;
                     user-select: none; /* supported by Chrome and Opera */
                     -webkit-user-select: none; /* Safari */
@@ -189,11 +182,8 @@ export default {
             height: 100%;
             width: 100%;
         }
-
     }
-    
 }
-
 
 @media only screen and (max-width: 1050px) {
     .nav-mobile {
@@ -210,7 +200,6 @@ export default {
         }
     }
 }
-
 
 @media only screen and (max-width: 375px) {
     .nav-mobile {

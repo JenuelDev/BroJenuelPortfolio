@@ -24,6 +24,7 @@
             fill-rule="nonzero"
         ></path>
     </svg>
+    <svg v-if="type === 3" :class="classNames" aria-hidden="true" width="116" height="116" viewBox="0 0 116 116"><g fill-rule="evenodd"><path d="M57 110a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm-18 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm-18 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm-18 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm72-18a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm-18 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm-18 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm-18 0a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 92a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm18-18a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 74a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm18-18a3 3 0 1 1 0 6 3 3 0 0 1 0-6zM3 56a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm18-18a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path><rect opacity=".238" x="36" width="80" height="80" rx="8"></rect></g></svg>
 </template>
 <script>
 export default {
