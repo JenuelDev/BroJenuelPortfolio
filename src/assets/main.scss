@@ -31,8 +31,6 @@
     --nav-height: 100px;
     --nav-scroll-height: 70px;
     --border-radius: 4px;
-    --tab-height: 50px;
-    --tab-width: 120px;
     --light-navy: #112240;
     --lightest-navy: #233554;
     --fz-xxl: 22px;
@@ -61,7 +59,6 @@
 @import './../views/AboutMe/style.scss';
 @import './../views/CodeChallenge/style.scss';
 @import './../views/ContactMe/style.scss';
-@import './../views/MyExperience/style.scss';
 @import './../views/MyWork/my-work.scss';
 @import './../components/Footer/Footer.scss';
 @import './styles/tool-tip.scss';

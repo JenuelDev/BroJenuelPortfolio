@@ -29,7 +29,7 @@
         </li>
     </ul>
     <section class="flex flex-col w-[100%] max-w-[900px] visible opacity-100 z-10 px-10px mt-100px select-none mx-auto">
-        <h1 class="lg:text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--primary)] tracking-tight mt-10px mb-15px">Technical skill set</h1>
+        <h1 class="lg:text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--primary)] tracking-tight mt-10px mb-15px md:px-10px">Technical skill set</h1>
         <p class="md:text-size-24px text-size-20px md:px-10px w-[100%] max-w-[770px] md:leading-relaxed leading-relaxed">
             I’m constantly learning and keep up to date with the latest technologies, so I can pick the best tech for the job.
         </p>
