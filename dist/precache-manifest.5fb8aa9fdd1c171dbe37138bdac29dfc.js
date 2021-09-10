@@ -4,11 +4,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/.well-known/brave-rewards-verification.txt"
   },
   {
-    "revision": "67e4c1abee3915e6f453",
+    "revision": "d4b5b83a2bcf05387d4a",
     "url": "/css/app.2bb9211b.css"
   },
   {
-    "revision": "67e4c1abee3915e6f453",
+    "revision": "d4b5b83a2bcf05387d4a",
     "url": "/css/app.2bb9211b.css.map"
   },
   {
@@ -36,11 +36,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/chunk-4be1f41d.71c51657.css.map"
   },
   {
-    "revision": "eeb9e55df5bdb2ec6938",
+    "revision": "7c354223a0392d7a0efa",
     "url": "/css/chunk-6d9884d0.891c2a75.css"
   },
   {
-    "revision": "eeb9e55df5bdb2ec6938",
+    "revision": "7c354223a0392d7a0efa",
     "url": "/css/chunk-6d9884d0.891c2a75.css.map"
   },
   {
@@ -136,16 +136,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/icons/safari-pinned-tab.svg"
   },
   {
-    "revision": "b3d5503d3f2f6b0190834a5d6441dd99",
+    "revision": "f0dc3ace0887fe00b8f477fed50758f5",
     "url": "/index.html"
   },
   {
-    "revision": "67e4c1abee3915e6f453",
-    "url": "/js/app.8fc7f7b3.js"
+    "revision": "d4b5b83a2bcf05387d4a",
+    "url": "/js/app.0d7ad24c.js"
   },
   {
-    "revision": "67e4c1abee3915e6f453",
-    "url": "/js/app.8fc7f7b3.js.map"
+    "revision": "d4b5b83a2bcf05387d4a",
+    "url": "/js/app.0d7ad24c.js.map"
   },
   {
     "revision": "f7f7d2108a81ecf9a755",
@@ -172,12 +172,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-4be1f41d.7d3035ca.js.map"
   },
   {
-    "revision": "eeb9e55df5bdb2ec6938",
-    "url": "/js/chunk-6d9884d0.98cde472.js"
+    "revision": "7c354223a0392d7a0efa",
+    "url": "/js/chunk-6d9884d0.6604c1fc.js"
   },
   {
-    "revision": "eeb9e55df5bdb2ec6938",
-    "url": "/js/chunk-6d9884d0.98cde472.js.map"
+    "revision": "7c354223a0392d7a0efa",
+    "url": "/js/chunk-6d9884d0.6604c1fc.js.map"
   },
   {
     "revision": "6d6e54ce1a2c1ec441a9",
