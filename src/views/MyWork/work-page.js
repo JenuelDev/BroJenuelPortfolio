@@ -5,7 +5,7 @@ export default {
     works: [
         {
             overline: "Documentation Project",
-            title: "Laravel MongoDB Documentation",
+            title: "Laravel MongoDB Docs",
             des:
                 "Documentation about laravel with mongodb, this package adds functionalities to the Eloquent model and Query builder for MongoDB, using the original Laravel API. This library extends the original Laravel classes, so it uses exactly the same methods.",
             techs: ["vuepress", "vue"],

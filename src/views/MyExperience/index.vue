@@ -1,5 +1,5 @@
 <template>
-    <section v-scrollanimation class="my-work lg:mt-130px">
+    <section v-scrollanimation class="my-work-experience lg:mt-130px mx-auto">
         <div>
             <h2 class="lg:text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--primary)] tracking-tight mt-10px mb-15px md:px-10px">
                 My work experience
@@ -97,7 +97,7 @@ export default {
 };
 </script>
 <style lang="postcss">
-.my-work {
+.my-work-experience {
     --tab-height: 50px;
     --tab-width: 120px;
 
@@ -205,7 +205,7 @@ export default {
 }
 
 @media only screen and (max-width: 600px) {
-    .my-work {
+    .my-work-experience {
         .inner {
             display: block;
             .tab-list {
