@@ -57,7 +57,7 @@ export default {
 </script>
 <style lang="postcss">
 .theme-dropdown {
-    @apply cursor-pointer;
+    @apply cursor-pointer relative;
 
     .color-selector {
         @apply h-[30px] w-[30px] bg-[var(--primary)] mt-[3px] mr-[20px] mb-0 ml-20px rounded-1 border border-width-3px border-[var(--primary)] duration-100;
@@ -68,6 +68,7 @@ export default {
         min-width: 180px;
         transform: translateY(30px);
         right: 20px;
+        top: 20px;
         padding: 15px 0 0 0;
         opacity: 0;
         z-index: 1;

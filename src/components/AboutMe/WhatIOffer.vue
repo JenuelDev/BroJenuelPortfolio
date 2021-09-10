@@ -14,7 +14,9 @@
         </div>
         <div class="mt-30px text-center mb-50px">
             <div>
-                <button class="bg-[var(--primary)] px-25px py-10px rounded-md text-[var(--background)] font-600 opacity-90 hover:opacity-100">Get In Touch</button>
+                <router-link to="/contact" class="bg-[var(--primary)] px-25px py-10px rounded-md text-[var(--background)] font-600 opacity-90 hover:opacity-100">
+                    Get In Touch
+                </router-link>
             </div>
         </div>
     </section>

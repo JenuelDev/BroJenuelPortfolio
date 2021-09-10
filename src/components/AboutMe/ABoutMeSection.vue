@@ -9,11 +9,9 @@
                         <div class="text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--lightestSlate)] tracking-tight">I create apps and websites</div>
                     </div>
                     <div class="mt-30px">
-                        <div>
-                            <button class="bg-[var(--primary)] px-25px py-10px rounded-md text-[var(--background)] font-600 opacity-90 hover:opacity-100">
-                                Get In Touch
-                            </button>
-                        </div>
+                        <router-link to="/contact" class="bg-[var(--primary)] px-25px py-10px rounded-md text-[var(--background)] font-600 opacity-90 hover:opacity-100">
+                            Get In Touch
+                        </router-link>
                     </div>
                 </div>
             </div>
@@ -25,7 +23,7 @@
                     </div>
                 </div>
             </div>
-            <SvgDecoration classNames="absolute md:visible invisible left-[-50px] bottom-[-20px] transform rotate-[-180deg] fill-[var(--primary)] opacity-50" :type="1" />
+            <SvgDecoration classNames="absolute md:visible invisible left-[-50px] bottom-[-40px] transform rotate-[-180deg] fill-[var(--primary)] opacity-50" :type="1" />
             <SvgDecoration classNames="absolute md:right-[-56px] md:visible invisible z-20 fill-[var(--primary)] opacity-50" :type="2" />
         </div>
         <div class="md:text-size-24px text-size-20px md:px-10px w-[100%] max-w-[770px] pt-100px md:leading-relaxed leading-relaxed select-none relative">
@@ -37,7 +35,7 @@
                 Over the past {{ yearCount() }} years, I’ve gained experience across some aspects of the application lifecycle, including frontend, backend, and dev-ops.
                 This allows me to take full ownership of a project from design to implementation and deployment.
             </div>
-            <div >
+            <div>
                 I started as a backend developer on PHP stack. At some point, I found out that I enjoy building website and apps using other frameworks. Since then, I’ve
                 changed my focus to frontend and backend development.
             </div>

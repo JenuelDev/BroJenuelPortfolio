@@ -137,6 +137,12 @@ export default {
             flex-direction: column;
             gap: 20px;
             font-size: 1.3rem;
+            margin-left: 20px;
+
+            .theme-dropdown-content {
+                left: -25px !important;
+                top: 40px !important;
+            }
 
             li {
                 cursor: pointer;

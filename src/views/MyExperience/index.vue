@@ -1,6 +1,6 @@
 <template>
     <section v-scrollanimation class="my-work-experience lg:mt-130px mx-auto">
-        <div>
+        <div class="relative">
             <h2 class="lg:text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--primary)] tracking-tight mt-10px mb-15px md:px-10px">
                 My work experience
             </h2>
@@ -64,13 +64,16 @@
                     </div>
                 </template>
             </div>
+            <SvgDecoration classNames="absolute md:visible invisible right-[0px] top-[70px] transform fill-[var(--primary)] opacity-50" :type="1" />
         </div>
     </section>
 </template>
 <script>
+import SvgDecoration from '@/components/SvgDecoration/SvgDecoration.vue';
 import Experience from './experiences/index.js';
 import { ref, onUnmounted, onMounted } from 'vue';
 export default {
+    components: { SvgDecoration },
     setup() {
         const tab = ref(0);
         const width = ref(500);
@@ -91,7 +94,7 @@ export default {
         return {
             experiences: Experience,
             tab,
-            width
+            width,
         };
     },
 };
