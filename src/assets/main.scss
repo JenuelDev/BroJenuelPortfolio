@@ -1,8 +1,6 @@
 
 :root {
-    
-    --font-sans: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-    --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    --font-mono: "Inter var", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     --border-radius: 4px;
     --fz-xs: 13px;
@@ -33,8 +31,6 @@
     --nav-height: 100px;
     --nav-scroll-height: 70px;
     --border-radius: 4px;
-    --tab-height: 50px;
-    --tab-width: 120px;
     --light-navy: #112240;
     --lightest-navy: #233554;
     --fz-xxl: 22px;
@@ -51,40 +47,15 @@
 @import './styles/themes.scss';
 
 
-*,
-::before,
-::after {
-    font-family: var(--font-mono);
-    box-sizing: inherit;
-    outline: none;
-}
 
-img {
-    width: 100%;
-    max-width: 100%;
-    vertical-align: middle;
-}
-
-.highlight:hover {
-    color: var(--primary);
-}
-
-.cursor-pointer {
-    cursor: pointer;
-}
 // components
-@import './styles/scrollbar.scss';
 @import './styles/body.scss';
+@import './styles/scrollbar.scss';
 @import './styles/header.scss';
 @import './../components/GradientBorder/style.scss';
 @import './../components/social-media-links/style.scss';
 
 //css pages
 @import './../views/AboutMe/style.scss';
-@import './../views/CodeChallenge/style.scss';
-@import './../views/ContactMe/style.scss';
-@import './../views/MyExperience/style.scss';
-@import './../views/MyWork/my-work.scss';
 @import './../components/Footer/Footer.scss';
-@import './styles/transition.scss';
 @import './styles/tool-tip.scss';

@@ -1,5 +1,5 @@
 <template>
-    <div v-scrollanimation class="my-footer">
+    <div v-scrollanimation class="my-footer text-size-20px">
         <div
             class="footer-toggle-link"
             @click="openSite('https://github.com/BroJenuel/BroJenuelPortfolio')"
@@ -24,7 +24,7 @@
                 </svg>
                 Jenuel Ganawed
             </div>
-            <q>Programming isn't about what you know; it's about what you can figure out.</q>
+            <q class="text-center">Programming isn't about what you know; it's about what you can figure out.</q>
         </div>
     </div>
 </template>

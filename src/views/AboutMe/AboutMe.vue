@@ -1,104 +1,149 @@
 <template>
-    <div class="modal-window">
-        <div class="modal-window-content">
-            <transition name="modal">
-                <div class="box" v-show="dialog">
-                    <div>
-                        <Icon
-                            @click="closeDialog()"
-                            class="x-close-button"
-                            name="x"
-                        />
-                        <h1>
-                            <div class="skill-icon">
-                                <Icon :name="dialogContent.icon" :size="30" />
-                            </div>
-                            {{ dialogContent.title }}
-                        </h1>
-                        <div>
-                            <p v-html="dialogContent.des"></p>
-                        </div>
-                    </div>
-                </div>
-            </transition>
-        </div>
-        <transition name="modalBg">
-            <div
-                v-show="dialog"
-                class="modal-window-bg"
-                @click="closeDialog()"
-            ></div>
-        </transition>
-    </div>
-    <section v-scrollanimation class="about-me">
-        <h2 class="numbered-header">
-            <Icon class="front-icon" name="user" :size="30" /> About Me
-        </h2>
-        <div class="about-me-inner">
-            <div class="about-me-text">
-                <div class="about-me-text-info" v-html="AboutMe.info"></div>
-                <ul class="skill-list">
-                    <li
-                        v-for="(skill, i) in AboutMe.skills"
-                        v-scrollanimation
-                        :key="skill.text"
-                        @click="openDialog(skill)"
-                        :style="'transition-delay: ' + i * 50 + 'ms'"
-                    >
-                        <div>
-                            <Icon
-                                class="skill-icon"
-                                :name="skill.icon"
-                                :size="20"
-                            />
-                            {{ skill.text }}
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="about-me-photo">
-                <div class="wrapper">
-                    <div
-                        class="photo"
-                        style="position: relative; overflow: hidden"
-                    >
-                        <div class="photo-front"></div>
-                        <img
-                            loading="lazy"
-                            src="https://i.imgur.com/la9CFWFm.png"
-                            alt="Jenuel Ganawed - Profile Picture"
-                            width="300"
-                            height="300"
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="what-i-offer-content">
-        <div v-scrollview class="services-title">
-            <h2>
-                <Icon class="service-title-icon" name="qrCode" /> What I can
-                Offer/Service
-            </h2>
-            <p>Your complete website solution</p>
-        </div>
-        <div class="services-wrapper">
-            <div
-                class="services-item"
-                v-scrollview
-                v-for="(service, i) in services"
-                :key="service.title"
-                :style="`transition-delay: ${i * 200}ms;`"
-            >
-                <Card
-                    :index="1"
-                    :icon="service.icon"
-                    :title="service.title"
-                    :description="service.description"
-                />
-            </div>
-        </div>
-    </div>
+    <AboutMeSection />
+    <TechnicalSkills />
+    <WhatIconOffer />
 </template>
-<script src="./script.js"></script>
+<script>
+import AboutMeSection from './../../components/AboutMe/ABoutMeSection.vue';
+import TechnicalSkills from './../../components/AboutMe/TechnicalSkills.vue';
+import WhatIconOffer from './../../components/AboutMe/WhatIOffer.vue';
+export default {
+    components: {
+        AboutMeSection,
+        TechnicalSkills,
+        WhatIconOffer
+    },
+};
+</script>
+<style lang="postcss">
+.what-i-offer-content {
+    margin: 70px auto 10px auto;
+    max-width: 1000px;
+    min-height: 60vh;
+
+    .services-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &.a-view-before-enter {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: 0.3s;
+            transition-delay: 400ms;
+        }
+
+        &.a-view-enter {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            font-size: clamp(17px, 5vw, 32px);
+            margin: 0 0 10px 0;
+
+            .service-title-icon {
+                margin-right: 10px;
+                color: var(--primary);
+            }
+        }
+        p {
+            margin: 0;
+        }
+    }
+
+    .services-wrapper {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .services-item {
+            margin: 10px;
+
+            &.a-view-before-enter {
+                opacity: 0;
+                transform: translateY(20px);
+                transition: 0.3s;
+            }
+
+            &.a-view-enter {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+    }
+}
+
+// modal
+.modal-window {
+    .skill-icon {
+        min-width: 30px;
+    }
+    .modal-window-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 80;
+    }
+    .modal-window-content {
+        position: fixed;
+        z-index: 90;
+        top: 0;
+        left: 0;
+
+        .box {
+            position: fixed;
+            max-width: 250px;
+            background-color: var(--background);
+            padding: 20px;
+            border-radius: 10px;
+            left: 50%;
+            margin-left: -125px;
+            margin-top: 20vh;
+
+            .x-close-button {
+                float: right;
+                cursor: pointer;
+                transition: 0.3s;
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+
+            h1 {
+                margin: 10px 0;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: var(--primary);
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 553px) {
+    .modal-window {
+        .modal-window-content {
+            .box {
+                position: fixed;
+                max-width: 250px;
+                background-color: var(--background);
+                padding: 20px;
+                left: 45%;
+                border-radius: 10px;
+                margin-left: -125px;
+                margin-top: 20vh;
+            }
+        }
+    }
+}
+</style>

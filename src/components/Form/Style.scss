@@ -1,9 +1,10 @@
 .contact-form {
+    width: 100%;
     .form {
         display: flex;
         flex-direction: column;
         gap: 15px;
-        max-width: 500px;
+        width: 100%;
 
         .flex {
             display: flex;

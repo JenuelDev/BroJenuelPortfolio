@@ -1,7 +1,7 @@
 <template>
-    <div v-show="show" class="alert-component" :class="setType(type)">
-        <h1>{{ title }}</h1>
-        <p v-html="description"></p>
+    <div v-show="show" class="alert-component text-left" :class="setType(type)">
+        <h1 class="text-[var(--background)] md:text-size-24px text-size-20px font-700 mb-7px">{{ title }}</h1>
+        <p class="text-[var(--background)] md:text-size-20px text-size-18px" v-html="description"></p>
     </div>
 </template>
 <script>
@@ -36,11 +36,6 @@ export default {
     padding: 10px;
     opacity: 0.8;
     border-radius: 5px;
-    h1,
-    p {
-        margin: 5px;
-        color: var(--background);
-    }
 
     &.show-error {
         background-color: var(--error);

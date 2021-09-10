@@ -8,14 +8,21 @@
             </div>
             <input v-model="form.subject" type="text" placeholder="Subject" />
             <textarea v-model="form.message" name="msg" placeholder="Message" rows="8"></textarea>
-            <GradientBorder @click="sendEmail()" aria-label="Send Message" :withBg="false" style="margin-top: 5px; width: 150px; font-size: 1.1rem !important; font-weight: 900">
-                <p style="margin: 0">{{ sending ? 'Sending...' : 'Send' }}</p>
-            </GradientBorder>
+            <div class="mt-10px">
+                <button
+                    type="button"
+                    class="bg-[var(--primary)] px-25px py-10px rounded-md text-[var(--background)] font-600 opacity-90 hover:opacity-100 w-[100%]"
+                    :class="{ 'opacity-50 hover:opacity-50 cursor-not-allowed': sending }"
+                    @click="sendEmail()"
+                    :disabled="sending"
+                >
+                    <p style="margin: 0">{{ sending ? 'Sending...' : 'Send' }}</p>
+                </button>
+            </div>
         </div>
     </div>
 </template>
 <script>
-import GradientBorder from './../GradientBorder';
 import Alert from './../alert/Alert.vue';
 import { reactive, ref } from '@vue/reactivity';
 import axios from 'axios';
@@ -24,7 +31,7 @@ init('user_zdO7SqNAzUeW1bl8KtMhn');
 
 export default {
     name: 'Form',
-    components: { GradientBorder, Alert },
+    components: { Alert },
     setup() {
         const form = reactive({
             subject: '',
@@ -42,11 +49,12 @@ export default {
         const sending = ref(false);
 
         const validateEmail = (email) => {
-            const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            const re =
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
             return re.test(String(email).toLowerCase());
         };
         const checkProperties = () => {
-            return form.subject != '' && form.name != '' && form.email != '' && form.message != '' ? true : false;
+            return form.subject == '' || form.name == '' || form.email == '' || form.message == '' ? true : false;
         };
 
         const alertSet = ({ title, description, type, show }) => {
@@ -78,10 +86,14 @@ export default {
                     type: 'success',
                     show: true,
                 });
+                form.subject = '';
+                form.name = '';
+                form.email = '';
+                form.message = '';
                 return;
             }
 
-            if (checkProperties() === false) {
+            if (checkProperties() === true) {
                 alertSet({
                     title: 'Some Fields Are Empty 😢😭📧',
                     description: 'Sorry about that, it seems that there are empty fields. Please fill them all out.',
@@ -135,12 +147,6 @@ export default {
                             sent.value = true;
                             showError.value = false;
                             sending.value = false;
-                            this.form = {
-                                subject: '',
-                                name: '',
-                                email: '',
-                                message: '',
-                            };
                             validateForm(true);
                         })
                         .catch(() => {
