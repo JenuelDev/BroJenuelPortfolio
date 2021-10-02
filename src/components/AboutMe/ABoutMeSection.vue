@@ -26,17 +26,17 @@
             <SvgDecoration classNames="absolute md:visible invisible left-[-50px] bottom-[-40px] transform rotate-[-180deg] fill-[var(--primary)] opacity-50" :type="1" />
             <SvgDecoration classNames="absolute md:right-[-56px] md:visible invisible z-20 fill-[var(--primary)] opacity-50" :type="2" />
         </div>
-        <div class="md:text-size-24px text-size-20px md:px-10px w-[100%] max-w-[770px] pt-100px md:leading-relaxed leading-relaxed select-none relative">
+        <div class="md:text-size-24px text-size-20px md:px-10px w-[100%] max-w-[770px] pt-100px md:leading-relaxed leading-relaxed relative">
             <div class="mb-30px">
                 My name is Jenuel Ganawed. I’m a developer with a full-stack background and a keen eye for good design. I love to make complex things simple and joy to
                 use. Currently, I focus on building single-page applications with VueJs.
             </div>
             <div class="mb-30px">
                 Over the past {{ yearCount() }} years, I’ve gained experience across some aspects of the application lifecycle, including frontend, backend, and dev-ops.
-                This allows me to take full ownership of a project from design to implementation and deployment.
+                It allows me to take full ownership of a project from design to implementation and deployment.
             </div>
             <div>
-                I started as a backend developer on PHP stack. At some point, I found out that I enjoy building website and apps using other frameworks. Since then, I’ve
+                I started as a backend developer on PHP stack. At some point, I found out that I enjoy building websites and apps using other frameworks. Since then, I’ve
                 changed my focus to frontend and backend development.
             </div>
             <SvgDecoration classNames="absolute right-[-150px] top-90 md:block hidden z-20 fill-[var(--primary)] opacity-50" :type="3" />

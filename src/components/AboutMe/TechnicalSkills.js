@@ -89,7 +89,7 @@ export const mySkills = [
             {
                 icon: `<i class='bx bxl-figma' ></i>`,
                 text: `Figma`,
-                des: `Figma is a vector graphics editor and prototyping tool which is primarily web-based, with additional offline features enabled by desktop applications for macOS and Windows. The Figma Mirror companion apps for Android and iOS allow viewing Figma prototypes in real-time on mobile devices.`
+                des: `As a developer that also works with frontend development, I started to learn and gain experience in UX designing because I want it to be User Friendly. Figma is great for creating designs and is what I use.`
             }
         ]
     }

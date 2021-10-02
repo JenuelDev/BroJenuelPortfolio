@@ -1,7 +1,9 @@
 <template>
     <section v-scrollanimation class="my-work lg:pt-130px pt-0 mx-auto max-w-[1000px]">
         <h2 class="lg:text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--primary)] tracking-tight mb-15px md:px-10px">Projects I made</h2>
-        <p class="md:text-size-24px text-size-20px md:px-10px w-[100%] max-w-[770px] md:leading-relaxed leading-normal">{{ works.des }}</p>
+        <p class="md:text-size-24px text-size-20px md:px-10px w-[100%] max-w-[770px] md:leading-relaxed leading-normal">
+            Showing are personal projects that I made during my spare/free time. I don't add projects from my Jobs since these are projects developed by multiple developers.
+        </p>
         <div style="margin-top: 20px">
             <template v-for="(work, i) in works.works" :key="i">
                 <div v-scrollanimation class="work-info" :style="'transition-delay:' + i * 200 + 'ms'">
@@ -47,32 +49,28 @@
 import CodeChallenge from './../CodeChallenge/index.vue';
 import Icon from './../../components/Icons';
 import Project from './work-page';
+import { useStore } from 'vuex';
+import { computed, onMounted } from '@vue/runtime-core';
 export default {
     name: 'Project',
     components: { Icon, CodeChallenge },
-    data: () => {
+    setup() {
+        const store = useStore();
+        onMounted(() => {
+            store.state.workShow = true;
+        });
         return {
             works: Project,
+            myWorks: computed(() => store.state.workPage.works),
+            openSite(site) {
+                window.open(site, '_blank');
+            },
         };
-    },
-    mounted() {
-        this.$store.state.workShow = true;
-    },
-    computed: {
-        myWorks() {
-            return this.$store.state.workPage.works;
-        },
-    },
-    methods: {
-        openSite(site) {
-            window.open(site, '_blank');
-        },
     },
 };
 </script>
 <style lang="postcss">
 .my-work {
-
     &.a-before-enter {
         opacity: 0;
         transform: translateY(20px);
@@ -127,7 +125,6 @@ export default {
         }
 
         .work-info-details {
-
             .info-overline {
                 margin: 10px 0px;
                 color: var(--primary);
