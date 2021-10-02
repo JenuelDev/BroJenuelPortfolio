@@ -1,7 +1,4 @@
 export default {
-    title: "My Projects",
-    des:
-        "Showcasing projects I made, some projects are made for public use and some are made for a client.",
     works: [
         {
             overline: "Desktop Application",
@@ -10,6 +7,12 @@ export default {
                 "Focus on what matters instead of fighting with your mind. Whether you're new to this app or a seasoned user, Believers Sword App is a simple application that helps you study bible with extra features.",
             techs: ["electron", "electron.builder", "Vue3", "windiCss"],
             links: [
+                {
+                    link:
+                        "https://github.com/Bible-Projects/believers-sword-app",
+                    icon: "github",
+                    tooltip: "Open in Github"
+                },
                 {
                     link: "https://believers-sword-app.herokuapp.com/",
                     icon: "link",
@@ -91,12 +94,12 @@ export default {
                     tooltip: "Open In Github"
                 },
                 {
-                    link: "https://jenuelganawed.ml",
+                    link: "https://jenuelganawed.com",
                     icon: "link",
                     tooltip: "Open Link"
                 }
             ],
-            imageLink: "https://jenuelganawed.ml",
+            imageLink: "https://jenuelganawed.com",
             img: "https://i.imgur.com/ygEsq4Kl.png"
         },
         {
