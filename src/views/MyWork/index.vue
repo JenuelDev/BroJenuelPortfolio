@@ -33,7 +33,7 @@
                         <div class="work-info-image-link" @click="openSite(work.imageLink)">
                             <div class="image-wrapping">
                                 <div class="front-filter"></div>
-                                <img width="300" height="150" loading="lazy" :src="work.img" :alt="`${work.title} - Image`" />
+                                <img loading="lazy" :src="work.img" :alt="`${work.title} - Image`" />
                             </div>
                         </div>
                     </div>
@@ -225,7 +225,6 @@ export default {
                         position: absolute;
                         top: 0px;
                         left: 0px;
-                        width: 100%;
                         height: 100%;
                         object-fit: cover;
                         object-position: center center;
