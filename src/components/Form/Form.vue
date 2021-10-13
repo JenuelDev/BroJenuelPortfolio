@@ -113,10 +113,10 @@ export default {
             }
 
             let verified = await verifyEmail();
-            if (verified.deliverable === false) {
+            if (verified && ( verified.deliverable === false || verified.code != 200 )) {
                 alertSet({
                     title: 'Oops! Email Does not Exist! 😢😭📧',
-                    description: 'Sorry about that, it seems that you have entered a wrong email, I cant find it anywhere.',
+                    description: 'Sorry about that, it seems that you have entered a wrong email, I cant find it anywhere.' + (verified.code === 301 ? "The email service provider accepts all emails without specifying if it's deliverable or not." : ''),
                     type: 'error',
                     show: true,
                 });
