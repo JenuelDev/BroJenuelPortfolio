@@ -72,7 +72,6 @@ export default {
                     r = res.data;
                 })
                 .catch((e) => {
-                    console.log(e.response.data);
                     r = e.response.data;
                 });
             return r;
