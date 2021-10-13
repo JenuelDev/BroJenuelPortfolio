@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.9fa700b8c701f33a0c1cb5ad063374d5.js"
+  "/precache-manifest.33ff52cbe8379f3eec7a506e4777cd3e.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "jenuelganawed-portfolio"});

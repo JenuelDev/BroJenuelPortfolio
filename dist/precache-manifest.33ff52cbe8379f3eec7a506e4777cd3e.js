@@ -4,11 +4,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/.well-known/brave-rewards-verification.txt"
   },
   {
-    "revision": "87da76b90e5effffe0a0",
+    "revision": "4f776c4636e8f7c62bc7",
     "url": "/css/app.180a0073.css"
   },
   {
-    "revision": "87da76b90e5effffe0a0",
+    "revision": "4f776c4636e8f7c62bc7",
     "url": "/css/app.180a0073.css.map"
   },
   {
@@ -20,11 +20,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/chunk-396f9390.9c6ed950.css.map"
   },
   {
-    "revision": "c7730030c55d54c6376c",
+    "revision": "eff4a587f382a1b2e54b",
     "url": "/css/chunk-4be1f41d.71c51657.css"
   },
   {
-    "revision": "c7730030c55d54c6376c",
+    "revision": "eff4a587f382a1b2e54b",
     "url": "/css/chunk-4be1f41d.71c51657.css.map"
   },
   {
@@ -136,16 +136,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/icons/safari-pinned-tab.svg"
   },
   {
-    "revision": "14f38f439001851a95774725c60a6062",
+    "revision": "554d4731523efb31edc510ee2c205a5c",
     "url": "/index.html"
   },
   {
-    "revision": "87da76b90e5effffe0a0",
-    "url": "/js/app.24c1b97f.js"
+    "revision": "4f776c4636e8f7c62bc7",
+    "url": "/js/app.8b0a921f.js"
   },
   {
-    "revision": "87da76b90e5effffe0a0",
-    "url": "/js/app.24c1b97f.js.map"
+    "revision": "4f776c4636e8f7c62bc7",
+    "url": "/js/app.8b0a921f.js.map"
   },
   {
     "revision": "62cf7a05578c7013ebcb",
@@ -156,12 +156,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-396f9390.05ddea70.js.map"
   },
   {
-    "revision": "c7730030c55d54c6376c",
-    "url": "/js/chunk-4be1f41d.384b9e4e.js"
+    "revision": "eff4a587f382a1b2e54b",
+    "url": "/js/chunk-4be1f41d.cbe19847.js"
   },
   {
-    "revision": "c7730030c55d54c6376c",
-    "url": "/js/chunk-4be1f41d.384b9e4e.js.map"
+    "revision": "eff4a587f382a1b2e54b",
+    "url": "/js/chunk-4be1f41d.cbe19847.js.map"
   },
   {
     "revision": "fdafc9a2239d20ddef72",
