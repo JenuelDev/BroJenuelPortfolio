@@ -11,11 +11,11 @@ const routes = [
         name: "AboutMe",
         component: AboutMe
     },
-    {
-        path: "/experience",
-        name: "Experience",
-        component: () => import("./../views/MyExperience")
-    },
+    // {
+    //     path: "/experience",
+    //     name: "Experience",
+    //     component: () => import("./../views/MyExperience")
+    // },
     {
         path: "/Project",
         name: "Project",

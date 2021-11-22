@@ -23,7 +23,7 @@
                         Home
                     </div>
                 </li>
-                <li
+                <!-- <li
                     v-scrollanimation
                     style="transition-delay: 250ms"
                     @click="
@@ -35,7 +35,7 @@
                         <Icon name="case" :size="15" />
                         Experience
                     </div>
-                </li>
+                </li> -->
                 <li
                     v-scrollanimation
                     style="transition-delay: 400ms"

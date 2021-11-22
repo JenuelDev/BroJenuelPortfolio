@@ -2,7 +2,7 @@
     <section v-scrollanimation class="my-work lg:pt-130px pt-0 mx-auto max-w-[1000px]">
         <h2 class="lg:text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--primary)] tracking-tight mb-15px md:px-10px">Projects I made</h2>
         <p class="md:text-size-24px text-size-20px md:px-10px w-[100%] max-w-[770px] md:leading-relaxed leading-normal">
-            Showing are personal projects that I made during my spare/free time. I don't add projects from my Jobs since these are projects developed by multiple developers.
+            Showing are personal projects that I made during my spare/free time. I don't add projects from my Jobs since these are private projects.
         </p>
         <div style="margin-top: 20px">
             <template v-for="(work, i) in works.works" :key="i">
