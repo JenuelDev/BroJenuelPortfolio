@@ -9,11 +9,11 @@
                             <span class="text-size-14px font-500"> Home </span>
                         </div>
                     </li>
-                    <li v-scrollanimation style="transition-delay: 250ms" @click="$router.push({ name: 'Experience' })">
+                    <!-- <li v-scrollanimation style="transition-delay: 250ms" @click="$router.push({ name: 'Experience' })">
                         <div class="flex items-center" :class="{ active: $route.name == 'Experience' }">
                             <span class="text-size-14px font-500"> Experience </span>
                         </div>
-                    </li>
+                    </li> -->
                     <li v-scrollanimation style="transition-delay: 400ms" @click="$router.push({ name: 'Project' })">
                         <div :class="{ active: $route.name == 'Project' }">
                             <span class="text-size-14px font-500"> Projects </span>
