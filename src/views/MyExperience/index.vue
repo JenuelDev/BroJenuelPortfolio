@@ -9,7 +9,7 @@
             </p>
             <div class="inner">
                 <ul class="tab-list">
-                    <li v-for="(exp, index) in experiences" :key="exp.company" @click="tab = index" :class="tab == index ? 'active' : ''">
+                    <li v-for="(exp, index) in experiences" :key="exp.company" @click="changeTab(index)" :class="tab == index ? 'active' : ''">
                         <div>
                             <span class="md:text-size-18px text-size-16">{{ exp.tab }}</span>
                         </div>
@@ -44,8 +44,7 @@
                                     px-15px
                                     py-5px
                                     text-[var(--primary)]
-                                    hover:bg-[var(--primary)]
-                                    hover:text-[var(--background)]
+                                    hover:bg-[var(--primary)] hover:text-[var(--background)]
                                     duration-300
                                 "
                                 v-if="exp.certificate"
@@ -72,6 +71,7 @@
 import SvgDecoration from '@/components/SvgDecoration/SvgDecoration.vue';
 import Experience from './experiences/index.js';
 import { ref, onUnmounted, onMounted } from 'vue';
+const tabKey = 'expTabKey';
 export default {
     components: { SvgDecoration },
     setup() {
@@ -84,7 +84,12 @@ export default {
 
         onMounted(() => {
             window.addEventListener('resize', widthHandler());
+
             widthHandler();
+            let tabindex = localStorage.getItem(tabKey);
+            if (tabindex) {
+                tab.value = parseInt(tabindex);
+            }
         });
 
         onUnmounted(() => {
@@ -95,6 +100,10 @@ export default {
             experiences: Experience,
             tab,
             width,
+            changeTab(index) {
+                localStorage.setItem(tabKey, index);
+                tab.value = index;
+            },
         };
     },
 };

@@ -2,14 +2,25 @@ import dapayan2018 from "./experience/dapayan2018";
 import ilearn2018 from "./experience/ilearn2018";
 import utalk2019 from "./experience/utalk2019";
 
+const vocphone = {
+    position: 'Web Developer',
+    tab: 'Vocphone',
+    company: 'Vocphone',
+    workStart: 'Nov. 2021',
+    workUntil: '<span class="present-work">Present</span>',
+    des:
+        "Full Time <b>Web Developer</b> at <a href='https://www.vocphone.com/' target='_blank'>Vocphone</a>. I focus on Front-end and Back-end. We develope and manage exceptional apps/websites/systems. Join Australia's fastest growing cloud PABX and pay as little as $1.39 per user.",
+    url: "https://www.vocphone.com/"
+}
+
 const webinarinc = {
     position: 'Web Developer',
     tab: 'Webinarinc',
     company: 'Webinarinc',
     workStart: 'Mar. 2021',
-    workUntil: '<span class="present-work">Present</span>',
+    workUntil: 'Nov. 2021',
     des:
-        "Full Time <b>Web Developer</b> at webinarinc. I focus both on Front-end and Back-end. We develope and manage exceptional apps/websites. <br><br> <a href='https://webinarinc.com/about-us/'>Webinarinc</a> has a passion for providing industry-leading automotive sales training and innovative tools. Webinarinc was born! Founded in 2015, Webinarinc takes decades of experience in the automotive industry and translates it into training and tools that provide the insights, tips and techniques that allow dealerships across the United States to stand at the forefront of their marketplace.",
+        "Full Time <b>Web Developer</b> at Webinarinc. We focus on developing/debugging/fixing websites, using different technologies to satisfy customers.",
     url: "https://webinarinc.com/"
 }
 
@@ -27,4 +38,4 @@ const kcp = {
         label: "Show Certificate of Fulfillment"
     }
 }
-export default [webinarinc, utalk2019, dapayan2018, ilearn2018, kcp]
+export default [vocphone, webinarinc, utalk2019, dapayan2018, ilearn2018, kcp]
