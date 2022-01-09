@@ -11,7 +11,7 @@ export default {
     components: {
         AboutMeSection,
         TechnicalSkills,
-        WhatIconOffer
+        WhatIconOffer,
     },
 };
 </script>
@@ -72,76 +72,6 @@ export default {
             &.a-view-enter {
                 opacity: 1;
                 transform: translateY(0px);
-            }
-        }
-    }
-}
-
-// modal
-.modal-window {
-    .skill-icon {
-        min-width: 30px;
-    }
-    .modal-window-bg {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        z-index: 80;
-    }
-    .modal-window-content {
-        position: fixed;
-        z-index: 90;
-        top: 0;
-        left: 0;
-
-        .box {
-            position: fixed;
-            max-width: 250px;
-            background-color: var(--background);
-            padding: 20px;
-            border-radius: 10px;
-            left: 50%;
-            margin-left: -125px;
-            margin-top: 20vh;
-
-            .x-close-button {
-                float: right;
-                cursor: pointer;
-                transition: 0.3s;
-
-                &:hover {
-                    color: var(--primary);
-                }
-            }
-
-            h1 {
-                margin: 10px 0;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                color: var(--primary);
-                font-size: 1.3rem;
-            }
-        }
-    }
-}
-
-
-@media screen and (max-width: 553px) {
-    .modal-window {
-        .modal-window-content {
-            .box {
-                position: fixed;
-                max-width: 250px;
-                background-color: var(--background);
-                padding: 20px;
-                left: 45%;
-                border-radius: 10px;
-                margin-left: -125px;
-                margin-top: 20vh;
             }
         }
     }
