@@ -47,7 +47,7 @@
                 </div>
                 <div class="text-size-14px flex items-center gap-5px">
                     <div
-                        class="bg-dark-900 bg-opacity-50 p-5px rounded-md opacity-80 hover:opacity-100 cursor-pointer"
+                        class="bg-dark-900 !text-gray-200 p-5px rounded-md opacity-80 hover:opacity-100 cursor-pointer"
                         v-for="tool in mySkill.tools"
                         :key="tool.text"
                         @click="openDialog(tool)"
