@@ -2,11 +2,11 @@
     <section v-scrollanimation class="my-work lg:pt-130px pt-0 mx-auto max-w-[1000px]">
         <h2 class="lg:text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--primary)] tracking-tight mb-15px md:px-10px">Projects I made</h2>
         <p class="md:text-size-24px text-size-20px md:px-10px w-[100%] max-w-[770px] md:leading-relaxed leading-normal">
-            Showing are personal projects that I made during my spare/free time. I don't add projects from my Jobs since these are private projects.
+            Showing are personal projects that I made during my spare/free time. I don't add projects from my Work/Jobs, only if allowed.
         </p>
         <div style="margin-top: 20px">
             <template v-for="(work, i) in works.works" :key="i">
-                <div v-scrollanimation class="work-info" :style="'transition-delay:' + i * 200 + 'ms'">
+                <div v-scrollview class="work-info" :style="'transition-delay:' + 100 + 'ms'">
                     <div class="work-info-details" :class="i % 2 == 0 ? 'left-content' : 'right-content'">
                         <p class="text-[var(--primary)] font-200">{{ work.overline }}</p>
                         <h3 class="md:text-size-28px text-size-25px mb-25px font-600">{{ work.title }}</h3>
@@ -92,13 +92,13 @@ export default {
         -webkit-box-align: center;
         align-items: center;
 
-        &.a-before-enter {
+        &.a-view-before-enter {
             opacity: 0;
             transform: translateY(20px);
             transition: 0.2s ease-in-out 400ms;
         }
 
-        &.a-enter {
+        &.a-view-enter {
             opacity: 1;
             transform: translateY(0);
         }
