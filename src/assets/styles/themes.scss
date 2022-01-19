@@ -18,6 +18,11 @@
     --linear-4: #1098ad;
     --linear-5: #07b39b;
     --linear-6: #6fba82;
+
+    // profile gradient
+    --profile-gradient-1: rgba(0, 51, 60, 1);
+    --profile-gradient-2: rgba(0, 93, 102, 1);
+    --profile-gradient-3: rgba(0, 159, 191, 1);
 }
 
 [theme="yellowOrange"] {
@@ -40,6 +45,11 @@
     --linear-4: #e45826;
     --linear-5: #f0a500;
     --linear-6: #e6d5b8;
+
+    // profile gradient
+    --profile-gradient-1: #402c00;
+    --profile-gradient-2: #f0a500;
+    --profile-gradient-3: #ffbd2c;
 }
 
 [theme="underTheSea"] {
@@ -62,6 +72,11 @@
     --linear-4: #00a941;
     --linear-5: #328552;
     --linear-6: #147439;
+
+    // profile gradient
+    --profile-gradient-1: #017d24;
+    --profile-gradient-2: #26d557;
+    --profile-gradient-3: #4bff7e;
 }
 
 [theme="NightBurns"] {
@@ -84,6 +99,11 @@
     --linear-4: #e5585d;
     --linear-5: #df9395;
     --linear-6: #fff;
+
+    // profile gradient
+    --profile-gradient-1: #881d21;
+    --profile-gradient-2: #fc595f;
+    --profile-gradient-3: #ff7f84;
 }
 
 [theme="lightBurn"] {
@@ -106,6 +126,11 @@
     --linear-4: #b8005c;
     --linear-5: #b8005c;
     --linear-6: #b8005c;
+
+    // profile gradient
+    --profile-gradient-1: #8b124f;
+    --profile-gradient-2: #bb1669;
+    --profile-gradient-3: #e61f83;
 }
 
 [theme="brightMind"] {
@@ -134,4 +159,9 @@
     --font-size-sm: 14px;
 
     --social-icon-light-color: #8895bf;
+
+    // profile gradient
+    --profile-gradient-1: #3749a6;
+    --profile-gradient-2: #5d6ec5;
+    --profile-gradient-3: #778cf5;
 }
