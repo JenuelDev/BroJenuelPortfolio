@@ -1,0 +1,8 @@
+.profile-picture-style {
+    transition: 0.3s;
+    background: linear-gradient(42deg, var(--profile-gradient-1) 0%, var(--profile-gradient-2) 43%, var(--profile-gradient-3) 100%);
+
+    &:hover {
+        transform: scale(1.2) rotate(10deg);
+    }
+}

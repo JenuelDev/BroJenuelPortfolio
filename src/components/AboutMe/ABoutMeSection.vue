@@ -19,7 +19,7 @@
                 <div class="wrapper">
                     <div class="photo" style="position: relative; overflow: hidden">
                         <div class="photo-front"></div>
-                        <img class="max-w-300px w-[100%] w-[300px]" loading="lazy" src="https://i.imgur.com/pAb3PSyl.png" alt="Jenuel Ganawed - Profile Picture" />
+                        <img class="max-w-300px w-[100%] w-[300px] profile-picture-style" loading="lazy" src="./../../assets/images/profileImage.png" alt="Jenuel Ganawed - Profile Picture" />
                     </div>
                 </div>
             </div>
