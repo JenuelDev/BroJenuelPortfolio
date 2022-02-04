@@ -29,7 +29,7 @@
         <div class="md:text-size-24px text-size-20px md:px-10px w-[100%] max-w-[770px] pt-100px md:leading-relaxed leading-relaxed relative">
             <div class="mb-30px">
                 My name is Jenuel Ganawed. I’m a developer with a full-stack background and a keen eye for good design. I love to make complex things simple and joy to
-                use. Currently, I focus on building single-page applications with VueJs.
+                use. Currently, I focus on building web apps with VueJs(v2)(v3) and Laravel.
             </div>
             <div class="mb-30px">
                 Over the past {{ yearCount() }} years, I’ve gained experience across some aspects of the application lifecycle, including frontend, backend, and dev-ops.
