@@ -19,7 +19,12 @@
                 <div class="wrapper">
                     <div class="photo" style="position: relative; overflow: hidden">
                         <div class="photo-front"></div>
-                        <img class="max-w-300px w-[100%] w-[300px] profile-picture-style" loading="lazy" src="./../../assets/images/profileImage.png" alt="Jenuel Ganawed - Profile Picture" />
+                        <img
+                            class="max-w-300px w-[100%] w-[300px] profile-picture-style"
+                            loading="lazy"
+                            src="./../../assets/images/profileImage.png"
+                            alt="Jenuel Ganawed - Profile Picture"
+                        />
                     </div>
                 </div>
             </div>
@@ -34,10 +39,6 @@
             <div class="mb-30px">
                 Over the past {{ yearCount() }} years, I’ve gained experience across some aspects of the application lifecycle, including frontend, backend, and dev-ops.
                 It allows me to take full ownership of a project from design to implementation and deployment.
-            </div>
-            <div>
-                I started as a backend developer on PHP stack. At some point, I found out that I enjoy building websites and apps using other frameworks. Since then, I’ve
-                changed my focus to frontend and backend development.
             </div>
             <SvgDecoration classNames="absolute right-[-150px] top-90 md:block hidden z-20 fill-[var(--primary)] opacity-50" :type="3" />
         </div>

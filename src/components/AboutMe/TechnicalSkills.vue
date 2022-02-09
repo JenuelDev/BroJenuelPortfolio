@@ -154,6 +154,7 @@ export default {
         z-index: 90;
         top: 0;
         left: 0;
+        font-size: 1.1rem;
 
         .box {
             position: fixed;
