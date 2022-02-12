@@ -82,6 +82,7 @@ export default {
             background-color: var(--lightBackground);
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
+            gap: 3px;
         }
     }
 
