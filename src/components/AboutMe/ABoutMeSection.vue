@@ -1,10 +1,10 @@
 <template>
-    <section v-scrollanimation class="about-me mx-auto">
+    <section v-scrollanimation class="about-me mx-auto mb-100px">
         <div class="about-me-inner flex flex-row items-center gap-[50px] relative">
             <div class="about-me-text">
                 <div class="about-me-text-info text-right max-w-500px">
                     <div>
-                        <div class="text-size-16px font-500 text-[var(--primary)] opacity-60">Web Developer or Programmer</div>
+                        <div class="lg:text-size-30px text-size-25px font-500">Web Developer</div>
                         <div class="lg:text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--primary)] tracking-tight mt-10px">Hi there, I’m Jenuel</div>
                         <div class="text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--lightestSlate)] tracking-tight">I create apps and websites</div>
                     </div>
@@ -59,7 +59,8 @@ export default {
 </script>
 <style lang="postcss">
 .about-me {
-    @apply flex flex-col items-center min-h-[100vh] max-w-[900px] visible opacity-100 z-10 px-10px lg:mt-130px;
+    @apply flex flex-col items-center max-w-[900px] visible opacity-100 z-10 px-10px lg:mt-130px;
+
     &.a-before-enter {
         @apply opacity-0 transform translate-y-[20px] duration-[0.3s] ease-in;
     }
