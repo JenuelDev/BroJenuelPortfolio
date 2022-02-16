@@ -1,7 +1,9 @@
 <template>
     <div class="header" :class="{ 'navbar--hidden': !showNavbar && scroll > 100, 'nav-min': scroll > 50 }">
         <nav>
-            <div class="logo-image"></div>
+            <div class="logo-image">
+                <h2 class="sm:ml-[50px] ml-10px font-700 text-[var(--primary)] text-size-2.5rem">JG</h2>
+            </div>
             <div class="navs">
                 <ol>
                     <li v-scrollanimation style="transition-delay: 100ms" @click="$router.push({ name: 'AboutMe' })">
