@@ -1,3 +1,22 @@
+<script setup>
+import CodeChallenge from './../CodeChallenge/index.vue';
+// import { Icon } from '@vicons/utils';
+import Project from './work-page';
+import { useStore } from 'vuex';
+import { onMounted } from '@vue/runtime-core';
+// import { h } from 'vue';
+import IconLink from '../../components/Icon.vue';
+
+const store = useStore();
+onMounted(() => {
+    store.state.workShow = true;
+});
+
+const works = Project;
+function openSite(site) {
+    window.open(site, '_blank');
+}
+</script>
 <template>
     <section v-scrollanimation class="my-work lg:pt-130px pt-0 mx-auto max-w-[1000px]">
         <h2 class="lg:text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--primary)] tracking-tight mb-15px md:px-10px">Projects I made</h2>
@@ -27,7 +46,7 @@
                                 aria-label="GitHUB Link"
                                 @click="openSite(link.link)"
                             >
-                                <Icon class="highlight-hover" :name="link.icon" :size="25" />
+                                <IconLink :icon="link.icon" />
                             </div>
                         </div>
                     </div>
@@ -45,30 +64,7 @@
     </section>
     <CodeChallenge />
 </template>
-<script>
-import CodeChallenge from './../CodeChallenge/index.vue';
-import Icon from './../../components/Icons';
-import Project from './work-page';
-import { useStore } from 'vuex';
-import { computed, onMounted } from '@vue/runtime-core';
-export default {
-    name: 'Project',
-    components: { Icon, CodeChallenge },
-    setup() {
-        const store = useStore();
-        onMounted(() => {
-            store.state.workShow = true;
-        });
-        return {
-            works: Project,
-            myWorks: computed(() => store.state.workPage.works),
-            openSite(site) {
-                window.open(site, '_blank');
-            },
-        };
-    },
-};
-</script>
+
 <style lang="postcss">
 .my-work {
     &.a-before-enter {
