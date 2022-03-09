@@ -60,7 +60,7 @@ export default {
     @apply cursor-pointer relative;
 
     .color-selector {
-        @apply h-[30px] w-[30px] bg-[var(--primary)] mt-[3px] mr-[20px] mb-0 ml-20px rounded-1 border border-width-3px border-[var(--primary)] duration-100;
+        @apply h-[35px] w-[35px] bg-[var(--primary)] mt-[3px] mr-[20px] mb-0 ml-20px rounded-1 border border-width-3px border-[var(--primary)] duration-100;
     }
 
     .theme-dropdown-content {

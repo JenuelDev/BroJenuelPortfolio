@@ -6,7 +6,6 @@ import './registerServiceWorker'
 import ScrollAnimation, { animationViewFull } from './directives/scrollAnimation'
 import { store } from './store/store'
 import VueSession from './helper/VueSession'
-import 'boxicons/css/boxicons.min.css'
 import 'windi.css'
 
 createApp(App)

@@ -1,35 +1,62 @@
+<script setup>
+import { Icon } from '@vicons/utils';
+import { Facebook, Youtube, LinkedinIn, Github, Twitter, Dev } from '@vicons/fa';
+
+function openSite(site) {
+    window.open(site, '_blank');
+}
+</script>
+
 <template>
     <div class="social-network">
         <div class="social-media social-media-orientation social-media-placement">
             <ul v-scrollanimation class="social-media-list">
                 <li>
                     <div @click="openSite('https://www.facebook.com/ganawed/')" class="a-link">
-                        <div class="text-size-25px"><i class="bx bxl-facebook"></i></div>
-                        <span>Facebook</span>
+                        <div class="text-size-25px">
+                            <Icon><Facebook /></Icon>
+                        </div>
+                        <span class="icon-title">Facebook</span>
                     </div>
                 </li>
                 <li>
                     <div @click="openSite('https://www.youtube.com/channel/UCNANDtTF63UTRcYioVsSCdA')" class="a-link">
-                        <div class="text-size-25px"><i class="bx bxl-youtube"></i></div>
-                        <span>Youtube</span>
+                        <div class="text-size-25px">
+                            <Icon><Youtube /></Icon>
+                        </div>
+                        <span class="icon-title">Youtube</span>
                     </div>
                 </li>
                 <li>
                     <div @click="openSite('https://www.linkedin.com/in/jenuelganawed/')" class="a-link">
-                        <div class="text-size-25px"><i class="bx bxl-linkedin"></i></div>
-                        <span>LinkedIn</span>
+                        <div class="text-size-25px">
+                            <Icon><LinkedinIn /></Icon>
+                        </div>
+                        <span class="icon-title">LinkedIn</span>
                     </div>
                 </li>
                 <li>
                     <div @click="openSite('https://github.com/BroJenuel')" class="a-link">
-                        <div class="text-size-25px"><i class="bx bxl-github"></i></div>
-                        <span>GitHub</span>
+                        <div class="text-size-25px">
+                            <Icon><Github /></Icon>
+                        </div>
+                        <span class="icon-title">GitHub</span>
                     </div>
                 </li>
                 <li>
                     <div @click="openSite('https://twitter.com/broJenuel')" class="a-link">
-                        <div class="text-size-25px"><i class="bx bxl-twitter"></i></div>
-                        <span>Twitter</span>
+                        <div class="text-size-25px">
+                            <Icon><Twitter /></Icon>
+                        </div>
+                        <span class="icon-title">Twitter</span>
+                    </div>
+                </li>
+                <li>
+                    <div @click="openSite('https://twitter.com/broJenuel')" class="a-link">
+                        <div class="text-size-25px">
+                            <Icon><Dev /></Icon>
+                        </div>
+                        <span class="icon-title">Dev.to</span>
                     </div>
                 </li>
             </ul>
@@ -41,17 +68,3 @@
         </div>
     </div>
 </template>
-<script>
-import { ref } from '@vue/reactivity';
-export default {
-    name: 'SocialMediaLinks',
-    setup() {
-        return {
-            show: ref(true),
-            openSite(site) {
-                window.open(site, '_blank');
-            },
-        };
-    },
-};
-</script>

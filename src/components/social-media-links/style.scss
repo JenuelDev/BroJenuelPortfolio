@@ -39,7 +39,7 @@
                 .a-link {
                     position: relative;
                     color: var(--social-icon-light-color);
-                    span {
+                    .icon-title {
                         position: absolute;
                         visibility: hidden;
                         opacity: 0;
@@ -55,7 +55,7 @@
                     .a-link {
                         cursor: pointer;
                         color: var(--primary) !important;
-                        span {
+                        .icon-title {
                             visibility: visible;
                             opacity: 1;
                         }
@@ -89,7 +89,6 @@
             opacity: 1;
             transform: translateX(0px);
         }
-
 
         .email-media-link {
             position: relative;

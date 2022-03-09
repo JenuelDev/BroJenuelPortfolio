@@ -1,3 +1,11 @@
+<script setup>
+import CodeChallenge from './../../constant/code-challenges-page/index.js';
+import IconLink from './../../components/Icon.vue';
+
+function openSite(site) {
+    window.open(site, '_blank');
+}
+</script>
 <template>
     <section v-scrollanimation class="code-challenge">
         <h2 class="lg:text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--primary)] tracking-tight mb-15px md:px-10px">others projects</h2>
@@ -29,7 +37,7 @@
                                             :key="link.link"
                                             @click="openSite(link.link)"
                                         >
-                                            <Icon class="icon" :name="link.icon" :size="25" style="margin-bottom: 10px" />
+                                            <IconLink :icon="link.icon" :size="30" />
                                         </div>
                                     </div>
                                 </div>
@@ -42,7 +50,7 @@
                             <footer class="mt-30px">
                                 <ul class="flex gap-10px flex-wrap">
                                     <li class="flex items-center gap-5px" v-for="tech in code.techs" :key="tech.name">
-                                        <Icon :name="tech.icon" :size="15" />
+                                        <IconLink :icon="tech.icon" />
                                         {{ tech.name }}
                                     </li>
                                 </ul>
@@ -54,23 +62,7 @@
         </div>
     </section>
 </template>
-<script>
-import CodeChallenge from './../../constant/code-challenges-page/index.js';
-import Icon from './../../components/Icons';
-export default {
-    components: { Icon },
-    data: () => {
-        return {
-            CodeChallenge: CodeChallenge,
-        };
-    },
-    methods: {
-        openSite(site) {
-            window.open(site, '_blank');
-        },
-    },
-};
-</script>
+
 <style lang="postcss">
 .code-challenge {
     @apply max-w-[1000px] mx-auto my-100px;
@@ -134,12 +126,12 @@ export default {
                             .item-links-toggle {
                                 padding: 0px 5px;
                                 cursor: pointer;
-                                .icon {
+                                .highlight-hover {
                                     color: var(--lightSlate) !important;
                                 }
 
                                 &:hover {
-                                    .icon {
+                                    .highlight-hover {
                                         color: var(--primary) !important;
                                     }
                                 }

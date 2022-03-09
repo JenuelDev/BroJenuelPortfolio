@@ -1,3 +1,12 @@
+<script setup>
+import ThemeChanger from './../themeChanger/themeChanger';
+import { Home20Filled, Briefcase20Filled, Code20Filled, Mail20Filled, WebAsset24Filled } from '@vicons/fluent';
+import { Icon } from '@vicons/utils';
+import { socialMediaLinks } from './../../constant/social-network';
+import { computed } from 'vue';
+
+const SocialNetwork = computed(() => socialMediaLinks);
+</script>
 <template>
     <div class="nav-mobile">
         <div class="nav-front" :class="{ 'show-nav': $store.state.navShow }">
@@ -19,7 +28,9 @@
                     "
                 >
                     <div :class="{ active: $route.name == 'AboutMe' }">
-                        <Icon name="home" :size="15" />
+                        <Icon size="20">
+                            <Home20Filled />
+                        </Icon>
                         Home
                     </div>
                 </li>
@@ -32,7 +43,9 @@
                     "
                 >
                     <div :class="{ active: $route.name == 'Experience' }">
-                        <Icon name="case" :size="15" />
+                        <Icon size="20">
+                            <Briefcase20Filled />
+                        </Icon>
                         Experience
                     </div>
                 </li>
@@ -45,7 +58,9 @@
                     "
                 >
                     <div :class="{ active: $route.name == 'Project' }">
-                        <Icon name="code" :size="15" />
+                        <Icon size="20">
+                            <Code20Filled />
+                        </Icon>
                         Projects
                     </div>
                 </li>
@@ -58,13 +73,17 @@
                     "
                 >
                     <div :class="{ active: $route.name == 'Contact' }">
-                        <Icon name="envelope" :size="15" />
+                        <Icon size="20">
+                            <Mail20Filled />
+                        </Icon>
                         Contact Me
                     </div>
                 </li>
                 <li v-scrollanimation style="transition-delay: 650ms">
                     <a rel="external" href="https://brojenuelblog.ml" hreflang="es-es">
-                        <Icon name="documents" :size="15" />
+                        <Icon size="20">
+                            <WebAsset24Filled />
+                        </Icon>
                         Blog
                     </a>
                 </li>
@@ -80,22 +99,7 @@
         <div class="nav-back" :class="{ 'show-nav': $store.state.navShow }" @click="$store.state.navShow = false"></div>
     </div>
 </template>
-<script>
-import ThemeChanger from './../themeChanger/themeChanger';
-import Icon from './../Icons';
-import { socialMediaLinks } from './../../constant/social-network';
-export default {
-    components: { Icon, ThemeChanger },
-    computed: {
-        SocialNetwork: () => socialMediaLinks,
-    },
-    methods: {
-        goToLink(link) {
-            window.open(link);
-        },
-    },
-};
-</script>
+
 <style lang="scss">
 .nav-mobile {
     display: none;
@@ -146,9 +150,9 @@ export default {
 
             li {
                 cursor: pointer;
-                
 
-                div, a {
+                div,
+                a {
                     display: flex;
                     align-items: center;
                     gap: 7px;

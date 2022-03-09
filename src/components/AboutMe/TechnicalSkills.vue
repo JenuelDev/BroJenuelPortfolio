@@ -61,7 +61,7 @@
 </template>
 <script>
 import { reactive, ref } from '@vue/reactivity';
-import Icon from './../../components/Icons';
+import { Icon } from '@vicons/utils';
 import { skillList, mySkills } from './TechnicalSkills';
 export default {
     components: { Icon },
