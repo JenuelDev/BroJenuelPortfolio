@@ -52,7 +52,7 @@ function openSite(site) {
                     </div>
                 </li>
                 <li>
-                    <div @click="openSite('https://twitter.com/broJenuel')" class="a-link">
+                    <div @click="openSite('https://dev.to/brojenuel')" class="a-link">
                         <div class="text-size-25px">
                             <Icon><Dev /></Icon>
                         </div>
