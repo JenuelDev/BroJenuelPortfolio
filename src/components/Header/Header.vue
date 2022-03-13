@@ -1,6 +1,7 @@
 <script setup>
 import ThemeChanger from './../themeChanger/themeChanger';
 import { Home20Filled, Briefcase20Filled, Code20Filled, Mail20Filled, WebAsset24Filled, Navigation20Regular } from '@vicons/fluent';
+import { Facebook, Youtube, LinkedinIn, Github, Twitter, Dev } from '@vicons/fa';
 import { Icon } from '@vicons/utils';
 import { onBeforeMount, onMounted, ref } from 'vue';
 
@@ -18,12 +19,14 @@ function handleWidth() {
 function onScroll() {
     // Get the current scroll position
     const currentScrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
     // Because of momentum scrolling on mobiles, we shouldn't continue if it is less than zero
     if (currentScrollPosition < 0) {
         return;
     }
     // Here we determine whether we need to show or hide the navbar
     showNavbar.value = currentScrollPosition < lastScrollPosition.value;
+
     // Set the current scroll position as the last scroll position
     lastScrollPosition.value = currentScrollPosition;
 }
@@ -37,6 +40,10 @@ onMounted(() => {
 onBeforeMount(() => {
     window.removeEventListener('scroll', onScroll);
 });
+
+function openSite(site) {
+    window.open(site, '_blank');
+}
 </script>
 
 <template>
@@ -80,7 +87,7 @@ onBeforeMount(() => {
                         </div>
                     </li>
                     <li v-scrollanimation style="transition-delay: 650ms">
-                        <a class="text-size-14px font-500" rel="external" href="https://brojenuelblog.ml" hreflang="es-es">
+                        <a class="text-size-14px font-500" rel="external" href="https://dev.to/BroJenuel" hreflang="es-es">
                             <Icon size="20">
                                 <WebAsset24Filled />
                             </Icon>
@@ -91,6 +98,52 @@ onBeforeMount(() => {
                 <div v-scrollanimation style="transition-delay: 700ms">
                     <ThemeChanger />
                 </div>
+            </div>
+            <div class="nav-mobile">
+                <ol>
+                    <li>
+                        <div @click="openSite('https://www.facebook.com/ganawed/')" class="a-link">
+                            <div class="text-size-25px">
+                                <Icon size="37"><Facebook /></Icon>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div @click="openSite('https://www.youtube.com/channel/UCNANDtTF63UTRcYioVsSCdA')" class="a-link">
+                            <div class="text-size-25px">
+                                <Icon size="37"><Youtube /></Icon>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div @click="openSite('https://www.linkedin.com/in/jenuelganawed/')" class="a-link">
+                            <div class="text-size-25px">
+                                <Icon size="37"><LinkedinIn /></Icon>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div @click="openSite('https://github.com/BroJenuel')" class="a-link">
+                            <div class="text-size-25px">
+                                <Icon size="37"><Github /></Icon>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div @click="openSite('https://twitter.com/broJenuel')" class="a-link">
+                            <div class="text-size-25px">
+                                <Icon size="37"><Twitter /></Icon>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div @click="openSite('https://dev.to/brojenuel')" class="a-link">
+                            <div class="text-size-25px">
+                                <Icon size="37"><Dev /></Icon>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
             </div>
             <div class="show-mobile-nav-but">
                 <Icon size="40" @click="$store.state.navShow = true" style="margin-right: 20px">
