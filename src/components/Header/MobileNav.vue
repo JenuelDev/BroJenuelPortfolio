@@ -80,7 +80,7 @@ const SocialNetwork = computed(() => socialMediaLinks);
                     </div>
                 </li>
                 <li v-scrollanimation style="transition-delay: 650ms">
-                    <a rel="external" href="https://brojenuelblog.ml" hreflang="es-es">
+                    <a rel="external" href="https://dev.to/BroJenuel" hreflang="es-es">
                         <Icon size="20">
                             <WebAsset24Filled />
                         </Icon>

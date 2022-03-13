@@ -114,6 +114,13 @@
             }
         }
 
+        .nav-mobile {
+            ol {
+                display: flex;
+                gap: 15px;
+            }
+        }
+
         .show-mobile-nav-but {
             display: none;
         }
