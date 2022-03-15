@@ -50,7 +50,7 @@ function openSite(site) {
     <div class="header" :class="{ 'navbar--hidden': !showNavbar && scroll > 100, 'nav-min': scroll > 50 }">
         <nav>
             <div class="logo-image">
-                <h2 class="sm:ml-[50px] ml-10px font-700 text-[var(--primary)] text-size-2.5rem">JG</h2>
+                <h2 class="sm:ml-[50px] ml-10px font-700 text-[var(--primary)] text-size-2.5rem -mt-6px">JG</h2>
             </div>
             <div class="navs">
                 <ol>
@@ -145,8 +145,8 @@ function openSite(site) {
                     </li>
                 </ol>
             </div>
-            <div class="show-mobile-nav-but">
-                <Icon size="40" @click="$store.state.navShow = true" style="margin-right: 20px">
+            <div class="show-mobile-nav-but mt-[10px]">
+                <Icon size="40" @click="$store.state.navShow = true" style="margin-right: 20px;">
                     <Navigation20Regular />
                 </Icon>
             </div>

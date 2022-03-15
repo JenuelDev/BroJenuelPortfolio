@@ -113,10 +113,23 @@ export default {
             }
 
             let verified = await verifyEmail();
-            if (verified && ( verified.deliverable === false || verified.code != 200 )) {
+            if (verified && (verified.deliverable === false || verified.code != 200)) {
+                if (verified.code && verified.code == 401) {
+                    alertSet({
+                        title: 'Oops! Server Error! 😢😭📧',
+                        description:
+                            'Sorry about that, it seems their is an error on my server. Going to fix it later.',
+                        type: 'error',
+                        show: true,
+                    });
+                    return false;
+                }
+
                 alertSet({
                     title: 'Oops! Email Does not Exist! 😢😭📧',
-                    description: 'Sorry about that, it seems that you have entered a wrong email, I cant find it anywhere.' + (verified.code === 301 ? "The email service provider accepts all emails without specifying if it's deliverable or not." : ''),
+                    description:
+                        'Sorry about that, it seems that you have entered a wrong email, I cant find it anywhere.' +
+                        (verified.code === 301 ? "The email service provider accepts all emails without specifying if it's deliverable or not." : ''),
                     type: 'error',
                     show: true,
                 });
@@ -148,16 +161,19 @@ export default {
                             sending.value = false;
                             validateForm(true);
                         })
-                        .catch(() => {
+                        .catch((e) => {
                             sent.value = false;
                             showError.value = false;
                             sending.value = false;
-                            alertSet({
-                                title: 'Oops! Email Does not Exist! 😢😭📧',
-                                description: 'Sorry about that, it seems that you have entered a wrong email, I cant find it anywhere.',
-                                type: 'error',
-                                show: true,
-                            });
+
+                            if (e.response.status == 500) {
+                                alertSet({
+                                    title: 'Oops! Email Does not Exist! 😢😭📧',
+                                    description: 'Sorry about that, it seems that you have entered a wrong email, I cant find it anywhere.',
+                                    type: 'error',
+                                    show: true,
+                                });
+                            }
                         });
                 } else {
                     sending.value = false;
