@@ -1,20 +1,13 @@
+<script setup>
+import AboutMeSection from './../../components/AboutMe/ABoutMeSection.vue';
+import TechnicalSkills from './../../components/AboutMe/TechnicalSkills.vue';
+import WhatIconOffer from './../../components/AboutMe/WhatIOffer.vue';
+</script>
 <template>
     <AboutMeSection />
     <TechnicalSkills />
     <WhatIconOffer />
 </template>
-<script>
-import AboutMeSection from './../../components/AboutMe/ABoutMeSection.vue';
-import TechnicalSkills from './../../components/AboutMe/TechnicalSkills.vue';
-import WhatIconOffer from './../../components/AboutMe/WhatIOffer.vue';
-export default {
-    components: {
-        AboutMeSection,
-        TechnicalSkills,
-        WhatIconOffer,
-    },
-};
-</script>
 <style lang="postcss">
 .what-i-offer-content {
     margin: 70px auto 10px auto;

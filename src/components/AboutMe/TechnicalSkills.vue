@@ -1,3 +1,30 @@
+<script setup>
+import { reactive, ref } from '@vue/reactivity';
+import { Icon } from '@vicons/utils';
+import { skillList, mySkills } from './TechnicalSkills';
+import RenderIcon from './../../components/Icon.vue';
+const dialog = ref(false);
+const dialogContent = reactive({
+    title: '',
+    des: '',
+    icon: '',
+});
+
+const openDialog = (skill) => {
+    dialogContent.skill = skill.text;
+    dialogContent.title = skill.text;
+    dialogContent.des = skill.des;
+    dialogContent.icon = skill.icon;
+
+    document.getElementById('main-screen-window').style.overflowY = 'hidden';
+    dialog.value = !dialog.value;
+};
+const closeDialog = () => {
+    document.getElementById('main-screen-window').style.overflowY = 'overlay';
+    dialog.value = !dialog.value;
+};
+</script>
+
 <template>
     <div class="modal-window">
         <div class="modal-window-content">
@@ -37,7 +64,7 @@
             <div class="flex flex-col justify-between" v-for="mySkill in mySkills" :key="mySkill.tech">
                 <div>
                     <div class="flex items-center">
-                        <span class="text-[var(--primary)] text-size-30px" v-html="mySkill.icon"></span>
+                        <RenderIcon :icon="mySkill.icon" :size="30" />
                         <h3 class="ml-7px font-600 md:text-size-24px text-size-20px">{{ mySkill.tech }}</h3>
                         <span class="technical-skill-year">{{ mySkill.yearStarted }}</span>
                     </div>
@@ -59,41 +86,7 @@
         </div>
     </section>
 </template>
-<script>
-import { reactive, ref } from '@vue/reactivity';
-import { Icon } from '@vicons/utils';
-import { skillList, mySkills } from './TechnicalSkills';
-export default {
-    components: { Icon },
-    setup() {
-        const dialog = ref(false);
-        const dialogContent = reactive({
-            title: '',
-            des: '',
-            icon: '',
-        });
-        return {
-            dialog,
-            skillList,
-            dialogContent,
-            mySkills,
-            openDialog(skill) {
-                dialogContent.skill = skill.text;
-                dialogContent.title = skill.text;
-                dialogContent.des = skill.des;
-                dialogContent.icon = skill.icon;
 
-                document.getElementById('main-screen-window').style.overflowY = 'hidden';
-                dialog.value = !dialog.value;
-            },
-            closeDialog() {
-                document.getElementById('main-screen-window').style.overflowY = 'overlay';
-                dialog.value = !dialog.value;
-            },
-        };
-    },
-};
-</script>
 <style lang="postcss">
 .technical-skill-year {
     @apply md:text-size-20px text-size-18px opacity-60;
