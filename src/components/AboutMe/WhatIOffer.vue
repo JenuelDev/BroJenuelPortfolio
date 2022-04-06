@@ -3,7 +3,7 @@
         <div class="text-center mb-40px">
             <h1 class="lg:text-size-52px md:text-size-44px text-size-36px font-800 text-[var(--primary)] tracking-tight mt-10px mb-15px">What I can offer</h1>
             <p class="md:text-size-24px text-size-20px md:px-10px w-[100%] max-w-[770px] md:leading-relaxed leading-normal mx-auto">
-                If you hire me, here are the things that I can do to help solve some of your companies problems, and help to reduce issues.
+                If you hire me, here are the things that I can do to help solve some of your company's problems, and help to reduce issues. I will also create and maintain web apps.
             </p>
         </div>
 
