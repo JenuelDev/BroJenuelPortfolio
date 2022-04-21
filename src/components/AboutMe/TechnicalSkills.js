@@ -61,8 +61,8 @@ export const mySkills = [
     },
     {
         icon: Diamond16Filled,
-        tech: "PHP/Ruby",
-        des: "Technology I used for Backend Development. PHP is the first ever language I learned for building backend functionalities. After that I started focusing on using PHP frameworks to build faster server-side rendering websites and API calls. I Just Started learning Ruby, and I only know little of it.",
+        tech: "PHP",
+        des: "Technology I used for Backend Development. PHP is the first ever language I learned for building backend functionalities. After that I started focusing on using PHP frameworks to build faster server-side rendering websites and API calls.",
         yearStarted: 2017,
         tools: [
             {
@@ -77,6 +77,14 @@ export const mySkills = [
                 text: 'laravel/Lumen',
                 des: "<a href='https://laravel.com/' target='_blank' alt='Go to Laravel'>Laravel</a> is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller architectural pattern and based on Symfony. Laravel <a href='https://lumen.laravel.com/' target='_blank' alt='Go to lumen'>Lumen</a> is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax.",
             },
+        ]
+    },
+    {
+        icon: Diamond16Filled,
+        tech: "Rails",
+        des: "Ruby on Rails is a ruby framework for Web Development that also followed the MVC structure like Laravel and any other frameworks. I Just Started learning Ruby, and I only know little of it.",
+        yearStarted: 2017,
+        tools: [
             {
                 icon: rails,
                 text: 'Ruby on Rails',

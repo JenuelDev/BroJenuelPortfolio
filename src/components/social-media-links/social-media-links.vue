@@ -13,7 +13,7 @@ function openSite(site) {
             <ul v-scrollanimation class="social-media-list">
                 <li>
                     <div @click="openSite('https://www.facebook.com/ganawed/')" class="a-link">
-                        <div class="text-size-25px">
+                        <div class="text-size-40px">
                             <Icon><Facebook /></Icon>
                         </div>
                         <span class="icon-title">Facebook</span>
@@ -21,7 +21,7 @@ function openSite(site) {
                 </li>
                 <li>
                     <div @click="openSite('https://www.youtube.com/channel/UCNANDtTF63UTRcYioVsSCdA')" class="a-link">
-                        <div class="text-size-25px">
+                        <div class="text-size-40px">
                             <Icon><Youtube /></Icon>
                         </div>
                         <span class="icon-title">Youtube</span>
@@ -29,7 +29,7 @@ function openSite(site) {
                 </li>
                 <li>
                     <div @click="openSite('https://www.linkedin.com/in/jenuelganawed/')" class="a-link">
-                        <div class="text-size-25px">
+                        <div class="text-size-40px">
                             <Icon><LinkedinIn /></Icon>
                         </div>
                         <span class="icon-title">LinkedIn</span>
@@ -37,7 +37,7 @@ function openSite(site) {
                 </li>
                 <li>
                     <div @click="openSite('https://github.com/BroJenuel')" class="a-link">
-                        <div class="text-size-25px">
+                        <div class="text-size-40px">
                             <Icon><Github /></Icon>
                         </div>
                         <span class="icon-title">GitHub</span>
@@ -45,7 +45,7 @@ function openSite(site) {
                 </li>
                 <li>
                     <div @click="openSite('https://twitter.com/broJenuel')" class="a-link">
-                        <div class="text-size-25px">
+                        <div class="text-size-40px">
                             <Icon><Twitter /></Icon>
                         </div>
                         <span class="icon-title">Twitter</span>
@@ -53,7 +53,7 @@ function openSite(site) {
                 </li>
                 <li>
                     <div @click="openSite('https://dev.to/brojenuel')" class="a-link">
-                        <div class="text-size-25px">
+                        <div class="text-size-40px">
                             <Icon><Dev /></Icon>
                         </div>
                         <span class="icon-title">Dev.to</span>
