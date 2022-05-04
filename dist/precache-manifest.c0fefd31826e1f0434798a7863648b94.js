@@ -4,11 +4,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/.well-known/brave-rewards-verification.txt"
   },
   {
-    "revision": "440d59cfcab13c1e517f",
+    "revision": "7d3d2f6ce560dd8c0a7c",
     "url": "/css/app.56e637b1.css"
   },
   {
-    "revision": "440d59cfcab13c1e517f",
+    "revision": "7d3d2f6ce560dd8c0a7c",
     "url": "/css/app.56e637b1.css.map"
   },
   {
@@ -28,11 +28,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/chunk-3fb44642.891c2a75.css.map"
   },
   {
-    "revision": "a23aa7a5145c56538f5e",
+    "revision": "8d9c6ad10751e9e8c139",
     "url": "/css/chunk-815059a2.e378bd13.css"
   },
   {
-    "revision": "a23aa7a5145c56538f5e",
+    "revision": "8d9c6ad10751e9e8c139",
     "url": "/css/chunk-815059a2.e378bd13.css.map"
   },
   {
@@ -112,16 +112,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/profileImage.09e24700.png"
   },
   {
-    "revision": "07128c4df42dfcc5c81bd15a3da45823",
+    "revision": "f0a505da880337541185804e028af3fc",
     "url": "/index.html"
   },
   {
-    "revision": "440d59cfcab13c1e517f",
-    "url": "/js/app.dc918584.js"
+    "revision": "7d3d2f6ce560dd8c0a7c",
+    "url": "/js/app.5343adec.js"
   },
   {
-    "revision": "440d59cfcab13c1e517f",
-    "url": "/js/app.dc918584.js.map"
+    "revision": "7d3d2f6ce560dd8c0a7c",
+    "url": "/js/app.5343adec.js.map"
   },
   {
     "revision": "bb5e44655798fa5b3862",
@@ -140,12 +140,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-3fb44642.a2c4e79a.js.map"
   },
   {
-    "revision": "a23aa7a5145c56538f5e",
-    "url": "/js/chunk-815059a2.6f6d522f.js"
+    "revision": "8d9c6ad10751e9e8c139",
+    "url": "/js/chunk-815059a2.430eb5b5.js"
   },
   {
-    "revision": "a23aa7a5145c56538f5e",
-    "url": "/js/chunk-815059a2.6f6d522f.js.map"
+    "revision": "8d9c6ad10751e9e8c139",
+    "url": "/js/chunk-815059a2.430eb5b5.js.map"
   },
   {
     "revision": "c3012fac4f67a3f9744a",
