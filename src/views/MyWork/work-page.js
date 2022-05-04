@@ -117,12 +117,12 @@ export default {
                     tooltip: "Open in Github"
                 },
                 {
-                    link: "https://brojenuelblog.ml",
+                    link: "https://brojenuel-blog.vercel.app/",
                     icon: ExternalLinkSquareAlt,
                     tooltip: "Open Link"
                 }
             ],
-            imageLink: "https://brojenuelblog.ml",
+            imageLink: "https://brojenuel-blog.vercel.app/",
             img: "https://i.imgur.com/vwwFfRUl.png"
         }
     ]
