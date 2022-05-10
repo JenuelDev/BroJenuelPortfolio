@@ -1,3 +1,12 @@
+<script setup>
+import SvgDecoration from './../SvgDecoration/SvgDecoration.vue';
+import Document16Regular from '@vicons/fluent/Document16Regular';
+import { Icon } from '@vicons/utils';
+
+const yearCount = () => {
+    return new Date().getFullYear() - 2017;
+};
+</script>
 <template>
     <section v-scrollanimation class="about-me mx-auto mb-100px">
         <div class="about-me-inner flex flex-row items-center gap-[50px] relative">
@@ -12,6 +21,16 @@
                         <router-link to="/contact" class="bg-[var(--primary)] px-25px py-10px rounded-md text-[var(--background)] font-600 opacity-90 hover:opacity-100">
                             Get In Touch
                         </router-link>
+                        <a
+                            href="https://drive.google.com/file/d/1CEMto0ubGMVBJNCLq-QQN8-aFsYUo2Dd/view?usp=sharing"
+                            target="_blank"
+                            class="ml-10px bg-[var(--primary)] px-25px py-10px rounded-md text-[var(--background)] font-600 opacity-90 hover:opacity-100 cursor-pointer"
+                        >
+                            <Icon size="20" >
+                                <Document16Regular />
+                            </Icon>
+                            Resume
+                        </a>
                     </div>
                 </div>
             </div>
@@ -44,19 +63,7 @@
         </div>
     </section>
 </template>
-<script>
-import SvgDecoration from './../SvgDecoration/SvgDecoration.vue';
-export default {
-    components: { SvgDecoration },
-    setup() {
-        return {
-            yearCount: () => {
-                return new Date().getFullYear() - 2017;
-            },
-        };
-    },
-};
-</script>
+
 <style lang="postcss">
 .about-me {
     @apply flex flex-col items-center max-w-[900px] visible opacity-100 z-10 px-10px lg:mt-130px;

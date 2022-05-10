@@ -1,9 +1,15 @@
 <script setup>
 import ThemeChanger from './../themeChanger/themeChanger';
 import { Home20Filled, Briefcase20Filled, Code20Filled, Mail20Filled, WebAsset24Filled, Navigation20Regular } from '@vicons/fluent';
-import { Facebook, Youtube, LinkedinIn, Github, Twitter, Dev } from '@vicons/fa';
+import Facebook from '@vicons/fa/Facebook';
+import LinkedinIn from '@vicons/fa/LinkedinIn';
+import Youtube from '@vicons/fa/Youtube';
+import Github from '@vicons/fa/Github';
+import Twitter from '@vicons/fa/Twitter';
+import Dev from '@vicons/fa/Dev';
 import { Icon } from '@vicons/utils';
 import { onBeforeMount, onMounted, ref } from 'vue';
+import Document16Regular from '@vicons/fluent/Document16Regular';
 
 const scroll = ref(0);
 const width = ref(0);
@@ -94,6 +100,20 @@ function openSite(site) {
                             Blog
                         </a>
                     </li>
+                    <li v-scrollanimation style="transition-delay: 650ms">
+                        <a
+                            class="text-size-14px font-500"
+                            rel="external"
+                            href="https://drive.google.com/file/d/1CEMto0ubGMVBJNCLq-QQN8-aFsYUo2Dd/view?usp=sharing"
+                            hreflang="es-es"
+                            target="_blank"
+                        >
+                            <Icon size="20">
+                                <Document16Regular />
+                            </Icon>
+                            Resume
+                        </a>
+                    </li>
                 </ol>
                 <div v-scrollanimation style="transition-delay: 700ms">
                     <ThemeChanger />
@@ -146,7 +166,7 @@ function openSite(site) {
                 </ol>
             </div>
             <div class="show-mobile-nav-but mt-[10px]">
-                <Icon size="40" @click="$store.state.navShow = true" style="margin-right: 20px;">
+                <Icon size="40" @click="$store.state.navShow = true" style="margin-right: 20px">
                     <Navigation20Regular />
                 </Icon>
             </div>
