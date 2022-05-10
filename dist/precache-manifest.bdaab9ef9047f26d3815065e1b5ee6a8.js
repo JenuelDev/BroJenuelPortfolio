@@ -4,43 +4,43 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/.well-known/brave-rewards-verification.txt"
   },
   {
-    "revision": "7d3d2f6ce560dd8c0a7c",
-    "url": "/css/app.56e637b1.css"
+    "revision": "a3c733d13f0ce87d2a36",
+    "url": "/css/app.f1bad038.css"
   },
   {
-    "revision": "7d3d2f6ce560dd8c0a7c",
-    "url": "/css/app.56e637b1.css.map"
+    "revision": "a3c733d13f0ce87d2a36",
+    "url": "/css/app.f1bad038.css.map"
   },
   {
-    "revision": "bb5e44655798fa5b3862",
+    "revision": "abefec30f0c323c65ad9",
     "url": "/css/chunk-0eff3ee0.e9131918.css"
   },
   {
-    "revision": "bb5e44655798fa5b3862",
+    "revision": "abefec30f0c323c65ad9",
     "url": "/css/chunk-0eff3ee0.e9131918.css.map"
   },
   {
-    "revision": "5ea766a5d3ce08a18329",
+    "revision": "d2d9aed32a19945893a8",
     "url": "/css/chunk-3fb44642.891c2a75.css"
   },
   {
-    "revision": "5ea766a5d3ce08a18329",
+    "revision": "d2d9aed32a19945893a8",
     "url": "/css/chunk-3fb44642.891c2a75.css.map"
   },
   {
-    "revision": "8d9c6ad10751e9e8c139",
+    "revision": "239d20e03f48d5ec4557",
     "url": "/css/chunk-815059a2.e378bd13.css"
   },
   {
-    "revision": "8d9c6ad10751e9e8c139",
+    "revision": "239d20e03f48d5ec4557",
     "url": "/css/chunk-815059a2.e378bd13.css.map"
   },
   {
-    "revision": "c3012fac4f67a3f9744a",
+    "revision": "ae3aca7f35ca6071f4bb",
     "url": "/css/chunk-8f0c0f22.b3e2821f.css"
   },
   {
-    "revision": "c3012fac4f67a3f9744a",
+    "revision": "ae3aca7f35ca6071f4bb",
     "url": "/css/chunk-8f0c0f22.b3e2821f.css.map"
   },
   {
@@ -112,56 +112,56 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/profileImage.09e24700.png"
   },
   {
-    "revision": "f0a505da880337541185804e028af3fc",
+    "revision": "b07f78dd19d30d4a2116b414a5be2345",
     "url": "/index.html"
   },
   {
-    "revision": "7d3d2f6ce560dd8c0a7c",
-    "url": "/js/app.5343adec.js"
+    "revision": "a3c733d13f0ce87d2a36",
+    "url": "/js/app.476b05b6.js"
   },
   {
-    "revision": "7d3d2f6ce560dd8c0a7c",
-    "url": "/js/app.5343adec.js.map"
+    "revision": "a3c733d13f0ce87d2a36",
+    "url": "/js/app.476b05b6.js.map"
   },
   {
-    "revision": "bb5e44655798fa5b3862",
-    "url": "/js/chunk-0eff3ee0.e5b5b1c4.js"
+    "revision": "abefec30f0c323c65ad9",
+    "url": "/js/chunk-0eff3ee0.6d8d1472.js"
   },
   {
-    "revision": "bb5e44655798fa5b3862",
-    "url": "/js/chunk-0eff3ee0.e5b5b1c4.js.map"
+    "revision": "abefec30f0c323c65ad9",
+    "url": "/js/chunk-0eff3ee0.6d8d1472.js.map"
   },
   {
-    "revision": "5ea766a5d3ce08a18329",
-    "url": "/js/chunk-3fb44642.a2c4e79a.js"
+    "revision": "d2d9aed32a19945893a8",
+    "url": "/js/chunk-3fb44642.53fa5d29.js"
   },
   {
-    "revision": "5ea766a5d3ce08a18329",
-    "url": "/js/chunk-3fb44642.a2c4e79a.js.map"
+    "revision": "d2d9aed32a19945893a8",
+    "url": "/js/chunk-3fb44642.53fa5d29.js.map"
   },
   {
-    "revision": "8d9c6ad10751e9e8c139",
-    "url": "/js/chunk-815059a2.430eb5b5.js"
+    "revision": "239d20e03f48d5ec4557",
+    "url": "/js/chunk-815059a2.e156baa0.js"
   },
   {
-    "revision": "8d9c6ad10751e9e8c139",
-    "url": "/js/chunk-815059a2.430eb5b5.js.map"
+    "revision": "239d20e03f48d5ec4557",
+    "url": "/js/chunk-815059a2.e156baa0.js.map"
   },
   {
-    "revision": "c3012fac4f67a3f9744a",
-    "url": "/js/chunk-8f0c0f22.6273a5e6.js"
+    "revision": "ae3aca7f35ca6071f4bb",
+    "url": "/js/chunk-8f0c0f22.69afa2f5.js"
   },
   {
-    "revision": "c3012fac4f67a3f9744a",
-    "url": "/js/chunk-8f0c0f22.6273a5e6.js.map"
+    "revision": "ae3aca7f35ca6071f4bb",
+    "url": "/js/chunk-8f0c0f22.69afa2f5.js.map"
   },
   {
-    "revision": "3eecee0197595d49d107",
-    "url": "/js/chunk-vendors.1c612963.js"
+    "revision": "1f8df7b5498e81e6c732",
+    "url": "/js/chunk-vendors.cccd298a.js"
   },
   {
-    "revision": "3eecee0197595d49d107",
-    "url": "/js/chunk-vendors.1c612963.js.map"
+    "revision": "1f8df7b5498e81e6c732",
+    "url": "/js/chunk-vendors.cccd298a.js.map"
   },
   {
     "revision": "a3b6bee43f4004cef379034b2b588375",
