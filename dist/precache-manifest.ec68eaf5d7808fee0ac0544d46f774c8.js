@@ -4,12 +4,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/.well-known/brave-rewards-verification.txt"
   },
   {
-    "revision": "9ffa4d64928683f2a2ce",
-    "url": "/css/app.563ddf41.css"
+    "revision": "2ed273edece92f0e83a8",
+    "url": "/css/app.3f867a19.css"
   },
   {
-    "revision": "9ffa4d64928683f2a2ce",
-    "url": "/css/app.563ddf41.css.map"
+    "revision": "2ed273edece92f0e83a8",
+    "url": "/css/app.3f867a19.css.map"
   },
   {
     "revision": "abefec30f0c323c65ad9",
@@ -112,16 +112,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/profileImage.09e24700.png"
   },
   {
-    "revision": "ed140326500c20deeb3adc951791845d",
+    "revision": "e7817fdf7ca46999c95cfa38511d11d4",
     "url": "/index.html"
   },
   {
-    "revision": "9ffa4d64928683f2a2ce",
-    "url": "/js/app.476b05b6.js"
+    "revision": "2ed273edece92f0e83a8",
+    "url": "/js/app.5df19ebe.js"
   },
   {
-    "revision": "9ffa4d64928683f2a2ce",
-    "url": "/js/app.476b05b6.js.map"
+    "revision": "2ed273edece92f0e83a8",
+    "url": "/js/app.5df19ebe.js.map"
   },
   {
     "revision": "abefec30f0c323c65ad9",

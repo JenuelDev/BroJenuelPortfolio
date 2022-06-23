@@ -4,7 +4,8 @@ import AboutMe from "./../views/AboutMe/AboutMe.vue";
 const routes = [
     {
         path: "/",
-        redirect: "/home"
+        redirect: "/home",
+
     },
     {
         path: "/home",
@@ -14,17 +15,17 @@ const routes = [
     {
         path: "/experience",
         name: "Experience",
-        component: () => import("./../views/MyExperience")
+        component: () => import("./../views/MyExperience"),
     },
     {
         path: "/Project",
         name: "Project",
-        component: () => import("./../views/MyWork")
+        component: () => import("./../views/MyWork"),
     },
     {
         path: "/contact",
         name: "Contact",
-        component: () => import("./../views/ContactMe")
+        component: () => import("./../views/ContactMe"),
     },
     {
         path: "/:pathMatch(.*)*",
@@ -43,6 +44,10 @@ const router = createRouter({
             return savedPosition;
         }
     }
+});
+
+router.afterEach((to) => {
+    document.title = `Jenuel Ganawed - ${to.name}`
 });
 
 export default router;

@@ -46,7 +46,7 @@ export default {
 };
 </script>
 
-<style lang="postcss">
+<style lang="scss">
 main {
     min-height: 70vh;
 }
