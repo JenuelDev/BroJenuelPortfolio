@@ -4,12 +4,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/.well-known/brave-rewards-verification.txt"
   },
   {
-    "revision": "ca1f1494017e2486c9f8",
-    "url": "/css/app.3f867a19.css"
+    "revision": "ae4feb426783bdd9c2fd",
+    "url": "/css/app.54058110.css"
   },
   {
-    "revision": "ca1f1494017e2486c9f8",
-    "url": "/css/app.3f867a19.css.map"
+    "revision": "ae4feb426783bdd9c2fd",
+    "url": "/css/app.54058110.css.map"
   },
   {
     "revision": "abefec30f0c323c65ad9",
@@ -112,16 +112,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/profileImage.09e24700.png"
   },
   {
-    "revision": "206bf1b413dbeb5b8b34c1363670a362",
+    "revision": "97fa961e9da8a3f47451edeea57a923f",
     "url": "/index.html"
   },
   {
-    "revision": "ca1f1494017e2486c9f8",
-    "url": "/js/app.6b518783.js"
+    "revision": "ae4feb426783bdd9c2fd",
+    "url": "/js/app.960d104f.js"
   },
   {
-    "revision": "ca1f1494017e2486c9f8",
-    "url": "/js/app.6b518783.js.map"
+    "revision": "ae4feb426783bdd9c2fd",
+    "url": "/js/app.960d104f.js.map"
   },
   {
     "revision": "abefec30f0c323c65ad9",
@@ -156,12 +156,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-8f0c0f22.69afa2f5.js.map"
   },
   {
-    "revision": "1f8df7b5498e81e6c732",
-    "url": "/js/chunk-vendors.cccd298a.js"
+    "revision": "6a922aa85cd57de9dbf5",
+    "url": "/js/chunk-vendors.bdec5490.js"
   },
   {
-    "revision": "1f8df7b5498e81e6c732",
-    "url": "/js/chunk-vendors.cccd298a.js.map"
+    "revision": "6a922aa85cd57de9dbf5",
+    "url": "/js/chunk-vendors.bdec5490.js.map"
   },
   {
     "revision": "a3b6bee43f4004cef379034b2b588375",
