@@ -32,11 +32,13 @@ const closeDialog = () => {
                 <div class="box" v-show="dialog">
                     <div>
                         <Icon @click="closeDialog()" class="x-close-button" name="x" />
-                        <h1>
-                            <div class="skill-icon text-size-34px" v-html="dialogContent.icon"></div>
-                            {{ dialogContent.title }}
+                        <h1 class="flex flex-col items-center">
+                            <div class="skill-icon w-50px" v-html="dialogContent.icon"></div>
+                            <div>
+                                {{ dialogContent.title }}
+                            </div>
                         </h1>
-                        <div>
+                        <div class="text-center">
                             <p v-html="dialogContent.des"></p>
                         </div>
                     </div>
@@ -79,7 +81,8 @@ const closeDialog = () => {
                         :key="tool.text"
                         @click="openDialog(tool)"
                     >
-                        {{ tool.text }}
+                        <div class="skill-icon min-w-30px" v-html="tool.icon"></div>
+                        <!-- {{ tool.text }} -->
                     </div>
                 </div>
             </div>
@@ -101,7 +104,7 @@ const closeDialog = () => {
 
 .technical-skills-wrapper {
     & > * {
-        @apply py-30px;
+        @apply py-15px;
         flex: 1 1 300px;
     }
 }
@@ -151,7 +154,7 @@ const closeDialog = () => {
 
         .box {
             position: fixed;
-            max-width: 250px;
+            max-width: 290px;
             background-color: var(--background);
             padding: 20px;
             border-radius: 10px;
@@ -171,7 +174,6 @@ const closeDialog = () => {
 
             h1 {
                 margin: 10px 0;
-                display: flex;
                 align-items: center;
                 gap: 10px;
                 color: var(--primary);

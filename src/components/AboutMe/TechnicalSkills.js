@@ -1,6 +1,7 @@
 import { Html5 } from "@vicons/fa";
-import { DesignIdeas16Regular, Diamond16Filled, Javascript16Filled } from "@vicons/fluent";
+import { DesignIdeas16Regular, Javascript16Filled } from "@vicons/fluent";
 import { codeigniter, figma, html5, laravel, nodejs, nuxt, rails, sass, tailwind, vue, windicss } from "../../assets/SVG_ICONS";
+import { Php, Gem } from "@vicons/fa"
 
 export const skillList = [
 ];
@@ -60,7 +61,7 @@ export const mySkills = [
         ]
     },
     {
-        icon: Diamond16Filled,
+        icon: Php,
         tech: "PHP",
         des: "Technology I used for Backend Development. PHP is the first ever language I learned for building backend functionalities. After that I started focusing on using PHP frameworks to build faster server-side rendering websites and API calls.",
         yearStarted: 2017,
@@ -80,7 +81,7 @@ export const mySkills = [
         ]
     },
     {
-        icon: Diamond16Filled,
+        icon: Gem,
         tech: "Rails",
         des: "Ruby on Rails is a ruby framework for Web Development that also followed the MVC structure like Laravel and any other frameworks. I Just Started learning Ruby, and I only know little of it.",
         yearStarted: 2019,
