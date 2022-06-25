@@ -76,13 +76,13 @@ const closeDialog = () => {
                 </div>
                 <div class="text-size-14px flex items-center gap-5px">
                     <div
-                        class="bg-dark-900 !text-gray-200 p-5px rounded-md opacity-80 hover:opacity-100 cursor-pointer"
+                        class="hover:bg-dark-900 p-5px rounded-md cursor-pointer flex items-center gap-5px text-size-20px max-w-40px overflow-hidden hover:max-w-200px duration-300 truncate"
                         v-for="tool in mySkill.tools"
                         :key="tool.text"
                         @click="openDialog(tool)"
                     >
                         <div class="skill-icon min-w-30px" v-html="tool.icon"></div>
-                        <!-- {{ tool.text }} -->
+                        <span>{{ tool.text }}</span>
                     </div>
                 </div>
             </div>
