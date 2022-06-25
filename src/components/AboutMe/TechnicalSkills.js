@@ -83,7 +83,7 @@ export const mySkills = [
         icon: Diamond16Filled,
         tech: "Rails",
         des: "Ruby on Rails is a ruby framework for Web Development that also followed the MVC structure like Laravel and any other frameworks. I Just Started learning Ruby, and I only know little of it.",
-        yearStarted: 2017,
+        yearStarted: 2019,
         tools: [
             {
                 icon: rails,

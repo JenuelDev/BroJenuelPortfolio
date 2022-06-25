@@ -4,11 +4,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/.well-known/brave-rewards-verification.txt"
   },
   {
-    "revision": "2ed273edece92f0e83a8",
+    "revision": "ca1f1494017e2486c9f8",
     "url": "/css/app.3f867a19.css"
   },
   {
-    "revision": "2ed273edece92f0e83a8",
+    "revision": "ca1f1494017e2486c9f8",
     "url": "/css/app.3f867a19.css.map"
   },
   {
@@ -112,16 +112,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/profileImage.09e24700.png"
   },
   {
-    "revision": "e7817fdf7ca46999c95cfa38511d11d4",
+    "revision": "206bf1b413dbeb5b8b34c1363670a362",
     "url": "/index.html"
   },
   {
-    "revision": "2ed273edece92f0e83a8",
-    "url": "/js/app.5df19ebe.js"
+    "revision": "ca1f1494017e2486c9f8",
+    "url": "/js/app.6b518783.js"
   },
   {
-    "revision": "2ed273edece92f0e83a8",
-    "url": "/js/app.5df19ebe.js.map"
+    "revision": "ca1f1494017e2486c9f8",
+    "url": "/js/app.6b518783.js.map"
   },
   {
     "revision": "abefec30f0c323c65ad9",
