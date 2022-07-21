@@ -124,7 +124,6 @@ function openSite(site) {
             .info-overline {
                 margin: 10px 0px;
                 color: var(--primary);
-                font-family: var(--font-mono) !important;
                 font-weight: 400;
             }
 
