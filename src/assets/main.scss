@@ -1,6 +1,6 @@
-
 :root {
-    --font-mono: "Inter var", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-mono: "Inter var", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial,
+        sans-serif;
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     --border-radius: 4px;
     --fz-xs: 13px;
@@ -14,19 +14,19 @@
     --primary: #64ffdb;
     --primary-darker: #349780;
     --liteprimary: #172a45;
-    --lightestPrimary: #303C55;
+    --lightestPrimary: #303c55;
     --slate: #8892b0;
     --lightSlate: #a8b2d1;
     --lightestSlate: #ccd6f6;
     --white: #e6f1ff;
     --secondary: #424242;
-    --accent: #82B1FF;
-    --error: #FF5252;
-    --info: #2196F3;
-    --success: #4CAF50;
-    --warning: #FFC107;
+    --accent: #82b1ff;
+    --error: #ff5252;
+    --info: #2196f3;
+    --success: #4caf50;
+    --warning: #ffc107;
     --black-shadow: 0 10px 30px -15px black;
-    --navy-shadow: rgba(2,12,27,1);
+    --navy-shadow: rgba(2, 12, 27, 1);
 
     --nav-height: 100px;
     --nav-scroll-height: 70px;
@@ -44,19 +44,20 @@
     --linear-6: #6fba82;
 }
 
-@import './styles/themes.scss';
+@import "./styles/themes.scss";
+@import "./styles/timeline.scss";
 
 // Profile Picture
-@import './styles/ProfilePicture.scss';
+@import "./styles/ProfilePicture.scss";
 
 // components
-@import './styles/body.scss';
-@import './styles/scrollbar.scss';
-@import './styles/header.scss';
-@import './../components/GradientBorder/style.scss';
-@import './../components/social-media-links/style.scss';
+@import "./styles/body.scss";
+@import "./styles/scrollbar.scss";
+@import "./styles/header.scss";
+@import "./../components/GradientBorder/style.scss";
+@import "./../components/social-media-links/style.scss";
 
 //css pages
-@import './../views/AboutMe/style.scss';
-@import './../components/Footer/Footer.scss';
-@import './styles/tool-tip.scss';
+@import "./../views/AboutMe/style.scss";
+@import "./../components/Footer/Footer.scss";
+@import "./styles/tool-tip.scss";

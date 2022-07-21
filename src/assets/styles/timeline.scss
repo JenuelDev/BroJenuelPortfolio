@@ -1,0 +1,86 @@
+.timeline {
+    margin: 4em 0;
+    position: relative;
+    // max-width: 46em;
+
+    &:before {
+        background-color: var(--slate);
+        content: "";
+        margin-left: -1px;
+        position: absolute;
+        top: 0;
+        left: 2em;
+        width: 2px;
+        height: 100%;
+        opacity: 0.2;
+    }
+
+    .timeline-event {
+        position: relative;
+
+        &:hover {
+            .timeline-event-icon {
+                transform: rotate(-45deg);
+                background-color: var(--primary);
+            }
+
+            .timeline-event-thumbnail {
+                background-color: var(--primary);
+                color: var(--background);
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .timeline-event-copy {
+        padding: 2em 2em;
+        position: relative;
+        top: -1.875em;
+        left: 4em;
+        width: 80%;
+
+        p:not(.timeline-event-thumbnail) {
+            padding-bottom: 1.2em;
+        }
+    }
+
+    .timeline-event-icon {
+        -moz-transition: -moz-transform 0.2s ease-in;
+        -o-transition: -o-transform 0.2s ease-in;
+        -webkit-transition: -webkit-transform 0.2s ease-in;
+        transition: transform 0.2s ease-in;
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background-color: var(--slate);
+        outline: 10px solid white;
+        display: block;
+        margin: 0.5em 0.5em 0.5em -0.5em;
+        position: absolute;
+        top: 0;
+        left: 2em;
+        width: 1em;
+        height: 1em;
+    }
+
+    .timeline-event-thumbnail {
+        transition: box-shadow 0.5s ease-in 0.1s;
+        transition: 0.3s;
+        background-color: var(--lightBackground);
+        display: inline-block;
+        margin-bottom: 1.2em;
+        padding: 0.25em 1em 0.2em 1em;
+        border-radius: 2px;
+
+        .present-work {
+            font-weight: bolder;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .timeline-event-copy {
+        padding: 2em 0em;
+    }
+}
