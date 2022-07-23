@@ -82,7 +82,7 @@ const closeDialog = () => {
                         @click="openDialog(tool)"
                     >
                         <div class="skill-icon min-w-30px" v-html="tool.icon"></div>
-                        <span>{{ tool.text }}</span>
+                        <span class="ml-10px">{{ tool.text }}</span>
                     </div>
                 </div>
             </div>
