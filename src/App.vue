@@ -30,7 +30,7 @@ export default {
             }
         }
         console.log(
-            '%cHey! Whats Up! \n%cLike to dig into the meaty bits of the website?\nThanks for looking! Hit me up on Twitter @BroJenuel!',
+            '%cHey! Whats Up! \n%cLike to dig into the meaty bits of the website?\nThanks for looking! Hit me up on twitter@BroJenuel, instagram@BroJenuel!',
             'padding:10px;' +
                 'border-radius: 10px;' +
                 'color:#64ffda;' +

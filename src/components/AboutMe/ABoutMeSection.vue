@@ -13,24 +13,31 @@ const yearCount = () => {
             <div class="about-me-text">
                 <div class="about-me-text-info text-right max-w-500px">
                     <div>
-                        <div class="lg:text-size-30px text-size-25px font-500">Web Developer</div>
+                        <div class="lg:text-size-40px text-size-30px font-500">Web Developer</div>
                         <div class="lg:text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--primary)] tracking-tight mt-10px">Hi there, I’m Jenuel</div>
                         <div class="text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--lightestSlate)] tracking-tight">I create apps and websites</div>
                     </div>
-                    <div class="mt-30px">
-                        <router-link to="/contact" class="bg-[var(--primary)] px-25px py-10px rounded-md text-[var(--background)] font-600 opacity-90 hover:opacity-100">
-                            Get In Touch
-                        </router-link>
-                        <a
-                            href="https://drive.google.com/file/d/1CEMto0ubGMVBJNCLq-QQN8-aFsYUo2Dd/view?usp=sharing"
-                            target="_blank"
-                            class="ml-10px bg-[var(--primary)] px-25px py-10px rounded-md text-[var(--background)] font-600 opacity-90 hover:opacity-100 cursor-pointer"
-                        >
-                            <Icon size="20" >
-                                <Document16Regular />
-                            </Icon>
-                            Resume
-                        </a>
+                    <div class="mt-30px flex lg:justify-end justify-center flex-wrap gap-20px items-center">
+                        <div>
+                            <router-link
+                                to="/contact"
+                                class="bg-[var(--primary)] px-25px py-10px rounded-md text-[var(--background)] font-600 opacity-90 hover:opacity-100"
+                            >
+                                Get In Touch
+                            </router-link>
+                        </div>
+                        <div>
+                            <a
+                                href="https://drive.google.com/file/d/1CEMto0ubGMVBJNCLq-QQN8-aFsYUo2Dd/view?usp=sharing"
+                                target="_blank"
+                                class="bg-[var(--primary)] px-25px py-10px rounded-md text-[var(--background)] font-600 opacity-90 hover:opacity-100 cursor-pointer whitespace-nowrap"
+                            >
+                                <Icon size="20">
+                                    <Document16Regular />
+                                </Icon>
+                                Resume
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
