@@ -13,7 +13,7 @@ const yearCount = () => {
             <div class="about-me-text">
                 <div class="about-me-text-info text-right max-w-500px">
                     <div>
-                        <div class="lg:text-size-40px text-size-30px font-500">Web Developer</div>
+                        <div class="lg:text-size-36px text-size-30px font-500">Software Developer</div>
                         <div class="lg:text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--primary)] tracking-tight mt-10px">Hi there, I’m Jenuel</div>
                         <div class="text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--lightestSlate)] tracking-tight">I create apps and websites</div>
                     </div>
