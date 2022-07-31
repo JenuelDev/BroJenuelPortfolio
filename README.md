@@ -5,8 +5,9 @@
 <img src="https://github.com/aleen42/badges/raw/master/src/visual_studio_code_dfc.svg"/>
 
 
-I'm glad that you visited my repo. I made this website from scratch while basing the design of  [Brittany Chiang's](https://onepagelove.com/brittany-chiang) design.  
-I recreated it ground up myself using Vue 3.
+I'm glad that you visited my repo. I made this website from scratch while basing the design of  [Brittany Chiang's](https://onepagelove.com/brittany-chiang) design. 
+
+I recreated it ground up using only Vue 3.
 
 #### ***Mobile Performance Test `Lighthouse`***  
 [![Mobile Test](https://i.imgur.com/SFErR8H.png)](https://i.imgur.com/SFErR8H.png)
