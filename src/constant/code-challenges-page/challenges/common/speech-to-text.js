@@ -9,7 +9,7 @@ export default {
             tooltip: 'Open in Github'
         },
         {
-            link: "https://jenuelganawed-speechtotext.netlify.app/",
+            link: "https://speach-to-text.jenuelganawed.com",
             icon: ExternalLinkSquareAlt,
             tooltip: 'Open Link'
         }

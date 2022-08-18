@@ -9,7 +9,7 @@ export default {
             tooltip: 'Open In Github'
         },
         {
-            link: "https://jenuelganawed-calculator-vue.netlify.app/",
+            link: "https://calculator.jenuelganawed.com",
             icon: ExternalLinkSquareAlt,
             tooltip: 'Open Link'
         }

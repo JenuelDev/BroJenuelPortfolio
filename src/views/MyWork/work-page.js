@@ -38,12 +38,12 @@ export default {
                     tooltip: "Open in Github"
                 },
                 {
-                    link: "https://laravel-mongodb.netlify.app/",
+                    link: "https://laravel-mongo-docs.ml",
                     icon: ExternalLinkSquareAlt,
                     tooltip: "Open Link"
                 }
             ],
-            imageLink: "https://laravel-mongodb.netlify.app/",
+            imageLink: "https://laravel-mongo-docs.ml",
             img: "https://i.imgur.com/XUQZQLCl.png"
         },
         {
@@ -104,26 +104,5 @@ export default {
             imageLink: "https://jenuelganawed.com",
             img: "https://i.imgur.com/ygEsq4Kl.png"
         },
-        {
-            overline: "Personal Blog",
-            title: "Bro Jenuel Blog",
-            des:
-                "I built a blog for my self, where I can post what I learned and upload my journey as a developer. I post 1 to 2 times a week.",
-            techs: ["vue", "nuxtjs", "javaScript", "typeScript"],
-            links: [
-                {
-                    link: "https://github.com/BroJenuel/BroJenuelBlog",
-                    icon: Github,
-                    tooltip: "Open in Github"
-                },
-                {
-                    link: "https://brojenuel-blog.vercel.app/",
-                    icon: ExternalLinkSquareAlt,
-                    tooltip: "Open Link"
-                }
-            ],
-            imageLink: "https://brojenuel-blog.vercel.app/",
-            img: "https://i.imgur.com/vwwFfRUl.png"
-        }
     ]
 };
