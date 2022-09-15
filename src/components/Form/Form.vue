@@ -25,7 +25,6 @@
 <script>
 import Alert from './../alert/Alert.vue';
 import { reactive, ref } from '@vue/reactivity';
-import axios from 'axios';
 import emailjs, { init } from 'emailjs-com';
 init('user_zdO7SqNAzUeW1bl8KtMhn');
 
@@ -64,19 +63,6 @@ export default {
             alertShow.value = show;
         };
 
-        const verifyEmail = async () => {
-            let r;
-            await axios
-                .post(`${process.env.VUE_APP_BACKEND_URL}/email/verify?email=${form.email}`)
-                .then((res) => {
-                    r = res.data;
-                })
-                .catch((e) => {
-                    r = e.response.data;
-                });
-            return r;
-        };
-
         const validateForm = async (sentSuccess = false) => {
             if (sentSuccess === true) {
                 alertSet({
@@ -106,30 +92,6 @@ export default {
                 alertSet({
                     title: 'Oops! Invalid Email 😢😭📧',
                     description: 'Sorry about that, it seems that you have entered a wrong email format.',
-                    type: 'error',
-                    show: true,
-                });
-                return false;
-            }
-
-            let verified = await verifyEmail();
-            if (verified && (verified.deliverable === false || verified.code != 200)) {
-                if (verified.code && verified.code == 401) {
-                    alertSet({
-                        title: 'Oops! Server Error! 😢😭📧',
-                        description:
-                            'Sorry about that, it seems their is an error on my server. Going to fix it later.',
-                        type: 'error',
-                        show: true,
-                    });
-                    return false;
-                }
-
-                alertSet({
-                    title: 'Oops! Email Does not Exist! 😢😭📧',
-                    description:
-                        'Sorry about that, it seems that you have entered a wrong email, I cant find it anywhere.' +
-                        (verified.code === 301 ? "The email service provider accepts all emails without specifying if it's deliverable or not." : ''),
                     type: 'error',
                     show: true,
                 });
