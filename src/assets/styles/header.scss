@@ -58,7 +58,7 @@
                 gap: 10px;
             }
 
-            ol {
+            .nav-o {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -68,7 +68,8 @@
                 counter-reset: item 0;
                 gap: 10px;
 
-                li {
+                & > div,
+                & > a {
                     margin: 0px 5px;
                     position: relative;
                     counter-increment: item 1;

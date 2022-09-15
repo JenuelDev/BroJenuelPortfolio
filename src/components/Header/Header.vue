@@ -10,6 +10,7 @@ import Dev from '@vicons/fa/Dev';
 import { Icon } from '@vicons/utils';
 import { onBeforeMount, onMounted, ref } from 'vue';
 import Document16Regular from '@vicons/fluent/Document16Regular';
+import { RouterLink } from 'vue-router';
 
 const scroll = ref(0);
 const width = ref(0);
@@ -59,48 +60,48 @@ function openSite(site) {
                 <h2 class="sm:ml-[50px] ml-10px font-700 text-[var(--primary)] text-size-2.5rem -mt-6px">JG</h2>
             </div>
             <div class="navs">
-                <ol>
-                    <li v-scrollanimation style="transition-delay: 100ms" @click="$router.push({ name: 'AboutMe' })">
+                <div class="nav-o">
+                    <RouterLink v-scrollanimation style="transition-delay: 100ms" to="/home">
                         <div class="flex items-center" :class="{ active: $route.name == 'AboutMe' }">
                             <Icon size="20">
                                 <Home20Filled />
                             </Icon>
                             <span class="text-size-14px font-500"> Home </span>
                         </div>
-                    </li>
-                    <li v-scrollanimation style="transition-delay: 250ms" @click="$router.push({ name: 'Experience' })">
+                    </RouterLink>
+                    <RouterLink v-scrollanimation style="transition-delay: 250ms" to="/experience">
                         <div class="flex items-center" :class="{ active: $route.name == 'Experience' }">
                             <Icon size="20">
                                 <Briefcase20Filled />
                             </Icon>
                             <span class="text-size-14px font-500"> Experience </span>
                         </div>
-                    </li>
-                    <li v-scrollanimation style="transition-delay: 400ms" @click="$router.push({ name: 'Project' })">
+                    </RouterLink>
+                    <RouterLink v-scrollanimation style="transition-delay: 400ms" to="/project">
                         <div :class="{ active: $route.name == 'Project' }">
                             <Icon size="20">
                                 <Code20Filled />
                             </Icon>
                             <span class="text-size-14px font-500"> Projects </span>
                         </div>
-                    </li>
-                    <li v-scrollanimation style="transition-delay: 550ms" @click="$router.push({ name: 'Contact' })">
+                    </RouterLink>
+                    <RouterLink v-scrollanimation style="transition-delay: 550ms" to="/contact">
                         <div :class="{ active: $route.name == 'Contact' }">
                             <Icon size="20">
                                 <Mail20Filled />
                             </Icon>
                             <span class="text-size-14px font-500"> Contact Me </span>
                         </div>
-                    </li>
-                    <li v-scrollanimation style="transition-delay: 650ms">
+                    </RouterLink>
+                    <div v-scrollanimation style="transition-delay: 650ms">
                         <a class="text-size-14px font-500" rel="external" href="https://dev.to/BroJenuel" hreflang="es-es">
                             <Icon size="20">
                                 <WebAsset24Filled />
                             </Icon>
                             Blog
                         </a>
-                    </li>
-                    <li v-scrollanimation style="transition-delay: 650ms">
+                    </div>
+                    <div v-scrollanimation style="transition-delay: 650ms">
                         <a
                             class="text-size-14px font-500"
                             rel="external"
@@ -113,8 +114,8 @@ function openSite(site) {
                             </Icon>
                             Resume
                         </a>
-                    </li>
-                </ol>
+                    </div>
+                </div>
                 <div v-scrollanimation style="transition-delay: 700ms">
                     <ThemeChanger />
                 </div>
