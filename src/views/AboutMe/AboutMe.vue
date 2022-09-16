@@ -8,7 +8,7 @@ import WhatIconOffer from './../../components/AboutMe/WhatIOffer.vue';
     <TechnicalSkills />
     <WhatIconOffer />
 </template>
-<style lang="postcss">
+<style lang="scss">
 .what-i-offer-content {
     margin: 70px auto 10px auto;
     max-width: 1000px;

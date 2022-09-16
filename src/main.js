@@ -1,12 +1,12 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import './assets/main.scss'
-import './registerServiceWorker'
-import ScrollAnimation, { animationViewFull } from './directives/scrollAnimation'
-import { store } from './store/store'
-import VueSession from './helper/VueSession'
-import 'windi.css'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import './assets/main.scss';
+import './registerServiceWorker';
+import ScrollAnimation, { animationViewFull } from './directives/scrollAnimation';
+import { store } from './store/store';
+import VueSession from './helper/VueSession';
+import 'windi.css';
 
 createApp(App)
     .directive('scrollanimation', ScrollAnimation)
@@ -22,11 +22,11 @@ createApp(App)
         },
         unmounted(el) {
             document.body.removeEventListener('click', el.clickOutsideEvent);
-        }
+        },
     })
     .use(store)
     .use(router)
     .use(VueSession, {
-        persist: true
+        persist: true,
     })
-    .mount('#app')
+    .mount('#app');

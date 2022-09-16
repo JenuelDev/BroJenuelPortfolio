@@ -2,6 +2,7 @@
 import SvgDecoration from './../SvgDecoration/SvgDecoration.vue';
 import Document16Regular from '@vicons/fluent/Document16Regular';
 import { Icon } from '@vicons/utils';
+import { Mail20Filled } from '@vicons/fluent';
 
 const yearCount = () => {
     return new Date().getFullYear() - 2017;
@@ -21,21 +22,24 @@ const yearCount = () => {
                         <div>
                             <router-link
                                 to="/contact"
-                                class="bg-[var(--primary)] px-25px py-10px rounded-md text-[var(--background)] font-600 opacity-90 hover:opacity-100"
+                                class="bg-[var(--primary)] px-25px py-10px rounded-md text-[var(--background)] font-600 opacity-90 hover:opacity-100 flex items-center gap-5px"
                             >
-                                Get In Touch
+                                <Icon size="20">
+                                    <Mail20Filled />
+                                </Icon>
+                                <span> Get In Touch </span>
                             </router-link>
                         </div>
                         <div>
                             <a
                                 href="https://drive.google.com/file/d/1CEMto0ubGMVBJNCLq-QQN8-aFsYUo2Dd/view?usp=sharing"
                                 target="_blank"
-                                class="bg-[var(--primary)] px-25px py-10px rounded-md text-[var(--background)] font-600 opacity-90 hover:opacity-100 cursor-pointer whitespace-nowrap"
+                                class="bg-[var(--primary)] px-25px py-10px rounded-md text-[var(--background)] font-600 opacity-90 hover:opacity-100 cursor-pointer whitespace-nowrap flex items-center gap-5px"
                             >
                                 <Icon size="20">
                                     <Document16Regular />
                                 </Icon>
-                                Resume
+                                <span> Resume </span>
                             </a>
                         </div>
                     </div>
