@@ -51,7 +51,6 @@ const yearCount = () => {
                         <div class="photo-front"></div>
                         <img
                             class="max-w-300px w-[100%] w-[300px] profile-picture-style"
-                            loading="lazy"
                             width="300px"
                             src="./../../assets/images/profileImage.webp"
                             alt="Jenuel Ganawed - Profile Picture"
