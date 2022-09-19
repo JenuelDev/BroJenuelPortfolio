@@ -4,11 +4,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/.well-known/brave-rewards-verification.txt"
   },
   {
-    "revision": "c53227e59afcc43c775f",
+    "revision": "992ca051613df59210f9",
     "url": "/css/app.0103ec31.css"
   },
   {
-    "revision": "c53227e59afcc43c775f",
+    "revision": "992ca051613df59210f9",
     "url": "/css/app.0103ec31.css.map"
   },
   {
@@ -20,11 +20,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/chunk-15fe49da.d00b4dff.css.map"
   },
   {
-    "revision": "422f283be06cc4b5d3bd",
+    "revision": "6ca5db767d495bf288c6",
     "url": "/css/chunk-18fd590e.5ec8c475.css"
   },
   {
-    "revision": "422f283be06cc4b5d3bd",
+    "revision": "6ca5db767d495bf288c6",
     "url": "/css/chunk-18fd590e.5ec8c475.css.map"
   },
   {
@@ -112,16 +112,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/profileImage.ac3f181b.webp"
   },
   {
-    "revision": "c5ae1d202c7254b731c2185483b5152f",
+    "revision": "52737f6918408936485d1fde42ef9e1d",
     "url": "/index.html"
   },
   {
-    "revision": "c53227e59afcc43c775f",
-    "url": "/js/app.c70af825.js"
+    "revision": "992ca051613df59210f9",
+    "url": "/js/app.149d58c7.js"
   },
   {
-    "revision": "c53227e59afcc43c775f",
-    "url": "/js/app.c70af825.js.map"
+    "revision": "992ca051613df59210f9",
+    "url": "/js/app.149d58c7.js.map"
   },
   {
     "revision": "7a822dbe399ac591cba9",
@@ -132,12 +132,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-15fe49da.ec09199a.js.map"
   },
   {
-    "revision": "422f283be06cc4b5d3bd",
-    "url": "/js/chunk-18fd590e.c6969dcb.js"
+    "revision": "6ca5db767d495bf288c6",
+    "url": "/js/chunk-18fd590e.cc9d795e.js"
   },
   {
-    "revision": "422f283be06cc4b5d3bd",
-    "url": "/js/chunk-18fd590e.c6969dcb.js.map"
+    "revision": "6ca5db767d495bf288c6",
+    "url": "/js/chunk-18fd590e.cc9d795e.js.map"
   },
   {
     "revision": "e1fc75be89442484ab82",
