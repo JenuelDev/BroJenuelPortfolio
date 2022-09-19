@@ -11,7 +11,7 @@ export default {
             tooltip: 'Open In Github'
         },
         {
-            link: "https://lets-chat-app-by-jenuel.herokuapp.com/",
+            link: "https://lets-chat-b6w7.onrender.com/",
             icon: ExternalLinkSquareAlt,
             tooltip: 'Open Link'
         }
