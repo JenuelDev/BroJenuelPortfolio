@@ -94,7 +94,7 @@ function openSite(site) {
                         </div>
                     </RouterLink>
                     <div v-scrollanimation style="transition-delay: 650ms">
-                        <a class="text-size-14px font-500" rel="external" href="https://dev.to/BroJenuel" hreflang="es-es">
+                        <a class="text-size-14px font-500" rel="external" href="https://blog.brojenuel.com" hreflang="es-es">
                             <Icon size="20">
                                 <WebAsset24Filled />
                             </Icon>
