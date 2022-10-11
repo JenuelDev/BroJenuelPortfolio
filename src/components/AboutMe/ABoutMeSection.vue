@@ -14,9 +14,9 @@ const yearCount = () => {
             <div class="about-me-text">
                 <div class="about-me-text-info text-right max-w-500px">
                     <div>
-                        <div class="lg:text-size-36px text-size-30px font-500">Software Developer</div>
-                        <div class="lg:text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--primary)] tracking-tight mt-10px">Hi there, I’m Jenuel</div>
-                        <div class="text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--lightestSlate)] tracking-tight">I create apps and websites</div>
+                        <h3 class="lg:text-size-36px text-size-30px font-500">Software Developer</h3>
+                        <h1 class="lg:text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--primary)] tracking-tight mt-10px">Hi there, I’m Jenuel</h1>
+                        <h2 class="text-size-52px md:text-size-44px text-size-36px font-600 text-[var(--lightestSlate)] tracking-tight">I create apps and websites</h2>
                     </div>
                     <div class="mt-30px flex lg:justify-end justify-center flex-wrap gap-20px items-center">
                         <div>
@@ -63,14 +63,14 @@ const yearCount = () => {
             <SvgDecoration classNames="absolute md:right-[-56px] md:visible invisible z-20 fill-[var(--primary)] opacity-50" :type="2" />
         </div>
         <div class="md:text-size-24px text-size-20px md:px-10px w-[100%] max-w-[770px] pt-100px md:leading-relaxed leading-relaxed relative">
-            <div class="mb-30px">
-                My name is Jenuel Ganawed. I’m a developer with a full-stack background and a keen eye for good design. I love to make complex things simple and joy to
-                use. Currently, I focus on building web apps with VueJs(v2)(v3) and Laravel.
-            </div>
-            <div class="mb-30px">
+            <p class="mb-30px">
+                My name is Jenuel Ganawed or call me BroJenuel. I’m a developer with a full-stack background and a keen eye for good design. I love to make complex things
+                simple and joy to use. Currently, I focus on building web apps with VueJs(v2)(v3) and Laravel.
+            </p>
+            <p class="mb-30px">
                 Over the past {{ yearCount() }} years, I’ve gained experience across some aspects of the application lifecycle, including frontend, backend, and dev-ops.
                 It allows me to take full ownership of a project from design to implementation and deployment.
-            </div>
+            </p>
             <SvgDecoration classNames="absolute right-[-150px] top-90 md:block hidden z-20 fill-[var(--primary)] opacity-50" :type="3" />
         </div>
     </section>

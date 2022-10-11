@@ -61,7 +61,7 @@ function openSite(site) {
             </div>
             <div class="navs">
                 <div class="nav-o">
-                    <RouterLink v-scrollanimation style="transition-delay: 100ms" to="/home">
+                    <RouterLink v-scrollanimation style="transition-delay: 100ms" to="/">
                         <div class="flex items-center" :class="{ active: $route.name == 'AboutMe' }">
                             <Icon size="20">
                                 <Home20Filled />

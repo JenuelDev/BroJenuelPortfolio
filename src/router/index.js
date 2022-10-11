@@ -1,36 +1,31 @@
-import { createRouter, createWebHistory } from "vue-router";
-import AboutMe from "./../views/AboutMe/AboutMe.vue";
+import { createRouter, createWebHistory } from 'vue-router';
+import AboutMe from './../views/AboutMe/AboutMe.vue';
 
 const routes = [
     {
-        path: "/",
-        redirect: "/home",
-
+        path: '/',
+        name: 'AboutMe',
+        component: AboutMe,
     },
     {
-        path: "/home",
-        name: "AboutMe",
-        component: AboutMe
+        path: '/experience',
+        name: 'Experience',
+        component: () => import('./../views/MyExperience'),
     },
     {
-        path: "/experience",
-        name: "Experience",
-        component: () => import("./../views/MyExperience"),
+        path: '/project',
+        name: 'Project',
+        component: () => import('./../views/MyWork'),
     },
     {
-        path: "/project",
-        name: "Project",
-        component: () => import("./../views/MyWork"),
+        path: '/contact',
+        name: 'Contact',
+        component: () => import('./../views/ContactMe'),
     },
     {
-        path: "/contact",
-        name: "Contact",
-        component: () => import("./../views/ContactMe"),
-    },
-    {
-        path: "/:pathMatch(.*)*",
-        name: "PageNotFound",
-        component: () => import("./../views/PageNotFound")
+        path: '/:pathMatch(.*)*',
+        name: 'PageNotFound',
+        component: () => import('./../views/PageNotFound'),
     },
 ];
 
@@ -43,11 +38,11 @@ const router = createRouter({
         } else {
             return savedPosition;
         }
-    }
+    },
 });
 
 router.afterEach((to) => {
-    document.title = `Jenuel Ganawed - ${to.name}`
+    document.title = `Jenuel Ganawed - ${to.name}`;
 });
 
 export default router;
