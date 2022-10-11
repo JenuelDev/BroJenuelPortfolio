@@ -2,23 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://brojenuel.com/</loc>
+        <loc>https://www.brojenuel.com/home</loc>
+        <lastmod>2022-10-10T17:33:30+08:00</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1</priority>
     </url>
     <url>
-        <loc>https://brojenuel.com/home</loc>
+        <loc>https://www.brojenuel.com/experience</loc>
+        <lastmod>2022-10-10T17:33:30+08:00</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1</priority>
     </url>
     <url>
-        <loc>https://brojenuel.com/experience</loc>
+        <loc>https://www.brojenuel.com/project</loc>
+        <lastmod>2022-10-10T17:33:30+08:00</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1</priority>
     </url>
     <url>
-        <loc>https://brojenuel.com/work</loc>
-        <priority>1</priority>
-    </url>
-    <url>
-        <loc>https://brojenuel.com/contact</loc>
+        <loc>https://www.brojenuel.com/contact</loc>
+        <lastmod>2022-10-10T17:33:30+08:00</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1</priority>
     </url>
 </urlset>

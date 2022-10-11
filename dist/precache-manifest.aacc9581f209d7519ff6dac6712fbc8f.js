@@ -112,7 +112,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/profileImage.ac3f181b.webp"
   },
   {
-    "revision": "23deb81dc915fede535c501246f5107b",
+    "revision": "1d36b2c925e3e73fdb745d96abb7cfc4",
     "url": "/index.html"
   },
   {
@@ -172,7 +172,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/robot.txt"
   },
   {
-    "revision": "f3410da18a93d55f7a66b444afff7944",
+    "revision": "feae4d888642f2074dda5ac4198d92eb",
     "url": "/sitemap.xml"
   }
 ]);
