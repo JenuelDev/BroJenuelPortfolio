@@ -1,2 +1,2 @@
 (window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-3d51ab06"],{"01c5":function(e,t,n){"use strict";n.r(t);var c=n("7a23");const o={class:"page-not-found"},i=Object(c["createElementVNode"])("h1",null,"OOPS!",-1),r=Object(c["createElementVNode"])("p",null,"404 - THE PAGE CAN'T BE FOUND",-1),s=[i,r];function a(e,t){const n=Object(c["resolveDirective"])("scrollanimation");return Object(c["withDirectives"])((Object(c["openBlock"])(),Object(c["createElementBlock"])("div",o,s)),[[n]])}n("8f15");var l=n("6b0d"),u=n.n(l);const b={},d=u()(b,[["render",a]]);t["default"]=d},"3b73":function(e,t,n){},"8f15":function(e,t,n){"use strict";n("3b73")}}]);
-//# sourceMappingURL=chunk-3d51ab06.698c40a6.js.map
+//# sourceMappingURL=chunk-3d51ab06.c2c25ebd.js.map
